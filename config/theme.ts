@@ -1,11 +1,17 @@
 // theme/themeConfig.ts
-import type { ThemeConfig } from 'antd';
+import type { ThemeConfig } from "antd"
 
 const theme: ThemeConfig = {
+  hashed: false,
   token: {
-    fontSize: 16,
-    colorPrimary: '#52c41a',
+    fontFamily: "Nunito",
+    colorPrimary: "#3172A9",
   },
-};
+  components: {
+      Button: {
+        colorLink: '#3172A9', 
+      }
+    },
+}
 
-export default theme;
+export default theme
