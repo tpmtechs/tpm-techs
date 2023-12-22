@@ -43,7 +43,7 @@ const Services: FC = () => {
         style={{ width: "100vw" }}
         className="flex w-full items-center justify-center bg-[url('https://firebasestorage.googleapis.com/v0/b/tpm-techs.appspot.com/o/banner-2.jpg?alt=media&token=1eb8d70f-c57b-4350-ab09-bb161e9262fd')] bg-cover bg-no-repeat"
       >
-        <div style={{ maxWidth: 1440, height: 600 }} className="z-40 flex w-full items-center justify-start">
+        <div style={{ maxWidth: 1280, height: 600 }} className="z-40 flex w-full items-center justify-start">
           <Row gutter={[24, 24]}>
             <Col span={24}>
               <div className="text-2xl text-white">Building The Future, Restoring The Past</div>
@@ -63,7 +63,7 @@ const Services: FC = () => {
         <div style={{ height: 600 }} className="absolute inset-0 z-30 w-full bg-black bg-opacity-60" />
       </section>
 
-      <div style={{ maxWidth: 1440 }} className="w-full">
+      <div style={{ maxWidth: 1280 }} className="w-full">
         <section className="my-16">
           <div style={{ color: "#3172A9" }} className="text-3xl font-bold">
             # Services
@@ -94,7 +94,7 @@ const Services: FC = () => {
         style={{ width: "100vw" }}
         className="relative flex w-full items-center justify-center bg-[url('https://firebasestorage.googleapis.com/v0/b/tpm-techs.appspot.com/o/banner-2.jpg?alt=media&token=1eb8d70f-c57b-4350-ab09-bb161e9262fd')] bg-cover bg-no-repeat"
       >
-        <div style={{ maxWidth: 1440, height: 600 }} className="z-40 flex w-full items-center justify-start">
+        <div style={{ maxWidth: 1280, height: 600 }} className="z-40 flex w-full items-center justify-start">
           <Row style={{ width: "100%" }} gutter={[48, 48]} align="middle">
             <Col span={12}>
               <div className="text-left text-lg font-semibold text-gamboge">
