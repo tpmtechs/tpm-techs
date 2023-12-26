@@ -1,4 +1,4 @@
-import { Nunito } from "next/font/google"
+import { Inter } from "next/font/google"
 import React from "react"
 import BasicLayout from "layouts/basicLayout"
 import "styles/tailwind.css"
@@ -12,16 +12,16 @@ export const metadata = {
   description: "Welcome to TPM Technology",
 }
 
-const nunito = Nunito({ 
+const inter = Inter({ 
   subsets: ["latin"],
-  weight: ['200','300', '400', '500', '600', '700', '800', '900', '1000'],
+  weight: ['100','200','300', '400', '500', '600', '700', '800', '900'],
   display: 'swap',
 })
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <body className={nunito.className}>
+      <body className={inter.className}>
         <StyledComponentsRegistry>
             <BasicLayout>{children}</BasicLayout>
         </StyledComponentsRegistry>

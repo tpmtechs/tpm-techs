@@ -1,5 +1,5 @@
 import { FacebookFilled, GithubFilled, LinkedinFilled, TwitterSquareFilled } from "@ant-design/icons"
-import { Button, Col, Divider, Image, Input, Row } from "antd"
+import { Button, Col, Divider, Image, Input, Row, Select } from "antd"
 import dayjs from "dayjs"
 import Link from "next/link"
 import type { FC } from "react"
@@ -7,33 +7,59 @@ import "./index.css"
 
 const Footer: FC = () => {
   return (
-    <div className="flex w-full items-center justify-center bg-gradient-to-r from-primary-700 to-primary-800 py-6 pt-12 text-white">
-      <div className="footer-container w-full">
-        <div>
-          <Row align="middle" justify="space-between">
-            <Col className="font-semibold">
-              <div className="text-4xl text-white">Join our newsletter</div>
-              <div className="text-base text-white">We&apos;ll send you a nice letter once per week. No Spam.</div>
-            </Col>
-            <Col>
-              <Row gutter={[8, 8]}>
-                <Col>
-                  <Input size="large" placeholder="Enter your email" />
-                </Col>
-                <Col>
-                  <Button size="large" type="primary">
-                    Subscribe
-                  </Button>
-                </Col>
-              </Row>
-            </Col>
-          </Row>
+    <div className="flex w-full flex-col items-center justify-center bg-gradient-to-r from-primary-700 to-primary-800 pb-6 text-white">
+      <section
+        style={{ width: "100vw" }}
+        className="relative flex w-full items-center justify-center bg-[url('https://firebasestorage.googleapis.com/v0/b/tpm-techs.appspot.com/o/NL9.jpg?alt=media&token=333c5633-f345-4832-ad22-dd45b408505d')] bg-cover bg-no-repeat"
+      >
+        <div style={{ maxWidth: 1280, height: 400 }} className="z-40 flex w-full items-center justify-start">
+          <div>
+            <Row align="middle" justify="center">
+              <Col span={8}>
+                <Row gutter={[16, 16]} justify="center">
+                  <Col className="text-center font-semibold">
+                    <div className="text-4xl text-white">Cần hỗ trợ ?</div>
+                    <div className="text-base text-white">Đăng ký thông tin để được tư vấn</div>
+                  </Col>
+                  <Col span={24}>
+                    <Input size="large" placeholder="Họ và tên" />
+                  </Col>
+                  <Col span={24}>
+                    <Input size="large" placeholder="Số điện thoại" />
+                  </Col>
+                  <Col span={24}>
+                    <Input size="large" placeholder="Địa chỉ Email" />
+                  </Col>
+                  <Col span={24}>
+                    <Select
+                      style={{ width: "100%" }}
+                      size="large"
+                      placeholder="Lĩnh vực cần tư vấn"
+                      options={[
+                        { value: "IOT", label: "IOT" },
+                        { value: "Năng lượng tái tạo", label: "Năng lượng tái tạo" },
+                        { value: "Lĩnh vực khác", label: "Lĩnh vực khác" },
+                      ]}
+                    />
+                  </Col>
+                  <Col span={24}>
+                    <Button style={{ width: "100%" }} size="large" type="primary">
+                      Đăng ký
+                    </Button>
+                  </Col>
+                </Row>
+              </Col>
+            </Row>
+          </div>
         </div>
-        <Divider style={{ borderColor: "#3172A9" }} />
-        <div>
+        <div style={{ height: 400 }} className="absolute inset-0 z-30 w-full bg-black bg-opacity-25" />
+      </section>
+
+      <div className="footer-container w-full">
+        <div className="pt-12">
           <Row gutter={[48, 48]} justify="space-between" align="middle">
-            <Col span={6}>
-              <div className="flex items-center justify-center bg-white rounded-xl">
+            <Col span={7}>
+              <div className="flex items-center justify-center rounded-xl bg-white">
                 <Image
                   preview={false}
                   width={120}
@@ -41,34 +67,33 @@ const Footer: FC = () => {
                   src="https://firebasestorage.googleapis.com/v0/b/tpm-techs.appspot.com/o/tpm-technology-no-background.png?alt=media&token=d12002fa-bc8c-45e9-9607-b166005dc3fa"
                 />
               </div>
-              <div className="mt-2">
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                industrys standard dummy text ever since the 1500s.
+              <div className="mt-2 text-center">
+                “Chúng tôi là Đối tác tin cậy của khách hàng”
               </div>
             </Col>
             <Col span={6}>
               <Row gutter={[12, 12]}>
-                <Col span={24}>Address: 268 Lý Thường Kiệt, Quận 10, Tp. Hồ Chí Minh</Col>
-                <Col span={24}>Email: example@tpm-techs.com</Col>
-                <Col span={24}>Phone: (+84)12 345 6789</Col>
+                <Col span={24}>Địa chỉ: Số 42 đường 34, An Phú, thành phố Thủ Đức</Col>
+                <Col span={24}>Email: tpmcore@gmail.com</Col>
+                <Col span={24}>Hotline: 028 2229 9685</Col>
               </Row>
             </Col>
-            <Col span={6}>
+            <Col span={5}>
               <Row gutter={[12, 12]}>
                 <Col span={24}>
-                  <Link href="/about">Home</Link>
+                  <Link href="/about">Trang chủ</Link>
                 </Col>
                 <Col span={24}>
-                  <Link href="/about">About TPM</Link>
+                  <Link href="/about">Giới thiệu</Link>
                 </Col>
                 <Col span={24}>
-                  <Link href="/services">Services</Link>
+                  <Link href="/services">Dịch vụ</Link>
                 </Col>
                 <Col span={24}>
-                  <Link href="/projects">Projects</Link>
+                  <Link href="/projects">Dự án</Link>
                 </Col>
                 <Col span={24}>
-                  <Link href="/contact">Contact Us</Link>
+                  <Link href="/contact">Liên hệ</Link>
                 </Col>
               </Row>
             </Col>
@@ -92,7 +117,7 @@ const Footer: FC = () => {
                   </Button>
                 </Col>
                 <Col>
-                  <Button type="link" href="/home">
+                  <Button type="link" href="https://www.facebook.com/profile.php?id=61554331060849">
                     <FacebookFilled style={{ fontSize: 28 }} />
                   </Button>
                 </Col>

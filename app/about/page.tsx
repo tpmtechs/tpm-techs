@@ -60,7 +60,7 @@ const About: FC = () => {
 
       <div style={{ maxWidth: 1280 }} className="w-full">
         <section className="my-16">
-          <div style={{ color: "#3172A9" }} className="text-3xl font-bold">
+          <div style={{ color: "#3172A9" }} className="text-3xl font-semibold">
             # TPM Technology, Inc.
           </div>
           <Divider />
@@ -101,7 +101,7 @@ const About: FC = () => {
             </Col>
             <Col span={12}>
               <div className="my-8">
-                <div style={{ color: "#3172A9" }} className="my-2 text-2xl font-bold">
+                <div style={{ color: "#3172A9" }} className="my-2 text-2xl font-semibold">
                   Mission
                 </div>
                 <div className=" text-xl text-slate-500">
@@ -112,7 +112,7 @@ const About: FC = () => {
               </div>
 
               <div className="my-8">
-                <div style={{ color: "#3172A9" }} className="text-2xl font-bold">
+                <div style={{ color: "#3172A9" }} className="text-2xl font-semibold">
                   Goal
                 </div>
                 <div className="my-2 text-xl text-slate-500">
@@ -128,7 +128,7 @@ const About: FC = () => {
 
       <div style={{ maxWidth: 1280 }} className="w-full">
         <section className="my-16">
-          <div style={{ color: "#3172A9" }} className="text-3xl font-bold">
+          <div style={{ color: "#3172A9" }} className="text-3xl font-semibold">
             # People
           </div>
           <Divider />
@@ -161,7 +161,7 @@ const About: FC = () => {
         className="flex w-full items-center justify-center bg-mabel bg-cover bg-no-repeat"
       >
         <div style={{ maxWidth: 1280 }} className="my-16 w-full">
-          <div style={{ color: "#3172A9" }} className="text-3xl font-bold">
+          <div style={{ color: "#3172A9" }} className="text-3xl font-semibold">
             # Testimonials
           </div>
           <Divider />

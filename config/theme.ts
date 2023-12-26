@@ -4,7 +4,7 @@ import type { ThemeConfig } from "antd"
 const theme: ThemeConfig = {
   hashed: false,
   token: {
-    fontFamily: "Nunito",
+    fontFamily: "Inter",
     colorPrimary: "#3172A9",
   },
   components: {

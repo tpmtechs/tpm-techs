@@ -65,7 +65,7 @@ const Services: FC = () => {
 
       <div style={{ maxWidth: 1280 }} className="w-full">
         <section className="my-16">
-          <div style={{ color: "#3172A9" }} className="text-3xl font-bold">
+          <div style={{ color: "#3172A9" }} className="text-3xl font-semibold">
             # Services
           </div>
           <Divider />

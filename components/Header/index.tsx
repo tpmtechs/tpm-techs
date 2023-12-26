@@ -21,21 +21,29 @@ const Header: FC = () => {
           <Col>
             <Row gutter={[48, 48]} align="middle">
               <Col>
-                <Link className="text-primary" style={{ fontFamily: 'Nunito'}} href="/home">Home</Link>
+                <Link className="text-primary" href="/home">
+                  Trang chủ
+                </Link>
               </Col>
               <Col>
-                <Link className="text-primary" href="/about">About TPM</Link>
+                <Link className="text-primary" href="/about">
+                  Giới thiệu
+                </Link>
               </Col>
               <Col>
-                <Link className="text-primary" href="/services">Services</Link>
+                <Link className="text-primary" href="/services">
+                  Dịch vụ
+                </Link>
               </Col>
               <Col>
-                <Link className="text-primary" href="/projects">Projects</Link>
+                <Link className="text-primary" href="/projects">
+                  Dự án
+                </Link>
               </Col>
               <Col>
                 <Button type="primary" size="large" href="/contact">
-                    Contact Us
-                  </Button>
+                  Liên hệ
+                </Button>
               </Col>
             </Row>
           </Col>

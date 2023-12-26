@@ -73,7 +73,6 @@ module.exports = {
         },
       },
       fontFamily: {
-        nunito: ["Nunito"],
         body: [
           "Inter",
           "ui-sans-serif",
