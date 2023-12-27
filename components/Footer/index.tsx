@@ -10,10 +10,10 @@ const Footer: FC = () => {
     <div className="flex w-full flex-col items-center justify-center bg-gradient-to-r from-primary-700 to-primary-800 pb-6 text-white">
       <section
         style={{ width: "100vw" }}
-        className="relative flex w-full items-center justify-center bg-[url('https://firebasestorage.googleapis.com/v0/b/tpm-techs.appspot.com/o/NL9.jpg?alt=media&token=333c5633-f345-4832-ad22-dd45b408505d')] bg-cover bg-no-repeat"
+        className="relative flex w-full items-center justify-center bg-center bg-[url('https://firebasestorage.googleapis.com/v0/b/tpm-techs.appspot.com/o/NL9.jpg?alt=media&token=333c5633-f345-4832-ad22-dd45b408505d')] bg-cover bg-no-repeat"
       >
         <div style={{ maxWidth: 1280, height: 400 }} className="z-40 flex w-full items-center justify-start">
-          <div>
+          <div className="w-full">
             <Row align="middle" justify="center">
               <Col span={8}>
                 <Row gutter={[16, 16]} justify="center">

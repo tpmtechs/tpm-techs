@@ -41,7 +41,7 @@ const Services: FC = () => {
     <div className="flex w-full flex-col items-center justify-center " style={{ marginTop: "66px" }}>
       <section
         style={{ width: "100vw" }}
-        className="flex w-full items-center justify-center bg-[url('https://firebasestorage.googleapis.com/v0/b/tpm-techs.appspot.com/o/banner-2.jpg?alt=media&token=1eb8d70f-c57b-4350-ab09-bb161e9262fd')] bg-cover bg-no-repeat"
+        className="flex w-full items-center justify-center bg-center bg-[url('https://firebasestorage.googleapis.com/v0/b/tpm-techs.appspot.com/o/IOT7.jpg?alt=media&token=0bc8fa7c-6a68-4d63-9ad4-e5b40e19b683')] bg-cover bg-no-repeat"
       >
         <div style={{ maxWidth: 1280, height: 600 }} className="z-40 flex w-full items-center justify-start">
           <Row gutter={[24, 24]}>
@@ -92,7 +92,7 @@ const Services: FC = () => {
 
       <section
         style={{ width: "100vw" }}
-        className="relative flex w-full items-center justify-center bg-[url('https://firebasestorage.googleapis.com/v0/b/tpm-techs.appspot.com/o/banner-2.jpg?alt=media&token=1eb8d70f-c57b-4350-ab09-bb161e9262fd')] bg-cover bg-no-repeat"
+        className="relative flex w-full items-center justify-center bg-center bg-[url('https://firebasestorage.googleapis.com/v0/b/tpm-techs.appspot.com/o/banner-2.jpg?alt=media&token=1eb8d70f-c57b-4350-ab09-bb161e9262fd')] bg-cover bg-no-repeat"
       >
         <div style={{ maxWidth: 1280, height: 600 }} className="z-40 flex w-full items-center justify-start">
           <Row style={{ width: "100%" }} gutter={[48, 48]} align="middle">

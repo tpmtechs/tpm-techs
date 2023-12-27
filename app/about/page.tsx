@@ -45,7 +45,7 @@ const About: FC = () => {
     <div className="flex w-full flex-col items-center justify-center " style={{ marginTop: "66px" }}>
       <section
         style={{ width: "100vw" }}
-        className="flex w-full items-center justify-center bg-[url('https://firebasestorage.googleapis.com/v0/b/tpm-techs.appspot.com/o/banner-2.jpg?alt=media&token=1eb8d70f-c57b-4350-ab09-bb161e9262fd')] bg-cover bg-no-repeat"
+        className="flex w-full items-center justify-center bg-[url('https://firebasestorage.googleapis.com/v0/b/tpm-techs.appspot.com/o/IOT4.jpg?alt=media&token=cad8d884-d3cb-41d0-9226-f6990b6d0279')] bg-cover bg-center bg-no-repeat"
       >
         <div style={{ maxWidth: 1280, height: 600 }} className="z-40 flex w-full items-center justify-start">
           <Row gutter={[24, 24]}>
@@ -66,13 +66,31 @@ const About: FC = () => {
           <Divider />
           <Row align="middle">
             <Col span={12}>
-              <div className="text-lg font-semibold">
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
-                scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap
-                into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the
-                release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing
-                software like Aldus PageMaker including versions of Lorem Ipsum.
+              <div className="text-base font-medium text-justify">
+                Chào mừng đến với TPC Group, đối tác đáng tin cậy của bạn Dịch vụ năng lượng Giải pháp của Công ty
+                (ESCO) trong lĩnh vực công nghiệp. Với sự mạnh mẽ Đội ngũ kỹ sư có tay nghề cao, chúng tôi chuyên cung
+                cấp những sản phẩm hàng đầu dịch vụ năng lượng phục vụ cho nhu cầu cụ thể của các công ty công nghiệp.
+              </div>
+
+              <div className="mt-4 text-base font-medium text-justify">
+                Tại TPC Group, chúng tôi hiểu vai trò quan trọng của năng lượng trong tối ưu hóa hoạt động công nghiệp.
+                Các dịch vụ ESCO toàn diện của chúng tôi là nhằm nâng cao hiệu quả sử dụng năng lượng, giảm chi phí vận
+                hành, và thúc đẩy tính bền vững. Với nhiều năm kinh nghiệm trong ngành, chúng tôi đã đạt được danh tiếng
+                về việc cung cấp các giải pháp phù hợp và đáng tin cậy nhằm giải quyết những thách thức đặc biệt mà các
+                khách hàng công nghiệp của chúng tôi phải đối mặt. 
+              </div>
+
+              <div className="mt-4 text-base font-medium text-justify">
+                Đội ngũ kỹ sư tận tâm của chúng tôi là trung tâm của
+                sự thành công của chúng tôi. Của họ chuyên môn và cam kết cho phép chúng tôi đưa ra các chiến lược đổi
+                mới, công nghệ tiên tiến và áp dụng hiệu quả để tối đa hóa tiết kiệm năng lượng cho doanh nghiệp của
+                bạn.
+              </div>
+              <div className="mt-4 text-base font-medium text-justify">
+                Cho dù bạn đang tìm cách cải thiện hiệu suất năng lượng, hãy thực hiện giải pháp năng lượng tái tạo
+                hoặc tối ưu hóa mức tiêu thụ năng lượng tổng thể, TPC Group sẵn sàng đồng hành cùng bạn trên hành trình
+                hướng tới một tương lai xanh hơn và có lợi hơn. Khám phá1- sự khác biệt của chúng tôi đội ngũ kỹ sư giàu
+                kinh nghiệm có thể làm cho công ty công nghiệp của bạn hôm nay.
               </div>
             </Col>
             <Col span={12}>

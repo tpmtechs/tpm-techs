@@ -21,7 +21,7 @@ const Contact: FC = () => {
     <div className="flex w-full flex-col items-center justify-center " style={{ marginTop: "66px" }}>
       <section
         style={{ width: "100vw" }}
-        className="flex w-full items-center justify-center bg-[url('https://firebasestorage.googleapis.com/v0/b/tpm-techs.appspot.com/o/banner-2.jpg?alt=media&token=1eb8d70f-c57b-4350-ab09-bb161e9262fd')] bg-cover bg-no-repeat"
+        className="flex w-full items-center justify-center bg-center bg-[url('https://firebasestorage.googleapis.com/v0/b/tpm-techs.appspot.com/o/IOT9.jpg?alt=media&token=f1f2be23-4e80-47e3-b820-28403ed9826e')] bg-cover bg-no-repeat"
       >
         <div style={{ maxWidth: 1280, height: 600 }} className="z-40 flex w-full items-center justify-start">
           <Row gutter={[24, 24]}>
