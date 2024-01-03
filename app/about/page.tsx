@@ -7,32 +7,20 @@ import MemberCard from "components/MemberCard"
 
 const profiles = [
   {
-    name: "Johnny Tractor",
-    role: "Human Resource Director",
-    imageUrl: "https://img.freepik.com/free-photo/portrait-beautiful-woman-engineer_23-2148826527.jpg",
+    name: "Nguyễn Thiên Đức",
+    role: "Giám đốc điều hành TPM",
+    imageUrl: "https://firebasestorage.googleapis.com/v0/b/tpm-techs.appspot.com/o/ceo-nguyen-thien-duc.jpeg?alt=media&token=826c1205-f5ab-4629-a168-7aacef5f22bd",
     description:
-      "Lorem ipsum dolor sit amet, consec tetur adipiscing elit. Lorem ipsum dolor sit amet, consec tetur adipiscing elit",
+      "CEO",
   },
   {
-    name: "Johnny Tractor",
-    role: "Human Resource Director",
-    imageUrl: "https://img.freepik.com/free-photo/portrait-beautiful-woman-engineer_23-2148826527.jpg",
+    name: "PGS.TS Ngô Hà Quang Thịnh ",
+    role: "P. Giám đốc điều hành TPM",
+    imageUrl: "https://firebasestorage.googleapis.com/v0/b/tpm-techs.appspot.com/o/anonymous.jpeg?alt=media&token=2b944d6e-3fbe-4a7b-a95e-d2ec7bd484ac",
     description:
-      "Lorem ipsum dolor sit amet, consec tetur adipiscing elit. Lorem ipsum dolor sit amet, consec tetur adipiscing elit",
-  },
-  {
-    name: "Johnny Tractor",
-    role: "Human Resource Director",
-    imageUrl: "https://img.freepik.com/free-photo/portrait-beautiful-woman-engineer_23-2148826527.jpg",
-    description:
-      "Lorem ipsum dolor sit amet, consec tetur adipiscing elit. Lorem ipsum dolor sit amet, consec tetur adipiscing elit",
-  },
-  {
-    name: "Johnny Tractor",
-    role: "Human Resource Director",
-    imageUrl: "https://img.freepik.com/free-photo/portrait-beautiful-woman-engineer_23-2148826527.jpg",
-    description:
-      "Lorem ipsum dolor sit amet, consec tetur adipiscing elit. Lorem ipsum dolor sit amet, consec tetur adipiscing elit",
+      `Chuyên gia tư vấn IoT, với kiến thức sâu rộng và sự
+chuyên nghiệp, đang đồng hành cùng doanh nghiệp trong
+việc áp dụng các giải pháp IoT tiên tiến và hiệu quả.`,
   },
 ]
 
@@ -61,36 +49,19 @@ const About: FC = () => {
       <div style={{ maxWidth: 1280 }} className="w-full">
         <section className="my-16">
           <div style={{ color: "#3172A9" }} className="text-3xl font-semibold">
-            # TPM Technology, Inc.
+            # {`Công ty TPM - Tiên Phong Trong Lĩnh Vực Internet of Things (IoT)`}
           </div>
           <Divider />
           <Row align="middle">
             <Col span={12}>
-              <div className="text-base font-medium text-justify">
-                Chào mừng đến với TPC Group, đối tác đáng tin cậy của bạn Dịch vụ năng lượng Giải pháp của Công ty
-                (ESCO) trong lĩnh vực công nghiệp. Với sự mạnh mẽ Đội ngũ kỹ sư có tay nghề cao, chúng tôi chuyên cung
-                cấp những sản phẩm hàng đầu dịch vụ năng lượng phục vụ cho nhu cầu cụ thể của các công ty công nghiệp.
-              </div>
-
-              <div className="mt-4 text-base font-medium text-justify">
-                Tại TPC Group, chúng tôi hiểu vai trò quan trọng của năng lượng trong tối ưu hóa hoạt động công nghiệp.
-                Các dịch vụ ESCO toàn diện của chúng tôi là nhằm nâng cao hiệu quả sử dụng năng lượng, giảm chi phí vận
-                hành, và thúc đẩy tính bền vững. Với nhiều năm kinh nghiệm trong ngành, chúng tôi đã đạt được danh tiếng
-                về việc cung cấp các giải pháp phù hợp và đáng tin cậy nhằm giải quyết những thách thức đặc biệt mà các
-                khách hàng công nghiệp của chúng tôi phải đối mặt. 
-              </div>
-
-              <div className="mt-4 text-base font-medium text-justify">
-                Đội ngũ kỹ sư tận tâm của chúng tôi là trung tâm của
-                sự thành công của chúng tôi. Của họ chuyên môn và cam kết cho phép chúng tôi đưa ra các chiến lược đổi
-                mới, công nghệ tiên tiến và áp dụng hiệu quả để tối đa hóa tiết kiệm năng lượng cho doanh nghiệp của
-                bạn.
-              </div>
-              <div className="mt-4 text-base font-medium text-justify">
-                Cho dù bạn đang tìm cách cải thiện hiệu suất năng lượng, hãy thực hiện giải pháp năng lượng tái tạo
-                hoặc tối ưu hóa mức tiêu thụ năng lượng tổng thể, TPC Group sẵn sàng đồng hành cùng bạn trên hành trình
-                hướng tới một tương lai xanh hơn và có lợi hơn. Khám phá1- sự khác biệt của chúng tôi đội ngũ kỹ sư giàu
-                kinh nghiệm có thể làm cho công ty công nghiệp của bạn hôm nay.
+              <div className="text-justify text-base font-medium">
+                {`
+                TPM, hoặc Tinh Phẩm Mới, đặt chân chạy đua với thời đại công nghiệp 4.0, là một
+đơn vị đột phá chuyên sâu trong lĩnh vực Internet of Things (IoT). Với đam mê
+sáng tạo và cam kết mang đến giải pháp tiên tiến, chúng tôi không chỉ là một công
+ty, mà còn là một nhóm người tập trung vào việc biến những ý tưởng táo bạo thành
+hiện thực.
+                `}
               </div>
             </Col>
             <Col span={12}>
@@ -111,32 +82,91 @@ const About: FC = () => {
         style={{ width: "100vw" }}
         className="flex w-full items-center justify-center bg-mabel bg-cover bg-no-repeat"
       >
-        <div style={{ maxWidth: 1280, height: 600 }} className="z-40 flex w-full items-center justify-start">
+        <div style={{ maxWidth: 1280 }} className="z-40 flex w-full items-center justify-start">
           <Row style={{ width: "100%" }} align="middle" gutter={[24, 24]}>
             <Col span={12}>
               <div className="text-2xl italic text-primary">TPM Technology</div>
-              <div className=" text-7xl font-extrabold text-primary">Mission & Goal</div>
+              <div className=" text-5xl font-extrabold text-primary">
+                {`
+                  Sứ Mệnh và Tầm Nhìn
+                `}
+              </div>
             </Col>
             <Col span={12}>
               <div className="my-8">
                 <div style={{ color: "#3172A9" }} className="my-2 text-2xl font-semibold">
-                  Mission
+                  {`
+                    Sứ Mệnh và Tầm Nhìn:
+                  `}
                 </div>
                 <div className=" text-xl text-slate-500">
-                  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                  industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
-                  scrambled it to make a type specimen book.
+                  {`
+                  Chúng tôi đặt ra sứ mệnh tạo ra những sản phẩm và dịch vụ IoT mang tính đột phá,
+giúp nâng cao hiệu suất và tối ưu hóa quy trình kinh doanh cho khách hàng. Tầm
+nhìn của chúng tôi không chỉ giới hạn trong việc phát triển kỹ thuật số, mà còn là
+việc định hình một tương lai thông minh và bền vững cho cộng đồng.
+                  `}
                 </div>
               </div>
 
               <div className="my-8">
                 <div style={{ color: "#3172A9" }} className="text-2xl font-semibold">
-                  Goal
+                  {`Đội Ngũ Chuyên Gia`}
                 </div>
                 <div className="my-2 text-xl text-slate-500">
-                  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                  industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
-                  scrambled it to make a type specimen book.
+                  {`Sức mạnh của TPM nằm ở đội ngũ chuyên gia đa ngành, những người không chỉ
+có kinh nghiệm sâu rộng về IoT mà còn đầy tinh thần năng động và sáng tạo.
+Chúng tôi đặt niềm tin vào sự đa dạng ý kiến và sự đồng thuận để tạo ra những sản
+phẩm có thể thách thức và thay đổi thế giới.`}
+                </div>
+              </div>
+
+              <div className="my-8">
+                <div style={{ color: "#3172A9" }} className="text-2xl font-semibold">
+                  {`Sản Phẩm và Giải Pháp`}
+                </div>
+                <div className="my-2 text-xl text-slate-500">
+                  {`TPM tự hào về sự đa dạng trong danh mục sản phẩm, từ các thiết bị cảm biến
+thông minh cho đến các nền tảng phần mềm hiện đại. Chúng tôi không chỉ cung cấp giải pháp chuẩn mà còn tập trung vào phát triển sản phẩm tùy chỉnh, tương
+thích với mọi nhu cầu đặc biệt của khách hàng.`}
+                </div>
+              </div>
+
+              <div className="my-8">
+                <div style={{ color: "#3172A9" }} className="text-2xl font-semibold">
+                  {`Chất Lượng và Hiệu Suất`}
+                </div>
+                <div className="my-2 text-xl text-slate-500">
+                  {`Chúng tôi cam kết đưa ra sản phẩm và dịch vụ có chất lượng cao nhất, được đánh
+giá cao về tính ổn định, an toàn và độ tin cậy. Tính hiệu quả của giải pháp của
+chúng tôi không chỉ giúp khách hàng tiết kiệm chi phí mà còn tăng cường sự cạnh
+tranh của họ trong thị trường ngày càng khốc liệt.`}
+                </div>
+              </div>
+
+              <div className="my-8">
+                <div style={{ color: "#3172A9" }} className="text-2xl font-semibold">
+                  {`Trách Nhiệm Xã Hội và Bền Vững`}
+                </div>
+                <div className="my-2 text-xl text-slate-500">
+                  {`Chúng tôi không chỉ xem xét mình là một doanh nghiệp, mà còn là một thành viên
+của cộng đồng xã hội. Trong mọi hành động, chúng tôi đều hướng tới việc góp
+phần vào sự phát triển bền vững và bảo vệ môi trường. Chúng tôi tin rằng sự thành
+công của chúng tôi không chỉ đo lường bằng doanh số kinh doanh mà còn bằng
+ảnh hưởng tích cực đối với xã hội.`}
+                </div>
+              </div>
+
+              <div className="my-8">
+                <div style={{ color: "#3172A9" }} className="text-2xl font-semibold">
+                  {`Cuối cùng`}
+                </div>
+                <div className="my-2 text-xl text-slate-500">
+                  {`TPM không chỉ là một doanh nghiệp IoT, mà là một nguồn động viên và đối tác
+chiến lược cho sự phát triển của khách hàng. Chúng tôi không ngừng đổi mới để
+đồng hành cùng doanh nghiệp trong cuộc cách mạng số, xây dựng cầu nối giữa ý
+tưởng và hiện thực, và góp phần vào việc xây dựng một tương lai thông minh và
+bền vững.`}
                 </div>
               </div>
             </Col>
@@ -151,20 +181,24 @@ const About: FC = () => {
           </div>
           <Divider />
           <div className="my-8 flex items-center justify-center text-center text-4xl font-semibold">
-            <div className="w-6/12 ">50+ years of experience</div>
+            <div className="w-6/12 ">5+ năm kinh nghiệm</div>
           </div>
           <div className="my-8 flex items-center justify-center text-center text-lg font-semibold">
-            <div className="w-6/12 ">
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-              industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
-              scrambled it to make a type specimen book.
+            <div className="w-5/6">
+              {`
+              TPM tự hào có đội ngũ nhân viên với hơn 5 năm kinh nghiệm chuyên sâu trong
+lĩnh vực IoT. Điều này chứng tỏ sự ổn định và chuyên nghiệp của chúng tôi trong
+việc đưa ra giải pháp và dịch vụ IoT đẳng cấp. Các chuyên gia giàu kinh nghiệm
+của chúng tôi không chỉ mang đến sự hiểu biết sâu rộng về công nghệ mà còn là
+nguồn động viên và định hình sự đổi mới trong ngành.
+              `}
             </div>
           </div>
           <div className="my-8">
-            <Row gutter={[48, 48]}>
+            <Row gutter={[24, 24]} justify="center">
               {profiles.map((profile: any) => {
                 return (
-                  <Col key={profile.name} span={6}>
+                  <Col key={profile.name} span={7}>
                     <MemberCard profile={profile} />
                   </Col>
                 )
@@ -180,7 +214,7 @@ const About: FC = () => {
       >
         <div style={{ maxWidth: 1280 }} className="my-16 w-full">
           <div style={{ color: "#3172A9" }} className="text-3xl font-semibold">
-            # Testimonials
+            # {`Tìm hiểu thêm`}
           </div>
           <Divider />
 

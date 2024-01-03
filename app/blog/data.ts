@@ -2,9 +2,24 @@ const TYPE = {
   title: "title",
   paragraph: "paragraph",
   list: "list",
+  image: "image",
 }
 
-export const blogs = [
+interface IContent {
+  type: string;
+  content?: string;
+  items?: string[];
+}
+
+interface IBlog {
+  id: number;
+  title: string;
+  description: string;
+  contents: IContent[] ;
+  image: string;
+}
+
+export const blogs: IBlog[] = [
   {
     id: 1,
     title: "HỆ THỐNG TỰ ĐỘNG HÓA VÀ ĐIỀU KHIỂN",

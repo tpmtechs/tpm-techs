@@ -362,17 +362,37 @@ const Home: FC = () => {
       <div style={{ maxWidth: 1280 }} className="w-full">
         <section className="my-16">
           <div style={{ color: "#3172A9" }} className="text-3xl font-semibold">
-            # Introduction
+            # Giới thiệu
           </div>
           <Divider />
-          <div className="text-lg font-semibold">
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-            industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
-            scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
-            electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of
-            Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like
-            Aldus PageMaker including versions of Lorem Ipsum.
-          </div>
+          <Typography.Text>
+            <div className="my-4 text-lg font-semibold">{`Công ty TPM - Chuyên Gia Tiên Phong Trong Lĩnh Vực IoT`}</div>
+          </Typography.Text>
+          <Typography.Text>
+            <div className="text-lg font-semibold">
+              {`TPM, là một doanh nghiệp chuyên về công nghệ và đổi mới trong lĩnh vực Internet
+of Things (IoT). Với lòng cam kết và sự sáng tạo, chúng tôi đang không ngừng nỗ
+lực để đưa ra những sản phẩm và giải pháp có tính ứng dụng cao, giúp khách hàng
+tối ưu hóa quy trình kinh doanh của họ.`}
+            </div>
+          </Typography.Text>
+          <Typography.Text>
+            <div className="my-4 text-lg font-semibold">
+              {`
+            Chúng tôi hiểu rằng thành công không chỉ đến từ việc làm hàng đầu mà còn từ sự
+linh hoạt, sáng tạo và cam kết. Do đó, chúng tôi luôn đề cao tinh thần đồng đội,
+khuyến khích mọi cá nhân trong tổ chức chia sẻ ý tưởng và đóng góp vào quá trình
+sáng tạo.
+            `}
+            </div>
+          </Typography.Text>
+          <Typography.Text>
+            <div className="my-4 text-lg font-semibold">{`
+          TPM không chỉ là nơi làm việc mà còn là một cộng đồng, nơi mọi thành viên đều
+được tạo điều kiện để phát triển cá nhân và chung. Chúng tôi đánh giá cao sự đa
+dạng và tôn trọng, tạo ra một môi trường làm việc tích cực và đầy động lực.
+          `}</div>
+          </Typography.Text>
         </section>
 
         <section className="my-16">
@@ -381,12 +401,12 @@ const Home: FC = () => {
               <Row align="middle" gutter={[12, 12]}>
                 <Col>
                   <div style={{ color: "#3172A9" }} className="text-5xl font-semibold">
-                    3
+                    5+
                   </div>
                 </Col>
                 <Col>
-                  <div className="text-slate-500">Years</div>
-                  <div className="text-slate-500">of experience</div>
+                  <div className="text-slate-500">năm</div>
+                  <div className="text-slate-500">kinh nghiệm</div>
                 </Col>
               </Row>
             </Col>
@@ -408,7 +428,7 @@ const Home: FC = () => {
 
         <section className="my-16">
           <div style={{ color: "#3172A9" }} className="text-3xl font-semibold">
-            # Services
+            # {`Dịch vụ`}
           </div>
           <Divider />
           <Row gutter={[48, 48]} align="middle">
@@ -555,27 +575,48 @@ const Home: FC = () => {
 
         <section className="my-16">
           <div style={{ color: "#3172A9" }} className="text-3xl font-semibold">
-            # Chúng tôi cung cấp dịch vụ:
+            # {`Sản phẩm`}
           </div>
           <Divider />
           <Row gutter={[24, 24]} align="middle" justify="space-between">
             <Col span={8}>
-              <div style={{ color: "#3172A9" }} className="text-xl font-semibold">
-                Smart metering services
+              <div className="text-center flex flex-col justify-center items-center">
+                <img
+                  alt="banner"
+                  className="w-8/12 rounded-xl mb-2"
+                  src="https://nexcom.vn/upload_images/images/2021/12/28/smart-grid-technology.jpg"
+                />
+                <div style={{ color: "#3172A9" }} className="text-xl font-semibold">
+                  Smart metering services
+                </div>
+                <div className="text-md text-slate-500">Dịch vụ cung cấp năng lượng thông minh</div>
               </div>
-              <div className="text-md w-8/12 text-slate-500">Dịch vụ cung cấp năng lượng thông minh</div>
             </Col>
             <Col span={8}>
-              <div style={{ color: "#3172A9" }} className="text-xl font-semibold">
-                Smart energy consulting
+              <div className="text-center flex flex-col justify-center items-center">
+                <img
+                  alt="banner"
+                  className="w-8/12 rounded-xl mb-2"
+                  src="https://vietnetco.vn/wp-content/uploads/2020/11/ung-dung-cua-iot-1.jpg"
+                />
+                <div style={{ color: "#3172A9" }} className="text-xl font-semibold">
+                  Smart energy consulting
+                </div>
+                <div className="text-md text-slate-500">Dịch vụ tư vấn năng lượng thông minh</div>
               </div>
-              <div className="text-md w-8/12 text-slate-500">Dịch vụ tư vấn năng lượng thông minh</div>
             </Col>
             <Col span={8}>
-              <div style={{ color: "#3172A9" }} className="text-xl font-semibold">
-                Smart farming solutions
+              <div className="text-center flex flex-col justify-center items-center">
+                <img
+                  alt="banner"
+                  className="w-8/12 rounded-xl mb-2"
+                  src="https://kimnonggoldstar.vn/wp-content/uploads/2023/08/nong-nghiep-thong-minh-xu-the-tat-yeu-trong-tuong-lai-gan-kimnonggoldstar-vn-2.jpg"
+                />
+                <div style={{ color: "#3172A9" }} className="text-xl font-semibold">
+                  Smart farming solutions
+                </div>
+                <div className="text-md text-slate-500">Giải pháp nông nghiệp thông minh</div>
               </div>
-              <div className="text-md w-8/12 text-slate-500">Giải pháp nông nghiệp thông minh</div>
             </Col>
           </Row>
         </section>

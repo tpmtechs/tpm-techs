@@ -1,24 +1,26 @@
 /* eslint-disable @next/next/no-img-element */
 
 import { type FC } from "react"
+import './index.css';
 
 interface IServiceCard {
     title: string;
     description: string;
+    image: string;
 }
 
-const ServiceCard: FC<IServiceCard> = ({title, description}) => {
+const ServiceCard: FC<IServiceCard> = ({title, description, image}) => {
   return (
-    <div className="w-96 rounded-xl bg-white" style={{ height: 500 }}>
+    <div className="w-96 rounded-xl bg-white" style={{ height: 420 }}>
       <img
         alt="banner"
-        className="w-full rounded-t-xl"
-        src="https://firebasestorage.googleapis.com/v0/b/tpm-techs.appspot.com/o/banner-1.jpeg?alt=media&token=0d2c26d9-4d3a-497b-bf55-a8e1be6bc35d"
+        className="w-full rounded-t-xl h-48 object-cover"
+        src={image}
       />
-      <div className="p-10">
+      <div className="p-10 h-72">
         <div></div>
-        <div className="text-2xl font-extrabold">{title}</div>
-        <div className="text-base font-medium mt-2">{description}</div>
+        <div className="text-lg font-bold">{title}</div>
+        <div className="text-base font-regular mt-2 block-ellipsis">{description}</div>
       </div>
     </div>
   )
