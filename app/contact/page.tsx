@@ -10,18 +10,15 @@ import {
   TwitterSquareFilled,
 } from "@ant-design/icons"
 import { Button, Col, Divider, Row } from "antd"
-import { type FC, useState } from "react"
-
-function classNames(...classes: string[]) {
-  return classes.filter(Boolean).join(" ")
-}
+import Map from "components/Map"
+import { type FC } from "react"
 
 const Contact: FC = () => {
   return (
     <div className="flex w-full flex-col items-center justify-center " style={{ marginTop: "66px" }}>
       <section
         style={{ width: "100vw" }}
-        className="flex w-full items-center justify-center bg-center bg-[url('https://firebasestorage.googleapis.com/v0/b/tpm-techs.appspot.com/o/IOT9.jpg?alt=media&token=f1f2be23-4e80-47e3-b820-28403ed9826e')] bg-cover bg-no-repeat"
+        className="flex w-full items-center justify-center bg-[url('https://firebasestorage.googleapis.com/v0/b/tpm-techs.appspot.com/o/IOT9.jpg?alt=media&token=f1f2be23-4e80-47e3-b820-28403ed9826e')] bg-cover bg-center bg-no-repeat"
       >
         <div style={{ maxWidth: 1280, height: 600 }} className="z-40 flex w-full items-center justify-start">
           <Row gutter={[24, 24]}>
@@ -36,7 +33,7 @@ const Contact: FC = () => {
       <div className="my-16 flex w-full items-center justify-center">
         <div style={{ maxWidth: 1280 }} className="w-full">
           <div style={{ color: "#3172A9" }} className="text-3xl font-semibold">
-            # Contact
+            # {`Liên hệ`}
           </div>
           <Divider />
           <Row gutter={[48, 48]}>
@@ -122,6 +119,15 @@ const Contact: FC = () => {
                         </Button>
                       </Col>
                     </Row>
+                  </Col>
+                  <Col span={24}>
+                    <Map
+                      style={{
+                        width: "100%",
+                        height: "300px",
+                        borderRadius: "12px",
+                      }}
+                    />
                   </Col>
                 </Row>
               </div>

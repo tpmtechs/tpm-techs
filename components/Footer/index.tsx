@@ -4,13 +4,14 @@ import dayjs from "dayjs"
 import Link from "next/link"
 import type { FC } from "react"
 import "./index.css"
+import Map from "components/Map"
 
 const Footer: FC = () => {
   return (
     <div className="flex w-full flex-col items-center justify-center bg-gradient-to-r from-primary-700 to-primary-800 pb-6 text-white">
       <section
         style={{ width: "100vw" }}
-        className="relative flex w-full items-center justify-center bg-center bg-[url('https://firebasestorage.googleapis.com/v0/b/tpm-techs.appspot.com/o/NL9.jpg?alt=media&token=333c5633-f345-4832-ad22-dd45b408505d')] bg-cover bg-no-repeat"
+        className="relative flex w-full items-center justify-center bg-[url('https://firebasestorage.googleapis.com/v0/b/tpm-techs.appspot.com/o/NL9.jpg?alt=media&token=333c5633-f345-4832-ad22-dd45b408505d')] bg-cover bg-center bg-no-repeat"
       >
         <div style={{ maxWidth: 1280, height: 400 }} className="z-40 flex w-full items-center justify-start">
           <div className="w-full">
@@ -67,9 +68,7 @@ const Footer: FC = () => {
                   src="https://firebasestorage.googleapis.com/v0/b/tpm-techs.appspot.com/o/tpm-technology-no-background.png?alt=media&token=d12002fa-bc8c-45e9-9607-b166005dc3fa"
                 />
               </div>
-              <div className="mt-2 text-center">
-                “Chúng tôi là Đối tác tin cậy của khách hàng”
-              </div>
+              <div className="mt-2 text-center">“Chúng tôi là Đối tác tin cậy của khách hàng”</div>
             </Col>
             <Col span={6}>
               <Row gutter={[12, 12]}>
@@ -78,7 +77,7 @@ const Footer: FC = () => {
                 <Col span={24}>Hotline: 028 2229 9685</Col>
               </Row>
             </Col>
-            <Col span={5}>
+            <Col span={3}>
               <Row gutter={[12, 12]}>
                 <Col span={24}>
                   <Link href="/about">Trang chủ</Link>
@@ -97,7 +96,15 @@ const Footer: FC = () => {
                 </Col>
               </Row>
             </Col>
-            <Col span={6}></Col>
+            <Col span={8}>
+              <Map
+                style={{
+                  width: "100%",
+                  height: "200px",
+                  borderRadius: "12px",
+                }}
+              />
+            </Col>
           </Row>
         </div>
         <Divider style={{ borderColor: "#3172A9" }} />

@@ -41,18 +41,18 @@ const Home: FC = () => {
                 <Row gutter={[24, 24]}>
                   <Col span={24}>
                     <div className="text-5xl font-extrabold text-white">
-                      The standard Lorem Ipsum passage, used since the 1500s.
+                      TPM Technology 
                     </div>
-                    <div className="text-5xl font-extrabold text-white">Since 2023.</div>
+                    {/* <div className="text-5xl font-extrabold text-white">Since 2023.</div> */}
                     <div className="text-2xl text-white">
-                      Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...
+                     Chuyên Gia Tiên Phong Trong Lĩnh Vực IoT
                     </div>
                   </Col>
                   <Col span={24}>
                     <Row gutter={[24, 24]} align="middle" justify="start">
                       <Col>
-                        <Button size="large" href="/services">
-                          What we do
+                        <Button size="large" href="/about">
+                          Tìm hiểu về TPM
                         </Button>
                       </Col>
 
@@ -77,18 +77,18 @@ const Home: FC = () => {
                 <Row gutter={[24, 24]}>
                   <Col span={24}>
                     <div className="text-5xl font-extrabold text-white">
-                      The standard Lorem Ipsum passage, used since the 1500s.
+                      TPM Technology 
                     </div>
-                    <div className="text-5xl font-extrabold text-white">Since 2023.</div>
+                    {/* <div className="text-5xl font-extrabold text-white">Since 2023.</div> */}
                     <div className="text-2xl text-white">
-                      Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...
+                     Chuyên Gia Tiên Phong Trong Lĩnh Vực IoT
                     </div>
                   </Col>
                   <Col span={24}>
                     <Row gutter={[24, 24]} align="middle" justify="start">
                       <Col>
-                        <Button size="large" href="/services">
-                          What we do
+                        <Button size="large" href="/about">
+                          Tìm hiểu về TPM
                         </Button>
                       </Col>
 
@@ -113,18 +113,18 @@ const Home: FC = () => {
                 <Row gutter={[24, 24]}>
                   <Col span={24}>
                     <div className="text-5xl font-extrabold text-white">
-                      The standard Lorem Ipsum passage, used since the 1500s.
+                      TPM Technology 
                     </div>
-                    <div className="text-5xl font-extrabold text-white">Since 2023.</div>
+                    {/* <div className="text-5xl font-extrabold text-white">Since 2023.</div> */}
                     <div className="text-2xl text-white">
-                      Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...
+                     Chuyên Gia Tiên Phong Trong Lĩnh Vực IoT
                     </div>
                   </Col>
                   <Col span={24}>
                     <Row gutter={[24, 24]} align="middle" justify="start">
                       <Col>
-                        <Button size="large" href="/services">
-                          What we do
+                        <Button size="large" href="/about">
+                          Tìm hiểu về TPM
                         </Button>
                       </Col>
 
@@ -149,18 +149,18 @@ const Home: FC = () => {
                 <Row gutter={[24, 24]}>
                   <Col span={24}>
                     <div className="text-5xl font-extrabold text-white">
-                      The standard Lorem Ipsum passage, used since the 1500s.
+                      TPM Technology 
                     </div>
-                    <div className="text-5xl font-extrabold text-white">Since 2023.</div>
+                    {/* <div className="text-5xl font-extrabold text-white">Since 2023.</div> */}
                     <div className="text-2xl text-white">
-                      Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...
+                     Chuyên Gia Tiên Phong Trong Lĩnh Vực IoT
                     </div>
                   </Col>
                   <Col span={24}>
                     <Row gutter={[24, 24]} align="middle" justify="start">
                       <Col>
-                        <Button size="large" href="/services">
-                          What we do
+                        <Button size="large" href="/about">
+                          Tìm hiểu về TPM
                         </Button>
                       </Col>
 
@@ -185,18 +185,18 @@ const Home: FC = () => {
                 <Row gutter={[24, 24]}>
                   <Col span={24}>
                     <div className="text-5xl font-extrabold text-white">
-                      The standard Lorem Ipsum passage, used since the 1500s.
+                      TPM Technology 
                     </div>
-                    <div className="text-5xl font-extrabold text-white">Since 2023.</div>
+                    {/* <div className="text-5xl font-extrabold text-white">Since 2023.</div> */}
                     <div className="text-2xl text-white">
-                      Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...
+                     Chuyên Gia Tiên Phong Trong Lĩnh Vực IoT
                     </div>
                   </Col>
                   <Col span={24}>
                     <Row gutter={[24, 24]} align="middle" justify="start">
                       <Col>
-                        <Button size="large" href="/services">
-                          What we do
+                        <Button size="large" href="/about">
+                          Tìm hiểu về TPM
                         </Button>
                       </Col>
 
@@ -221,18 +221,18 @@ const Home: FC = () => {
                 <Row gutter={[24, 24]}>
                   <Col span={24}>
                     <div className="text-5xl font-extrabold text-white">
-                      The standard Lorem Ipsum passage, used since the 1500s.
+                      TPM Technology 
                     </div>
-                    <div className="text-5xl font-extrabold text-white">Since 2023.</div>
+                    {/* <div className="text-5xl font-extrabold text-white">Since 2023.</div> */}
                     <div className="text-2xl text-white">
-                      Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...
+                     Chuyên Gia Tiên Phong Trong Lĩnh Vực IoT
                     </div>
                   </Col>
                   <Col span={24}>
                     <Row gutter={[24, 24]} align="middle" justify="start">
                       <Col>
-                        <Button size="large" href="/services">
-                          What we do
+                        <Button size="large" href="/about">
+                          Tìm hiểu về TPM
                         </Button>
                       </Col>
 
@@ -257,18 +257,18 @@ const Home: FC = () => {
                 <Row gutter={[24, 24]}>
                   <Col span={24}>
                     <div className="text-5xl font-extrabold text-white">
-                      The standard Lorem Ipsum passage, used since the 1500s.
+                      TPM Technology 
                     </div>
-                    <div className="text-5xl font-extrabold text-white">Since 2023.</div>
+                    {/* <div className="text-5xl font-extrabold text-white">Since 2023.</div> */}
                     <div className="text-2xl text-white">
-                      Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...
+                     Chuyên Gia Tiên Phong Trong Lĩnh Vực IoT
                     </div>
                   </Col>
                   <Col span={24}>
                     <Row gutter={[24, 24]} align="middle" justify="start">
                       <Col>
-                        <Button size="large" href="/services">
-                          What we do
+                        <Button size="large" href="/about">
+                          Tìm hiểu về TPM
                         </Button>
                       </Col>
 
@@ -293,18 +293,18 @@ const Home: FC = () => {
                 <Row gutter={[24, 24]}>
                   <Col span={24}>
                     <div className="text-5xl font-extrabold text-white">
-                      The standard Lorem Ipsum passage, used since the 1500s.
+                      TPM Technology 
                     </div>
-                    <div className="text-5xl font-extrabold text-white">Since 2023.</div>
+                    {/* <div className="text-5xl font-extrabold text-white">Since 2023.</div> */}
                     <div className="text-2xl text-white">
-                      Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...
+                     Chuyên Gia Tiên Phong Trong Lĩnh Vực IoT
                     </div>
                   </Col>
                   <Col span={24}>
                     <Row gutter={[24, 24]} align="middle" justify="start">
                       <Col>
-                        <Button size="large" href="/services">
-                          What we do
+                        <Button size="large" href="/about">
+                          Tìm hiểu về TPM
                         </Button>
                       </Col>
 
@@ -329,18 +329,18 @@ const Home: FC = () => {
                 <Row gutter={[24, 24]}>
                   <Col span={24}>
                     <div className="text-5xl font-extrabold text-white">
-                      The standard Lorem Ipsum passage, used since the 1500s.
+                      TPM Technology 
                     </div>
-                    <div className="text-5xl font-extrabold text-white">Since 2023.</div>
+                    {/* <div className="text-5xl font-extrabold text-white">Since 2023.</div> */}
                     <div className="text-2xl text-white">
-                      Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...
+                     Chuyên Gia Tiên Phong Trong Lĩnh Vực IoT
                     </div>
                   </Col>
                   <Col span={24}>
                     <Row gutter={[24, 24]} align="middle" justify="start">
                       <Col>
-                        <Button size="large" href="/services">
-                          What we do
+                        <Button size="large" href="/about">
+                          Tìm hiểu về TPM
                         </Button>
                       </Col>
 
@@ -414,12 +414,12 @@ dạng và tôn trọng, tạo ra một môi trường làm việc tích cực v
               <Row align="middle" gutter={[12, 12]}>
                 <Col>
                   <div style={{ color: "#3172A9" }} className="text-5xl font-semibold">
-                    500+
+                    200+
                   </div>
                 </Col>
                 <Col>
-                  <div className="font-semibold text-slate-500">Projects</div>
-                  <div className="font-semibold text-slate-500">we have done</div>
+                  <div className="font-semibold text-slate-500">dự án</div>
+                  <div className="font-semibold text-slate-500">đã nghiệm thu</div>
                 </Col>
               </Row>
             </Col>

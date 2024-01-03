@@ -1,12 +1,15 @@
 "use client"
 
-import { blogs } from "../data"
+import { blogs, posts, serviceBlogs } from "../data"
 import "./index.css"
-import { Typography } from "antd"
+import { Image, Typography } from "antd"
 const { Title, Paragraph } = Typography
 
 const BlogDetail = ({ params }: { params: { slug: string } }) => {
-  const blog = blogs.find((blog: any) => blog.id.toString() === params.slug)
+
+  const blogList = [...blogs, ...posts, ...serviceBlogs];
+
+  const blog = blogList.find((blog: any) => blog.id.toString() === params.slug)
 
   if (!blog)
     return (
@@ -44,13 +47,23 @@ const BlogDetail = ({ params }: { params: { slug: string } }) => {
               } else if (content.type === "title") {
                 return (
                   <div key="content" className={content.type}>
-                    <Title level={3}>{content.content}</Title>
+                    <Title className="text-justify" level={3}>{content.content}</Title>
+                  </div>
+                )
+              }
+              else if (content.type === "image") {
+                return (
+                  <div key="content" className={content.type}>
+                    <div className="flex items-center justify-center">
+                      <Image className="w-full rounded-xl" alt="image" src={content?.content} />
+                    </div>
+                    {/* <img className="w-full rounded-xl" alt="image" src={content?.content} /> */}
                   </div>
                 )
               }
               return (
                 <div key="content" className={content.type}>
-                  <Paragraph>{content.content}</Paragraph>
+                  <Paragraph className="text-justify">{content.content}</Paragraph>
                 </div>
               )
             })}

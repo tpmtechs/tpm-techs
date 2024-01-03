@@ -2,76 +2,24 @@ import { CheckOutlined } from "@ant-design/icons"
 import { Button, Col, Divider, Row } from "antd"
 import { type FC } from "react"
 import ServiceCard from "components/ServiceCard"
-
-
-const services = [
-  {
-    title: "Iot trong chuỗi cung ứng hàng hóa",
-    description:
-      `Smart Logistic ngày càng phát triển mạnh mẽ trong thời đại công nghệ 4.0
-để đem tới sự ưu việt trong việc quản lý chuỗi cung ứng hậu cần. Trong đó, công
-nghệ IoT đóng vai trò vô cùng quan trọng để vận hành trơn tru. Tuy nhiên, không
-phải ai cũng biết về công nghệ này. Chính vì vậy, bài viết bên dưới sẽ giúp bạn
-hiểu thêm về nó!`,
-    image: "https://pnctech.vn/wp-content/uploads/2022/11/smart-logistic-1.jpeg",
-  },
-  {
-    title: "IoT trong chăm sóc sức khỏe",
-    description:
-      `Thiết bị chăm sóc sức khỏe thông minh là một trong những ứng dụng IoT
-trong y tế phổ biến nhất. Hãy cùng tìm hiểu về cách Internet of Things thay đổi
-lĩnh vực y tế - chăm sóc sức khỏe trong bài viết này.`,
-    image: "https://www.elcom.com.vn/storage/uploads/images/6j4tXzXzopIsAmfhIB2gCKfFK91PWUOubJdTwVRk.jpg",
-  },
-  {
-    title: "IoT trong nhà thông minh",
-    description:
-      `Giống như mạng Internet trước đây, công nghệ IoT đã tạo nên một “làn
-sóng” trong mọi khía cạnh của cuộc sống, bao gồm sự ra đời của nhà thông minh.`,
-    image: "https://images.cenhomes.vn/2019/03/nha-thong-minh.jpg",
-  },
-  {
-    title: "IoT trong công nghiệp sản xuất",
-    description:
-      `IoT trong sản xuất (Internet of Things in Manufacturing) là một hệ thống
-mạng lưới các thiết bị vật lý kết nối với nhau và với Internet nhằm tạo ra một môi
-trường sản xuất thông minh, tự động hóa và tối ưu hóa quy trình sản xuất.`,
-    image: "https://vti-solutions.vn/wp-content/uploads/2023/05/rpa-concept-with-blurry-hand-touching-screen-2048x1366.jpg",
-  },
-  {
-    title: "IoT trong bán lẻ",
-    description:
-      `Các nhà bán lẻ hiện đại đều đang ứng dụng Internet of Things – IoT để
-hoàn thiện hoạt động tại cửa hàng. Nhằm mục đích cải thiện trải nghiệm và thúc
-đẩy giao dịch mua sắm của khách hàng.`,
-    image: "https://digital.fpt.com/wp-content/uploads/2019/12/shutterstock_1714734415-1-scaled.jpg",
-  },
-  {
-    title: "Iot trong nông nghiệp",
-    description:
-      `Công nghệ IoT trong nông nghiệp không chỉ giúp tối ưu hóa chi phí sản
-xuất nông nghiệp mà còn giúp thúc đẩy thương mại và tăng sự an toàn cho cả
-người sản xuất và người sử dụng sản phẩm`,
-    image: "https://niptech.vn/images/ckeditor/images/iot%201.jpg",
-  },
-]
+import { BlogType, serviceBlogs } from "app/blog/data"
 
 const Services: FC = () => {
+  const services = serviceBlogs.filter((blog) => {
+    return blog?.type === BlogType.SERVICE
+  })
+
   return (
     <div className="flex w-full flex-col items-center justify-center " style={{ marginTop: "66px" }}>
       <section
         style={{ width: "100vw" }}
-        className="flex w-full items-center justify-center bg-center bg-[url('https://firebasestorage.googleapis.com/v0/b/tpm-techs.appspot.com/o/IOT7.jpg?alt=media&token=0bc8fa7c-6a68-4d63-9ad4-e5b40e19b683')] bg-cover bg-no-repeat"
+        className="flex w-full items-center justify-center bg-[url('https://firebasestorage.googleapis.com/v0/b/tpm-techs.appspot.com/o/IOT7.jpg?alt=media&token=0bc8fa7c-6a68-4d63-9ad4-e5b40e19b683')] bg-cover bg-center bg-no-repeat"
       >
         <div style={{ maxWidth: 1280, height: 600 }} className="z-40 flex w-full items-center justify-start">
           <Row gutter={[24, 24]}>
             <Col span={24}>
-              <div className="text-2xl text-white">
-                {`Xây dựng tương lại, Khôi phục quá khứ`}
-              </div>
-              <div className="text-5xl font-extrabold text-white">
-                {`Cung cấp các giải pháp sáng tạo và bền vững`}
-              </div>
+              <div className="text-2xl text-white">{`Xây dựng tương lại, Khôi phục quá khứ`}</div>
+              <div className="text-5xl font-extrabold text-white">{`Cung cấp các giải pháp sáng tạo và bền vững`}</div>
             </Col>
             <Col span={24}>
               <Row gutter={[24, 24]} align="middle" justify="start">
@@ -104,10 +52,15 @@ const Services: FC = () => {
 
           <div className="my-8">
             <Row gutter={[48, 48]} align="middle" justify="center">
-              {services.map((service: { title: string; description: string; image: string }) => {
+              {services.map((service) => {
                 return (
                   <Col key={service.title} span={8}>
-                    <ServiceCard title={service.title} description={service.description} image={service.image} />
+                    <ServiceCard
+                      title={service.title}
+                      description={service.description}
+                      image={service.image}
+                      href={`/blog/${service.id}`}
+                    />
                   </Col>
                 )
               })}
@@ -118,7 +71,7 @@ const Services: FC = () => {
 
       <section
         style={{ width: "100vw" }}
-        className="relative flex w-full items-center justify-center bg-center bg-[url('https://firebasestorage.googleapis.com/v0/b/tpm-techs.appspot.com/o/banner-2.jpg?alt=media&token=1eb8d70f-c57b-4350-ab09-bb161e9262fd')] bg-cover bg-no-repeat"
+        className="relative flex w-full items-center justify-center bg-[url('https://firebasestorage.googleapis.com/v0/b/tpm-techs.appspot.com/o/banner-2.jpg?alt=media&token=1eb8d70f-c57b-4350-ab09-bb161e9262fd')] bg-cover bg-center bg-no-repeat"
       >
         <div style={{ maxWidth: 1280, height: 600 }} className="z-40 flex w-full items-center justify-start">
           <Row style={{ width: "100%" }} gutter={[48, 48]} align="middle">

@@ -4,30 +4,37 @@ import { Carousel, Col, Divider, Image, Row } from "antd"
 import { type FC } from "react"
 import "animate.css"
 import MemberCard from "components/MemberCard"
+import { BlogType, serviceBlogs } from "app/blog/data"
+import { Post } from "app/projects/page"
 
 const profiles = [
   {
     name: "Nguyễn Thiên Đức",
     role: "Giám đốc điều hành TPM",
-    imageUrl: "https://firebasestorage.googleapis.com/v0/b/tpm-techs.appspot.com/o/ceo-nguyen-thien-duc.jpeg?alt=media&token=826c1205-f5ab-4629-a168-7aacef5f22bd",
+    imageUrl:
+      "https://firebasestorage.googleapis.com/v0/b/tpm-techs.appspot.com/o/ceo-nguyen-thien-duc.jpeg?alt=media&token=826c1205-f5ab-4629-a168-7aacef5f22bd",
     description:
-      "CEO",
+      "Giám đốc điều hành TPM kiêm giám đốc điều hành TPCONS, đại diện cho các công ty ĐẦU TƯ VÀ XÂY DỰNG ÂN NAM & Công Ty TNHH PHÁT TRIỂN NĂNG LƯỢNG SẠCH TPE",
   },
-  {
-    name: "PGS.TS Ngô Hà Quang Thịnh ",
-    role: "P. Giám đốc điều hành TPM",
-    imageUrl: "https://firebasestorage.googleapis.com/v0/b/tpm-techs.appspot.com/o/anonymous.jpeg?alt=media&token=2b944d6e-3fbe-4a7b-a95e-d2ec7bd484ac",
-    description:
-      `Chuyên gia tư vấn IoT, với kiến thức sâu rộng và sự
-chuyên nghiệp, đang đồng hành cùng doanh nghiệp trong
-việc áp dụng các giải pháp IoT tiên tiến và hiệu quả.`,
-  },
+  //   {
+  //     name: "PGS.TS Ngô Hà Quang Thịnh ",
+  //     role: "P. Giám đốc điều hành TPM",
+  //     imageUrl: "https://firebasestorage.googleapis.com/v0/b/tpm-techs.appspot.com/o/anonymous.jpeg?alt=media&token=2b944d6e-3fbe-4a7b-a95e-d2ec7bd484ac",
+  //     description:
+  //       `Chuyên gia tư vấn IoT, với kiến thức sâu rộng và sự
+  // chuyên nghiệp, đang đồng hành cùng doanh nghiệp trong
+  // việc áp dụng các giải pháp IoT tiên tiến và hiệu quả.`,
+  //   },
 ]
 
 const About: FC = () => {
   const onChange = (currentSlide: number) => {
     console.log(currentSlide)
   }
+
+  const blogs = serviceBlogs.filter((blog) => {
+    return blog.type === BlogType.READ_MORE
+  })
 
   return (
     <div className="flex w-full flex-col items-center justify-center " style={{ marginTop: "66px" }}>
@@ -218,7 +225,7 @@ nguồn động viên và định hình sự đổi mới trong ngành.
           </div>
           <Divider />
 
-          <Carousel afterChange={onChange} autoplay autoplaySpeed={1000}>
+          {/* <Carousel afterChange={onChange} autoplay autoplaySpeed={1000}>
             <div className="w-full">
               <div className="flex w-full items-center justify-center">
                 <div className="w-10/12">
@@ -367,7 +374,16 @@ nguồn động viên và định hình sự đổi mới trong ngành.
                 </div>
               </div>
             </div>
-          </Carousel>
+          </Carousel> */}
+          <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 lg:mx-0 lg:max-w-none lg:grid-cols-4">
+            {blogs.map((blog) => {
+              return (
+                <div className="w-full" key={blog.id}>
+                  <Post key={blog.id} post={blog} />
+                </div>
+              )
+            })}
+          </div>
         </div>
       </section>
     </div>

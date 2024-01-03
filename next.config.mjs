@@ -7,6 +7,9 @@ import { env } from "./env.mjs"
  */
 const config = withPlugins([[withBundleAnalyzer({ enabled: env.ANALYZE })]], {
   reactStrictMode: true,
+  env: {
+    GOOGLE_MAP_API_KEY: process.env.GOOGLE_MAP_API_KEY,
+  },
   experimental: { instrumentationHook: true },
   rewrites() {
     return [
