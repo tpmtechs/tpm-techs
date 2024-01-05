@@ -5,7 +5,7 @@ import { type FC } from "react"
 import "animate.css"
 import MemberCard from "components/MemberCard"
 import { BlogType, serviceBlogs } from "app/blog/data"
-import { Post } from "app/projects/page"
+import Post from "components/Post"
 
 const profiles = [
   {
