@@ -440,7 +440,7 @@ dạng và tôn trọng, tạo ra một môi trường làm việc tích cực v
                   src="https://images.ctfassets.net/szez98lehkfm/7g2sitSkiFvEKsqCwh2LnY/0d1a0347390c625abdea9fb27d035488/MyIC_Inline_73525"
                 />
                 <div className="middle">
-                  <Button type="primary" size="large" href="/blog/1">
+                  <Button type="primary" size="large" href="/blog/101">
                     Đọc thêm
                   </Button>
                 </div>
@@ -495,7 +495,7 @@ dạng và tôn trọng, tạo ra một môi trường làm việc tích cực v
                   src="https://bcp.cdnchinhphu.vn/334894974524682240/2023/6/26/csdlqg-1687768866623578740455.jpg"
                 />
                 <div className="middle">
-                  <Button type="primary" size="large" href="/blog/2">
+                  <Button type="primary" size="large" href="/blog/102">
                     Đọc thêm
                   </Button>
                 </div>
@@ -510,7 +510,7 @@ dạng và tôn trọng, tạo ra một môi trường làm việc tích cực v
                   src="https://vina-aspire.com/wp-content/uploads/2022/06/1-3.png"
                 />
                 <div className="middle">
-                  <Button type="primary" size="large" href="/blog/3">
+                  <Button type="primary" size="large" href="/blog/103">
                     Đọc thêm
                   </Button>
                 </div>
@@ -564,7 +564,7 @@ dạng và tôn trọng, tạo ra một môi trường làm việc tích cực v
                   src="https://smartindustry.vn/wp-content/uploads/2022/04/iot_istock_1215247403.jpg"
                 />
                 <div className="middle">
-                  <Button type="primary" size="large" href="/blog/4">
+                  <Button type="primary" size="large" href="/blog/104">
                     Đọc thêm
                   </Button>
                 </div>
