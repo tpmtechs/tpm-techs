@@ -450,7 +450,7 @@ dạng và tôn trọng, tạo ra một môi trường làm việc tích cực v
               <Row style={{ height: "100%" }} align="middle" justify="center">
                 <Row gutter={[12, 12]}>
                   <Col span={24}>
-                    <Link href="/blog/1">
+                    <Link href="/blog/101">
                       <div style={{ color: "#3172A9" }} className="text-2xl font-semibold">
                         HỆ THỐNG TỰ ĐỘNG HÓA VÀ ĐIỀU KHIỂN
                       </div>
@@ -471,7 +471,7 @@ dạng và tôn trọng, tạo ra một môi trường làm việc tích cực v
               <Row style={{ height: "100%" }} align="middle" justify="center">
                 <Row gutter={[12, 12]}>
                   <Col span={24}>
-                    <Link href="/blog/2">
+                    <Link href="/blog/102">
                       <div style={{ color: "#3172A9" }} className="text-2xl font-semibold">
                         THIẾT BỊ KẾT NỐI
                       </div>
@@ -520,7 +520,7 @@ dạng và tôn trọng, tạo ra một môi trường làm việc tích cực v
               <Row style={{ height: "100%" }} align="middle" justify="center">
                 <Row gutter={[12, 12]}>
                   <Col span={24}>
-                    <Link href="/blog/3">
+                    <Link href="/blog/103">
                       <div style={{ color: "#3172A9" }} className="text-2xl font-semibold">
                         TƯ VẤN
                       </div>
@@ -539,7 +539,7 @@ dạng và tôn trọng, tạo ra một môi trường làm việc tích cực v
               <Row style={{ height: "100%" }} align="middle" justify="center">
                 <Row gutter={[12, 12]}>
                   <Col span={24}>
-                    <Link href="/blog/4">
+                    <Link href="/blog/104">
                       <div style={{ color: "#3172A9" }} className="text-2xl font-semibold">
                         HỖ TRỢ
                       </div>

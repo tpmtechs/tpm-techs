@@ -25,13 +25,13 @@ const Projects: FC = () => {
         <div className="py-12 sm:py-12">
           <div className="mx-auto max-w-7xl px-6 lg:px-8">
             <div style={{ color: "#3172A9" }} className="text-3xl font-semibold">
-              # {`Năng lượng sạch`}
+              # {`Internet of Things`}
             </div>
             <Divider />
             <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16   lg:mx-0 lg:max-w-none lg:grid-cols-3">
               {posts
                 .filter((post) => {
-                  return post?.category?.title === "Năng lượng sạch"
+                  return post?.category?.title === "Internet of Things"
                 })
                 .map((post) => (
                   <Post key={post?.id} post={post} />
@@ -45,13 +45,13 @@ const Projects: FC = () => {
         <div className="py-12 sm:py-12">
           <div className="mx-auto max-w-7xl px-6 lg:px-8">
             <div style={{ color: "#3172A9" }} className="text-3xl font-semibold">
-              # {`Internet of Things`}
+              # {`Năng lượng sạch`}
             </div>
             <Divider />
             <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16   lg:mx-0 lg:max-w-none lg:grid-cols-3">
               {posts
                 .filter((post) => {
-                  return post?.category?.title === "Internet of Things"
+                  return post?.category?.title === "Năng lượng sạch"
                 })
                 .map((post) => (
                   <Post key={post?.id} post={post} />
