@@ -2,7 +2,7 @@ import { CheckOutlined } from "@ant-design/icons"
 import { Button, Col, Divider, Row } from "antd"
 import { type FC } from "react"
 import ServiceCard from "components/ServiceCard"
-import { BlogType, serviceBlogs } from "app/blog/data"
+import { BlogType, serviceBlogs } from "app/[locale]/blog/data"
 
 const Services: FC = () => {
   const services = serviceBlogs.filter((blog) => {

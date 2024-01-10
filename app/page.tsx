@@ -1,5 +1,6 @@
-import Home from "app/home/page"
+
 import { Metadata } from "next"
+import Home from "./[locale]/home/page"
 
 export const metadata: Metadata = {
   title: "TPM Technology",

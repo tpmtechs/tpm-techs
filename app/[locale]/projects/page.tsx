@@ -1,6 +1,6 @@
 import { type FC } from "react"
 import { Col, Divider, Row } from "antd"
-import { posts } from "app/blog/data"
+import { posts } from "app/[locale]/blog/data"
 import Post from "components/Post"
 
 const Projects: FC = () => {

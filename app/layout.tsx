@@ -3,6 +3,7 @@ import React from "react"
 import BasicLayout from "layouts/basicLayout"
 import "styles/tailwind.css"
 
+
 import StyledComponentsRegistry from "../lib/AntdRegistry"
 
 import "globals.css"
@@ -16,9 +17,17 @@ const inter = Inter({
   subsets: ["latin"],
 })
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+type LayoutProps = {
+  params: { locale: string };
+  children: React.ReactNode;
+};
+
+export default function RootLayout({ params, children }: LayoutProps) {
+
+  const { locale } = params;
+
   return (
-    <html lang="en">
+    <html lang={locale}>
       <body className={inter.className}>
         <StyledComponentsRegistry>
             <BasicLayout>{children}</BasicLayout>
