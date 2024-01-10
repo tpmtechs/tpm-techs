@@ -10,10 +10,76 @@ import {
   TwitterSquareFilled,
 } from "@ant-design/icons"
 import { Button, Col, Divider, Row } from "antd"
+import { type FC, useState } from "react"
 import Map from "components/Map"
-import { type FC } from "react"
+
+enum FormType {
+  LAST_NAME = "lastName",
+  FIRST_NAME = "firstName",
+  COMPANY = "company",
+  EMAIL = "email",
+  COUNTRY = "country",
+  PHONE_NUMBER = "phoneNumber",
+  SUBJECT = "subject",
+  MESSAGE = "message",
+}
+
+interface IFormData {
+  lastName?: string
+  firstName?: string
+  email?: string
+  phoneNumber?: string
+  company?: string
+  message?: string
+  subject?: string
+  country?: string
+}
 
 const Contact: FC = () => {
+  const [values, setValues] = useState<IFormData>({
+    lastName: "Họ",
+    firstName: "Tên",
+    email: "Email",
+    phoneNumber: "Số điện thoại",
+    company: "Công ty",
+    message: "Nội dung",
+    subject: "Tiêu đề",
+    country: "(+84)",
+  })
+
+  const body = encodeURIComponent(
+    "Tên: " +
+      `${values?.lastName} ${values?.firstName}` +
+      "\nNơi làm việc: " +
+      values?.company +
+      "\nEmail: " +
+      values?.email +
+      "\nSố điện thoại: " +
+      `${values?.country} ${values?.phoneNumber}` +
+      "\nCông ty: " +
+      values?.company +
+      "\nNội dung: " +
+      values?.message
+  )
+
+  const mailtoHref = `mailto:quan260402@gmail.com?subject=[TPM Technology] - ${values?.subject}&body=${body}`
+
+  const handleChange = (type: string, e: any) => {
+    if (type === FormType.COUNTRY) {
+      // @ts-ignore
+      const country = document.getElementById("country").value
+      setValues({
+        ...values,
+        country,
+      })
+    } else {
+      setValues({
+        ...values,
+        [type]: e?.target?.value || "",
+      })
+    }
+  }
+
   return (
     <div className="flex w-full flex-col items-center justify-center " style={{ marginTop: "66px" }}>
       <section
@@ -39,10 +105,6 @@ const Contact: FC = () => {
           <Row gutter={[48, 48]}>
             <Col span={12}>
               <h2 className="text-3xl font-semibold tracking-tight text-gray-900 sm:text-4xl">Liên hệ chúng tôi</h2>
-              {/* <p className="mt-2 text-lg leading-8 text-gray-600">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              </p> */}
               <div className="mt-28">
                 <Row gutter={[16, 16]}>
                   <Col span={24}>
@@ -139,7 +201,7 @@ const Contact: FC = () => {
                   Chúng tôi sẽ liên hệ bạn trong thời gian sớm nhất.
                 </p>
               </div>
-              <form action="#" method="POST" className="mt-8 w-full sm:mt-8">
+              <form action={mailtoHref} method="POST" className="mt-8 w-full sm:mt-8">
                 <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
                   <div>
                     <label htmlFor="last-name" className="block text-sm font-semibold leading-6 text-gray-900">
@@ -149,9 +211,9 @@ const Contact: FC = () => {
                       <input
                         placeholder="Họ"
                         type="text"
-                        name="last-name"
                         id="last-name"
                         autoComplete="family-name"
+                        onChange={(e) => handleChange(FormType.LAST_NAME, e)}
                         className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-primary-600 sm:text-sm sm:leading-6"
                       />
                     </div>
@@ -164,9 +226,9 @@ const Contact: FC = () => {
                       <input
                         placeholder="Tên"
                         type="text"
-                        name="first-name"
                         id="first-name"
                         autoComplete="given-name"
+                        onChange={(e) => handleChange(FormType.FIRST_NAME, e)}
                         className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-primary-600 sm:text-sm sm:leading-6"
                       />
                     </div>
@@ -179,9 +241,9 @@ const Contact: FC = () => {
                       <input
                         placeholder="Công ty"
                         type="text"
-                        name="company"
                         id="company"
                         autoComplete="organization"
+                        onChange={(e) => handleChange(FormType.COMPANY, e)}
                         className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-primary-600 sm:text-sm sm:leading-6"
                       />
                     </div>
@@ -194,9 +256,9 @@ const Contact: FC = () => {
                       <input
                         placeholder="Email"
                         type="email"
-                        name="email"
                         id="email"
                         autoComplete="email"
+                        onChange={(e) => handleChange(FormType.EMAIL, e)}
                         className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-primary-600 sm:text-sm sm:leading-6"
                       />
                     </div>
@@ -211,36 +273,37 @@ const Contact: FC = () => {
                           Quốc gia
                         </label>
                         <select
+                          onChange={(e) => handleChange(FormType.COUNTRY, e)}
                           id="country"
-                          name="country"
+                          defaultValue="(+84)"
                           className="h-full rounded-md border-0 bg-transparent bg-none py-0 pl-4 pr-9 text-gray-400 focus:ring-2 focus:ring-inset focus:ring-primary-600 sm:text-sm"
                         >
-                          <option>VN</option>
-                          <option>JP</option>
-                          <option>US</option>
+                          <option value={"(+84)"}>VN</option>
+                          <option value={"(+81)"}>JP</option>
+                          <option value={"(+1)"}>US</option>
                         </select>
                       </div>
                       <input
                         placeholder="Số điện thoại"
                         type="tel"
-                        name="phone-number"
                         id="phone-number"
                         autoComplete="tel"
+                        onChange={(e) => handleChange(FormType.PHONE_NUMBER, e)}
                         className="block w-full rounded-md border-0 px-3.5 py-2 pl-24 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-primary-600 sm:text-sm sm:leading-6"
                       />
                     </div>
                   </div>
                   <div className="sm:col-span-2">
-                    <label htmlFor="title" className="block text-sm font-semibold leading-6 text-gray-900">
+                    <label htmlFor="subject" className="block text-sm font-semibold leading-6 text-gray-900">
                       Tiêu đề
                     </label>
                     <div className="mt-2.5">
                       <input
                         placeholder="Tiêu đề"
-                        type="title"
-                        name="title"
-                        id="title"
-                        autoComplete="title"
+                        type="subject"
+                        id="subject"
+                        autoComplete="subject"
+                        onChange={(e) => handleChange(FormType.SUBJECT, e)}
                         className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-primary-600 sm:text-sm sm:leading-6"
                       />
                     </div>
@@ -251,8 +314,8 @@ const Contact: FC = () => {
                     </label>
                     <div className="mt-2.5">
                       <textarea
+                        onChange={(e) => handleChange(FormType.MESSAGE, e)}
                         placeholder="Nội dung"
-                        name="message"
                         id="message"
                         rows={4}
                         className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-primary-600 sm:text-sm sm:leading-6"
