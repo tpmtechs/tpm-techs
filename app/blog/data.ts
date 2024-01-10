@@ -6,42 +6,42 @@ const TYPE = {
 }
 
 export enum BlogType {
-  SERVICE = 'service',
-  PROJECT = 'project',
-  READ_MORE = 'read-more',
+  SERVICE = "service",
+  PROJECT = "project",
+  READ_MORE = "read-more",
 }
 
 interface IContent {
-  type: string;
-  content?: string;
-  items?: string[];
+  type: string
+  content?: string
+  items?: string[]
 }
 
 interface ICategory {
-  title: string;
-  href?: string;
+  title: string
+  href?: string
 }
 
 interface IAuthor {
-  name: string;
-  role?: string;
-  href?: string;
-  imageUrl?: string;
+  name: string
+  role?: string
+  href?: string
+  imageUrl?: string
 }
 
 interface IBlog {
-  id: number;
-  title: string;
-  description: string;
-  contents: IContent[] ;
-  image: string;
-  type?: string;
+  id: number
+  title: string
+  description: string
+  contents: IContent[]
+  image: string
+  type?: string
 
-  href?: string;
-  date?: string;
-  datetime?: string;
-  category?: ICategory;
-  author?: IAuthor;
+  href?: string
+  date?: string
+  datetime?: string
+  category?: ICategory
+  author?: IAuthor
 }
 
 export const blogs: IBlog[] = [
@@ -434,7 +434,6 @@ thể nghiêm trọng hơn và cần thêm thời gian để khắc phục.`,
   },
 ]
 
-
 export const posts: IBlog[] = [
   {
     image:
@@ -442,8 +441,7 @@ export const posts: IBlog[] = [
     id: 201,
     title: "Towards clean energy, for a green era",
     href: "#",
-    description:
-      "Towards clean energy, for a green era",
+    description: "Towards clean energy, for a green era",
     date: "Mar 16, 2020",
     datetime: "2020-03-16",
     category: { title: "Năng lượng sạch", href: "#" },
@@ -463,8 +461,7 @@ export const posts: IBlog[] = [
     id: 202,
     title: "TALK SHOW ENVIRONMENT & SUSTAINABLE DESIGN.",
     href: "#",
-    description:
-      `Sự kiện Talk show tại Đại học Hoa Sen đã tạo nên một không khí truyền cảm
+    description: `Sự kiện Talk show tại Đại học Hoa Sen đã tạo nên một không khí truyền cảm
 hứng và sáng tạo, khi CEO Nguyễn Thiên Đức của TPCons làm diễn giả chính.
 Với sự hiện diện của một nhà lãnh đạo năng động và tầm nhìn chiến lược, buổi Talk show không chỉ là một cơ hội để sinh viên đổi mới kiến thức mà còn là nguồn
 động viên mạnh mẽ cho sự sáng tạo và khởi nghiệp trong tương lai.`,
@@ -478,7 +475,48 @@ Với sự hiện diện của một nhà lãnh đạo năng động và tầm n
       imageUrl:
         "https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
     },
-    contents: [],
+    contents: [
+      {
+        type: TYPE.PARAGRAPH,
+        content: `Sự kiện Talk show tại Đại học Hoa Sen đã tạo nên một không khí truyền cảm hứng và sáng tạo, khi CEO Nguyễn Thiên Đức của TPCons làm diễn giả chính. Với sự hiện diện của một nhà lãnh đạo năng động và tầm nhìn chiến lược, buổi Talk show không chỉ là một cơ hội để sinh viên đổi mới kiến thức mà còn là nguồn động viên mạnh mẽ cho sự sáng tạo và khởi nghiệp trong tương lai.`,
+      },
+      {
+        type: TYPE.PARAGRAPH,
+        content: `CEO của TPCons, một đơn vị hàng đầu trong lĩnh vực xây dựng hệ thống năng
+lượng mặt trời, đã chia sẻ về hành trình xây dựng và phát triển doanh nghiệp. Bằng
+những câu chuyện và kinh nghiệm thực tế, anh đã truyền động lực và tầm quan
+trọng của việc đổi mới và chấp nhận thách thức trong môi trường kinh doanh hiện
+đại.`,
+      },
+      {
+        type: TYPE.IMAGE,
+        content: `https://firebasestorage.googleapis.com/v0/b/tpm-techs.appspot.com/o/image-001.jpg?alt=media&token=496cbcda-9576-4fbd-b8b4-870db9e5d237`,
+      },
+      {
+        type: TYPE.PARAGRAPH,
+        content: `TPCons, đồng hành với Đại học Hoa Sen trong việc phát triển mô hình giáo
+dục và nâng cao chất lượng đào tạo. Sự hỗ trợ này không chỉ giúp sinh viên tiếp
+cận công nghệ tiên tiến mà còn tạo ra cơ hội thực tập và học hỏi trong môi trường
+thực tế.`,
+      },
+      {
+        type: TYPE.IMAGE,
+        content: `https://firebasestorage.googleapis.com/v0/b/tpm-techs.appspot.com/o/image-003.jpg?alt=media&token=d8fd3110-9561-4bd3-9dc9-48a4781952a7`,
+      },
+      {
+        type: TYPE.PARAGRAPH,
+        content: `Talk show là một dịp quý báu, không chỉ để truyền đạt kiến thức mà còn để xây
+dựng cộng đồng sinh viên chủ động và sáng tạo. Sự hiện diện của TPCons không
+chỉ là một đối tác tài trợ mà còn là một nguồn động viên mạnh mẽ cho sự phát triển
+toàn diện của sinh viên Đại học Hoa Sen, góp phần xây dựng tương lai rạng ngời
+và bền vững.`,
+      },
+      {
+        type: TYPE.IMAGE,
+        content: `https://firebasestorage.googleapis.com/v0/b/tpm-techs.appspot.com/o/image-002.jpg?alt=media&token=d514eda2-6a88-4501-b28b-d0270e4025c1`,
+      },
+      
+    ],
   },
   {
     image:
@@ -487,8 +525,7 @@ Với sự hiện diện của một nhà lãnh đạo năng động và tầm n
     title: `Exploring Energy Innovations: PTCons Invited by Huawei to
 Shenzhen.`,
     href: "#",
-    description:
-      `In a groundbreaking initiative, Huawei, a global technology leader, has extended
+    description: `In a groundbreaking initiative, Huawei, a global technology leader, has extended
 a special invitation to PTCons, a prominent player in the energy technology sector,
 for an exclusive tour of their facilities in Shenzhen. This tour promises to be a
 unique opportunity for PTCons to delve into the cutting-edge advancements in
@@ -504,7 +541,70 @@ to sustainable development.`,
       imageUrl:
         "https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
     },
-    contents: [],
+    contents: [
+      {
+        type: TYPE.PARAGRAPH,
+        content: `The tour aims to immerse PTCons in the heart of Huawei's research and
+development efforts, providing a firsthand experience of the company's strides in
+energy innovation. As the world grapples with environmental challenges, this
+collaboration between PTCons and Huawei signifies a collective endeavor to
+address pressing issues through technological solutions.`,
+      },
+      {
+        type: TYPE.IMAGE,
+        content: `https://firebasestorage.googleapis.com/v0/b/tpm-techs.appspot.com/o/image-101.jpg?alt=media&token=b65362af-dc46-4082-a6e0-a4107ea9f5e7`,
+      },
+      {
+        type: TYPE.PARAGRAPH,
+        content: `Shenzhen, Huawei's technological hub, serves as the backdrop for this
+transformative experience. Renowned as a global center for innovation, Shenzhen
+provides the perfect setting for PTCons to witness the intersection of technology
+and sustainability. From state-of-the-art research laboratories to innovative
+manufacturing facilities, the tour is poised to offer a comprehensive view of
+Huawei's prowess in developing energy-efficient solutions.`,
+      },
+      {
+        type: TYPE.IMAGE,
+        content: `https://firebasestorage.googleapis.com/v0/b/tpm-techs.appspot.com/o/image-102.jpg?alt=media&token=e7526986-a3a7-4a34-a8bc-d07585f65034`,
+      },
+      {
+        type: TYPE.PARAGRAPH,
+        content: `The focus of the tour extends beyond mere observation, offering PTCons the
+chance to engage in interactive sessions with Huawei's leading experts and
+researchers. These sessions are designed to facilitate knowledge exchange,
+fostering a collaborative environment where ideas can be shared and insights
+gained. PTCons stands to benefit not only from Huawei's technological expertise
+but also from the wealth of experience garnered through successful
+implementations of clean energy solutions worldwide.`,
+      },
+      {
+        type: TYPE.IMAGE,
+        content: `https://firebasestorage.googleapis.com/v0/b/tpm-techs.appspot.com/o/image-103.jpg?alt=media&token=b0634c18-1fde-43f9-8a08-1b7737579b43`,
+      },
+      {
+        type: TYPE.PARAGRAPH,
+        content: `The tour will spotlight Huawei's portfolio of energy technologies, ranging from
+renewable energy sources to smart grid solutions. Participants can expect to
+witness groundbreaking advancements in solar power, energy storage, and
+intelligent energy management systems. Huawei's commitment to sustainability
+and eco-friendly practices will be underscored through case studies and real-world
+applications, providing PTCons with valuable insights to integrate into their own
+initiatives.`,
+      },
+      {
+        type: TYPE.IMAGE,
+        content: `https://firebasestorage.googleapis.com/v0/b/tpm-techs.appspot.com/o/image-104.jpg?alt=media&token=4776970b-2790-4864-9bed-f77428ad3088`,
+      },
+      {
+        type: TYPE.PARAGRAPH,
+        content: `In conclusion, the PTCons' tour of Huawei's facilities in Shenzhen represents a
+convergence of technological innovation and environmental consciousness.`,
+      },
+      {
+        type: TYPE.IMAGE,
+        content: `https://firebasestorage.googleapis.com/v0/b/tpm-techs.appspot.com/o/image-105.jpg?alt=media&token=6b3980e8-5d57-4b10-a796-898e0d426df2`,
+      },
+    ],
   },
   {
     image:
@@ -513,8 +613,7 @@ to sustainable development.`,
     title: `EAI INTERNATIONAL CONFERENCE ON RENEWABLE ENERGY
 AND SUSTAINABALE MANUFACTURING.`,
     href: "#",
-    description:
-      `Công ty TNHH đầu tư và xây dựng Tpcons hân hạnh được làm nhà tài trợ vàng -
+    description: `Công ty TNHH đầu tư và xây dựng Tpcons hân hạnh được làm nhà tài trợ vàng -
 Gold Sponsor trong hội nghị quốc tế EAI về năng lượng tái tạo và sản xuất bền
 vững tại Trường Đại học Bách khoa - ĐH Quốc gia TP.HCM.`,
     date: "Mar 16, 2020",
@@ -527,7 +626,20 @@ vững tại Trường Đại học Bách khoa - ĐH Quốc gia TP.HCM.`,
       imageUrl:
         "https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
     },
-    contents: [],
+    contents: [
+      {
+        type: TYPE.IMAGE,
+        content: `https://firebasestorage.googleapis.com/v0/b/tpm-techs.appspot.com/o/image-201.jpg?alt=media&token=e5a493f1-614d-4d46-a6d4-e4a2cd1246f9`,
+      },
+      {
+        type: TYPE.IMAGE,
+        content: `https://firebasestorage.googleapis.com/v0/b/tpm-techs.appspot.com/o/image-202.jpg?alt=media&token=43f5391b-ffe9-43e8-9bbb-0b230b0b7e10`,
+      },
+      {
+        type: TYPE.IMAGE,
+        content: `https://firebasestorage.googleapis.com/v0/b/tpm-techs.appspot.com/o/image-203.jpg?alt=media&token=cf096dfa-ff55-4a21-9199-0348e9475c8b`,
+      },
+    ],
   },
 
   {
@@ -536,8 +648,7 @@ vững tại Trường Đại học Bách khoa - ĐH Quốc gia TP.HCM.`,
     id: 205,
     title: `Năng lượng sạch tái tạo`,
     href: "#",
-    description:
-      `
+    description: `
  Công ty TNHH Đầu tư và Xây dựng Tpcons đã chứng minh sự độc đáo và uy
 tín của mình trong lĩnh vực xây dựng hệ thống điện năng lượng mặt trời áp mái.
 Với sự chuyên nghiệp và kinh nghiệm lâu năm, Tpcons đã thực hiện nhiều dự án
@@ -553,16 +664,66 @@ thiểu tác động xấu đến môi trường.`,
       imageUrl:
         "https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
     },
-    contents: [],
+    contents: [
+      {
+        type: TYPE.PARAGRAPH,
+        content: `Mỗi dự án điện mặt trời áp mái do Tpcons thực hiện đều phản ánh tầm quan
+trọng của việc chuyển đổi sang nguồn năng lượng sạch và bền vững. Tính tới nay,
+Tpcons đã triển khai nhiều dự án với quy mô đa dạng, từ các khu dân cư, doanh
+nghiệp nhỏ đến các tổ chức lớn.`,
+      },
+      {
+        type: TYPE.IMAGE,
+        content: `https://firebasestorage.googleapis.com/v0/b/tpm-techs.appspot.com/o/image-301.jpg?alt=media&token=170b8bf3-9c4c-413d-b4ed-3871d84153ae`,
+      },
+      {
+        type: TYPE.PARAGRAPH,
+        content: `Những dự án này không chỉ mang lại nguồn điện sạch cho cộng đồng mà còn
+giảm áp lực lên hệ thống năng lượng quốc gia. Sự sáng tạo trong việc tích hợp
+năng lượng mặt trời vào các công trình áp mái đã tạo ra không gian sống và làm
+việc thân thiện với môi trường, hỗ trợ doanh nghiệp giảm chi phí và đồng thời góp
+phần vào nỗ lực toàn cầu về bảo vệ môi trường.`,
+      },
+      {
+        type: TYPE.IMAGE,
+        content: `https://firebasestorage.googleapis.com/v0/b/tpm-techs.appspot.com/o/image-302.jpg?alt=media&token=2985aedd-f671-4251-b31a-8effcb455a91`,
+      },
+      {
+        type: TYPE.PARAGRAPH,
+        content: `Ngoài ra, Tpcons còn kiên trì hỗ trợ các doanh nghiệp và tổ chức trong hành
+trình chuyển đổi sang nguồn năng lượng sạch. Bằng cách xây dựng và duy trì các hệ thống năng lượng mặt trời áp mái hiệu quả, công ty này đã chứng minh rằng sự
+chuyển đổi sang năng lượng tái tạo không chỉ là lựa chọn của tương lai mà còn là
+nguồn lợi ích hiện tại cho cộng đồng và doanh nghiệp.`,
+      },
+      {
+        type: TYPE.IMAGE,
+        content: `https://firebasestorage.googleapis.com/v0/b/tpm-techs.appspot.com/o/image-303.jpg?alt=media&token=b5fb02eb-21c9-4ca9-b3ba-83e695368fec`,
+      },
+      {
+        type: TYPE.IMAGE,
+        content: `https://firebasestorage.googleapis.com/v0/b/tpm-techs.appspot.com/o/image-304.jpg?alt=media&token=e708dcb3-d5c6-4b7d-a0ee-0718007230bf`,
+      },
+      {
+        type: TYPE.IMAGE,
+        content: `https://firebasestorage.googleapis.com/v0/b/tpm-techs.appspot.com/o/image-305.jpg?alt=media&token=d7d047ee-96d2-4d80-bc5d-c160cbf2047e`,
+      },
+      {
+        type: TYPE.IMAGE,
+        content: `https://firebasestorage.googleapis.com/v0/b/tpm-techs.appspot.com/o/image-306.jpg?alt=media&token=42d0858c-6120-4f46-8a46-400c062aa3d7`,
+      },
+      {
+        type: TYPE.IMAGE,
+        content: `https://firebasestorage.googleapis.com/v0/b/tpm-techs.appspot.com/o/image-307.jpg?alt=media&token=e5fb3c24-ffcf-4a58-be9f-ef95c0fff73f`,
+      },
+    ],
   },
-   {
+  {
     image:
       "https://firebasestorage.googleapis.com/v0/b/tpm-techs.appspot.com/o/post-6.jpg?alt=media&token=54c72117-bbaa-4ef6-aa52-436eeef0acb8",
     id: 206,
     title: `LỄ KHỞI CÔNG ĐIỆN MẶT TRỜI ÁP MÁI TẠI CỦ CHI`,
     href: "#",
-    description:
-      `Buổi lễ khởi công dự án Điện mặt trời áp mái với công suất 2,003kWp là bước
+    description: `Buổi lễ khởi công dự án Điện mặt trời áp mái với công suất 2,003kWp là bước
 đột phá của Nhà máy Bia Sài Gòn - Củ Chi trong việc chuyển đổi sang nguồn năng
 lượng sạch.`,
     date: "Mar 16, 2020",
@@ -575,7 +736,28 @@ lượng sạch.`,
       imageUrl:
         "https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
     },
-    contents: [],
+    contents: [
+      {
+        type: TYPE.IMAGE,
+        content: `https://firebasestorage.googleapis.com/v0/b/tpm-techs.appspot.com/o/image-401.jpg?alt=media&token=8438a0f6-c0f9-430a-94a4-3f1ece6c5eac`,
+      },
+      {
+        type: TYPE.PARAGRAPH,
+        content: `Dự án được tin tưởng giao cho chủ thầu uy tín - Công ty TNHH đầu tư và xây
+dựng Tpcons, chuyên gia hàng đầu trong lĩnh vực điện mặt trời. Hợp tác giữa chủ
+đầu tư và chủ thầu hứa hẹn mang lại hệ thống điện hiệu quả, làm tăng tính bền
+vững và giảm lượng khí nhà kính, đồng thời thúc đẩy tiêu chí phát triển xanh và
+bền vững trong ngành công nghiệp sản xuất.`,
+      },
+    {
+        type: TYPE.IMAGE,
+        content: `https://firebasestorage.googleapis.com/v0/b/tpm-techs.appspot.com/o/image-402.jpg?alt=media&token=96502a5e-82d3-4a93-8764-d29be0399416`,
+      },
+      {
+        type: TYPE.IMAGE,
+        content: `https://firebasestorage.googleapis.com/v0/b/tpm-techs.appspot.com/o/image-403.jpg?alt=media&token=238a62b3-7821-4dbe-a6f2-84883e363b2d`,
+      },
+    ],
   },
   {
     image:
@@ -584,8 +766,7 @@ lượng sạch.`,
     title: `Lễ khởi công dự án điện năng lượng mặt trời áp mái tại Quảng Ngãi
 đã diễn ra trọng thể.`,
     href: "#",
-    description:
-      `Đánh dấu bước tiến quan trọng trong hành trình chuyển đổi năng lượng của
+    description: `Đánh dấu bước tiến quan trọng trong hành trình chuyển đổi năng lượng của
 Công ty cổ phần Bia Sài Gòn. Dự án nhấn mạnh cam kết của doanh nghiệp về việc sử dụng nguồn năng lượng sạch và bền vững, đồng thời thể hiện tầm nhìn chiến
 lược của họ về môi trường và xã hội.`,
     date: "Mar 16, 2020",
@@ -606,8 +787,7 @@ lược của họ về môi trường và xã hội.`,
     id: 208,
     title: `LỄ KÝ KẾT HỢP ĐỒNG GIỮA TPC, SABECO & SPGROUP`,
     href: "#",
-    description:
-      `Công ty TNHH đầu tư và xây dựng Tpcons xin thông báo lễ ký kết hợp đồng giữa
+    description: `Công ty TNHH đầu tư và xây dựng Tpcons xin thông báo lễ ký kết hợp đồng giữa
 SABECO, SPgroup và PTC đã hoàn thành.`,
     date: "Mar 16, 2020",
     datetime: "2020-03-16",
@@ -627,8 +807,7 @@ SABECO, SPgroup và PTC đã hoàn thành.`,
     id: 209,
     title: `NHÀ MÁY ĐIỆN MẶT TRỜI SOLAR PARK.`,
     href: "#",
-    description:
-      `TPC, với danh tiếng là chủ thầu uy tín, đã đồng hành và hoàn thành một trong
+    description: `TPC, với danh tiếng là chủ thầu uy tín, đã đồng hành và hoàn thành một trong
 những dự án động lực nhất trong lĩnh vực năng lượng tái tạo - Nhà máy điện mặt
 trời Solar Park tại Dầu Tiếng 1 và Dầu Tiếng 2. Đây là bước ngoặt quan trọng
 trong hành trình chuyển đổi năng lượng và bảo vệ môi trường.`,
@@ -650,8 +829,7 @@ trong hành trình chuyển đổi năng lượng và bảo vệ môi trường.
     id: 210,
     title: `Dự án điện năng lượng mặt trời tại Dầu Tiếng`,
     href: "#",
-    description:
-      `Dự án điện năng lượng mặt trời tại Dầu Tiếng đang thu hút sự chú ý
+    description: `Dự án điện năng lượng mặt trời tại Dầu Tiếng đang thu hút sự chú ý
 lớn trong ngành năng lượng Việt Nam. Với quy mô ấn tượng và vị trí chiến lược,
 dự án này hứa hẹn đóng góp lớn vào nguồn cung cấp điện quốc gia từ nguồn tái
 tạo. Chủ đầu tư của dự án đã đặt mục tiêu xây dựng một hệ thống hiện đại, kết hợp
@@ -675,8 +853,7 @@ khu vực.`,
     id: 211,
     title: `Dự án điện năng lượng mặt trời tại Tân Bình`,
     href: "#",
-    description:
-      `Dự án điện năng lượng mặt trời tại Tân Bình, hoàn thành vào năm 2019, là một
+    description: `Dự án điện năng lượng mặt trời tại Tân Bình, hoàn thành vào năm 2019, là một
 minh chứng cho sự thành công và đồng hành hiệu quả giữa chủ đầu tư
 MEDIPHAR CNC Tân Bình và nhà thầu TPCons. Dự án này đã tạo ra một nguồn
 điện tái tạo quan trọng, góp phần vào việc giảm thiểu ảnh hưởng của ngành công
@@ -695,196 +872,196 @@ nghiệp đến môi trường.`,
   },
 
   // Iot
-    {
-      id: 212,
-      date: "Mar 16, 2020",
-      datetime: "2020-03-16",
-      category: { title: "Internet of Things", href: "#" },
-      title: `PHÁT TRIỂN BỘ ĐIỀU KHIỂN NHIỀU TRỤC SỬ DỤNG CÔNG NGHỆ MANG ETHERCAT`,
-      description: `Phương pháp thông thường: Điều khiển nhiều động cơ bằng tín hiệu xung và Phương pháp mới: Điều khiển nhiều động cơ bằng tín hiệu mạng`,
-      image: `https://firebasestorage.googleapis.com/v0/b/tpm-techs.appspot.com/o/Picture1_IOT.png?alt=media&token=deddcf5f-f915-4765-8315-ba6e17f0dd04`,
-      contents: [
-        {
-          type: TYPE.TITLE,
-          content: `Tên dự án: Phát triển bộ điều khiển nhiều trục sử dụng công nghệ mạng EtherCAT`
-        },
-        {
-          type: TYPE.TITLE,
-          content: `Phương pháp thông thường: Điều khiển nhiều động cơ bằng tín hiệu xung`
-        },
-        {
-          type: TYPE.PARAGRAPH,
-          content: `
+  {
+    id: 212,
+    date: "Mar 16, 2020",
+    datetime: "2020-03-16",
+    category: { title: "Internet of Things", href: "#" },
+    title: `PHÁT TRIỂN BỘ ĐIỀU KHIỂN NHIỀU TRỤC SỬ DỤNG CÔNG NGHỆ MANG ETHERCAT`,
+    description: `Phương pháp thông thường: Điều khiển nhiều động cơ bằng tín hiệu xung và Phương pháp mới: Điều khiển nhiều động cơ bằng tín hiệu mạng`,
+    image: `https://firebasestorage.googleapis.com/v0/b/tpm-techs.appspot.com/o/Picture1_IOT.png?alt=media&token=deddcf5f-f915-4765-8315-ba6e17f0dd04`,
+    contents: [
+      {
+        type: TYPE.TITLE,
+        content: `Tên dự án: Phát triển bộ điều khiển nhiều trục sử dụng công nghệ mạng EtherCAT`,
+      },
+      {
+        type: TYPE.TITLE,
+        content: `Phương pháp thông thường: Điều khiển nhiều động cơ bằng tín hiệu xung`,
+      },
+      {
+        type: TYPE.PARAGRAPH,
+        content: `
           Pulse-based motion controller
-          `
-        },
-        {
-          type: TYPE.LIST,
-          items: [
-            `Cáp điều khiển khá cồng kềnh và đắt tiền`,
-            `Một bộ điều khiển tối đa 4-8 động cơ được điều khiển `,
-            `Thời gian trễ cao, không đảm bảo điều khiển đồng bộ`,
-            `Cảm biến PHẢI được truyền về máy tính chủ`,
-          ],
-        },
-        {
-          type: TYPE.IMAGE,
-          content: `https://firebasestorage.googleapis.com/v0/b/tpm-techs.appspot.com/o/Picture2_IOT.png?alt=media&token=5a841b0f-12ad-4a6f-9dc3-1ec1aaf5f96b`
-        },
-        {
-          type: TYPE.TITLE,
-          content: `Phương pháp mới: Điều khiển nhiều động cơ bằng tín hiệu mạng`
-        },
-        {
-          type: TYPE.PARAGRAPH,
-          content: `Network-based motion controller`
-        },
-        {
-          type: TYPE.LIST,
-          items: [
-            `Sử dụng cáp LAN, khá gọn, rẻ tiền và dễ kiếm`,
-            `Một bộ điều khiển tối đa 64 động cơ được bảo đảm điều khiển đồng bộ `,
-            `Không có thời gian trễ hoặc rất nhỏ`,
-            `Cảm biến được truyền về servo driver (đặt gần động cơ nên không đòi hỏi dây dẫn dài)`,
-          ]
-        },
-        {
-          type: TYPE.IMAGE,
-          content: `https://firebasestorage.googleapis.com/v0/b/tpm-techs.appspot.com/o/Picture3_IOT.png?alt=media&token=48faaa6a-a3e2-4942-8299-2fcdfa684fc1`
-        },
-        {
-          type: TYPE.PARAGRAPH,
-          content: `Hệ thống hoàn chỉnh bao gồm:`
-        },
-        {
-          type: TYPE.LIST,
-          items: [
-            `1 master motion controller kết nối vào máy tính`,
-            `Các loại slave bao gồm servo driver (dùng để điều khiển động cơ) và I/O (Input/Output: dung để nhận tín hiệu từ cảm biến)`,
-            `Có tối đa 64 slave trong 1 network`,
-          ]
-        },
-        {
-          type: TYPE.IMAGE,
-          content: `https://firebasestorage.googleapis.com/v0/b/tpm-techs.appspot.com/o/Picture4_IOT.png?alt=media&token=07615029-1ba3-4d34-a308-66d8e6f4e287`
-        },
-      ]
-    },
-    {
-      id: 213,
-      date: "Mar 16, 2020",
-      datetime: "2020-03-16",
-      category: { title: "Internet of Things", href: "#" },
-      title: `GIẢI PHÁP CỘNG TÁC GIỮA NGƯỜI VÀ ROBOT TRONG SẢN XUẤT CÔNG NGHIỆP`,
-      description: `Mô hình AI được sử dụng để thu thập các thông tin về con người`,
-      image: `https://firebasestorage.googleapis.com/v0/b/tpm-techs.appspot.com/o/Picture5_IOT.png?alt=media&token=ad708b63-4f24-4eac-b674-ee8430d9759e`,
-      contents: [
-        {
-          type: TYPE.LIST,
-          items: [
-            `Mô hình AI được sử dụng để thu thập các thông tin về con người `,
-            `Kỹ sư vận hành giám sát hệ thống qua máy tính chủ`,
-            `Bất cứ nguy cơ va chạm nào đều được phát hiện và cảnh báo`,
-          ]
-        },
-        {
-          type: TYPE.IMAGE,
-          content: `https://firebasestorage.googleapis.com/v0/b/tpm-techs.appspot.com/o/Picture6_IOT.png?alt=media&token=a1fa4186-d274-406e-bcf8-353ae1815900`
-        },
-        {
-          type: TYPE.LIST,
-          items: [
-            `Chương trình điều khiển vận hàng trên hệ điều hành Windows`,
-            `Chương trình được cài đặt trên máy tính chủ `,
-            `LED cảnh báo: đỏ, vàng và xanh biển `,
-          ],
-        },
-        {
-          type: TYPE.IMAGE,
-          content: `https://firebasestorage.googleapis.com/v0/b/tpm-techs.appspot.com/o/Picture7_IOT.png?alt=media&token=943a1da6-3230-4e80-9f81-b71d0a31ca4b`
-        }
-      ]
-    },
-    {
-      id: 214,
-      date: "Mar 16, 2020",
-      datetime: "2020-03-16",
-      category: { title: "Internet of Things", href: "#" },
-      title: `ỨNG DỤNG TRÍ TUỆ NHÂN TẠO CHO ROBOT DI ĐỘNG CHỞ HÀNG`,
-      description: `Robot di động có khả năng tải hàng hóa tối đa 500kg, có khả năng kết nối wireless và giám sát từ xa`,
-      image: `https://firebasestorage.googleapis.com/v0/b/tpm-techs.appspot.com/o/Picture8_IOT.png?alt=media&token=c25c45e3-030f-410b-aa9c-6165f92fb867`,
-      contents: [
-        {
-          type: TYPE.TITLE,
-          content: `Ứng dụng trí tuệ nhân tạo cho hệ robot di động chở hàng`
-        },
-        {
-          type: TYPE.IMAGE,
-          content: `https://firebasestorage.googleapis.com/v0/b/tpm-techs.appspot.com/o/Picture8_IOT.png?alt=media&token=c25c45e3-030f-410b-aa9c-6165f92fb867`
-        },
-        {
-          type: TYPE.LIST,
-          items: [
-            `Robot di động có khả năng tải hàng hóa tối đa 500kg`,
-            `Di chuyển theo quỹ đạo được lập trình trước`,
-            `Robot có khả năng kết nối wireless và giám sát từ xa`,
-          ]
-        },
-        {
-          type: TYPE.IMAGE,
-          content: `https://firebasestorage.googleapis.com/v0/b/tpm-techs.appspot.com/o/Picture9.1_IOT.png?alt=media&token=16f1558e-de3d-4c55-915b-c1192d295654`
-        },
-        {
-          type: TYPE.PARAGRAPH,
-          content: `
+          `,
+      },
+      {
+        type: TYPE.LIST,
+        items: [
+          `Cáp điều khiển khá cồng kềnh và đắt tiền`,
+          `Một bộ điều khiển tối đa 4-8 động cơ được điều khiển `,
+          `Thời gian trễ cao, không đảm bảo điều khiển đồng bộ`,
+          `Cảm biến PHẢI được truyền về máy tính chủ`,
+        ],
+      },
+      {
+        type: TYPE.IMAGE,
+        content: `https://firebasestorage.googleapis.com/v0/b/tpm-techs.appspot.com/o/Picture2_IOT.png?alt=media&token=5a841b0f-12ad-4a6f-9dc3-1ec1aaf5f96b`,
+      },
+      {
+        type: TYPE.TITLE,
+        content: `Phương pháp mới: Điều khiển nhiều động cơ bằng tín hiệu mạng`,
+      },
+      {
+        type: TYPE.PARAGRAPH,
+        content: `Network-based motion controller`,
+      },
+      {
+        type: TYPE.LIST,
+        items: [
+          `Sử dụng cáp LAN, khá gọn, rẻ tiền và dễ kiếm`,
+          `Một bộ điều khiển tối đa 64 động cơ được bảo đảm điều khiển đồng bộ `,
+          `Không có thời gian trễ hoặc rất nhỏ`,
+          `Cảm biến được truyền về servo driver (đặt gần động cơ nên không đòi hỏi dây dẫn dài)`,
+        ],
+      },
+      {
+        type: TYPE.IMAGE,
+        content: `https://firebasestorage.googleapis.com/v0/b/tpm-techs.appspot.com/o/Picture3_IOT.png?alt=media&token=48faaa6a-a3e2-4942-8299-2fcdfa684fc1`,
+      },
+      {
+        type: TYPE.PARAGRAPH,
+        content: `Hệ thống hoàn chỉnh bao gồm:`,
+      },
+      {
+        type: TYPE.LIST,
+        items: [
+          `1 master motion controller kết nối vào máy tính`,
+          `Các loại slave bao gồm servo driver (dùng để điều khiển động cơ) và I/O (Input/Output: dung để nhận tín hiệu từ cảm biến)`,
+          `Có tối đa 64 slave trong 1 network`,
+        ],
+      },
+      {
+        type: TYPE.IMAGE,
+        content: `https://firebasestorage.googleapis.com/v0/b/tpm-techs.appspot.com/o/Picture4_IOT.png?alt=media&token=07615029-1ba3-4d34-a308-66d8e6f4e287`,
+      },
+    ],
+  },
+  {
+    id: 213,
+    date: "Mar 16, 2020",
+    datetime: "2020-03-16",
+    category: { title: "Internet of Things", href: "#" },
+    title: `GIẢI PHÁP CỘNG TÁC GIỮA NGƯỜI VÀ ROBOT TRONG SẢN XUẤT CÔNG NGHIỆP`,
+    description: `Mô hình AI được sử dụng để thu thập các thông tin về con người`,
+    image: `https://firebasestorage.googleapis.com/v0/b/tpm-techs.appspot.com/o/Picture5_IOT.png?alt=media&token=ad708b63-4f24-4eac-b674-ee8430d9759e`,
+    contents: [
+      {
+        type: TYPE.LIST,
+        items: [
+          `Mô hình AI được sử dụng để thu thập các thông tin về con người `,
+          `Kỹ sư vận hành giám sát hệ thống qua máy tính chủ`,
+          `Bất cứ nguy cơ va chạm nào đều được phát hiện và cảnh báo`,
+        ],
+      },
+      {
+        type: TYPE.IMAGE,
+        content: `https://firebasestorage.googleapis.com/v0/b/tpm-techs.appspot.com/o/Picture6_IOT.png?alt=media&token=a1fa4186-d274-406e-bcf8-353ae1815900`,
+      },
+      {
+        type: TYPE.LIST,
+        items: [
+          `Chương trình điều khiển vận hàng trên hệ điều hành Windows`,
+          `Chương trình được cài đặt trên máy tính chủ `,
+          `LED cảnh báo: đỏ, vàng và xanh biển `,
+        ],
+      },
+      {
+        type: TYPE.IMAGE,
+        content: `https://firebasestorage.googleapis.com/v0/b/tpm-techs.appspot.com/o/Picture7_IOT.png?alt=media&token=943a1da6-3230-4e80-9f81-b71d0a31ca4b`,
+      },
+    ],
+  },
+  {
+    id: 214,
+    date: "Mar 16, 2020",
+    datetime: "2020-03-16",
+    category: { title: "Internet of Things", href: "#" },
+    title: `ỨNG DỤNG TRÍ TUỆ NHÂN TẠO CHO ROBOT DI ĐỘNG CHỞ HÀNG`,
+    description: `Robot di động có khả năng tải hàng hóa tối đa 500kg, có khả năng kết nối wireless và giám sát từ xa`,
+    image: `https://firebasestorage.googleapis.com/v0/b/tpm-techs.appspot.com/o/Picture8_IOT.png?alt=media&token=c25c45e3-030f-410b-aa9c-6165f92fb867`,
+    contents: [
+      {
+        type: TYPE.TITLE,
+        content: `Ứng dụng trí tuệ nhân tạo cho hệ robot di động chở hàng`,
+      },
+      {
+        type: TYPE.IMAGE,
+        content: `https://firebasestorage.googleapis.com/v0/b/tpm-techs.appspot.com/o/Picture8_IOT.png?alt=media&token=c25c45e3-030f-410b-aa9c-6165f92fb867`,
+      },
+      {
+        type: TYPE.LIST,
+        items: [
+          `Robot di động có khả năng tải hàng hóa tối đa 500kg`,
+          `Di chuyển theo quỹ đạo được lập trình trước`,
+          `Robot có khả năng kết nối wireless và giám sát từ xa`,
+        ],
+      },
+      {
+        type: TYPE.IMAGE,
+        content: `https://firebasestorage.googleapis.com/v0/b/tpm-techs.appspot.com/o/Picture9.1_IOT.png?alt=media&token=16f1558e-de3d-4c55-915b-c1192d295654`,
+      },
+      {
+        type: TYPE.PARAGRAPH,
+        content: `
             Cấu trúc bộ điều khiển robot di động thông minh
-          `
-        },
-        {
-          type: TYPE.IMAGE,
-          content: `https://firebasestorage.googleapis.com/v0/b/tpm-techs.appspot.com/o/Picture11_IOT.png?alt=media&token=033c5113-c624-4d86-93ea-22413265f5b5`
-        },
-        {
-          type: TYPE.PARAGRAPH,
-          content: `Kết quả nhận dạng sử dụng kỹ thuật xử lý ảnh`
-        },
-        {
-          type: TYPE.IMAGE,
-          content: `https://firebasestorage.googleapis.com/v0/b/tpm-techs.appspot.com/o/Picture10_IOT.png?alt=media&token=9aa4fb32-965e-4480-8165-f11c6a9769f4`
-        },
-        {
-          type: TYPE.PARAGRAPH,
-          content: `Mô hình không gian xung quanh con người`
-        },
-        {
-          type: TYPE.IMAGE,
-          content: `https://firebasestorage.googleapis.com/v0/b/tpm-techs.appspot.com/o/Picture12_IOT.png?alt=media&token=aac3e151-f8ea-4cf0-a7e5-697e6f4302a0`
-        }
-      ]
-    }
+          `,
+      },
+      {
+        type: TYPE.IMAGE,
+        content: `https://firebasestorage.googleapis.com/v0/b/tpm-techs.appspot.com/o/Picture11_IOT.png?alt=media&token=033c5113-c624-4d86-93ea-22413265f5b5`,
+      },
+      {
+        type: TYPE.PARAGRAPH,
+        content: `Kết quả nhận dạng sử dụng kỹ thuật xử lý ảnh`,
+      },
+      {
+        type: TYPE.IMAGE,
+        content: `https://firebasestorage.googleapis.com/v0/b/tpm-techs.appspot.com/o/Picture10_IOT.png?alt=media&token=9aa4fb32-965e-4480-8165-f11c6a9769f4`,
+      },
+      {
+        type: TYPE.PARAGRAPH,
+        content: `Mô hình không gian xung quanh con người`,
+      },
+      {
+        type: TYPE.IMAGE,
+        content: `https://firebasestorage.googleapis.com/v0/b/tpm-techs.appspot.com/o/Picture12_IOT.png?alt=media&token=aac3e151-f8ea-4cf0-a7e5-697e6f4302a0`,
+      },
+    ],
+  },
 ]
 
 export const serviceBlogs: IBlog[] = [
-    {
-        id: 300,
-        type: BlogType.READ_MORE,
-        title: "IoT là gì? Định nghĩa và các ứng dụng của IoT trong cuộc sống",
-        description: `IoT, viết tắt của "Internet of Things," có nghĩa là kết nối các đồ vật hàng
+  {
+    id: 300,
+    type: BlogType.READ_MORE,
+    title: "IoT là gì? Định nghĩa và các ứng dụng của IoT trong cuộc sống",
+    description: `IoT, viết tắt của "Internet of Things," có nghĩa là kết nối các đồ vật hàng
         ngày của chúng ta với một mạng internet chung để chúng có thể giao tiếp và hoạt
         động cùng nhau.`,
-        image: 'https://didongmoi.com.vn/data/cms-image/iot-la-gi/IoT-la-gi-7.png',
-        contents: [
-            {
-                type: TYPE.TITLE,
-                content: 'IoT là gì?',
-            },
-            {
-                type: TYPE.TITLE,
-                content: 'Định nghĩa',
-            },
-            {
-                type: TYPE.PARAGRAPH,
-                content: `IoT, viết tắt của "Internet of Things," có nghĩa là kết nối các đồ vật hàng ngày của
+    image: "https://didongmoi.com.vn/data/cms-image/iot-la-gi/IoT-la-gi-7.png",
+    contents: [
+      {
+        type: TYPE.TITLE,
+        content: "IoT là gì?",
+      },
+      {
+        type: TYPE.TITLE,
+        content: "Định nghĩa",
+      },
+      {
+        type: TYPE.PARAGRAPH,
+        content: `IoT, viết tắt của "Internet of Things," có nghĩa là kết nối các đồ vật hàng ngày của
                 chúng ta với một mạng internet chung để chúng có thể giao tiếp và hoạt động cùng
                 nhau. Điều này giống như khi bạn và bạn bè trò chuyện thông qua tin nhắn, chiếc
                 đèn, tủ lạnh, hay thậm chí là chiếc xe hơi của bạn sẽ có thể nhận lệnh từ điện thoại
@@ -893,15 +1070,15 @@ export const serviceBlogs: IBlog[] = [
                 Nhờ vậy, chúng có thể tự động thực hiện nhiều việc thú vị, như bật tắt đèn theo lịch 
                 trình, thông báo khi đồ ăn hết sắp hết hạn cho tủ lạnh, và thậm chí giúp xe hơi 
                 tránh được ùn tắc.
-                `
-            },
-            {
-              type: TYPE.TITLE,
-              content: `Lịch sử ra đời của IoT`
-            },
-            {
-              type: TYPE.PARAGRAPH,
-              content: `
+                `,
+      },
+      {
+        type: TYPE.TITLE,
+        content: `Lịch sử ra đời của IoT`,
+      },
+      {
+        type: TYPE.PARAGRAPH,
+        content: `
               Lịch sử hình thành của IoT gắn liền với sự phát triển của Internet. Vì chính nhờ
               mạng các máy tính mới có thể kết nối với nhau. Khi điện thoại thông minh và máy 
               tính bảng trở thành một phần không thể thiếu của cuộc sống hiện nay, các thiết bị
@@ -916,23 +1093,23 @@ export const serviceBlogs: IBlog[] = [
               Nhìn chung, IoT là một công nghệ được phát triển từng bước nhỏ qua thời gian 
               nhờ vào những phát kiến công nghệ và giờ đây, nó đã trở thành một phần quan 
               trọng trong thời đại chuyển đổi số.
-            `
-            },
-            {
-              type: TYPE.IMAGE,
-              content: `https://didongmoi.com.vn/data/cms-image/iot-la-gi/IoT-la-gi-3.png`
-            },
-            {
-              type: TYPE.TITLE,
-              content: `Tầm quan trọng của IoT`
-            },
-            {
-              type: TYPE.TITLE,
-              content: `Trong đời sống hàng ngày`
-            },
-            {
-              type: TYPE.PARAGRAPH,
-              content: `
+            `,
+      },
+      {
+        type: TYPE.IMAGE,
+        content: `https://didongmoi.com.vn/data/cms-image/iot-la-gi/IoT-la-gi-3.png`,
+      },
+      {
+        type: TYPE.TITLE,
+        content: `Tầm quan trọng của IoT`,
+      },
+      {
+        type: TYPE.TITLE,
+        content: `Trong đời sống hàng ngày`,
+      },
+      {
+        type: TYPE.PARAGRAPH,
+        content: `
               Như những sợi dây vô hình kết nối mọi thứ lại với nhau, Internet of Things (IoT) 
               đã biến cuộc sống trở nên đầy phép màu. IoT không chỉ khiến đời sống trở nên dễ
               dàng hơn , mà còn tạo ra một thế giới mới, nơi mà sự tương tác giữa con người và 
@@ -950,19 +1127,19 @@ export const serviceBlogs: IBlog[] = [
               Với những tiềm năng rất lớn còn chưa khai phá hết, IoT hứa hẹn trở thành một cột 
               mốc đặc biệt thay đổi hoàn toàn cuộc sống của chúng ta, tất nhiên là theo hướng 
               tích cực khi sức lực và trí óc của con người được thành thơi để tập trung học tập và 
-              làm việc ở trạng thái tốt nhất.`
-            },
-            {
-              type: TYPE.IMAGE,
-              content: `https://didongmoi.com.vn/data/cms-image/iot-la-gi/IoT-la-gi-4.png`
-            },
-            {
-              type: TYPE.TITLE,
-              content: `Trong doanh nghiệp`
-            },
-            {
-              type: TYPE.PARAGRAPH,
-              content: `
+              làm việc ở trạng thái tốt nhất.`,
+      },
+      {
+        type: TYPE.IMAGE,
+        content: `https://didongmoi.com.vn/data/cms-image/iot-la-gi/IoT-la-gi-4.png`,
+      },
+      {
+        type: TYPE.TITLE,
+        content: `Trong doanh nghiệp`,
+      },
+      {
+        type: TYPE.PARAGRAPH,
+        content: `
               Internet of Things (IoT) tất nhiên cũng đem đến cho doanh nghiệp những cơ hội 
               vàng để phát triển và theo kịp sự chuyển đổi liên tục của công nghệ.Dưới đây là 
               những cách mà IoT đã và đang mang lại những lợi ích quan trọng cho doanh nghiệp:
@@ -980,19 +1157,19 @@ export const serviceBlogs: IBlog[] = [
                     • Hành động dựa trên dữ liệu nhờ vào AI và máy học: Các dữ liệu và xu 
                     hướng đã được thu thập trong quá khứ có thể được khai thác để dự đoán hành 
                     vi khách hàng hoặc ảnh hưởng của sự kiện lên doanh thu,..
-              `
-            },
-            {
-              type: TYPE.IMAGE,
-              content: `https://didongmoi.com.vn/data/cms-image/iot-la-gi/IoT-la-gi-9.png`
-            },
-            {
-              type: TYPE.TITLE,
-              content: `Cấu trúc và cách hoạt động của IoT`
-            },
-            {
-              type: TYPE.PARAGRAPH,
-              content: `
+              `,
+      },
+      {
+        type: TYPE.IMAGE,
+        content: `https://didongmoi.com.vn/data/cms-image/iot-la-gi/IoT-la-gi-9.png`,
+      },
+      {
+        type: TYPE.TITLE,
+        content: `Cấu trúc và cách hoạt động của IoT`,
+      },
+      {
+        type: TYPE.PARAGRAPH,
+        content: `
               Internet of Things (IoT) là một mạng lưới liên kết các thiết bị và đồ vật thông qua 
               internet. Các thiết bị hoặc đồ vật này được trang bị cảm biến và chip kết nối, cho 
               phép chúng thu thập dữ liệu và gửi thông tin đến máy chủ hoặc công cụ điều khiển.
@@ -1012,23 +1189,23 @@ export const serviceBlogs: IBlog[] = [
               Tóm lại, IoT tạo nên một mạng lưới thông tin mà các thiết bị thông minh kết nối và 
               tương tác với nhau thông qua internet, cho phép thu thập và chia sẻ dữ liệu để cải 
               thiện năng suất và trải nghiệm của con người trong nhiều lĩnh vực khác nhau.
-              `
-            },
-            {
-              type: TYPE.IMAGE,
-              content: `https://didongmoi.com.vn/data/cms-image/iot-la-gi/IoT-la-gi-5.png`
-            },
-            {
-              type: TYPE.TITLE,
-              content: `Ưu nhược điểm của IoT`
-            },
-            {
-              type: TYPE.TITLE,
-              content: `Ưu điểm`
-            },
-            {
-              type: TYPE.PARAGRAPH,
-              content: `
+              `,
+      },
+      {
+        type: TYPE.IMAGE,
+        content: `https://didongmoi.com.vn/data/cms-image/iot-la-gi/IoT-la-gi-5.png`,
+      },
+      {
+        type: TYPE.TITLE,
+        content: `Ưu nhược điểm của IoT`,
+      },
+      {
+        type: TYPE.TITLE,
+        content: `Ưu điểm`,
+      },
+      {
+        type: TYPE.PARAGRAPH,
+        content: `
               Internet of Things (IoT) mang đến nhiều ưu điểm quan trọng cho cuộc sống và các 
               lĩnh vực khác nhau. Ưu điểm của IoT có thể kể đến như:
                   • Tăng cường hiệu suất: IoT cho phép theo dõi thời gian thực về hoạt động và 
@@ -1048,15 +1225,15 @@ export const serviceBlogs: IBlog[] = [
                   các thiết bị và mạng, giúp phát hiện và ngăn chặn các hoạt động đe dọa.
                   • Sáng tạo mới: IoT mở ra cơ hội tạo ra các sản phẩm và dịch vụ mới dựa trên 
                   sự kết hợp của các thiết bị và dữ liệu thông minh
-              `
-            },
-            {
-              type: TYPE.TITLE,
-              content: `Nhược điểm`
-            },
-            {
-              type: TYPE.PARAGRAPH,
-              content: `
+              `,
+      },
+      {
+        type: TYPE.TITLE,
+        content: `Nhược điểm`,
+      },
+      {
+        type: TYPE.PARAGRAPH,
+        content: `
               IoT không phải là một công nghệ hoàn hảo, nó cũng tồn tại những nhược điểm rất 
               đáng lưu ý và cần khắc phục như:
                     • Làm lộ thông tin cá nhân: Vì các thiết bị có thể thu thập thông tin cá nhân 
@@ -1076,19 +1253,19 @@ export const serviceBlogs: IBlog[] = [
                     khả năng đầu tư và lợi ích kỳ vọng.
                     • Phức tạp trong quản lý dữ liệu: Lượng dữ liệu lớn từ các thiết bị IoT đòi 
                     hỏi hệ thống quản lý và phân tích dữ liệu mạnh mẽ.
-              `
-            },
-            {
-              type: TYPE.TITLE,
-              content: `Ứng dụng của IoT`
-            },
-            {
-              type: TYPE.TITLE,
-              content: `Trong ngành sản xuất xe, công nghiệp ô tô`
-            },
-            {
-              type: TYPE.PARAGRAPH,
-              content: `
+              `,
+      },
+      {
+        type: TYPE.TITLE,
+        content: `Ứng dụng của IoT`,
+      },
+      {
+        type: TYPE.TITLE,
+        content: `Trong ngành sản xuất xe, công nghiệp ô tô`,
+      },
+      {
+        type: TYPE.PARAGRAPH,
+        content: `
               Trong ngành sản xuất xe và công nghiệp ô tô, IoT đã đem lại những ứng dụng đột 
               phá. Các cảm biến và kết nối thông minh giúp quản lý chuỗi cung ứng hiệu quả hơn, 
               từ việc theo dõi linh kiện đến dự báo tình trạng. Hệ thống IoT cũng giúp kiểm tra 
@@ -1098,19 +1275,19 @@ export const serviceBlogs: IBlog[] = [
               Dùng IoT thu thập dữ liệu từ xe đã sản xuất cũng giúp cải thiện thiết kế và trải 
               nghiệm người dùng. Điều này chứng tỏ rằng IoT đã tạo ra sự thay đổi đáng kể và 
               mang lại sự phát triển bước đột phá trong ngành này.
-              `
-            },
-            {
-              type: TYPE.IMAGE,
-              content: `https://didongmoi.com.vn/data/cms-image/iot-la-gi/IoT-la-gi-6.png`
-            },
-            {
-              type: TYPE.TITLE,
-              content: `Trong ngành xây dựng`
-            },
-            {
-              type: TYPE.PARAGRAPH,
-              content: `
+              `,
+      },
+      {
+        type: TYPE.IMAGE,
+        content: `https://didongmoi.com.vn/data/cms-image/iot-la-gi/IoT-la-gi-6.png`,
+      },
+      {
+        type: TYPE.TITLE,
+        content: `Trong ngành xây dựng`,
+      },
+      {
+        type: TYPE.PARAGRAPH,
+        content: `
               Đối với ngành xây dựng, IoT có nhiều đóng góp khi tham gia vào các dự án nhà 
               thông minh hoặc công trình thông minh.
 
@@ -1131,20 +1308,20 @@ export const serviceBlogs: IBlog[] = [
               thống giám sát thông minh giúp đo lường độ chính xác của vật liệu, thời gian 
               hoàn thành và khả năng hoạt động của thiết bị. Điều này giúp tối ưu hóa quy 
               trình xây dựng, đảm bảo tuân thủ tiến độ và kiểm soát chất lượng công trình.
-            `
-            },
-            {
-              type: TYPE.IMAGE,
-              content: `https://didongmoi.com.vn/data/cms-image/iot-la-gi/IoT-la-gi-7.png`
-            },
-            {
-              type: TYPE.TITLE,
-              content: `Trong ngành công nghiệp
-              `
-            },
-            {
-              type: TYPE.PARAGRAPH,
-              content: `
+            `,
+      },
+      {
+        type: TYPE.IMAGE,
+        content: `https://didongmoi.com.vn/data/cms-image/iot-la-gi/IoT-la-gi-7.png`,
+      },
+      {
+        type: TYPE.TITLE,
+        content: `Trong ngành công nghiệp
+              `,
+      },
+      {
+        type: TYPE.PARAGRAPH,
+        content: `
               IoT đã chứng minh ưu điểm của mình trong ngành công nghiệp, tạo ra sự cách 
               mạng trong cách sản xuất và quản lý nhà máy. Từ việc theo dõi và tối ưu hóa quy 
               trình sản xuất đến giám sát và bảo trì thiết bị, IoT đã giúp cải thiện hiệu suất và 
@@ -1154,19 +1331,19 @@ export const serviceBlogs: IBlog[] = [
               thiểu thất thoát và tăng khả năng đáp ứng nhu cầu. Những điều đó chứng tỏ
               IoT đóng vai trò quan trọng trong việc thúc đẩy sự phát triển bền vững và sáng tạo 
               trong ngành công nghiệp.
-              `
-            },
-            {
-              type: TYPE.IMAGE,
-              content: `https://didongmoi.com.vn/data/cms-image/iot-la-gi/IoT-la-gi-10.png`
-            },
-            {
-              type: TYPE.TITLE,
-              content: `Trong ngành bán lẻ`
-            },
-            {
-              type: TYPE.PARAGRAPH,
-              content: `
+              `,
+      },
+      {
+        type: TYPE.IMAGE,
+        content: `https://didongmoi.com.vn/data/cms-image/iot-la-gi/IoT-la-gi-10.png`,
+      },
+      {
+        type: TYPE.TITLE,
+        content: `Trong ngành bán lẻ`,
+      },
+      {
+        type: TYPE.PARAGRAPH,
+        content: `
               Trong lĩnh vực bán lẻ, IoT đã mang đến những cách tiếp cận mới. Các cảm biến 
               thông minh giúp quản lý tồn kho và cung cấp thông tin chi tiết về sản 
               phẩm. Như một trợ thủ đắc lực, IoT cung cấp thông tin chi tiết về sản phẩm ngay 
@@ -1175,49 +1352,52 @@ export const serviceBlogs: IBlog[] = [
               Từ việc gợi ý sản phẩm phù hợp cho đến việc cung cấp thông tin về xuất xứ và tính 
               năng, trải nghiệm mua sắm trở nên thú vị hơn. Sự tự động hóa cải thiện quy trình 
               từ đặt hàng đến giao hàng, tạo ra môi trường bán hàng hiệu quả và năng động.
-              `
-            },
-            {
-              type: TYPE.IMAGE,
-              content: `https://didongmoi.com.vn/data/cms-image/iot-la-gi/IoT-la-gi-11.png`
-            },
-            {
-              type: TYPE.PARAGRAPH,
-              content: `Bài viết trên đã cắt nghĩa IoT là gì cũng như giới thiệu đến bạn đọc những ứng 
-              dụng tuyệt vời của nó trong đời sống cá nhân lẫn cộng đồng.`
-            }
-        ]
-    },
-    {
-      id: 301,
-      type: BlogType.READ_MORE,
-      title: `Xu hướng IoT công nghiêp năm 2023`,
-      description: `
+              `,
+      },
+      {
+        type: TYPE.IMAGE,
+        content: `https://didongmoi.com.vn/data/cms-image/iot-la-gi/IoT-la-gi-11.png`,
+      },
+      {
+        type: TYPE.PARAGRAPH,
+        content: `Bài viết trên đã cắt nghĩa IoT là gì cũng như giới thiệu đến bạn đọc những ứng 
+              dụng tuyệt vời của nó trong đời sống cá nhân lẫn cộng đồng.`,
+      },
+    ],
+  },
+  {
+    id: 301,
+    type: BlogType.READ_MORE,
+    title: `Xu hướng IoT công nghiêp năm 2023`,
+    description: `
       Công nghệ IoT (Internet of Things) đã và đang trở thành một trong những 
       xu hướng công nghiệp phát triển mạnh mẽ trong thời gian gần đây. Và năm 2023 sẽ
       là một năm đầy triển vọng cho IoT công nghiệp……..`,
-      image: `https://eco-smart.biz/wp-content/uploads/2023/03/digital-marketing-agency.png`,
-      contents:[
-        {
-          type: TYPE.TITLE,
-          content: `Xu hướng về IoT công nghiệp trong năm 2023
-          `
-        },{
-          type: TYPE.PARAGRAPH,
-          content: `Công nghệ IoT (Internet of Things) đã và đang trở thành một trong những xu 
+    image: `https://eco-smart.biz/wp-content/uploads/2023/03/digital-marketing-agency.png`,
+    contents: [
+      {
+        type: TYPE.TITLE,
+        content: `Xu hướng về IoT công nghiệp trong năm 2023
+          `,
+      },
+      {
+        type: TYPE.PARAGRAPH,
+        content: `Công nghệ IoT (Internet of Things) đã và đang trở thành một trong những xu 
           hướng công nghiệp phát triển mạnh mẽ trong thời gian gần đây. Và năm 2023 sẽ là 
           một năm đầy triển vọng cho IoT công nghiệp.
           Trong năm 2023, có nhiều xu hướng IoT công nghiệp đáng chú ý sẽ xuất hiện. Đó 
           có thể là sự kết hợp của IoT với các công nghệ khác như trí tuệ nhân tạo, 
           blockchain, đám mây,.. để tạo ra những giải pháp mới cho các ngành công nghiệp. 
           Cùng với đó, các ứng dụng của IoT cũng sẽ mở rộng và phát triển đáng kể, bao 
-          gồm các ứng dụng trong lĩnh vực sản xuất, vận chuyển, năng lượng và y tế.`
-        },{
-          type: TYPE.IMAGE,
-          content: `https://www.thegioimaychu.vn/blog/wp-content/uploads/2021/01/TheGioiMayChu-Blog-Image-IoT-trends.jpg`
-        },{
-          type: TYPE.PARAGRAPH,
-          content: `
+          gồm các ứng dụng trong lĩnh vực sản xuất, vận chuyển, năng lượng và y tế.`,
+      },
+      {
+        type: TYPE.IMAGE,
+        content: `https://www.thegioimaychu.vn/blog/wp-content/uploads/2021/01/TheGioiMayChu-Blog-Image-IoT-trends.jpg`,
+      },
+      {
+        type: TYPE.PARAGRAPH,
+        content: `
           Để đáp ứng nhu cầu ngày càng cao của thị trường, các doanh nghiệp cần nắm rõ 
           những xu hướng IoT công nghiệp nổi bật của năm 2023 để có thể áp dụng những 
           giải pháp mới nhất và nâng cao năng suất sản xuất, giảm chi phí, tăng tính linh 
@@ -1234,26 +1414,27 @@ export const serviceBlogs: IBlog[] = [
                 4. Giải pháp IoT Edge Computing và tích hợp IoT vào đám mây
                 5. Ứng dụng IoT trong lĩnh vực y tế và sức khỏe.
                 Với những xu hướng này, các doanh nghiệp có thể áp dụng những giải pháp mới 
-                nhất và tiên tiến nhất để tăng cường năng suất và cạnh tranh trên thị trường.`
-        }
-      ]
-    },
-    {
-      id: 302,
-      type: BlogType.READ_MORE,
-      title: `Triển vọng và xu hướng phát triển IoT trong năm 2023`,
-      description: `Công nghệ Internet Of Things (IoT) đang ở trạng thái phát triển không 
+                nhất và tiên tiến nhất để tăng cường năng suất và cạnh tranh trên thị trường.`,
+      },
+    ],
+  },
+  {
+    id: 302,
+    type: BlogType.READ_MORE,
+    title: `Triển vọng và xu hướng phát triển IoT trong năm 2023`,
+    description: `Công nghệ Internet Of Things (IoT) đang ở trạng thái phát triển không 
       ngừng. Trong một khoảng thời gian rất ngắn, IoT đã chuyển từ một công cụ có ứng 
       dụng hạn chế và các vấn đề liên quan đến bảo mật thì đến hiện tại…….`,
-      image: `https://rtc.edu.vn/wp-content/uploads/2023/10/Tuong-lai-cua-su-phat-trien-IOT.png`,
-      contents: [
-        {
-          type: TYPE.TITLE,
-          content: `Triển vọng và xu hướng phát triển của IoT trong năm 2023
-          `
-        },{
-          type: TYPE.PARAGRAPH,
-          content: `
+    image: `https://rtc.edu.vn/wp-content/uploads/2023/10/Tuong-lai-cua-su-phat-trien-IOT.png`,
+    contents: [
+      {
+        type: TYPE.TITLE,
+        content: `Triển vọng và xu hướng phát triển của IoT trong năm 2023
+          `,
+      },
+      {
+        type: TYPE.PARAGRAPH,
+        content: `
           Công nghệ Internet Of Things (IoT) đang ở trạng thái phát triển không ngừng. 
           Trong một khoảng thời gian rất ngắn, IoT đã chuyển từ một công cụ có ứng dụng 
           hạn chế và các vấn đề liên quan đến bảo mật thì đến hiện tại, IoT đã trở thành một 
@@ -1266,33 +1447,35 @@ export const serviceBlogs: IBlog[] = [
           xem những phát triển và xu hướng IoT nào chúng ta có thể mong đợi sẽ thấy vào 
           năm 2023.
 
-          `
-        },
-        {
-          type: TYPE.IMAGE,
-          content: `https://rtc.edu.vn/wp-content/uploads/2023/10/Tuong-lai-cua-su-phat-trien-IOT.png`
-        },
-        {
-          type: TYPE.TITLE,
-          content: `Năm xu hướng của IoT cho năm 2023`
-        },
-        {
-          type: TYPE.TITLE,
-          content: `Ứng dụng có băng thông cao hơn`
-        },{
-          type: TYPE.PARAGRAPH,
-          content: `Cho đến gần đây, IoT vẫn bị hạn chế bởi loại và khối lượng dữ liệu mà các ứng 
+          `,
+      },
+      {
+        type: TYPE.IMAGE,
+        content: `https://rtc.edu.vn/wp-content/uploads/2023/10/Tuong-lai-cua-su-phat-trien-IOT.png`,
+      },
+      {
+        type: TYPE.TITLE,
+        content: `Năm xu hướng của IoT cho năm 2023`,
+      },
+      {
+        type: TYPE.TITLE,
+        content: `Ứng dụng có băng thông cao hơn`,
+      },
+      {
+        type: TYPE.PARAGRAPH,
+        content: `Cho đến gần đây, IoT vẫn bị hạn chế bởi loại và khối lượng dữ liệu mà các ứng 
           dụng của nó có thể xử lý. Nhưng vào năm 2023, chúng ta đang chứng kiến xu 
           hướng IoT chuyển sang lĩnh vực ứng dụng băng thông cao hơn với khối lượng dữ 
           liệu lớn hơn được truyền ở tốc độ cao hơn. Và điều này dẫn đến sự mở rộng đáng 
-          kể tiềm năng của công nghệ.`
-        },{
-          type: TYPE.TITLE,
-          content: `Xử lý dữ liệu theo thời gian thực`
-        },
-        {
-          type: TYPE.PARAGRAPH,
-          content: `
+          kể tiềm năng của công nghệ.`,
+      },
+      {
+        type: TYPE.TITLE,
+        content: `Xử lý dữ liệu theo thời gian thực`,
+      },
+      {
+        type: TYPE.PARAGRAPH,
+        content: `
           Với băng thông cao hơn, khả năng tăng lên. Vì vậy, chúng ta sẽ thấy ngày càng 
           nhiều công ty sử dụng IoT để xử lý dữ liệu theo thời gian thực bằng các dịch vụ tập 
           trung. Một trong những vấn đề chính với công nghệ IoT là lượng dữ liệu khổng lồ 
@@ -1303,14 +1486,16 @@ export const serviceBlogs: IBlog[] = [
           và xử lý/phân tích dữ liệu ở hầu hết các lĩnh vực. Vào năm 2023, sẽ có sự thúc đẩy 
           lớn hơn đối với việc phân tích thời gian thực trong nhiều tình huống khác nhau, 
           bao gồm cả video.
-          `
-        },{
-          type: TYPE.TITLE,
-          content: `Ứng dụng máy bay không người lái và máy tự động
-          `
-        },{
-          type: TYPE.PARAGRAPH,
-          content: `
+          `,
+      },
+      {
+        type: TYPE.TITLE,
+        content: `Ứng dụng máy bay không người lái và máy tự động
+          `,
+      },
+      {
+        type: TYPE.PARAGRAPH,
+        content: `
           Vào tháng 11 năm 2022, Science Direct đã xuất hiện một bài báo về Internet vạn 
           vật. Nội dung bài báo đề cập đến những thứ có thể tự động thực hiện các hoạt động 
           cần thiết bằng cách sử dụng thuật toán AI mà không cần sự can thiệp của con 
@@ -1327,16 +1512,19 @@ export const serviceBlogs: IBlog[] = [
           trên việc trở thành những người áp dụng sớm nhất trong lĩnh vực này. Tính đến 
           tháng 6 năm 2022, Amazon Robotics đã triển khai hơn 520.000 máy đến các trung 
           tâm kho bãi và phân phối trên khắp thế giới.
-          `
-        },{
-          type: TYPE.IMAGE,
-          content: `https://rtc.edu.vn/wp-content/uploads/2023/10/Xu-huong-phat-trien-cua-IoT-1.jpg`
-        },{
-          type: TYPE.TITLE,
-          content: `Giám sát ứng dụng`
-        },{
-          type: TYPE.PARAGRAPH,
-          content: `
+          `,
+      },
+      {
+        type: TYPE.IMAGE,
+        content: `https://rtc.edu.vn/wp-content/uploads/2023/10/Xu-huong-phat-trien-cua-IoT-1.jpg`,
+      },
+      {
+        type: TYPE.TITLE,
+        content: `Giám sát ứng dụng`,
+      },
+      {
+        type: TYPE.PARAGRAPH,
+        content: `
           IoT đã được sử dụng cho nhiều ứng dụng giám sát từ thời tiết đến việc sử dụng bàn 
           làm việc và việc tuân thủ Legionella. Nhưng điều rõ ràng là thiếu vắng là công 
           nghệ giám sát có thể đưa ra các quyết định quan trọng một cách tự động nhằm 
@@ -1347,14 +1535,15 @@ export const serviceBlogs: IBlog[] = [
           lý khỏi các cảnh báo không cần thiết và ngăn chặn bất kỳ sự gián đoạn nào đối với 
           các dịch vụ hoặc quy trình cần thiết.
 
-          `
-        },{
-          type: TYPE.TITLE,
-          content: `Bảo mật nâng cao`
-        },
-        {
-          type: TYPE.PARAGRAPH,
-          content: `
+          `,
+      },
+      {
+        type: TYPE.TITLE,
+        content: `Bảo mật nâng cao`,
+      },
+      {
+        type: TYPE.PARAGRAPH,
+        content: `
           Bảo mật đã trở thành một điểm yếu ngày càng tăng đối với IoT. Trong quá trình 
           phát triển các ứng dụng ban đầu, vấn đề bảo mật là một điều đáng tiếc. Và khi các 
           hệ thống được bổ sung và phát triển, nhiều lỗ hổng được phát hiện hơn, để lại 
@@ -1363,49 +1552,51 @@ export const serviceBlogs: IBlog[] = [
           Có nghĩa là an ninh mạng đã và sẽ vẫn là ưu tiên số một của IoT. Cả trong lĩnh vực 
           công nghệ mới, nơi sẽ tập trung vào phát triển ưu tiên bảo mật, kết nối và tích hợp 
           các hệ thống cũ.
-          `
-        },{
-          type: TYPE.TITLE,
-          content: `Tổng kết`
-        },{
-          type: TYPE.PARAGRAPH,
-          content: `Trải qua những năm phát triển nhanh chóng, Internet of Things (IoT) đã trở thành 
+          `,
+      },
+      {
+        type: TYPE.TITLE,
+        content: `Tổng kết`,
+      },
+      {
+        type: TYPE.PARAGRAPH,
+        content: `Trải qua những năm phát triển nhanh chóng, Internet of Things (IoT) đã trở thành 
           một sự thực rất hiện hữu và không thể bỏ qua trong cuộc sống và kinh doanh hiện 
           đại. IoT đã thay đổi cách chúng ta tương tác với thế giới xung quanh. Bước sang 
           năm 2023, IoT tiếp tục phát triển mạnh mẽ, mang theo những xu hướng và triển 
           vọng đầy hứa hẹn.
-          `
-        }
-      ]
-    },
-    {
-      id: 303,
-      type: BlogType.READ_MORE,
-      title: `Cảm biến IoT là gì? Các loại cảm biến và ứng dụng`,
-      description: `Cảm biến IoT (Internet Of Things) trong thời đại số hoá ngày nay đang thay 
+          `,
+      },
+    ],
+  },
+  {
+    id: 303,
+    type: BlogType.READ_MORE,
+    title: `Cảm biến IoT là gì? Các loại cảm biến và ứng dụng`,
+    description: `Cảm biến IoT (Internet Of Things) trong thời đại số hoá ngày nay đang thay 
       đổi cách chúng ta tương tác với thế giới xung quanh một cách mạnh mẽ và không 
       ngừng phát triển.`,
-      image: `https://iboss.vn/wp-content/uploads/2018/08/Google-Cloud-Looks-to-Streamline-IoT-Management-App-Developer-Magazine_0yq4xr07.jpg`,
-      contents: [
-        {
-          type: TYPE.TITLE,
-          content: `Cảm biến IoT là gì? Các loại cảm biến và ứng dụng`
-        },
-        {
-          type: TYPE.PARAGRAPH,
-          content: `Cảm biến IoT (Internet Of Things) trong thời đại số hoá ngày nay đang thay 
+    image: `https://iboss.vn/wp-content/uploads/2018/08/Google-Cloud-Looks-to-Streamline-IoT-Management-App-Developer-Magazine_0yq4xr07.jpg`,
+    contents: [
+      {
+        type: TYPE.TITLE,
+        content: `Cảm biến IoT là gì? Các loại cảm biến và ứng dụng`,
+      },
+      {
+        type: TYPE.PARAGRAPH,
+        content: `Cảm biến IoT (Internet Of Things) trong thời đại số hoá ngày nay đang thay 
           đổi cách chúng ta tương tác với thế giới xung quanh một cách mạnh mẽ và 
           không ngừng phát triển. Chúng là những công cụ quan trọng giúp người dùng 
           thu thập thông tin từ môi trường và các thiết bị, sau đó kết nối và chia sẻ dữ 
-          liệu này qua Internet.`
-        },
-        {
-          type: TYPE.TITLE,
-          content: `Cảm biến IoT là gì?`
-        },
-        {
-          type: TYPE.PARAGRAPH,
-          content: `
+          liệu này qua Internet.`,
+      },
+      {
+        type: TYPE.TITLE,
+        content: `Cảm biến IoT là gì?`,
+      },
+      {
+        type: TYPE.PARAGRAPH,
+        content: `
           Cảm biến IoT (Internet of Things) là các thiết bị hoặc hệ thống cảm biến được kết 
           nối vào mạng Internet để thu thập thông tin và dữ liệu từ môi trường xung quanh, 
           sau đó truyền thông tin này đến các máy chủ hoặc thiết bị khác để xử lý và theo dõi 
@@ -1416,19 +1607,20 @@ export const serviceBlogs: IBlog[] = [
 
           Cảm biến IoT có thể truyền dữ liệu thông qua nhiều giao thức kết nối như Wi-Fi, 
           Bluetooth, LoRaWan, Sigfox, Zingbee và nhiều giao thức khác tuỳ thuộc vào ứng 
-          dụng cụ thể và yêu cầu kỹ thuật.`
-        },{
-          type: TYPE.IMAGE,
-          content: `https://savvycom.vn/wp-content/uploads/2023/07/4-Vi-Du-Ve-IoT-Tao-Nen-Dot-Pha-Trong-Cuoc-Song-Hang-Ngay.jpg`
-        },
-        {
-          type: TYPE.TITLE,
-          content: `Lợi ích công nghệ cảm biến IoT
-          `
-        },
-        {
-          type: TYPE.PARAGRAPH,
-          content: `
+          dụng cụ thể và yêu cầu kỹ thuật.`,
+      },
+      {
+        type: TYPE.IMAGE,
+        content: `https://savvycom.vn/wp-content/uploads/2023/07/4-Vi-Du-Ve-IoT-Tao-Nen-Dot-Pha-Trong-Cuoc-Song-Hang-Ngay.jpg`,
+      },
+      {
+        type: TYPE.TITLE,
+        content: `Lợi ích công nghệ cảm biến IoT
+          `,
+      },
+      {
+        type: TYPE.PARAGRAPH,
+        content: `
           Một trong những ưu điểm chính của cảm biến IoT là khả năng truyền dữ liệu 
           không dây. Điều này có nghĩa là chúng dù có đặt ở những vị trí xa hoặc khó tiếp 
           cận thì vẫn có thể truyền dữ liệu trở lại trung tâm hoặc máy chủ thông qua đám 
@@ -1456,23 +1648,23 @@ export const serviceBlogs: IBlog[] = [
           Trong nông nghiệp, cảm biến IoT không dây có thể được sử dụng để theo dõi độ 
           ẩm của đất và sự phát triển của cây trồng, đồng thời cải thiện chu trình nước cho 
           phù hợp.
-          `
-        },
-        {
-          type: TYPE.IMAGE,
-          content: `https://media-cdn-v2.laodong.vn/storage/newsportal/2022/6/30/1062472/Anh-Chup-Man-Hinh-20-03.jpg`
-        },
-        {
-          type: TYPE.TITLE,
-          content: `Các loại cảm biến IoT`
-        },
-        {
-          type: TYPE.TITLE,
-          content: `Cảm biến nhiệt độ`
-        },
-        {
-          type: TYPE.PARAGRAPH,
-          content: `
+          `,
+      },
+      {
+        type: TYPE.IMAGE,
+        content: `https://media-cdn-v2.laodong.vn/storage/newsportal/2022/6/30/1062472/Anh-Chup-Man-Hinh-20-03.jpg`,
+      },
+      {
+        type: TYPE.TITLE,
+        content: `Các loại cảm biến IoT`,
+      },
+      {
+        type: TYPE.TITLE,
+        content: `Cảm biến nhiệt độ`,
+      },
+      {
+        type: TYPE.PARAGRAPH,
+        content: `
           Những cảm biến này đo nhiệt độ và được sử dụng trong nhiều ứng dụng, bao gồm 
           kiểm soát nhiệt độ, hệ thống HVAC và thiết bị y tế. Chúng có thể được sử dụng 
           trong các thiết bị đeo, chăm sóc sức khoẻ, IoT công nghiệp và các toà nhà thông 
@@ -1480,11 +1672,11 @@ export const serviceBlogs: IBlog[] = [
 
           Cảm biến nhiệt độ IoT có thể đo lượng nhiệt từ một nguồn phát ra, phân tích những 
           thay đổi đột ngột ở nguồn này và chuyển nó thành dữ liệu.
-          `
-        },
-        {
-          type: TYPE.TITLE,
-          content: `
+          `,
+      },
+      {
+        type: TYPE.TITLE,
+        content: `
           Cảm biến này phát hiện chuyển động trong một phạm vi cụ thể và được sử dụng 
           trong các ứng dụng như Camera an ninh, thiết bị báo trộm và thiết bị thể dục đeo 
           được.
@@ -1492,58 +1684,64 @@ export const serviceBlogs: IBlog[] = [
           Ví dụ: Nếu bạn đang chạy hoặc nhảy, cảm biến chuyển động có thể đo loại bài tập 
           đang thực hiện và thông qua thiết bị IoT, cung cấp dữ liệu cho người dùng dưới 
           dạng dữ liệu Calo đã đốt cháy.
-          `
-        }, {
-          type: TYPE.TITLE,
-          content: `Cảm biến tiệm cận`
-        }, {
-          type: TYPE.PARAGRAPH,
-          content: `
+          `,
+      },
+      {
+        type: TYPE.TITLE,
+        content: `Cảm biến tiệm cận`,
+      },
+      {
+        type: TYPE.PARAGRAPH,
+        content: `
           Những cảm biến này phát hiện sự hiện diện của vật thể hoặc con người và được sử 
           dụng trong các ứng dụng như hệ thống kiểm soát truy cập, Robot và hệ thống an 
-          toàn ô tô.`
-        }, {
-          type: TYPE.TITLE,
-          content: `Gia tốc kế`
-        },{
-          type: TYPE.PARAGRAPH,
-          content: `Gia tốc kế có thể phát hiện mức độ gia tốc và sự thay đổi trọng lực của vật thể. 
+          toàn ô tô.`,
+      },
+      {
+        type: TYPE.TITLE,
+        content: `Gia tốc kế`,
+      },
+      {
+        type: TYPE.PARAGRAPH,
+        content: `Gia tốc kế có thể phát hiện mức độ gia tốc và sự thay đổi trọng lực của vật thể. 
           Chúng thường được lắp đặt trên máy bay và đội tàu.
           Một ứng dụng phổ biến khác của công nghệ này là dành cho điện thoại thông 
           minh. Ví dụ gia tốc kế sẽ phát hiện xem điện thoại của bạn ở vị trí thẳng đứng hay 
           nằm ngang, sau đó điều chỉnh hình ảnh điện thoại theo đó.
-          `
-        },{
-          type: TYPE.TITLE,
-          content: `Con quay hồi chuyển`
-        },{
-          type: TYPE.PARAGRAPH,
-          content: `Loại cảm biến này chủ yếu được sử dụng trong điện thoại thông minh, chúng có 
+          `,
+      },
+      {
+        type: TYPE.TITLE,
+        content: `Con quay hồi chuyển`,
+      },
+      {
+        type: TYPE.PARAGRAPH,
+        content: `Loại cảm biến này chủ yếu được sử dụng trong điện thoại thông minh, chúng có 
           thể đo và duy trì hướng cũng như tốc độ góc của vật thể. Chúng xác định hơn gia 
           tốc kế vì chúng có thể đo độ nghiêng và hướng ngang
           Tất nhiên, còn các loại con quay hồi chuyển khác với các kích cỡ và ứng dụng 
           khác nhau trong máy bay, hệ thống định vị ô tô, Robot, máy ảnh kỹ thuật số, trò 
-          chơi di động.`
-        },
-        {
-          type: TYPE.TITLE,
-          content: `Cảm biến độ ẩm`
-        },
-        {
-          type: TYPE.PARAGRAPH,
-          content: `
+          chơi di động.`,
+      },
+      {
+        type: TYPE.TITLE,
+        content: `Cảm biến độ ẩm`,
+      },
+      {
+        type: TYPE.PARAGRAPH,
+        content: `
           Những cảm biến này đo độ ẩm trong không khí. Chúng được sử dụng hệ thống 
           sưởi, lỗ thông hơi và điều hoà không khí. Các ứng dụng phổ biến của cảm biến độ ẩm IoT là theo dõi thời tiết, giám sát chất lượng không khí trong nhà cho bệnh 
           viện, khách sạn và nhà thông minh.
-          `
-        },
-        {
-          type: TYPE.TITLE,
-          content: `Cảm biến áp suất`
-        },
-        {
-          type: TYPE.PARAGRAPH,
-          content: `
+          `,
+      },
+      {
+        type: TYPE.TITLE,
+        content: `Cảm biến áp suất`,
+      },
+      {
+        type: TYPE.PARAGRAPH,
+        content: `
           Những cảm biến này đo sự thay đổi áp suất trong khí và chất lỏng. Khi có sự thay 
           đổi về áp suất, cảm biến sẽ gửi thông tin đến thiết bị Iot và thông tin này được hiển 
           thị trong các ứng dụng hoặc phần mềm, cho phép những người quản lý biết về 
@@ -1551,15 +1749,15 @@ export const serviceBlogs: IBlog[] = [
 
           Loại cảm biến IoT này có thể được sử dụng để quản lý việc giám sát khả năng rò rỉ 
           chất lỏng trong hệ thống hoặc thùng chứa nước ở bất kỳ cơ sở nào.
-          `
-        },
-        {
-          type: TYPE.TITLE,
-          content: `Cảm biến ánh sáng`
-        },
-        {
-          type: TYPE.PARAGRAPH,
-          content: `
+          `,
+      },
+      {
+        type: TYPE.TITLE,
+        content: `Cảm biến ánh sáng`,
+      },
+      {
+        type: TYPE.PARAGRAPH,
+        content: `
           Các cảm biến Internet Of Things này đo lường cường độ và màu sắc của ánh sáng. 
           Chúng được sử dụng trong các ứng dụng như điều khiển ánh sáng, hệ thống an 
           ninh và nông nghiệp.
@@ -1567,15 +1765,15 @@ export const serviceBlogs: IBlog[] = [
           Cảm biến ánh sáng là một trong những thiết bị rất hữu ích để thích ứng với giải 
           pháp IoT của bạn nếu bạn cần theo dõi điều kiện ánh sáng trong các môi trường 
           khác nhau.
-          `
-        },
-        {
-          type: TYPE.TITLE,
-          content: `Cảm biến quang học`
-        },
-        {
-          type: TYPE.PARAGRAPH,
-          content: `
+          `,
+      },
+      {
+        type: TYPE.TITLE,
+        content: `Cảm biến quang học`,
+      },
+      {
+        type: TYPE.PARAGRAPH,
+        content: `
           Cảm biến quang học có thể phát hiện một số thay đổi của ánh sáng như cường độ, 
           bức sóng, tần số và độ phân cực.
 
@@ -1587,16 +1785,16 @@ export const serviceBlogs: IBlog[] = [
 
           Các cảm biến quang học giúp các sản phẩm IoT tiết kiệm năng lượng vì chúng 
           điều chỉnh lượng ánh sáng sẽ sử dụng để hiển thị thông tin người dùng.
-          `
-        },
-        {
-          type: TYPE.TITLE,
-          content: `Cảm biến hồng ngoại
-          `
-        },
-        {
-          type: TYPE.PARAGRAPH,
-          content: `
+          `,
+      },
+      {
+        type: TYPE.TITLE,
+        content: `Cảm biến hồng ngoại
+          `,
+      },
+      {
+        type: TYPE.PARAGRAPH,
+        content: `
           Các cảm biến IoT này phát ra ánh sáng hồng ngoại cho phép chúng xác định môi 
           trường xung quanh. Bên cạnh đó, chúng cũng có thể phát hiện và phân tích nhiệt 
           lượng toả ra từ các vật thể, động vật hoặc con người.
@@ -1605,32 +1803,36 @@ export const serviceBlogs: IBlog[] = [
           đeo, vì chúng cho phép người dùng viết lưu lượng và huyết áp của mình. Nếu bạn 
           có đồng hồ thông minh hoặc vòng tay thông minh, nó sẽ được trang bị cảm biến 
           hồng ngoại.
-          `
-        },
-        {
-          type: TYPE.IMAGE,
-          content: `https://www.elcom.com.vn/storage/uploads/images/2j2c2Ho1vsKz1OKpKEa3LGgj01JRLdYxrmRK0Xks.jpg
+          `,
+      },
+      {
+        type: TYPE.IMAGE,
+        content: `https://www.elcom.com.vn/storage/uploads/images/2j2c2Ho1vsKz1OKpKEa3LGgj01JRLdYxrmRK0Xks.jpg
           
-          `
-        }, {
-          type: TYPE.TITLE,
-          content: `Ứng dụng của cảm biến IoT
-          `
-        }, {
-          type: TYPE.PARAGRAPH,
-          content: `Cảm biến IoT (Internet Of Things) đã thay đổi cách chúng ta tương tác với thế giới 
+          `,
+      },
+      {
+        type: TYPE.TITLE,
+        content: `Ứng dụng của cảm biến IoT
+          `,
+      },
+      {
+        type: TYPE.PARAGRAPH,
+        content: `Cảm biến IoT (Internet Of Things) đã thay đổi cách chúng ta tương tác với thế giới 
           xung quanh. Chúng là các cảm biến có khả năng kết nối với Internet, cho phép thu 
           thập, truyền tải và phân tích dữ liệu từ môi trường và các thiết bị khác. Dưới đây là 
           một số ứng dụng của cảm biến IoT trong cuộc sống hàng ngày và nhiều lĩnh vực 
           khác nhau:
-          `
-        }, {
-          type: TYPE.TITLE,
-          content: `Nhà thông minh (Smart Homes):
-          `
-        }, {
-          type: TYPE.PARAGRAPH,
-          content: `
+          `,
+      },
+      {
+        type: TYPE.TITLE,
+        content: `Nhà thông minh (Smart Homes):
+          `,
+      },
+      {
+        type: TYPE.PARAGRAPH,
+        content: `
               • Quản lý năng lượng: Cảm biến IoT giúp theo dõi tiêu thụ điện và nước, từ 
               đó tối ưu hoá việc sử dụng năng lượng và tiết kiệm chi phí.
               • An ninh và an toàn: Cảm biến báo động, camera giám sát và cảm biến khói 
@@ -1639,40 +1841,46 @@ export const serviceBlogs: IBlog[] = [
               • Điều khiển từ xa: Bạn có thể điều khiển ánh sáng, nhiệt độ và các thiết bị gia 
               đình từ xa thông qua SmartPhone.
 
-          `
-        },{
-          type: TYPE.TITLE,
-          content: `Y tế (Healthcare):
-          `
-        }, {
-          type: TYPE.PARAGRAPH,
-          content: `
+          `,
+      },
+      {
+        type: TYPE.TITLE,
+        content: `Y tế (Healthcare):
+          `,
+      },
+      {
+        type: TYPE.PARAGRAPH,
+        content: `
                 • Theo dõi sức khỏe: Cảm biến IoT đo nhịp tim, áp suất máu, đường huyết và 
                 gửi dữ liệu đến bác sĩ hoặc hệ thống y tế để theo dõi sức khỏe cá nhân.
                 • Thuốc thông minh: Cảm biến có thể theo dõi việc sử dụng đúng dược phẩm 
                 và gửi nhắc nhở khi cần
 
-          `
-        },{
-          type: TYPE.TITLE,
-          content: `Nông nghiệp thông minh (Smart Agriculture):
-          `
-        }, {
-          type: TYPE.PARAGRAPH,
-          content: `
+          `,
+      },
+      {
+        type: TYPE.TITLE,
+        content: `Nông nghiệp thông minh (Smart Agriculture):
+          `,
+      },
+      {
+        type: TYPE.PARAGRAPH,
+        content: `
                 • Quản lý cây trồng: Cảm biến đo độ ẩm đất, nhiệt độ và độ phát triển của cây 
                 giúp nông dân quản lý cây trồng hiệu quả hơn.
                 • Tưới tự động: Cảm biến điều khiển hệ thống tưới nước dựa trên điều kiện 
                 thời tiết và độ ẩm đất.
 
-          `
-        },{
-          type: TYPE.TITLE,
-          content: `Công nghiệp 4.0:
-          `
-        }, {
-          type: TYPE.PARAGRAPH,
-          content: `
+          `,
+      },
+      {
+        type: TYPE.TITLE,
+        content: `Công nghiệp 4.0:
+          `,
+      },
+      {
+        type: TYPE.PARAGRAPH,
+        content: `
                 • Bảo trì dự đoán: Cảm biến theo dõi tình trạng máy móc và thiết bị sản xuất, 
                 dự đoán hỏng hóc và thời gian bảo trì.
                 • Quản lý tồn kho: Cảm biến giúp theo dõi lưu thông hàng hóa trong chuỗi 
@@ -1688,14 +1896,16 @@ export const serviceBlogs: IBlog[] = [
                 • Bảo mật: Cảm biến cảnh báo khi có sự di chuyển không được phép hoặc 
                 gian lận tài sản.
 
-          `
-        },{
-          type: TYPE.TITLE,
-          content: `Môi trường và tài nguyên tự nhiên:
-          `
-        }, {
-          type: TYPE.PARAGRAPH,
-          content: `
+          `,
+      },
+      {
+        type: TYPE.TITLE,
+        content: `Môi trường và tài nguyên tự nhiên:
+          `,
+      },
+      {
+        type: TYPE.PARAGRAPH,
+        content: `
                 • Giám sát môi trường: Cảm biến theo dõi chất lượng không khí, nước và đất 
                 đai để bảo vệ môi trường.
                 • Bảo vệ động vật quý hiếm: Cảm biến giúp theo dõi sự xuất hiện và di 
@@ -1704,14 +1914,16 @@ export const serviceBlogs: IBlog[] = [
                 • Tiết kiệm năng lượng: Cảm biến theo dõi hiệu suất các thiết bị tiết kiệm 
                 năng lượng và gợi ý cách tối ưu hóa sử dụng năng lượng.
           
-          `
-        },{
-          type: TYPE.TITLE,
-          content: `Thành phố thông minh (Smart Cities):
-          `
-        }, {
-          type: TYPE.PARAGRAPH,
-          content: `
+          `,
+      },
+      {
+        type: TYPE.TITLE,
+        content: `Thành phố thông minh (Smart Cities):
+          `,
+      },
+      {
+        type: TYPE.PARAGRAPH,
+        content: `
                 • Giao thông thông minh: Cảm biến giúp quản lý lưu lượng giao thông và tối 
                 ưu hóa hệ thống đèn đường và vận tải công cộng.
                 • Quản lý môi trường: Cảm biến giúp theo dõi chất lượng không khí và nước, 
@@ -1719,74 +1931,84 @@ export const serviceBlogs: IBlog[] = [
           Tổng hợp lại, các ứng dụng của cảm biến IoT đã thúc đẩy sự kết nối và tối ưu hóa 
           trong nhiều khía cạnh của cuộc sống và công nghiệp, mang lại lợi ích lớn cho sự 
           tiện ích và bảo vệ môi trường.
-          `
-        },{
-          type: TYPE.TITLE,
-          content: `Tổng kết
-          `
-        }, {
-          type: TYPE.PARAGRAPH,
-          content: `
+          `,
+      },
+      {
+        type: TYPE.TITLE,
+        content: `Tổng kết
+          `,
+      },
+      {
+        type: TYPE.PARAGRAPH,
+        content: `
           Cảm biến IoT đóng vai trò quan trọng trong việc thu thập dữ liệu từ môi trường và 
           các thiết bị, cho phép chúng ta nắm bắt thông tin quan trọng và tối ưu hoá quy trình 
           trong nhiều lĩnh vực khác nhau.
-          `
-        },
-      ]
-    },{
-      type: BlogType.SERVICE,
-      id: 304,
-      title: `Iot trong chuỗi cung ứng hàng hóa`,
-      description: `Smart Logistic ngày càng phát triển mạnh mẽ trong thời đại công nghệ 4.0 
+          `,
+      },
+    ],
+  },
+  {
+    type: BlogType.SERVICE,
+    id: 304,
+    title: `Iot trong chuỗi cung ứng hàng hóa`,
+    description: `Smart Logistic ngày càng phát triển mạnh mẽ trong thời đại công nghệ 4.0 
       để đem tới sự ưu việt trong việc quản lý chuỗi cung ứng hậu cần. Trong đó, công 
       nghệ IoT đóng vai trò vô cùng quan trọng để vận hành trơn tru. Tuy nhiên, không 
       phải ai cũng biết về công nghệ này. Chính vì vậy, bài viết bên dưới sẽ giúp bạn 
       hiểu thêm về nó!
       `,
-      image: `https://pnctech.vn/wp-content/uploads/2022/11/smart-logistic-1.jpeg`,
-      contents: [
-          {
-            type: TYPE.TITLE,
-            content: `Vai trò của công nghệ IoT trong Smart Logistic`
-          },{
-            type: TYPE.PARAGRAPH,
-            content: `
+    image: `https://pnctech.vn/wp-content/uploads/2022/11/smart-logistic-1.jpeg`,
+    contents: [
+      {
+        type: TYPE.TITLE,
+        content: `Vai trò của công nghệ IoT trong Smart Logistic`,
+      },
+      {
+        type: TYPE.PARAGRAPH,
+        content: `
             Smart Logistic ngày càng phát triển mạnh mẽ trong thời đại công nghệ 4.0 để đem 
             tới sự ưu việt trong việc quản lý chuỗi cung ứng hậu cần. Trong đó, công nghệ IoT 
             đóng vai trò vô cùng quan trọng để vận hành trơn tru. Tuy nhiên, không phải ai cũng 
             biết về công nghệ này. Chính vì vậy, bài viết bên dưới sẽ giúp bạn hiểu thêm về nó!
-            `
-          }, {
-            type: TYPE.TITLE,
-            content: `Vai trò của IoT trong Smart Logistic`
-          },{
-            type: TYPE.PARAGRAPH,
-            content: `
+            `,
+      },
+      {
+        type: TYPE.TITLE,
+        content: `Vai trò của IoT trong Smart Logistic`,
+      },
+      {
+        type: TYPE.PARAGRAPH,
+        content: `
             IoT – Internet of Thing là một hệ thống các thiết bị, đồ vật được kết nối thông qua 
             Internet. Từ đó cho phép các đồ vật và thiết bị thu thập, trao đổi dữ liệu với nhau. 
             Chính xác hơn, IoT lan tỏa giá trị của mạng Internet tới vạn vật giúp nó trở nên thông 
             minh hơn.
 
             Ngày nay, IoT thường được ứng dụng trong Smart Logistic để đem đến quá trình 
-            vận hành tối ưu. Vậy IoT có lợi ích gì?`
-          },{
-            type: TYPE.TITLE,
-            content: `Giảm chi phí`
-          },{
-            type: TYPE.PARAGRAPH,
-            content: `
+            vận hành tối ưu. Vậy IoT có lợi ích gì?`,
+      },
+      {
+        type: TYPE.TITLE,
+        content: `Giảm chi phí`,
+      },
+      {
+        type: TYPE.PARAGRAPH,
+        content: `
             Trong Smart Logistic, ứng dụng IoT giúp làm giảm tất cả chi phí từ phí quản lý hàng 
             tồn kho cho đến các chi phí bảo trì. Nhờ vậy, đảm bảo sử dụng tối ưu lao động, tiện 
             ích và không gian lưu trữ.
 
             Nói một cách khác, hệ thống hậu cần sẽ không bị lãng phí tài nguyên, giảm chi phí 
-            quản lý và gia tăng lợi nhuận.`
-          },{
-            type: TYPE.TITLE,
-            content: `Theo dõi thời gian thực`
-          },{
-            type: TYPE.PARAGRAPH,
-            content: `
+            quản lý và gia tăng lợi nhuận.`,
+      },
+      {
+        type: TYPE.TITLE,
+        content: `Theo dõi thời gian thực`,
+      },
+      {
+        type: TYPE.PARAGRAPH,
+        content: `
             Với công nghệ này, bạn có thể theo dõi các sản phẩm, thiết bị nhanh và chính xác 
             hơn khi chúng di chuyển trong chuỗi cung ứng.
 
@@ -1798,16 +2020,19 @@ export const serviceBlogs: IBlog[] = [
             hoặc hàng hóa nhạy cảm với nhiệt độ. Tất cả giai đoạn trong chuỗi hành trình của lô 
             hàng đều được lập bản đồ chính xác qua việc sử dụng dữ liệu IoT và đăng ký thiết 
             bị. Các thiết bị IoT có thể tự động gắn cờ báo hiệu khi lô hàng đã rời khỏi vùng nhiệt 
-            độ an toàn.`
-          },{
-            type: TYPE.TITLE,
-            content: `Quy trình làm việc liền mạch`
-          },{
-            type: TYPE.IMAGE,
-            content: `https://pnctech.vn/wp-content/uploads/2022/11/smart-logistic-2.png`
-          },{
-            type: TYPE.PARAGRAPH,
-            content: `
+            độ an toàn.`,
+      },
+      {
+        type: TYPE.TITLE,
+        content: `Quy trình làm việc liền mạch`,
+      },
+      {
+        type: TYPE.IMAGE,
+        content: `https://pnctech.vn/wp-content/uploads/2022/11/smart-logistic-2.png`,
+      },
+      {
+        type: TYPE.PARAGRAPH,
+        content: `
             IoT cho phép giám sát luồng của chuỗi cung ứng đến và đi thông qua kho. Từ đó, 
             nhà quản lý có thể sử dụng robot để lấy các hàng hóa cụ thể mà không bị trì hoãn, 
             hoặc có thể sử dụng dữ liệu được thu thập để xác định bố cục và cấu hình tốt nhất 
@@ -1819,26 +2044,30 @@ export const serviceBlogs: IBlog[] = [
             chẳng hạn như xác minh trái phiếu người môi giới vận tải hàng hóa của người lái xe 
             tải hoặc xử lý vận đơn.
 
-            Do đó, việc duy trì một quy trình làm việc liền mạch trở nên dễ dàng hơn.`
-          },{
-            type: TYPE.TITLE,
-            content: `Tăng khả năng mở rộng`
-          },{
-            type: TYPE.PARAGRAPH,
-            content: `
+            Do đó, việc duy trì một quy trình làm việc liền mạch trở nên dễ dàng hơn.`,
+      },
+      {
+        type: TYPE.TITLE,
+        content: `Tăng khả năng mở rộng`,
+      },
+      {
+        type: TYPE.PARAGRAPH,
+        content: `
             Ứng dụng IoT giúp tối ưu hóa từng mét vuông trong không gian lưu trữ. Với các dữ 
             liệu trong quá khứ, bạn có thể tính toán thời gian, không gian, cơ sở hạ tầng và đầu 
             tư cần thiết cho việc tăng quy mô.
 
             Ngoài ra, IoT có thể tích hợp kho này với kho khác khi hệ thống mạng của doanh 
             nghiệp phát triển hơn.
-            `
-          },{
-            type: TYPE.TITLE,
-            content: `Cải thiện độ chính xác của dự báo`
-          },{
-            type: TYPE.PARAGRAPH,
-            content: `
+            `,
+      },
+      {
+        type: TYPE.TITLE,
+        content: `Cải thiện độ chính xác của dự báo`,
+      },
+      {
+        type: TYPE.PARAGRAPH,
+        content: `
             Trong Smart Logistic, IoT cải thiện đáng kể các hoạt động thu thập dữ liệu. Nó cho 
             phép thu thập dữ liệu mọi lúc hoặc theo khoảng thời gian nhất định, giúp tiết kiệm 
             thời gian hơn so với cách thu thập thủ công. Do vậy, nó làm giảm tối đa ảnh hưởng 
@@ -1848,16 +2077,19 @@ export const serviceBlogs: IBlog[] = [
             tương thích. Nên thiết kế hệ thống IoT song song với phần mềm dự báo nhu cầu và 
             hậu cần để đảm bảo rằng dữ liệu IoT được sử dụng hiệu quả.
 
-            `
-          },{
-            type: TYPE.IMAGE,
-            content: `https://pnctech.vn/wp-content/uploads/2022/11/smart-logistic-3.jpeg`
-          },{
-            type: TYPE.TITLE,
-            content: `Tự động hóa cao hơn`
-          },{
-            type: TYPE.PARAGRAPH,
-            content: `
+            `,
+      },
+      {
+        type: TYPE.IMAGE,
+        content: `https://pnctech.vn/wp-content/uploads/2022/11/smart-logistic-3.jpeg`,
+      },
+      {
+        type: TYPE.TITLE,
+        content: `Tự động hóa cao hơn`,
+      },
+      {
+        type: TYPE.PARAGRAPH,
+        content: `
             IoT kết nối các loại máy móc, thiết bị với nhau mà không có sự can thiệp của con 
             người, điều này thuận lợi trong việc tự động hóa nâng cao khả năng của kho hàng. 
             Từ đó, có thể triển khai kế hoạch kinh doanh nhanh chóng và đạt được mục tiêu lợi 
@@ -1873,13 +2105,15 @@ export const serviceBlogs: IBlog[] = [
             đến khách hàng, một cảm biến IoT sẽ theo dõi gói hàng đó và đảm bảo rằng gói hàng 
             được xử lý cẩn thận.
 
-            `
-          },{
-            type: TYPE.TITLE,
-            content: `Ứng dụng của IoT trong Smart Logistic`
-          },{
-            type: TYPE.PARAGRAPH,
-            content: `
+            `,
+      },
+      {
+        type: TYPE.TITLE,
+        content: `Ứng dụng của IoT trong Smart Logistic`,
+      },
+      {
+        type: TYPE.PARAGRAPH,
+        content: `
             Trong chuỗi hậu cần thông minh, công nghệ IoT thường được ứng dụng phổ biến 
             trong một số thiết bị như:
                   • Giá đỡ thông minh tự động phát hiện lượng hàng trong kho.
@@ -1891,13 +2125,15 @@ export const serviceBlogs: IBlog[] = [
                   • Hệ thống tự động hóa tòa nhà thông minh.
                   • Tự động hóa robot.
 
-            `
-          },{
-            type: TYPE.TITLE,
-            content: `Xác định các trường hợp sử dụng IoT`
-          },{
-            type: TYPE.PARAGRAPH,
-            content: `
+            `,
+      },
+      {
+        type: TYPE.TITLE,
+        content: `Xác định các trường hợp sử dụng IoT`,
+      },
+      {
+        type: TYPE.PARAGRAPH,
+        content: `
             Hệ thống IoT ở mỗi doanh nghiệp nhìn chung sẽ có sự khác nhau. Bởi vì tùy theo 
             mục đích và nhu cầu sẽ có cách triển khai công nghệ phù hợp. Để xác định được 
             đúng trường hợp sử dụng IoT, hãy trả lời lần lượt từng câu hỏi sau:
@@ -1910,24 +2146,28 @@ export const serviceBlogs: IBlog[] = [
                   Việc xác định đúng trường hợp sử dụng thích hợp sẽ góp phần nâng cao hiệu quả 
                   của Smart Logistic.
 
-            `
-          },{
-            type: TYPE.TITLE,
-            content: `TPM cung cấp công nghệ IoT trong Smart Logistic`
-          },{
-            type: TYPE.PARAGRAPH,
-            content: `
+            `,
+      },
+      {
+        type: TYPE.TITLE,
+        content: `TPM cung cấp công nghệ IoT trong Smart Logistic`,
+      },
+      {
+        type: TYPE.PARAGRAPH,
+        content: `
             Vai trò quan trọng của công nghệ IoT trong Smart Logistic là điều không thể phủ 
             nhận. Một chuỗi cung ứng hoàn thiện và trơn tru tuyệt nhiên không thể thiếu đi 
             những công nghệ hiện đại này.
 
-            `
-          },{
-            type: TYPE.IMAGE,
-            content: `https://pnctech.vn/wp-content/uploads/2022/11/smart-logistic-4.jpeg`
-          },{
-            type: TYPE.PARAGRAPH,
-            content: `
+            `,
+      },
+      {
+        type: TYPE.IMAGE,
+        content: `https://pnctech.vn/wp-content/uploads/2022/11/smart-logistic-4.jpeg`,
+      },
+      {
+        type: TYPE.PARAGRAPH,
+        content: `
             Nếu bạn đang cần một địa chỉ uy tín để cung cấp các giải pháp công nghệ cho chuỗi 
             cung ứng của mình thì hãy liên hệ ngay với TPM. Với hơn 5 năm kinh nghiệm trong 
             ngành tự động hóa, chúng tôi tự hào là đối tác với nhiều tập đoàn lớn trong và ngoài 
@@ -1942,41 +2182,40 @@ export const serviceBlogs: IBlog[] = [
             cân nhắc và thiết lập công nghệ IoT để hoàn thiện chuỗi cung ứng. Hy vọng với bài 
             viết ở trên sẽ giúp bạn hiểu hết về vai trò của IoT.
 
-            `
-          }
-
-
-      ]
-    },{
-      id: 305,
-      type: BlogType.SERVICE,
-      title: ` IoT trong chăm sóc sức khỏe`,
-      description: `Thiết bị chăm sóc sức khỏe thông minh là một trong những ứng dụng IoT 
+            `,
+      },
+    ],
+  },
+  {
+    id: 305,
+    type: BlogType.SERVICE,
+    title: ` IoT trong chăm sóc sức khỏe`,
+    description: `Thiết bị chăm sóc sức khỏe thông minh là một trong những ứng dụng IoT 
       trong y tế phổ biến nhất. Hãy cùng tìm hiểu về cách Internet of Things thay đổi 
       lĩnh vực y tế - chăm sóc sức khỏe trong bài viết này.
       `,
-      image: `https://www.elcom.com.vn/storage/uploads/images/6j4tXzXzopIsAmfhIB2gCKfFK91PWUOubJdTwVRk.jpg`,
-      contents: [
-        {
-          type: TYPE.TITLE,
-          content: `Ứng dụng tốt nhất của IoT trong y tế - chăm sóc sức 
-          khỏe`
-        },
-        {
-          type: TYPE.PARAGRAPH,
-          content: `
+    image: `https://www.elcom.com.vn/storage/uploads/images/6j4tXzXzopIsAmfhIB2gCKfFK91PWUOubJdTwVRk.jpg`,
+    contents: [
+      {
+        type: TYPE.TITLE,
+        content: `Ứng dụng tốt nhất của IoT trong y tế - chăm sóc sức 
+          khỏe`,
+      },
+      {
+        type: TYPE.PARAGRAPH,
+        content: `
           Thiết bị chăm sóc sức khỏe thông minh là một trong những ứng dụng IoT trong y tế 
           phổ biến nhất. Hãy cùng tìm hiểu về cách Internet of Things thay đổi lĩnh vực y tế -
-          chăm sóc sức khỏe trong bài viết này.`
-        },
-        {
-          type: TYPE.IMAGE,
-          content: `https://www.elcom.com.vn/storage/uploads/images/6j4tXzXzopIsAmfhIB2gCKfFK91PWUOubJdTwVRk.jpg
-          `
-        },
-        {
-          type: TYPE.PARAGRAPH,
-          content: `
+          chăm sóc sức khỏe trong bài viết này.`,
+      },
+      {
+        type: TYPE.IMAGE,
+        content: `https://www.elcom.com.vn/storage/uploads/images/6j4tXzXzopIsAmfhIB2gCKfFK91PWUOubJdTwVRk.jpg
+          `,
+      },
+      {
+        type: TYPE.PARAGRAPH,
+        content: `
           Internet of Things - Internet vạn vật là công nghệ đột phá, được nhắc đến nhiều trong 
           vòng một thập kỷ trở lại đây. Nhờ công nghệ này, thiết bị thông minh đã liên tục ra 
           đời, trở nên thiết yếu và không thể thiếu cuộc sống con người.
@@ -2031,15 +2270,15 @@ export const serviceBlogs: IBlog[] = [
 
           Điều này không chỉ giúp quá trình khám chữa bệnh thuận tiện hơn, kịp thời chăm 
           sóc khẩn cấp mà còn là cơ hội để người dân tiếp cận y tế dễ dàng hơn, kể cả ở những 
-          khu dân cư xa trung tâm.`
-        },
-        {
-          type: TYPE.IMAGE,
-          content: `https://www.elcom.com.vn/storage/uploads/images/WqgKOAjSvMQiBM2W1bTGELz0vFG5bV8cFmQ5RYae.jpg`
-        },
-        {
-          type: TYPE.PARAGRAPH,
-          content:`
+          khu dân cư xa trung tâm.`,
+      },
+      {
+        type: TYPE.IMAGE,
+        content: `https://www.elcom.com.vn/storage/uploads/images/WqgKOAjSvMQiBM2W1bTGELz0vFG5bV8cFmQ5RYae.jpg`,
+      },
+      {
+        type: TYPE.PARAGRAPH,
+        content: `
           2.2. Phòng chống dịch bệnh
 
           Phòng bệnh hơn chữa bệnh. Vì vậy, các giải pháp IoT chăm sóc sức khỏe cung cấp 
@@ -2099,13 +2338,15 @@ export const serviceBlogs: IBlog[] = [
           gửi đến người dùng cuối, thường là thông qua ứng dụng di động.
           Các thiết bị thông minh IoB có thể đeo ở bên ngoài (đồng hồ thông minh, dây đeo 
           cổ tay,...), gắn bên trong (hệ thống cơ quan nhân tạo, bộ phận cấy ghép, chân tay giả 
-          thông minh,,...) hoặc hợp nhất với cơ thể (thuốc kỹ thuật số).`
-        },{
-          type: TYPE.IMAGE,
-          content: `https://www.elcom.com.vn/storage/uploads/images/6BOqpDygCY1vwXoCsrqnfa3sVva9tDaohQ4WESXh.jpg`
-        },{
-          type: TYPE.PARAGRAPH,
-          content: `
+          thông minh,,...) hoặc hợp nhất với cơ thể (thuốc kỹ thuật số).`,
+      },
+      {
+        type: TYPE.IMAGE,
+        content: `https://www.elcom.com.vn/storage/uploads/images/6BOqpDygCY1vwXoCsrqnfa3sVva9tDaohQ4WESXh.jpg`,
+      },
+      {
+        type: TYPE.PARAGRAPH,
+        content: `
           Công nghệ này cho phép bác sĩ theo dõi sức khỏe của khách hàng mọi lúc, chẩn đoán 
           chính xác hơn và hỗ trợ những bệnh nhân mắc bệnh mãn tính. Một số ví dụ rõ ràng 
           hơn về thiết bị IoB:
@@ -2173,13 +2414,15 @@ export const serviceBlogs: IBlog[] = [
                 một thách thức đòi hỏi bệnh viện, cơ sở y tế phải tìm cách khắc phục. IoT hỗ 
                 trợ theo dõi dựa trên cảm biến, thẻ, huy hiệu và các thiết bị công nghệ y tế 
                 được kết nối khác.
-          `
-        },{
-          type: TYPE.IMAGE,
-          content: `https://www.elcom.com.vn/storage/uploads/images/CLflMcNaCz9UW7rkfCR1y4wIwl85PVbFtK6OAKrS.jpg`
-        },{
-          type: TYPE.PARAGRAPH,
-          content: `
+          `,
+      },
+      {
+        type: TYPE.IMAGE,
+        content: `https://www.elcom.com.vn/storage/uploads/images/CLflMcNaCz9UW7rkfCR1y4wIwl85PVbFtK6OAKrS.jpg`,
+      },
+      {
+        type: TYPE.PARAGRAPH,
+        content: `
           3.3. Phòng thí nghiệm thông minh
 
           Xử lý lượng lớn dữ liệu khoa học, quản lý trang thiết bị và vật dụng thường xuyên 
@@ -2234,32 +2477,36 @@ export const serviceBlogs: IBlog[] = [
           động của Internet vạn vật trong lĩnh vực y tế. Đối với doanh nghiệp và nhà phát triển, 
           IoT mở ra vô số cơ hội để thể hiện sự sáng tạo của họ và áp dụng những tiến bộ công 
           nghệ nhằm cải thiện một phần quan trọng trong cuộc sống con người.
-          `
-        }
-      ]
-    },{
-      id: 306,
-      type: BlogType.SERVICE,
-      title: `IoT trong nhà thông minh`,
-      description: `Giống như mạng Internet trước đây, công nghệ IoT đã tạo nên một “làn 
+          `,
+      },
+    ],
+  },
+  {
+    id: 306,
+    type: BlogType.SERVICE,
+    title: `IoT trong nhà thông minh`,
+    description: `Giống như mạng Internet trước đây, công nghệ IoT đã tạo nên một “làn 
       sóng” trong mọi khía cạnh của cuộc sống, bao gồm sự ra đời của nhà thông minh.
       `,
-      image: `https://images.cenhomes.vn/2019/03/nha-thong-minh.jpg`,
-      contents: [
-          {
-            type: TYPE.TITLE,
-            content: `Ứng dụng Internet vạn vật trong nhà thông minh`
-          },{
-            type: TYPE.PARAGRAPH,
-            content: `Giống như mạng Internet trước đây, công nghệ IoT đã tạo nên một “làn sóng” trong mọi khía cạnh 
+    image: `https://images.cenhomes.vn/2019/03/nha-thong-minh.jpg`,
+    contents: [
+      {
+        type: TYPE.TITLE,
+        content: `Ứng dụng Internet vạn vật trong nhà thông minh`,
+      },
+      {
+        type: TYPE.PARAGRAPH,
+        content: `Giống như mạng Internet trước đây, công nghệ IoT đã tạo nên một “làn sóng” trong mọi khía cạnh 
             của cuộc sống, bao gồm sự ra đời của nhà thông minh.
-            `
-          },{
-            type: TYPE.IMAGE,
-            content: `https://www.elcom.com.vn/storage/uploads/images/sATLXaIF9BV2oTV7EHuOYzomP6pC4a75h4DIdQHa.png`
-          },{
-            type: TYPE.PARAGRAPH,
-            content: `Internet vạn vật (hay còn gọi là Internet of Things - IoT) đã “cách mạng hóa” nhiều 
+            `,
+      },
+      {
+        type: TYPE.IMAGE,
+        content: `https://www.elcom.com.vn/storage/uploads/images/sATLXaIF9BV2oTV7EHuOYzomP6pC4a75h4DIdQHa.png`,
+      },
+      {
+        type: TYPE.PARAGRAPH,
+        content: `Internet vạn vật (hay còn gọi là Internet of Things - IoT) đã “cách mạng hóa” nhiều 
             khía cạnh khác nhau trong cuộc sống con người. Đặc biệt, một trong những lĩnh vực 
             ứng dụng IoT nhiều nhất cũng như phổ biến nhất hiện nay chính là nhà thông minh.
 
@@ -2290,13 +2537,15 @@ export const serviceBlogs: IBlog[] = [
             điều khiển, giám sát thiết bị từ xa. Chỉ với một chạm trên chiếc di động thông minh 
             hoặc cú bấm chuột tại website, gia chủ có thể quản lý, điều chỉnh cài đặt ngay cả khi 
             không ở nhà như: bật/tắt đèn, điều chỉnh nhiệt độ, kiểm tra camera an ninh,...
-            `
-          },{
-            type: TYPE.IMAGE,
-            content: `https://www.elcom.com.vn/storage/uploads/images/wUsevQitQk0FGPjN0FclvcDoe3C9RIFfWyXIJWFU.png`
-          },{
-            type: TYPE.PARAGRAPH,
-            content: `
+            `,
+      },
+      {
+        type: TYPE.IMAGE,
+        content: `https://www.elcom.com.vn/storage/uploads/images/wUsevQitQk0FGPjN0FclvcDoe3C9RIFfWyXIJWFU.png`,
+      },
+      {
+        type: TYPE.PARAGRAPH,
+        content: `
             Tiết kiệm năng lượng: 
             Với những ưu điểm kể trên, IoT có thể tối ưu hóa việc sử dụng năng lượng trong 
             ngôi nhà thông minh. Bằng cách sử dụng cảm biến, phân tích dữ liệu và tự động 
@@ -2370,14 +2619,16 @@ export const serviceBlogs: IBlog[] = [
             Qua đó, chủ nhà có thể dễ dàng giám sát, quản lý ngôi nhà từ mọi nơi, mang lại sự 
             linh hoạt, mức độ kiểm soát cao hơn đối với không gian sống của chính mình, tạo ra 
             một môi trường sống thông minh hơn.
-            `
-          },{
-            type: TYPE.IMAGE,
-            content: `https://www.elcom.com.vn/storage/uploads/images/uaSc0vA9syIqBry5jyB8oUCitLSwJWya1NmpuMsn.png
-            `
-          },{
-            type: TYPE.PARAGRAPH,
-            content: `
+            `,
+      },
+      {
+        type: TYPE.IMAGE,
+        content: `https://www.elcom.com.vn/storage/uploads/images/uaSc0vA9syIqBry5jyB8oUCitLSwJWya1NmpuMsn.png
+            `,
+      },
+      {
+        type: TYPE.PARAGRAPH,
+        content: `
             3. Công nghệ nhà thông minh IoT
        
             Cảm biến:
@@ -2393,14 +2644,16 @@ export const serviceBlogs: IBlog[] = [
             trở nên phổ biến trong các ngôi nhà thông minh hiện nay. Công cụ này cho phép 
             người dùng điều khiển thiết bị, đồng thời thực hiện các tác vụ bằng lệnh thoại, mang 
             lại trải nghiệm điều khiển trực quan, rảnh tay (hand-free).
-            `
-          },{
-            type: TYPE.IMAGE,
-            content: `https://www.elcom.com.vn/storage/uploads/images/ycUMpR2rSp0K0lcTB5bDoYiXC4ZuBfPVcUshbde2.png
-            `
-          },{
-            type: TYPE.PARAGRAPH,
-            content: `
+            `,
+      },
+      {
+        type: TYPE.IMAGE,
+        content: `https://www.elcom.com.vn/storage/uploads/images/ycUMpR2rSp0K0lcTB5bDoYiXC4ZuBfPVcUshbde2.png
+            `,
+      },
+      {
+        type: TYPE.PARAGRAPH,
+        content: `
             Thiết bị thông minh:
 
             Các thiết bị hỗ trợ IoT, chẳng hạn như tủ lạnh, máy giặt hoặc lò nướng, có thể giao 
@@ -2441,27 +2694,27 @@ export const serviceBlogs: IBlog[] = [
             minh và thiết bị được kết nối với nhau. Với công nghệ IoT, chủ nhà có thể tận hưởng 
             khả năng tự động hóa, kiểm soát, tiện lợi và tiết kiệm năng lượng nâng cao.
 
-            `
-          }
-      ]
-    }
-    ,{
-      id: 307,
-      type: BlogType.SERVICE,
-      title: `IoT trong công nghiệp sản xuất`,
-      description: `IoT trong sản xuất (Internet of Things in Manufacturing) là một hệ thống 
+            `,
+      },
+    ],
+  },
+  {
+    id: 307,
+    type: BlogType.SERVICE,
+    title: `IoT trong công nghiệp sản xuất`,
+    description: `IoT trong sản xuất (Internet of Things in Manufacturing) là một hệ thống 
       mạng lưới các thiết bị vật lý kết nối với nhau và với Internet nhằm tạo ra một môi 
       trường sản xuất thông minh, tự động hóa và tối ưu hóa quy trình sản xuất.
       `,
-      image: `https://vti-solutions.vn/wp-content/uploads/2023/05/rpa-concept-with-blurry-hand-touching-screen-2048x1366.jpg`,
-      contents: [
-          {
-            type: TYPE.TITLE,
-            content: `Định nghĩa về IoT trong sản xuất`
-          },
-          {
-            type: TYPE.PARAGRAPH,
-            content: `
+    image: `https://vti-solutions.vn/wp-content/uploads/2023/05/rpa-concept-with-blurry-hand-touching-screen-2048x1366.jpg`,
+    contents: [
+      {
+        type: TYPE.TITLE,
+        content: `Định nghĩa về IoT trong sản xuất`,
+      },
+      {
+        type: TYPE.PARAGRAPH,
+        content: `
             IoT trong sản xuất (Internet of Things in Manufacturing) là một hệ thống mạng 
             lưới các thiết bị vật lý kết nối với nhau và với Internet nhằm tạo ra một môi trường 
             sản xuất thông minh, tự động hóa và tối ưu hóa quy trình sản xuất.
@@ -2470,15 +2723,15 @@ export const serviceBlogs: IBlog[] = [
             biến, vi xử lý, và kết nối mạng. Các thiết bị này có khả năng thu thập dữ liệu, trao 
             đổi thông tin, và tương tác với nhau, giúp cải thiện quá trình sản xuất, quản lý và 
             giám sát từ xa, tối ưu hóa hiệu suất, và tăng cường tính linh hoạt trong quy trình 
-            sản xuất.`
-          },
-          {
-            type: TYPE.IMAGE,
-            content: `https://vti-solutions.vn/wp-content/uploads/2023/05/rpa-concept-with-blurry-hand-touching-screen-2048x1366.jpg`
-          },
-          {
-            type: TYPE.PARAGRAPH,
-            content: `
+            sản xuất.`,
+      },
+      {
+        type: TYPE.IMAGE,
+        content: `https://vti-solutions.vn/wp-content/uploads/2023/05/rpa-concept-with-blurry-hand-touching-screen-2048x1366.jpg`,
+      },
+      {
+        type: TYPE.PARAGRAPH,
+        content: `
             Với IoT trong sản xuất, các thiết bị và máy móc có thể tự động truyền dữ liệu về
             việc hoạt động, điều kiện hoạt động, và các thông số quan trọng khác đến hệ thống 
             quản lý sản xuất. Dữ liệu này được tổ chức, phân tích và biến đổi thành thông tin 
@@ -2493,104 +2746,123 @@ export const serviceBlogs: IBlog[] = [
             Với sự phát triển của IoT trong sản xuất, các doanh nghiệp có thể nâng cao năng 
             suất, tăng cường chất lượng sản phẩm, giảm thiểu lỗi và rủi ro, tối ưu hóa quản lý 
             và giảm chi phí vận hành, và tạo ra một môi trường sản xuất thông minh, linh hoạt 
-            và hiệu quả.`
-          },{
-            type: TYPE.TITLE,
-            content: `IoT đóng vai trò như thế nào trong sản xuất
-            `
-          },{
-            type: TYPE.PARAGRAPH,
-            content: `IoT (Internet of Things) có ý nghĩa và vai trò quan trọng trong ngành sản xuất, 
+            và hiệu quả.`,
+      },
+      {
+        type: TYPE.TITLE,
+        content: `IoT đóng vai trò như thế nào trong sản xuất
+            `,
+      },
+      {
+        type: TYPE.PARAGRAPH,
+        content: `IoT (Internet of Things) có ý nghĩa và vai trò quan trọng trong ngành sản xuất, 
             chúng mang lại những lợi ích đáng kể và tạo ra một môi trường sản xuất thông 
             minh, tự động hóa và tối ưu hóa. Dưới đây là một số ý nghĩa và vai trò chính của 
-            IoT trong sản xuất:`
-          },{
-            type: TYPE.TITLE,
-            content: `Tự động hóa quy trình sản xuất
-            `
-          },{
-            type: TYPE.PARAGRAPH,
-            content: `IoT cho phép doanh nghiệp kết nối và điều khiển các thiết bị và máy móc sản xuất 
+            IoT trong sản xuất:`,
+      },
+      {
+        type: TYPE.TITLE,
+        content: `Tự động hóa quy trình sản xuất
+            `,
+      },
+      {
+        type: TYPE.PARAGRAPH,
+        content: `IoT cho phép doanh nghiệp kết nối và điều khiển các thiết bị và máy móc sản xuất 
             thông qua mạng Internet. Điều này tạo ra khả năng tự động hóa quy trình sản xuất, 
             giúp loại bỏ sự can thiệp con người và tăng tính tự động trong việc điều khiển, 
-            giám sát và quản lý hoạt động sản xuất`
-          },{
-            type: TYPE.TITLE,
-            content: `Tối ưu hóa hiệu suất sản xuất
-            `
-          },{
-            type: TYPE.PARAGRAPH,
-            content: `IoT cho phép thu thập dữ liệu từ các thiết bị và máy móc sản xuất thông qua cảm 
+            giám sát và quản lý hoạt động sản xuất`,
+      },
+      {
+        type: TYPE.TITLE,
+        content: `Tối ưu hóa hiệu suất sản xuất
+            `,
+      },
+      {
+        type: TYPE.PARAGRAPH,
+        content: `IoT cho phép thu thập dữ liệu từ các thiết bị và máy móc sản xuất thông qua cảm 
             biến và hệ thống giám sát. Dữ liệu này có thể được phân tích và sử dụng để đánh 
             giá hiệu suất, xác định các nguyên nhân gây lãng phí và tìm ra cách cải thiện quy 
             trình sản xuất. Điều này giúp tối ưu hóa hoạt động, nâng cao năng suất, giảm thời 
             gian chết và tiết kiệm tài nguyên.
-            `
-          },{
-            type: TYPE.TITLE,
-            content: `Quản lý chuỗi cung ứng
-            `
-          },{
-            type: TYPE.PARAGRAPH,
-            content: `IoT cung cấp khả năng theo dõi và quản lý toàn diện các khía cạnh của chuỗi cung 
+            `,
+      },
+      {
+        type: TYPE.TITLE,
+        content: `Quản lý chuỗi cung ứng
+            `,
+      },
+      {
+        type: TYPE.PARAGRAPH,
+        content: `IoT cung cấp khả năng theo dõi và quản lý toàn diện các khía cạnh của chuỗi cung 
             ứng. Từ việc theo dõi vị trí và trạng thái của hàng hóa trong quá trình vận chuyển, 
             đến việc tối ưu hóa lưu trữ và quản lý kho hàng, IoT giúp doanh nghiệp cải thiện 
             quy trình chuỗi cung ứng, giảm thiểu thất thoát và tồn kho dư thừa, và tăng cường 
             tính linh hoạt và phản ứng nhanh trong việc đáp ứng nhu cầu thị trường.            
-            `
-          },{
-            type: TYPE.TITLE,
-            content: `IoT giúp tăng cường an ninh và an toàn
-            `
-          },{
-            type: TYPE.PARAGRAPH,
-            content: `IoT có thể giúp cải thiện an ninh và an toàn trong môi trường sản xuất. Các cảm 
+            `,
+      },
+      {
+        type: TYPE.TITLE,
+        content: `IoT giúp tăng cường an ninh và an toàn
+            `,
+      },
+      {
+        type: TYPE.PARAGRAPH,
+        content: `IoT có thể giúp cải thiện an ninh và an toàn trong môi trường sản xuất. Các cảm 
             biến và hệ thống giám sát có thể giám sát các môi trường làm việc, phát hiện và 
             cảnh báo về nguy cơ, sự cố và vi phạm an toàn. Hơn nữa, IoT cũng có thể tăng 
             cường bảo mật thông tin, bảo vệ dữ liệu quan trọng và ngăn chặn các cuộc tấn 
             công mạng.                     
-            `
-          },{
-            type: TYPE.TITLE,
-            content: `Tạo ra một môi trường sản xuất thông minh
-            `
-          },{
-            type: TYPE.PARAGRAPH,
-            content: `IoT trong sản xuất mang đến khả năng kết nối và tương tác giữa các thiết bị và máy 
+            `,
+      },
+      {
+        type: TYPE.TITLE,
+        content: `Tạo ra một môi trường sản xuất thông minh
+            `,
+      },
+      {
+        type: TYPE.PARAGRAPH,
+        content: `IoT trong sản xuất mang đến khả năng kết nối và tương tác giữa các thiết bị và máy 
             móc thông qua Internet, tạo nên một môi trường sản xuất thông minh. Trong môi 
             trường này, các thiết bị có thể trao đổi thông tin, tự động điều chỉnh và cải thiện 
             quy trình sản xuất một cách linh hoạt và hiệu quả. Điều này giúp cho doanh nghiệp 
             có thể tạo ra một môi trường làm việc thông minh, năng động và đáp ứng nhanh 
             chóng đối với sự biến đổi của thị trường và yêu cầu khách hàng.                   
-            `
-          },{
-            type: TYPE.TITLE,
-            content: `Ứng dụng của IoT trong sản xuất`
-          },{
-            type: TYPE.TITLE,
-            content: `Tự động hóa quy trình sản xuất`
-          },{
-            type: TYPE.PARAGRAPH,
-            content: `Giám sát và điều khiển từ xa: IoT cho phép giám sát và điều khiển các thiết bị và 
+            `,
+      },
+      {
+        type: TYPE.TITLE,
+        content: `Ứng dụng của IoT trong sản xuất`,
+      },
+      {
+        type: TYPE.TITLE,
+        content: `Tự động hóa quy trình sản xuất`,
+      },
+      {
+        type: TYPE.PARAGRAPH,
+        content: `Giám sát và điều khiển từ xa: IoT cho phép giám sát và điều khiển các thiết bị và 
             máy móc sản xuất từ xa thông qua kết nối Internet. Nhờ đó, nhà quản lý và kỹ sư 
             có thể theo dõi hoạt động của hệ thống sản xuất và thực hiện các điều chỉnh từ xa, 
-            tiết kiệm thời gian và tăng tính linh hoạt.`
-          },{
-            type: TYPE.IMAGE,
-            content: `https://vti-solutions.vn/wp-content/uploads/2023/05/hand-touching-screen-rpa-concept-2048x1367.jpg`
-          },{
-            type: TYPE.PARAGRAPH,
-            content: `Theo dõi và quản lý thiết bị sản xuất: Các thiết bị IoT trong sản xuất có thể được 
+            tiết kiệm thời gian và tăng tính linh hoạt.`,
+      },
+      {
+        type: TYPE.IMAGE,
+        content: `https://vti-solutions.vn/wp-content/uploads/2023/05/hand-touching-screen-rpa-concept-2048x1367.jpg`,
+      },
+      {
+        type: TYPE.PARAGRAPH,
+        content: `Theo dõi và quản lý thiết bị sản xuất: Các thiết bị IoT trong sản xuất có thể được 
             sử dụng để theo dõi trạng thái, hoạt động và hiệu suất của các máy móc và thiết bị
             sản xuất. Dữ liệu được thu thập từ các cảm biến và gửi đến hệ thống quản lý, giúp 
             nhận biết sự cố, dự báo nhu cầu bảo trì và nâng cấp, và tối ưu hóa sử dụng và tuổi 
-            thọ của thiết bị.`
-          },{
-            type: TYPE.TITLE,
-            content: `Tối ưu hoá hiệu suất sản xuất`
-          },{
-            type: TYPE.PARAGRAPH,
-            content: `Tự động thu thập và phân tích dữ liệu: IoT cho phép tự động thu thập dữ liệu từ
+            thọ của thiết bị.`,
+      },
+      {
+        type: TYPE.TITLE,
+        content: `Tối ưu hoá hiệu suất sản xuất`,
+      },
+      {
+        type: TYPE.PARAGRAPH,
+        content: `Tự động thu thập và phân tích dữ liệu: IoT cho phép tự động thu thập dữ liệu từ
             nhiều nguồn khác nhau trong quy trình sản xuất, bao gồm cảm biến, máy móc và 
             hệ thống giám sát. Dữ liệu này có thể được phân tích và biến đổi thành thông tin hữu ích để giám sát hiệu suất, xác định các vấn đề và tìm ra cách cải thiện quy 
             trình sản xuất.
@@ -2600,13 +2872,15 @@ export const serviceBlogs: IBlog[] = [
             tích dữ liệu, IoT có thể dự báo và cảnh báo về nhu cầu bảo trì và nâng cấp thiết 
             bị trước khi xảy ra sự cố, giúp giảm thiểu thời gian dừng máy và đảm bảo sự liên 
             tục trong quy trình sản xuất.
-            `
-          },{
-            type: TYPE.TITLE,
-            content: `Quản lý chuỗi cung ứng`
-          },{
-            type: TYPE.PARAGRAPH,
-            content: `
+            `,
+      },
+      {
+        type: TYPE.TITLE,
+        content: `Quản lý chuỗi cung ứng`,
+      },
+      {
+        type: TYPE.PARAGRAPH,
+        content: `
             Theo dõi và quản lý vận chuyển hàng hóa: IoT trong sản xuất có thể được sử
             dụng để theo dõi vị trí, điều kiện và quá trình vận chuyển hàng hóa. Các cảm biến 
             và hệ thống giám sát có thể gửi thông tin về vị trí, nhiệt độ, độ ẩm và các thông số
@@ -2622,26 +2896,27 @@ export const serviceBlogs: IBlog[] = [
             Những ứng dụng này của IoT trong sản xuất giúp nâng cao hiệu suất, tăng cường 
             linh hoạt và đáp ứng nhanh chóng đối với biến đổi thị trường, và giảm thiểu thời 
             gian chết và lãng phí trong quy trình sản xuất.
-            Liên hệ với chúng tôi để được hỗ trợ ứng dụng các giải pháp AI & IoT`
-          }
-      ]
-    },{
-      id: 308,
-      type: BlogType.SERVICE,
-      title: `IoT trong bán lẻ`,
-      description: `Các nhà bán lẻ hiện đại đều đang ứng dụng Internet of Things – IoT để
+            Liên hệ với chúng tôi để được hỗ trợ ứng dụng các giải pháp AI & IoT`,
+      },
+    ],
+  },
+  {
+    id: 308,
+    type: BlogType.SERVICE,
+    title: `IoT trong bán lẻ`,
+    description: `Các nhà bán lẻ hiện đại đều đang ứng dụng Internet of Things – IoT để
       hoàn thiện hoạt động tại cửa hàng. Nhằm mục đích cải thiện trải nghiệm và thúc 
       đẩy giao dịch mua sắm của khách hàng.
       `,
-      image: `https://digital.fpt.com/wp-content/uploads/2019/12/shutterstock_1714734415-1-scaled.jpg`,
-      contents: [
-            {
-              type: TYPE.TITLE,
-              content: `Tìm hiểu IoT trong ngành kinh doanh bán lẻ`
-            },
-            {
-              type: TYPE.PARAGRAPH,
-              content: `
+    image: `https://digital.fpt.com/wp-content/uploads/2019/12/shutterstock_1714734415-1-scaled.jpg`,
+    contents: [
+      {
+        type: TYPE.TITLE,
+        content: `Tìm hiểu IoT trong ngành kinh doanh bán lẻ`,
+      },
+      {
+        type: TYPE.PARAGRAPH,
+        content: `
               Các nhà bán lẻ hiện đại đều đang ứng dụng Internet of Things – IoT để hoàn thiện 
               hoạt động tại cửa hàng. Nhằm mục đích cải thiện trải nghiệm và thúc đẩy giao dịch 
               mua sắm của khách hàng. Công nghệ IoT được cho là cách mạng hóa ngành bán lẻ. 
@@ -2650,15 +2925,15 @@ export const serviceBlogs: IBlog[] = [
               bản, đây là một mạng lưới kết nối “vạn vật” thông qua Internet. Thường tích hợp 
               cảm biến và các thiết bị được kết nối như IoT gateway. Cho phép giao tiếp, phân 
               tích và chia sẻ dữ liệu qua chuỗi các mạng lưới. Và nền tảng đám mây (cloud server) 
-              cung cấp các insights có ích cho doanh nghiệp.`
-            },
-            {
-              type: TYPE.TITLE,
-              content: `Công nghệ IoT đã thay đổi ngành bán lẻ như thế nào?`
-            },
-            {
-              type: TYPE.PARAGRAPH,
-              content: `
+              cung cấp các insights có ích cho doanh nghiệp.`,
+      },
+      {
+        type: TYPE.TITLE,
+        content: `Công nghệ IoT đã thay đổi ngành bán lẻ như thế nào?`,
+      },
+      {
+        type: TYPE.PARAGRAPH,
+        content: `
               Việc áp dụng các công nghệ hiện đại vào các quy trình bán hàng đã thay đổi tích 
               cực. Cụ thể:
                   • Cải thiện các trải nghiệm mua sắm nhanh chóng- tiện lợi.
@@ -2670,28 +2945,29 @@ export const serviceBlogs: IBlog[] = [
                   Chẳng hạn như sử dụng ví di động trở nên phổ biến đối với người tiêu dùng 
                   hiện nay.
                   • Ngoài ra, còn có các phương thức mua hàng từ xa cũng đã được nhiều cửa 
-                  hàng áp dụng thành công.`
-            },
-            {
-              type: TYPE.TITLE,
-              content: `Các ứng dụng IoT trong ngành kinh doanh bán lẻ`
-            },{
-              type: TYPE.PARAGRAPH,
-              content: `Để đáp ứng kỳ vọng của khách hàng và các doanh nghiệp. TPM giới thiệu một số 
+                  hàng áp dụng thành công.`,
+      },
+      {
+        type: TYPE.TITLE,
+        content: `Các ứng dụng IoT trong ngành kinh doanh bán lẻ`,
+      },
+      {
+        type: TYPE.PARAGRAPH,
+        content: `Để đáp ứng kỳ vọng của khách hàng và các doanh nghiệp. TPM giới thiệu một số 
               giải pháp IoT cho ngành bán lẻ hiện nay.
-              `
-            },
-            {
-              type: TYPE.TITLE,
-              content: `Kiosk bán hàng tự động`
-            },
-            {
-              type: TYPE.IMAGE,
-              content: `https://xandatechnologies.com/wp-content/uploads/2021/03/Self-Service-kiosk.png`
-            },
-            {
-              type: TYPE.PARAGRAPH,
-              content: `
+              `,
+      },
+      {
+        type: TYPE.TITLE,
+        content: `Kiosk bán hàng tự động`,
+      },
+      {
+        type: TYPE.IMAGE,
+        content: `https://xandatechnologies.com/wp-content/uploads/2021/03/Self-Service-kiosk.png`,
+      },
+      {
+        type: TYPE.PARAGRAPH,
+        content: `
               Đây là sản phẩm dùng để bán hàng/ order tự động và thanh toán tự động. Sản phẩm 
               này rất phù hợp với các cửa hàng kinh doanh F&B, chuỗi nhà hàng, sân bay, ga 
               tàu,…
@@ -2700,14 +2976,15 @@ export const serviceBlogs: IBlog[] = [
               muốn và thanh toán online. Ngoài ra, kiosk còn hỗ trợ nhiều tính năng khác. Chẳng 
               hạn: nội dung quảng cáo ở các định dạng: ảnh, chữ, video được truy xuất từ kho 
               Media của doanh nghiệp. Sản phẩm được thiết kế tuỳ theo yêu cầu cũng như mục 
-              đích sử dụng của khách hàng.`
-            },{
-              type: TYPE.TITLE,
-              content: `Hệ thống xếp hàng tự động`
-            },
-            {
-              type: TYPE.PARAGRAPH,
-              content: `Đây là giải pháp quản lý và tối ưu hóa việc xếp hàng. Nhằm giảm thời gian chờ đợi 
+              đích sử dụng của khách hàng.`,
+      },
+      {
+        type: TYPE.TITLE,
+        content: `Hệ thống xếp hàng tự động`,
+      },
+      {
+        type: TYPE.PARAGRAPH,
+        content: `Đây là giải pháp quản lý và tối ưu hóa việc xếp hàng. Nhằm giảm thời gian chờ đợi 
               và tạo ra trải nghiệm mua sắm hoặc dịch vụ tốt hơn cho khách hàng. Điều này giúp 
               cải thiện hài lòng của khách hàng và tạo sự trung thành.
 
@@ -2722,50 +2999,54 @@ export const serviceBlogs: IBlog[] = [
                   • …
             Tại TPM chúng tôi cung cấp từ các giải pháp đơn giản đến các giải pháp tích hợp 
             nhiều tính năng hiện đại. Tuỳ theo yêu cầu cũng như mục đích sử dụng của khách 
-            hàng mà chúng tôi sẽ thiết kế riêng.`
-            },{
-               type: TYPE.IMAGE,
-               content: `https://atpro.com.vn/wp-content/uploads/2023/09/xep-hang-tu-dong-tai-quay-nganh-fb-min-768x414.jpg`
-            },{
-              type: TYPE.TITLE,
-              content: `Giải pháp quản lý nhiệt độ độ ẩm xe đông lạnh phân tán `
-            },
-            {
-              type: TYPE.PARAGRAPH,
-              content: `Với các ngành hàng như thực phẩm, dược phẩm hoặc hàng hóa nhạy cảm về điều 
+            hàng mà chúng tôi sẽ thiết kế riêng.`,
+      },
+      {
+        type: TYPE.IMAGE,
+        content: `https://atpro.com.vn/wp-content/uploads/2023/09/xep-hang-tu-dong-tai-quay-nganh-fb-min-768x414.jpg`,
+      },
+      {
+        type: TYPE.TITLE,
+        content: `Giải pháp quản lý nhiệt độ độ ẩm xe đông lạnh phân tán `,
+      },
+      {
+        type: TYPE.PARAGRAPH,
+        content: `Với các ngành hàng như thực phẩm, dược phẩm hoặc hàng hóa nhạy cảm về điều 
               kiện môi trường. Giải pháp quản lý nhiệt độ và độ ẩm trong nhiều xe đông lạnh cùng 
               lúc và phân tán khắp nơi là rất quan trọng. Nhằm đảm bảo an toàn và chất lượng của 
               hàng hóa trong điều kiện môi trường phù hợp.
 
               Với công nghệ hiện đại cho phép nhiệt độ và độ ẩm trong xe luôn trong phạm vi cài 
-              đặt. Nếu hai giá trị này vượt ngưỡng sẽ tự động gửi cảnh báo qua SMS hoặc Email.`
-            },{
-              type: TYPE.IMAGE,
-              content: `https://atpro.com.vn/wp-content/uploads/2023/10/iot-trong-nganh-kinh-doanh-ban-le2-768x372.jpg`
-            },
-            {
-              type: TYPE.TITLE,
-              content: `Quản lý kho hàng thông minh`
-            },
-            {
-              type: TYPE.PARAGRAPH,
-              content: `IoT được coi là một trong những đầu tư công nghệ vào quản lý kho. Giải pháp này 
+              đặt. Nếu hai giá trị này vượt ngưỡng sẽ tự động gửi cảnh báo qua SMS hoặc Email.`,
+      },
+      {
+        type: TYPE.IMAGE,
+        content: `https://atpro.com.vn/wp-content/uploads/2023/10/iot-trong-nganh-kinh-doanh-ban-le2-768x372.jpg`,
+      },
+      {
+        type: TYPE.TITLE,
+        content: `Quản lý kho hàng thông minh`,
+      },
+      {
+        type: TYPE.PARAGRAPH,
+        content: `IoT được coi là một trong những đầu tư công nghệ vào quản lý kho. Giải pháp này 
               rất phù hợp với các cửa hàng quần áo, giày dép, túi xách, siêu thị,…Theo dõi số 
               lượng hàng tồn kho và hướng dẫn nhân viên đến đúng vị trí sản phẩm cần tìm. Góp 
               phần nâng cao quy trình phục vụ khách hàng nhanh chóng. Ngoài ra, việc quản lý 
               tốt kho hàng tối ưu thời gian tìm hàng của nhân viên cũng như chờ đợi của khách.
-              `
-            },
-            {
-              type: TYPE.IMAGE,
-              content: `https://atpro.com.vn/wp-content/uploads/2023/10/iot-trong-nganh-kinh-doanh-ban-le3-768x514.jpg`
-            },
-            {
-              type: TYPE.TITLE,
-              content: `Lời kết`
-            },{
-              type: TYPE.PARAGRAPH,
-              content: `Trong tương lai của ngành bán lẻ sẽ gắn liền với sự phát triển của công nghệ IoT. 
+              `,
+      },
+      {
+        type: TYPE.IMAGE,
+        content: `https://atpro.com.vn/wp-content/uploads/2023/10/iot-trong-nganh-kinh-doanh-ban-le3-768x514.jpg`,
+      },
+      {
+        type: TYPE.TITLE,
+        content: `Lời kết`,
+      },
+      {
+        type: TYPE.PARAGRAPH,
+        content: `Trong tương lai của ngành bán lẻ sẽ gắn liền với sự phát triển của công nghệ IoT. 
               Việc áp dụng các công nghệ mới mang đến nhiều lợi ích đáng kể về hiệu quả, trải 
               nghiệm của khách hàng cũng như tăng lợi nhuận. Hứa hẹn mang đến nhiều cơ hội 
               cho ngành bán lẻ và sản xuất. Giúp doanh nghiệp đang từng bước tiến xa hơn nữa
@@ -2773,33 +3054,34 @@ export const serviceBlogs: IBlog[] = [
 
               Hãy liên hệ số hotline của TPM, chúng tôi sẽ hỗ trợ và phục vụ quý khách hàng 
               nhanh chóng và đưa ra các giải pháp phù hợp với doanh nghiệp.
-              `
-            }
-      ]
-    },{
-      type: BlogType.SERVICE,
-      id: 309,
-      title: `Iot trong nông nghiệp`,
-      description: `Công nghệ IoT trong nông nghiệp không chỉ giúp tối ưu hóa chi phí sản 
+              `,
+      },
+    ],
+  },
+  {
+    type: BlogType.SERVICE,
+    id: 309,
+    title: `Iot trong nông nghiệp`,
+    description: `Công nghệ IoT trong nông nghiệp không chỉ giúp tối ưu hóa chi phí sản 
       xuất nông nghiệp mà còn giúp thúc đẩy thương mại và tăng sự an toàn cho cả 
       người sản xuất và người sử dụng sản phẩm`,
-      image: `https://niptech.vn/images/ckeditor/images/iot%201.jpg`,
-      contents: [
-            {
-              type: TYPE.TITLE,
-              content: `Ứng dụng IoT cho nông nghiệp: Xu hướng tất yếu`
-            },
-            {
-              type: TYPE.TITLE,
-              content: `Công nghệ IoT trong nông nghiệp không chỉ giúp tối ưu hóa chi 
+    image: `https://niptech.vn/images/ckeditor/images/iot%201.jpg`,
+    contents: [
+      {
+        type: TYPE.TITLE,
+        content: `Ứng dụng IoT cho nông nghiệp: Xu hướng tất yếu`,
+      },
+      {
+        type: TYPE.TITLE,
+        content: `Công nghệ IoT trong nông nghiệp không chỉ giúp tối ưu hóa chi 
               phí sản xuất nông nghiệp mà còn giúp thúc đẩy thương mại và 
               tăng sự an toàn cho cả người sản xuất và người sử dụng sản 
               phẩm
-              `
-            },
-            {
-              type: TYPE.PARAGRAPH,
-              content: `
+              `,
+      },
+      {
+        type: TYPE.PARAGRAPH,
+        content: `
               Việt Nam là một trong những nước sản xuất nông nghiệp lớn trên thế giới, với sản 
               lượng hằng năm luôn duy trì ở mức cao và ổn định. Tuy nhiên, Việt Nam cũng là 
               một trong những nước đang chịu ảnh hưởng nặng nề của biến đổi khí hậu; đồng 
@@ -2808,15 +3090,16 @@ export const serviceBlogs: IBlog[] = [
               tiêu chuẩn cao. Việt Nam cần có những thay đổi trong quy trình sản xuất nông 
               nghiệp để tối ưu chất lượng sản phẩm, cũng như có những giải pháp để hoạt động 
               nông nghiệp không còn quá phụ thuộc vào yếu tố môi trường và thời tiết.      
-              `
-            },
-            {
-              type: TYPE.TITLE,
-              content: `Tối ưu sản phẩm nông nghiệp
-              `
-            },{
-              type: TYPE.PARAGRAPH,
-              content: `
+              `,
+      },
+      {
+        type: TYPE.TITLE,
+        content: `Tối ưu sản phẩm nông nghiệp
+              `,
+      },
+      {
+        type: TYPE.PARAGRAPH,
+        content: `
                 Phát triển một hệ thống thông minh sử dụng IoT (Internet of Thing - Internet vạn 
                 vật) cho nông nghiệp, có thể giám sát sự phát triển của cây trồng và điều kiện môi 
                 trường canh tác, được coi là nhiệm vụ thiết yếu hiện nay, cho phép người trồng dự 
@@ -2831,14 +3114,16 @@ export const serviceBlogs: IBlog[] = [
                 Ứng dụng công nghệ IoT trong nông nghiệp có các ưu điểm vượt trội so với canh 
                 tác truyền thống như kịp thời ứng phó với thời tiết, tối ưu hóa năng suất, phân tích 
                 tính toán các yếu tố như đất đai, thủy lợi và kiểm soát dịch hại.      
-              `
-            },{
-              type: TYPE.IMAGE,
-              content: `https://kilala.vn/data/emagazine/images/vol45/iot-nongnghiep/img_content_03.jpg
-              `
-            },{
-              type: TYPE.PARAGRAPH,
-              content: `
+              `,
+      },
+      {
+        type: TYPE.IMAGE,
+        content: `https://kilala.vn/data/emagazine/images/vol45/iot-nongnghiep/img_content_03.jpg
+              `,
+      },
+      {
+        type: TYPE.PARAGRAPH,
+        content: `
               Việc ứng dụng được công nghệ IoT trong nông nghiệp đã tạo ra cuộc cách mạng 
               trong ngành nông nghiệp: Giúp kiểm soát và điều chỉnh điều kiện môi trường sinh 
               trưởng cho vật nuôi, cây trồng tại các khu vực trồng trọt, chăn nuôi để điều khiển 
@@ -2846,14 +3131,16 @@ export const serviceBlogs: IBlog[] = [
               nguồn nước… thông qua các hệ thống cảm biến và máy tính đo đạc, phân tích một 
               cách chính xác.
 
-              `
-            },{
-              type: TYPE.IMAGE,
-              content: `https://niptech.vn/images/ckeditor/images/iot%201.jpg
-              `
-            },{
-              type: TYPE.PARAGRAPH,
-              content: `
+              `,
+      },
+      {
+        type: TYPE.IMAGE,
+        content: `https://niptech.vn/images/ckeditor/images/iot%201.jpg
+              `,
+      },
+      {
+        type: TYPE.PARAGRAPH,
+        content: `
               Tại Việt Nam, nông nghiệp là một lĩnh vực xuất hiện từ lâu đời, vậy nên thế mạnh
               của Việt Nam so với những khu vực khác trên thế giới là kinh nghiệm sản xuất và
               canh tác được truyền từ nhiều thế hệ. Tuy nhiên, đây đồng thời cũng là một trong
@@ -2886,36 +3173,38 @@ export const serviceBlogs: IBlog[] = [
 
               Một số ứng dụng nổi bật của IoT khi được sử dụng trong nông nghiệp có thể kể
               đến như sau:
-              `
-            },{
-              type: TYPE.TITLE,
-              content: `Kiểm soát và điều chỉnh điều kiện môi trường sinh trưởng cho vật nuôi,
-              cây trồng tại các khu vực trồng trọt, chăn nuôi`
-            },
-            {
-              type: TYPE.IMAGE,
-              content: `https://niptech.vn/images/ckeditor/images/iot%202.png`
-            },{
-              type: TYPE.PARAGRAPH,
-              content: `Với công nghệ IoT, điều kiện sinh trưởng của vật nuôi, cây trồng không còn hoàn 
+              `,
+      },
+      {
+        type: TYPE.TITLE,
+        content: `Kiểm soát và điều chỉnh điều kiện môi trường sinh trưởng cho vật nuôi,
+              cây trồng tại các khu vực trồng trọt, chăn nuôi`,
+      },
+      {
+        type: TYPE.IMAGE,
+        content: `https://niptech.vn/images/ckeditor/images/iot%202.png`,
+      },
+      {
+        type: TYPE.PARAGRAPH,
+        content: `Với công nghệ IoT, điều kiện sinh trưởng của vật nuôi, cây trồng không còn hoàn 
               toàn phụ thuộc hết vào thời tiết nữa. Những thông số môi trường ảnh hưởng trực 
               tiếp tới vật nuôi và cây trồng như nhiệt độ, độ ẩm, chất lượng không khí, chất 
               lượng đất, chất lượng nguồn nước giờ đây có thể được hệ thống cảm biến và máy 
               tính đo đạc, phân tích một cách chính xác. Một hệ thống IoT thông minh còn có thể 
               để xuất các phương pháp cải tạo và điều chỉnh điều kiện nuôi trồng, sao cho phù 
-              hợp nhất cho quá trình sinh trưởng của từng loại con giống và cây trồng khác nhau.`
-            },
-            {
-              type: TYPE.TITLE,
-              content: `Hỗ trợ phân bố một cách tối ưu tài nguyên (tài nguyên đất, tài nguyên nước )và nguồn lực cho hoạt động sản xuất nông nghiệp`
-            },
-            {
-              type: TYPE.IMAGE,
-              content: `https://niptech.vn/images/ckeditor/images/iot%203.jpg`
-            },
-            {
-              type: TYPE.PARAGRAPH,
-              content: `
+              hợp nhất cho quá trình sinh trưởng của từng loại con giống và cây trồng khác nhau.`,
+      },
+      {
+        type: TYPE.TITLE,
+        content: `Hỗ trợ phân bố một cách tối ưu tài nguyên (tài nguyên đất, tài nguyên nước )và nguồn lực cho hoạt động sản xuất nông nghiệp`,
+      },
+      {
+        type: TYPE.IMAGE,
+        content: `https://niptech.vn/images/ckeditor/images/iot%203.jpg`,
+      },
+      {
+        type: TYPE.PARAGRAPH,
+        content: `
               Đất và nước đều là những nguồn tài nguyên có hạn, vậy nên việc tính toán sử dụng
               một cách tối ưu các nguồn tài nguyên này là vô cùng cần thiết. Với công nghệ IoT
               gồm những cảm biến, hệ thống giám sát trong thời gian thực và các phần mềm
@@ -2924,30 +3213,33 @@ export const serviceBlogs: IBlog[] = [
               thể kể tới các yếu tố: mật độ cây trồng tối ưu trên một diện tích đất, độ ẩm và khả
               năng giữ nước của đất, nhu cầu nước tưới của cây trồng trong từng thời điểm…
               Những thông số này sẽ giúp người nông dân gia tăng hiệu quả sử dụng tài nguyên
-              đất và nước lên đáng kể.`
-            },
-            {
-              type: TYPE.TITLE,
-              content: `Tối ưu lượng nhân lực lao động`
-            },{
-              type: TYPE.PARAGRAPH,
-              content: `
+              đất và nước lên đáng kể.`,
+      },
+      {
+        type: TYPE.TITLE,
+        content: `Tối ưu lượng nhân lực lao động`,
+      },
+      {
+        type: TYPE.PARAGRAPH,
+        content: `
               Khi đã có sự hỗ trợ của máy móc thông minh, thời gian và công sức lao động của
               người nông dân sẽ được giảm xuống. Đây là một lợi ích tất yếu khi ứng dụng các
               thành tựu của cách mạng công nghệ 4.0 vào nông nghiệp nói riêng và mọi lĩnh vực
               khác nói chung, đó là tối ưu được lượng nhân lực lao động.
-              `
-            },{
-              type: TYPE.TITLE,
-              content: `Kiểm soát và tối ưu về thời gian, liều lượng phân bón, hoá chất và thuốc
-              trừ sâu cần sử dụng`
-            },
-            {
-              type: TYPE.IMAGE,
-              content: `https://niptech.vn/images/ckeditor/images/iot%204.png`
-            },{
-              type: TYPE.PARAGRAPH,
-              content: `
+              `,
+      },
+      {
+        type: TYPE.TITLE,
+        content: `Kiểm soát và tối ưu về thời gian, liều lượng phân bón, hoá chất và thuốc
+              trừ sâu cần sử dụng`,
+      },
+      {
+        type: TYPE.IMAGE,
+        content: `https://niptech.vn/images/ckeditor/images/iot%204.png`,
+      },
+      {
+        type: TYPE.PARAGRAPH,
+        content: `
               Một trong những nhược điểm của nền nông nghiệp tại Việt Nam đó là việc sử dụng
               các chế phẩm hoá học trong quá trình sản xuất hiện nay chưa có sự kiểm soát chặt
               chẽ, chưa được tính toán chính xác về liều lượng để có thể vừa đảm bảo sự phát
@@ -2961,31 +3253,33 @@ export const serviceBlogs: IBlog[] = [
               tưới hoá chất không người lái… đang dần được áp dụng, nhằm đảm bảo các yếu tố
               thời gian sử dụng, liều lượng sử dụng cùng sự an toàn cho sức khoẻ con người và
               môi trường sinh thái.
-              `
-            },
-            {
-              type: TYPE.TITLE,
-              content: `Kiểm soát thời gian thu hoạch để cho chất lượng sản phẩm tốt nhất`
-            },
-            {
-              type: TYPE.PARAGRAPH,
-              content: `Để tối đa hoá sản lượng cũng như lợi nhuận, việc chọn đúng thời điểm thu hoạch
+              `,
+      },
+      {
+        type: TYPE.TITLE,
+        content: `Kiểm soát thời gian thu hoạch để cho chất lượng sản phẩm tốt nhất`,
+      },
+      {
+        type: TYPE.PARAGRAPH,
+        content: `Để tối đa hoá sản lượng cũng như lợi nhuận, việc chọn đúng thời điểm thu hoạch
               có ý nghĩa rất lớn đối với hoạt động nông nghiệp. Một hệ thống IoT với những cảm
               biến và phần mềm phân tích thông minh, có thể dự theo số liệu lấy được từ trực
               tiếp cây trồng để hỗ trợ người nông dân dự đoán năng suất và sản lượng, từ đó lên
               kế hoạch và quyết định thời điểm thu hoạch để có được sản lượng tốt nhất.
-              `
-            },
-            {
-              type: TYPE.TITLE,
-              content: `Giúp kết nối, đồng bộ với các hệ thống IoT khác trên khắp đất nước,
-              thúc đẩy hoạt động thương mại để đưa sản phẩm tới tay người tiêu dùng`
-            },{
-              type: TYPE.IMAGE,
-              content: `https://niptech.vn/images/ckeditor/images/iot%205.jpg`
-            },{
-              type: TYPE.PARAGRAPH,
-              content: `
+              `,
+      },
+      {
+        type: TYPE.TITLE,
+        content: `Giúp kết nối, đồng bộ với các hệ thống IoT khác trên khắp đất nước,
+              thúc đẩy hoạt động thương mại để đưa sản phẩm tới tay người tiêu dùng`,
+      },
+      {
+        type: TYPE.IMAGE,
+        content: `https://niptech.vn/images/ckeditor/images/iot%205.jpg`,
+      },
+      {
+        type: TYPE.PARAGRAPH,
+        content: `
               Với sự tham gia của Internet, các hệ thống IoT trong nhiều lĩnh vực khác nhau có
               thể kết nối để phối hợp cùng nhau hoạt động. Với hoạt động nông nghiệp, không
               chỉ trong quá trình sản xuất, công nghệ IoT còn có thể giúp thúc đẩy, hỗ trợ hoạt
@@ -2993,14 +3287,15 @@ export const serviceBlogs: IBlog[] = [
               bảo quản thông minh, cửa hàng phân phối thông minh hay các ứng dụng mua hàng
               thông minh. Tất cả đều sẽ thức đẩy hoạt động thương mại để có thể đưa sản phẩm
               nông nghiệp với chất lượng tốt nhất đến tay người tiêu dùng.
-              `
-            },{
-              type: TYPE.TITLE,
-              content: `Kết luận`
-            },
-            {
-              type: TYPE.PARAGRAPH,
-              content: `
+              `,
+      },
+      {
+        type: TYPE.TITLE,
+        content: `Kết luận`,
+      },
+      {
+        type: TYPE.PARAGRAPH,
+        content: `
               Từ những lợi ích khi ứng dụng công nghệ IoT vào lĩnh vực nông nghiệp mà chúng
               ta đã phân tích và chỉ rõ ở trên, có thể rút ra kết luận: Để nền nông nghiệp Việt
               Nam có thể bắt kịp với tốc độ phát triển cũng như đáp ứng được các tiêu chuẩn
@@ -3010,9 +3305,8 @@ export const serviceBlogs: IBlog[] = [
               tăng sự an toàn cho cả người sản xuất và người sử dụng sản phẩm. Có thể nói xu
               hướng ứng dụng công nghệ IoT vào nông nghiệp đang dần trở thành xu hướng tất
               yếu khách quan.
-              `
-            }
-
-      ]
-    },
+              `,
+      },
+    ],
+  },
 ]

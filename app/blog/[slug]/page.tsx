@@ -54,7 +54,7 @@ const BlogDetail = ({ params }: { params: { slug: string } }) => {
               else if (content.type === "image") {
                 return (
                   <div key="content" className={content.type}>
-                    <div className="flex items-center justify-center">
+                    <div className="flex items-center justify-center py-2">
                       <Image className="w-full rounded-xl" alt="image" src={content?.content} />
                     </div>
                     {/* <img className="w-full rounded-xl" alt="image" src={content?.content} /> */}
