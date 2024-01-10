@@ -32,7 +32,7 @@ const profiles = [
 ]
 
 const About: FC = () => {
-  const ref = useRef([])
+  const ref = useRef<any>([])
   const [height, setHeight] = useState(0)
 
   const onChange = (currentSlide: number) => {
@@ -44,7 +44,6 @@ const About: FC = () => {
   })
 
   useEffect(() => {
-    // @ts-ignore
     setHeight(ref?.current?.clientWidth / 1.778)
   }, [ref])
 
