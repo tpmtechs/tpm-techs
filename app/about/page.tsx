@@ -1,6 +1,8 @@
 "use client"
 
-import { Carousel, Col, Divider, Image, Row } from "antd"
+import { 
+  // Carousel, 
+  Col, Divider, Image, Row } from "antd"
 import Link from "next/link"
 import { type FC, useEffect, useRef, useState } from "react"
 import "animate.css"
@@ -9,8 +11,6 @@ import { BlogType, serviceBlogs } from "app/blog/data"
 import Post from "components/Post"
 
 import "./index.css"
-
-import Iframe from "react-iframe"
 
 const profiles = [
   {
@@ -261,16 +261,7 @@ nguồn động viên và định hình sự đổi mới trong ngành.
       <div style={{ maxWidth: 1280, padding: "0 32px" }} className="w-full ">
         <section className="pt-2 pb-16">
           <div id="video" ref={ref} style={{ height: height, width: "100%" }}>
-            <Iframe
-              url="https://drive.google.com/file/d/1tOkrFskCbFR3-bemXJ0aP9rqthFtU4gv/preview"
-              height="100%"
-              width="100%"
-              display="block"
-              allow="autoplay"
-              position="relative"
-              allowFullScreen
-              frameBorder={0}
-            />
+            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/jy1Q-VlgNdA?si=mSX6LkQBejhZPm8A&mute=1&loop=1&autoplay=1&amp;controls=0&amp;rel=0&amp;disablekb=0&amp;modestbranding=1&amp;showinfo=0&amp;preload=true&amp;playsinline=1&amp;iv_load_policy=3&amp;enablejsapi=1&amp;origin=http%3A%2F%2Fcaztus.vn&amp;widgetid=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
           </div>
         </section>
       </div>
