@@ -62,7 +62,7 @@ const Footer: FC = () => {
         style={{ width: "100vw" }}
         className="relative flex w-full items-center justify-center bg-[url('https://firebasestorage.googleapis.com/v0/b/tpm-techs.appspot.com/o/NL9.jpg?alt=media&token=333c5633-f345-4832-ad22-dd45b408505d')] bg-cover bg-center bg-no-repeat"
       >
-        <div style={{ maxWidth: 1280, padding: '0 32px', height: 400, padding: '0 32px' }} className="z-40 flex w-full items-center justify-start">
+        <div style={{ maxWidth: 1280, padding: '0 32px', height: 400}} className="z-40 flex w-full items-center justify-start">
           <div className="w-full">
             <Row align="middle" justify="center">
               <Col sm={8} xs={24}>
