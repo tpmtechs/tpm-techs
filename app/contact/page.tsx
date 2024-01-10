@@ -255,10 +255,10 @@ const Contact: FC = () => {
                             <PushpinOutlined />
                           </div>
                         </Col>
-                        <Col>
+                        <Col xs={16}>
                           <div>
-                            <h2 className="text-2xl font-semibold tracking-tight text-gray-900">Địa chỉ văn phòng</h2>
-                            <p>Số 42 đường 34, An Phú, thành phố Thủ Đức</p>
+                            <h2 className="text-xl font-semibold tracking-tight text-gray-900">Địa chỉ văn phòng</h2>
+                            <p className="text-sm ">Số 42 đường 34, An Phú, thành phố Thủ Đức</p>
                           </div>
                         </Col>
                       </Row>

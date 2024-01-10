@@ -18,7 +18,7 @@ const Services: FC = () => {
         <div style={{ maxWidth: 1280, padding: '0 32px', height: 600 }} className="z-40 flex w-full items-center justify-start">
           <Row gutter={[24, 24]}>
             <Col span={24}>
-              <div className="text-2xl text-white">{`Xây dựng tương lại, Khôi phục quá khứ`}</div>
+              <div className="text-2xl italic text-white">{`TPM Technology`}</div>
               <div className="text-5xl font-extrabold text-white">{`Cung cấp các giải pháp sáng tạo và bền vững`}</div>
             </Col>
             <Col span={24}>
