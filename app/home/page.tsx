@@ -37,7 +37,7 @@ const Home: FC = () => {
               style={{ width: "100vw" }}
               className="relative flex w-full items-center justify-center bg-[url('https://firebasestorage.googleapis.com/v0/b/tpm-techs.appspot.com/o/IOT1.jpg?alt=media&token=48f7566c-0163-47e3-aa6b-d4a31cec8dc0')] bg-cover bg-center bg-no-repeat"
             >
-              <div style={{ maxWidth: 1280, height: 600 }} className="z-40 flex w-full items-center justify-start">
+              <div style={{ maxWidth: 1280, padding: '0 32px', height: 600 }} className="z-40 flex w-full items-center justify-start">
                 <Row gutter={[24, 24]}>
                   <Col span={24}>
                     <div className="text-5xl font-extrabold text-white">
@@ -73,7 +73,7 @@ const Home: FC = () => {
               style={{ width: "100vw" }}
               className="relative flex w-full items-center justify-center bg-[url('https://firebasestorage.googleapis.com/v0/b/tpm-techs.appspot.com/o/IOT2.jpg?alt=media&token=0ee4c3bf-9cf4-4459-bb09-bc09b8545e04')] bg-cover bg-center bg-no-repeat"
             >
-              <div style={{ maxWidth: 1280, height: 600 }} className="z-40 flex w-full items-center justify-start">
+              <div style={{ maxWidth: 1280, padding: '0 32px', height: 600 }} className="z-40 flex w-full items-center justify-start">
                 <Row gutter={[24, 24]}>
                   <Col span={24}>
                     <div className="text-5xl font-extrabold text-white">
@@ -109,7 +109,7 @@ const Home: FC = () => {
               style={{ width: "100vw" }}
               className="relative flex w-full items-center justify-center bg-[url('https://firebasestorage.googleapis.com/v0/b/tpm-techs.appspot.com/o/IOT3.jpg?alt=media&token=f6738436-9956-460f-9f1e-0a6cca2e5d04')] bg-cover bg-center bg-no-repeat"
             >
-              <div style={{ maxWidth: 1280, height: 600 }} className="z-40 flex w-full items-center justify-start">
+              <div style={{ maxWidth: 1280, padding: '0 32px', height: 600 }} className="z-40 flex w-full items-center justify-start">
                 <Row gutter={[24, 24]}>
                   <Col span={24}>
                     <div className="text-5xl font-extrabold text-white">
@@ -145,7 +145,7 @@ const Home: FC = () => {
               style={{ width: "100vw" }}
               className="relative flex w-full items-center justify-center bg-[url('https://firebasestorage.googleapis.com/v0/b/tpm-techs.appspot.com/o/IOT4.jpg?alt=media&token=cad8d884-d3cb-41d0-9226-f6990b6d0279')] bg-cover bg-center bg-no-repeat"
             >
-              <div style={{ maxWidth: 1280, height: 600 }} className="z-40 flex w-full items-center justify-start">
+              <div style={{ maxWidth: 1280, padding: '0 32px', height: 600 }} className="z-40 flex w-full items-center justify-start">
                 <Row gutter={[24, 24]}>
                   <Col span={24}>
                     <div className="text-5xl font-extrabold text-white">
@@ -181,7 +181,7 @@ const Home: FC = () => {
               style={{ width: "100vw" }}
               className="relative flex w-full items-center justify-center bg-[url('https://firebasestorage.googleapis.com/v0/b/tpm-techs.appspot.com/o/IOT5.jpg?alt=media&token=1735844b-5457-4bdd-a5a5-931713407a53')] bg-cover bg-center bg-no-repeat"
             >
-              <div style={{ maxWidth: 1280, height: 600 }} className="z-40 flex w-full items-center justify-start">
+              <div style={{ maxWidth: 1280, padding: '0 32px', height: 600 }} className="z-40 flex w-full items-center justify-start">
                 <Row gutter={[24, 24]}>
                   <Col span={24}>
                     <div className="text-5xl font-extrabold text-white">
@@ -217,7 +217,7 @@ const Home: FC = () => {
               style={{ width: "100vw" }}
               className="relative flex w-full items-center justify-center bg-[url('https://firebasestorage.googleapis.com/v0/b/tpm-techs.appspot.com/o/IOT6.jpg?alt=media&token=5bfb9890-237a-4bdc-bced-86737298403d')] bg-cover bg-center bg-no-repeat"
             >
-              <div style={{ maxWidth: 1280, height: 600 }} className="z-40 flex w-full items-center justify-start">
+              <div style={{ maxWidth: 1280, padding: '0 32px', height: 600 }} className="z-40 flex w-full items-center justify-start">
                 <Row gutter={[24, 24]}>
                   <Col span={24}>
                     <div className="text-5xl font-extrabold text-white">
@@ -253,7 +253,7 @@ const Home: FC = () => {
               style={{ width: "100vw" }}
               className="relative flex w-full items-center justify-center bg-[url('https://firebasestorage.googleapis.com/v0/b/tpm-techs.appspot.com/o/IOT7.jpg?alt=media&token=0bc8fa7c-6a68-4d63-9ad4-e5b40e19b683')] bg-cover bg-center bg-no-repeat"
             >
-              <div style={{ maxWidth: 1280, height: 600 }} className="z-40 flex w-full items-center justify-start">
+              <div style={{ maxWidth: 1280, padding: '0 32px', height: 600 }} className="z-40 flex w-full items-center justify-start">
                 <Row gutter={[24, 24]}>
                   <Col span={24}>
                     <div className="text-5xl font-extrabold text-white">
@@ -289,7 +289,7 @@ const Home: FC = () => {
               style={{ width: "100vw" }}
               className="relative flex w-full items-center justify-center bg-[url('https://firebasestorage.googleapis.com/v0/b/tpm-techs.appspot.com/o/IOT8.jpg?alt=media&token=3d91aee2-0004-4618-a5b8-eec38b326c64')] bg-cover bg-center bg-no-repeat"
             >
-              <div style={{ maxWidth: 1280, height: 600 }} className="z-40 flex w-full items-center justify-start">
+              <div style={{ maxWidth: 1280, padding: '0 32px', height: 600 }} className="z-40 flex w-full items-center justify-start">
                 <Row gutter={[24, 24]}>
                   <Col span={24}>
                     <div className="text-5xl font-extrabold text-white">
@@ -325,7 +325,7 @@ const Home: FC = () => {
               style={{ width: "100vw" }}
               className="relative flex w-full items-center justify-center bg-[url('https://firebasestorage.googleapis.com/v0/b/tpm-techs.appspot.com/o/IOT9.jpg?alt=media&token=f1f2be23-4e80-47e3-b820-28403ed9826e')] bg-cover bg-center bg-no-repeat"
             >
-              <div style={{ maxWidth: 1280, height: 600 }} className="z-40 flex w-full items-center justify-start">
+              <div style={{ maxWidth: 1280, padding: '0 32px', height: 600 }} className="z-40 flex w-full items-center justify-start">
                 <Row gutter={[24, 24]}>
                   <Col span={24}>
                     <div className="text-5xl font-extrabold text-white">
@@ -359,7 +359,7 @@ const Home: FC = () => {
         </Carousel>
       </div>
 
-      <div style={{ maxWidth: 1280 }} className="w-full">
+      <div style={{ maxWidth: 1280, padding: '0 32px' }} className="w-full">
         <section className="my-16">
           <div style={{ color: "#3172A9" }} className="text-3xl font-semibold">
             # Giới thiệu
@@ -432,7 +432,7 @@ dạng và tôn trọng, tạo ra một môi trường làm việc tích cực v
           </div>
           <Divider />
           <Row gutter={[48, 48]} align="middle">
-            <Col span={12}>
+            <Col sm={12} xs={24}>
               <div className="container">
                 <img
                   alt="banner"
@@ -446,7 +446,7 @@ dạng và tôn trọng, tạo ra một môi trường làm việc tích cực v
                 </div>
               </div>
             </Col>
-            <Col span={12}>
+            <Col sm={12} xs={24}>
               <Row style={{ height: "100%" }} align="middle" justify="center">
                 <Row gutter={[12, 12]}>
                   <Col span={24}>
@@ -467,7 +467,7 @@ dạng và tôn trọng, tạo ra một môi trường làm việc tích cực v
               </Row>
             </Col>
 
-            <Col span={12}>
+            <Col sm={12} xs={24}>
               <Row style={{ height: "100%" }} align="middle" justify="center">
                 <Row gutter={[12, 12]}>
                   <Col span={24}>
@@ -487,7 +487,7 @@ dạng và tôn trọng, tạo ra một môi trường làm việc tích cực v
                 </Row>
               </Row>
             </Col>
-            <Col span={12}>
+            <Col sm={12} xs={24}>
               <div className="container">
                 <img
                   alt="banner"
@@ -502,7 +502,7 @@ dạng và tôn trọng, tạo ra một môi trường làm việc tích cực v
               </div>
             </Col>
 
-            <Col span={12}>
+            <Col sm={12} xs={24}>
               <div className="container">
                 <img
                   alt="banner"
@@ -516,7 +516,7 @@ dạng và tôn trọng, tạo ra một môi trường làm việc tích cực v
                 </div>
               </div>
             </Col>
-            <Col span={12}>
+            <Col sm={12} xs={24}>
               <Row style={{ height: "100%" }} align="middle" justify="center">
                 <Row gutter={[12, 12]}>
                   <Col span={24}>
@@ -535,7 +535,7 @@ dạng và tôn trọng, tạo ra một môi trường làm việc tích cực v
               </Row>
             </Col>
 
-            <Col span={12}>
+            <Col sm={12} xs={24}>
               <Row style={{ height: "100%" }} align="middle" justify="center">
                 <Row gutter={[12, 12]}>
                   <Col span={24}>
@@ -556,7 +556,7 @@ dạng và tôn trọng, tạo ra một môi trường làm việc tích cực v
                 </Row>
               </Row>
             </Col>
-            <Col span={12}>
+            <Col sm={12} xs={24}>
               <div className="container">
                 <img
                   alt="banner"
@@ -579,7 +579,7 @@ dạng và tôn trọng, tạo ra một môi trường làm việc tích cực v
           </div>
           <Divider />
           <Row gutter={[24, 24]} align="middle" justify="space-between">
-            <Col span={8}>
+            <Col sm={8} xs={24}>
               <div className="text-center flex flex-col justify-center items-center">
                 <img
                   alt="banner"
@@ -592,7 +592,7 @@ dạng và tôn trọng, tạo ra một môi trường làm việc tích cực v
                 <div className="text-md text-slate-500">Dịch vụ cung cấp năng lượng thông minh</div>
               </div>
             </Col>
-            <Col span={8}>
+            <Col sm={8} xs={24}>
               <div className="text-center flex flex-col justify-center items-center">
                 <img
                   alt="banner"
@@ -605,7 +605,7 @@ dạng và tôn trọng, tạo ra một môi trường làm việc tích cực v
                 <div className="text-md text-slate-500">Dịch vụ tư vấn năng lượng thông minh</div>
               </div>
             </Col>
-            <Col span={8}>
+            <Col sm={8} xs={24}>
               <div className="text-center flex flex-col justify-center items-center">
                 <img
                   alt="banner"
@@ -627,13 +627,13 @@ dạng và tôn trọng, tạo ra một môi trường làm việc tích cực v
           </div>
           <Divider />
           <div className="my-8 flex items-center justify-center text-center text-lg font-semibold">
-            <div className="w-6/12 ">
+            <div className="md:w-6/12 sm:w-10/12">
               Đồng hành với TPM Technology là những đối tác chuyên nghiệp. Cùng nhau chúng tôi sẽ giúp công trình của
               bạn trường tồn lâu dài và mang lại giá trị cao nhất
             </div>
           </div>
           <Row align="middle" justify="center">
-            <Row style={{ width: "60%" }} gutter={[24, 24]} align="middle" justify="center">
+            <Row gutter={[24, 24]} align="middle" justify="center">
               {partners.map((partner: string) => {
                 return (
                   <Col key={partner}>

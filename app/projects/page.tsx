@@ -10,7 +10,7 @@ const Projects: FC = () => {
         style={{ width: "100vw" }}
         className="flex w-full items-center justify-center bg-[url('https://firebasestorage.googleapis.com/v0/b/tpm-techs.appspot.com/o/IOT8.jpg?alt=media&token=3d91aee2-0004-4618-a5b8-eec38b326c64')] bg-cover bg-center bg-no-repeat"
       >
-        <div style={{ maxWidth: 1280, height: 600 }} className="z-40 flex w-full items-center justify-start">
+        <div style={{ maxWidth: 1280, padding: '0 32px', height: 600 }} className="z-40 flex w-full items-center justify-start">
           <Row gutter={[24, 24]}>
             <Col span={24}>
               <div className="text-2xl text-white">TPM Technology</div>
@@ -21,7 +21,7 @@ const Projects: FC = () => {
         <div style={{ height: 600 }} className="absolute inset-0 z-30 w-full bg-black bg-opacity-60" />
       </section>
 
-      <div style={{ maxWidth: 1280 }} className="w-full">
+      <div style={{ maxWidth: 1280, padding: '0 32px' }} className="w-full">
         <div className="py-12 sm:py-12">
           <div className="mx-auto max-w-7xl px-6 lg:px-8">
             <div style={{ color: "#3172A9" }} className="text-3xl font-semibold">
@@ -41,7 +41,7 @@ const Projects: FC = () => {
         </div>
       </div>
 
-      <div style={{ maxWidth: 1280 }} className="w-full">
+      <div style={{ maxWidth: 1280, padding: '0 32px' }} className="w-full">
         <div className="py-12 sm:py-12">
           <div className="mx-auto max-w-7xl px-6 lg:px-8">
             <div style={{ color: "#3172A9" }} className="text-3xl font-semibold">

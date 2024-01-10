@@ -2,13 +2,14 @@ import { Button, Col, Image, Row } from "antd"
 import Link from "next/link"
 import { FC } from "react"
 import "./index.css"
+import MenuDrawer from "components/MenuDrawer"
 
 const Header: FC = () => {
   return (
     <div className="fixed top-0 z-50 flex w-full items-center justify-center bg-white">
       <div className="header-container w-full ">
         <Row style={{ width: "100%" }} justify="space-between" align="middle">
-          <Col>
+          <Col lg={4} md={4} xs={10}>
             <Link href="/home">
               <Image
                 preview={false}
@@ -18,8 +19,8 @@ const Header: FC = () => {
               />
             </Link>
           </Col>
-          <Col>
-            <Row gutter={[48, 48]} align="middle">
+          <Col lg={20} md={20} xs={0}>
+            <Row gutter={[48, 48]} align="middle" justify="end">
               <Col>
                 <Link className="text-primary" href="/home">
                   Trang chủ
@@ -45,6 +46,11 @@ const Header: FC = () => {
                   Liên hệ
                 </Button>
               </Col>
+            </Row>
+          </Col>
+          <Col lg={0} md={0} xs={10}>
+            <Row justify="end" align="middle">
+              <MenuDrawer />
             </Row>
           </Col>
         </Row>

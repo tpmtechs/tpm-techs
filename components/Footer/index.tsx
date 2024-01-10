@@ -62,10 +62,10 @@ const Footer: FC = () => {
         style={{ width: "100vw" }}
         className="relative flex w-full items-center justify-center bg-[url('https://firebasestorage.googleapis.com/v0/b/tpm-techs.appspot.com/o/NL9.jpg?alt=media&token=333c5633-f345-4832-ad22-dd45b408505d')] bg-cover bg-center bg-no-repeat"
       >
-        <div style={{ maxWidth: 1280, height: 400 }} className="z-40 flex w-full items-center justify-start">
+        <div style={{ maxWidth: 1280, padding: '0 32px', height: 400, padding: '0 32px' }} className="z-40 flex w-full items-center justify-start">
           <div className="w-full">
             <Row align="middle" justify="center">
-              <Col span={8}>
+              <Col sm={8} xs={24}>
                 <Row gutter={[16, 16]} justify="center">
                   <Col className="text-center font-semibold">
                     <div className="text-4xl text-white">Cần hỗ trợ ?</div>
@@ -109,7 +109,7 @@ const Footer: FC = () => {
       <div className="footer-container w-full">
         <div className="pt-12">
           <Row gutter={[48, 48]} justify="space-between" align="middle">
-            <Col span={7}>
+            <Col sm={7} xs={24}>
               <div className="flex items-center justify-center rounded-xl bg-white">
                 <Image
                   preview={false}
@@ -120,14 +120,14 @@ const Footer: FC = () => {
               </div>
               <div className="mt-2 text-center">“Chúng tôi là Đối tác tin cậy của khách hàng”</div>
             </Col>
-            <Col span={6}>
+            <Col sm={6} xs={12}>
               <Row gutter={[12, 12]}>
                 <Col span={24}>Địa chỉ: Số 42 đường 34, An Phú, thành phố Thủ Đức</Col>
                 <Col span={24}>Email: tpmcore@gmail.com</Col>
                 <Col span={24}>Hotline: 028 2229 9685</Col>
               </Row>
             </Col>
-            <Col span={3}>
+            <Col sm={3} xs={12}>
               <Row gutter={[12, 12]}>
                 <Col span={24}>
                   <Link href="/about">Trang chủ</Link>
@@ -146,7 +146,7 @@ const Footer: FC = () => {
                 </Col>
               </Row>
             </Col>
-            <Col span={8}>
+            <Col sm={8} xs={24}>
               <Map
                 style={{
                   width: "100%",
@@ -159,10 +159,12 @@ const Footer: FC = () => {
         </div>
         <Divider style={{ borderColor: "#3172A9" }} />
         <div>
-          <Row justify="space-between" align="middle">
-            <Col>&#169; {dayjs().year()} TPM Technology. All rights reserved</Col>
-            <Col>
-              <Row gutter={[12, 12]}>
+          <Row justify="space-between" align="middle" gutter={[12, 12]}>
+            <Col sm={12} xs={24}>
+              <Row align="middle" justify={{ xs: 'center', sm: 'start' }}>&#169; {dayjs().year()} TPM Technology. All rights reserved</Row>
+            </Col>
+            <Col sm={12} xs={24}>
+              <Row gutter={[12, 12]} align="middle" justify={{ xs: 'center', sm: 'end' }}>
                 <Col>
                   <Button type="link" href="/home">
                     <LinkedinFilled style={{ fontSize: 28 }} />

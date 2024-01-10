@@ -15,7 +15,7 @@ const Services: FC = () => {
         style={{ width: "100vw" }}
         className="flex w-full items-center justify-center bg-[url('https://firebasestorage.googleapis.com/v0/b/tpm-techs.appspot.com/o/IOT7.jpg?alt=media&token=0bc8fa7c-6a68-4d63-9ad4-e5b40e19b683')] bg-cover bg-center bg-no-repeat"
       >
-        <div style={{ maxWidth: 1280, height: 600 }} className="z-40 flex w-full items-center justify-start">
+        <div style={{ maxWidth: 1280, padding: '0 32px', height: 600 }} className="z-40 flex w-full items-center justify-start">
           <Row gutter={[24, 24]}>
             <Col span={24}>
               <div className="text-2xl text-white">{`Xây dựng tương lại, Khôi phục quá khứ`}</div>
@@ -35,7 +35,7 @@ const Services: FC = () => {
         <div style={{ height: 600 }} className="absolute inset-0 z-30 w-full bg-black bg-opacity-60" />
       </section>
 
-      <div style={{ maxWidth: 1280 }} className="w-full">
+      <div style={{ maxWidth: 1280, padding: '0 32px' }} className="w-full">
         <section className="my-16">
           <div style={{ color: "#3172A9" }} className="text-3xl font-semibold">
             # {`Dịch vụ`}
@@ -45,7 +45,7 @@ const Services: FC = () => {
             <div className="w-6/12 ">{`Dịch vụ tốt nhất!`}</div>
           </div>
           <div className="my-1 flex items-center justify-center text-center text-4xl font-semibold">
-            <div className="w-8/12 font-semibold">{`
+            <div className="md:w-8/12 sm:w-full font-semibold">{`
               Cung cấp dịch vụ hiệu suất cao cho nhiều ngành công nghiệp và công nghệ!
             `}</div>
           </div>
@@ -54,7 +54,7 @@ const Services: FC = () => {
             <Row gutter={[48, 48]} align="middle" justify="center">
               {services.map((service) => {
                 return (
-                  <Col key={service.title} span={8}>
+                  <Col key={service.title}  xl={8} sm={12} xs={24}>
                     <ServiceCard
                       title={service.title}
                       description={service.description}
@@ -73,9 +73,9 @@ const Services: FC = () => {
         style={{ width: "100vw" }}
         className="relative flex w-full items-center justify-center bg-[url('https://firebasestorage.googleapis.com/v0/b/tpm-techs.appspot.com/o/banner-2.jpg?alt=media&token=1eb8d70f-c57b-4350-ab09-bb161e9262fd')] bg-cover bg-center bg-no-repeat"
       >
-        <div style={{ maxWidth: 1280, height: 600 }} className="z-40 flex w-full items-center justify-start">
-          <Row style={{ width: "100%" }} gutter={[48, 48]} align="middle">
-            <Col span={12}>
+        <div style={{ maxWidth: 1280, padding: '0 32px' }} className=" z-40 flex w-full items-center justify-start">
+          <Row style={{ padding: '32px 0' }} gutter={[48, 48]} align="middle" justify={{xs: 'center', sm: 'start'}}>
+            <Col sm={12} xs={24}>
               <div className="text-left text-lg font-semibold text-gamboge">
                 {`Xây dựng tương lại, Khôi phục quá khứ`}
               </div>
@@ -83,7 +83,7 @@ const Services: FC = () => {
                 {`Sản phẩm đáng tin cây, hiệu quả và kỹ thuật tiên tiến!`}
               </div>
             </Col>
-            <Col span={12}>
+            <Col sm={12} xs={24}>
               <div className="text-white">
                 <Row>
                   <Col span={2}>
@@ -100,7 +100,7 @@ cách đáng kể.`}
                 </Row>
               </div>
             </Col>
-            <Col span={12}>
+            <Col sm={12} xs={24}>
               <div className="text-white">
                 <Row>
                   <Col span={2}>
@@ -115,7 +115,7 @@ cách đáng kể.`}
                 </Row>
               </div>
             </Col>
-            <Col span={12}>
+            <Col sm={12} xs={24}>
               <div className="text-white">
                 <Row>
                   <Col span={2}>
@@ -130,7 +130,7 @@ cách đáng kể.`}
                 </Row>
               </div>
             </Col>
-            <Col span={12}>
+            <Col sm={12} xs={24}>
               <div className="text-white">
                 <Row>
                   <Col span={2}>
@@ -147,7 +147,7 @@ tôi giúp bảo vệ dữ liệu quan trọng của bạn, đồng thời giả
                 </Row>
               </div>
             </Col>
-            <Col span={12}>
+            <Col sm={12} xs={24}>
               <div className="text-white">
                 <Row>
                   <Col span={2}>
@@ -166,7 +166,7 @@ nối mạnh mẽ giữa doanh nghiệp và khách hàng.`}
             </Col>
           </Row>
         </div>
-        <div style={{ height: 600 }} className="absolute inset-0 z-30 w-full bg-black bg-opacity-70" />
+        <div className="absolute inset-0 z-30 w-full bg-black bg-opacity-70" />
       </section>
     </div>
   )

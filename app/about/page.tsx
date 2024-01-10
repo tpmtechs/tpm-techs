@@ -42,25 +42,25 @@ const About: FC = () => {
         style={{ width: "100vw" }}
         className="flex w-full items-center justify-center bg-[url('https://firebasestorage.googleapis.com/v0/b/tpm-techs.appspot.com/o/IOT4.jpg?alt=media&token=cad8d884-d3cb-41d0-9226-f6990b6d0279')] bg-cover bg-center bg-no-repeat"
       >
-        <div style={{ maxWidth: 1280, height: 600 }} className="z-40 flex w-full items-center justify-start">
+        <div style={{ maxWidth: 1280, padding: '0 32px', height: 600 }} className="z-40 flex w-full items-center justify-start">
           <Row gutter={[24, 24]}>
             <Col span={24}>
               <div className="text-2xl italic text-white">About</div>
-              <div className=" text-7xl font-extrabold text-white">TPM Technology, Inc.</div>
+              <div className="md:text-7xl text-3xl font-extrabold text-white">TPM Technology, Inc.</div>
             </Col>
           </Row>
         </div>
         <div style={{ height: 600 }} className="absolute inset-0 z-30 w-full bg-black bg-opacity-50" />
       </section>
 
-      <div style={{ maxWidth: 1280 }} className="w-full">
+      <div style={{ maxWidth: 1280, padding: '0 32px' }} className="w-full">
         <section className="my-16">
           <div style={{ color: "#3172A9" }} className="text-3xl font-semibold">
             # {`Công ty TPM - Tiên Phong Trong Lĩnh Vực Internet of Things (IoT)`}
           </div>
           <Divider />
           <Row align="middle">
-            <Col span={12}>
+            <Col sm={12} xs={24}>
               <div className="text-justify text-base font-medium">
                 {`
                 TPM, hoặc Tinh Phẩm Mới, đặt chân chạy đua với thời đại công nghiệp 4.0, là một
@@ -71,7 +71,7 @@ hiện thực.
                 `}
               </div>
             </Col>
-            <Col span={12}>
+            <Col sm={12} xs={24}>
               <Row align="middle" justify="center">
                 <Image
                   preview={false}
@@ -89,9 +89,9 @@ hiện thực.
         style={{ width: "100vw" }}
         className="flex w-full items-center justify-center bg-mabel bg-cover bg-no-repeat"
       >
-        <div style={{ maxWidth: 1280 }} className="z-40 flex w-full items-center justify-start">
-          <Row style={{ width: "100%" }} align="middle" gutter={[24, 24]}>
-            <Col span={12}>
+        <div style={{ maxWidth: 1280, padding: '0 32px' }} className="z-40 flex w-full items-center justify-start">
+          <Row style={{ padding: '32px 0' }} align="middle" gutter={[24, 24]}>
+            <Col sm={12} xs={24}>
               <div className="text-2xl italic text-primary">TPM Technology</div>
               <div className=" text-5xl font-extrabold text-primary">
                 {`
@@ -99,14 +99,14 @@ hiện thực.
                 `}
               </div>
             </Col>
-            <Col span={12}>
+            <Col sm={12} xs={24}>
               <div className="my-8">
                 <div style={{ color: "#3172A9" }} className="my-2 text-2xl font-semibold">
                   {`
                     Sứ Mệnh và Tầm Nhìn:
                   `}
                 </div>
-                <div className=" text-xl text-slate-500">
+                <div className=" text-xl text-slate-500 text-justify">
                   {`
                   Chúng tôi đặt ra sứ mệnh tạo ra những sản phẩm và dịch vụ IoT mang tính đột phá,
 giúp nâng cao hiệu suất và tối ưu hóa quy trình kinh doanh cho khách hàng. Tầm
@@ -120,7 +120,7 @@ việc định hình một tương lai thông minh và bền vững cho cộng �
                 <div style={{ color: "#3172A9" }} className="text-2xl font-semibold">
                   {`Đội Ngũ Chuyên Gia`}
                 </div>
-                <div className="my-2 text-xl text-slate-500">
+                <div className="my-2 text-xl text-slate-500 text-justify">
                   {`Sức mạnh của TPM nằm ở đội ngũ chuyên gia đa ngành, những người không chỉ
 có kinh nghiệm sâu rộng về IoT mà còn đầy tinh thần năng động và sáng tạo.
 Chúng tôi đặt niềm tin vào sự đa dạng ý kiến và sự đồng thuận để tạo ra những sản
@@ -132,7 +132,7 @@ phẩm có thể thách thức và thay đổi thế giới.`}
                 <div style={{ color: "#3172A9" }} className="text-2xl font-semibold">
                   {`Sản Phẩm và Giải Pháp`}
                 </div>
-                <div className="my-2 text-xl text-slate-500">
+                <div className="my-2 text-xl text-slate-500 text-justify">
                   {`TPM tự hào về sự đa dạng trong danh mục sản phẩm, từ các thiết bị cảm biến
 thông minh cho đến các nền tảng phần mềm hiện đại. Chúng tôi không chỉ cung cấp giải pháp chuẩn mà còn tập trung vào phát triển sản phẩm tùy chỉnh, tương
 thích với mọi nhu cầu đặc biệt của khách hàng.`}
@@ -143,7 +143,7 @@ thích với mọi nhu cầu đặc biệt của khách hàng.`}
                 <div style={{ color: "#3172A9" }} className="text-2xl font-semibold">
                   {`Chất Lượng và Hiệu Suất`}
                 </div>
-                <div className="my-2 text-xl text-slate-500">
+                <div className="my-2 text-xl text-slate-500 text-justify">
                   {`Chúng tôi cam kết đưa ra sản phẩm và dịch vụ có chất lượng cao nhất, được đánh
 giá cao về tính ổn định, an toàn và độ tin cậy. Tính hiệu quả của giải pháp của
 chúng tôi không chỉ giúp khách hàng tiết kiệm chi phí mà còn tăng cường sự cạnh
@@ -155,7 +155,7 @@ tranh của họ trong thị trường ngày càng khốc liệt.`}
                 <div style={{ color: "#3172A9" }} className="text-2xl font-semibold">
                   {`Trách Nhiệm Xã Hội và Bền Vững`}
                 </div>
-                <div className="my-2 text-xl text-slate-500">
+                <div className="my-2 text-xl text-slate-500 text-justify">
                   {`Chúng tôi không chỉ xem xét mình là một doanh nghiệp, mà còn là một thành viên
 của cộng đồng xã hội. Trong mọi hành động, chúng tôi đều hướng tới việc góp
 phần vào sự phát triển bền vững và bảo vệ môi trường. Chúng tôi tin rằng sự thành
@@ -168,7 +168,7 @@ công của chúng tôi không chỉ đo lường bằng doanh số kinh doanh m
                 <div style={{ color: "#3172A9" }} className="text-2xl font-semibold">
                   {`Cuối cùng`}
                 </div>
-                <div className="my-2 text-xl text-slate-500">
+                <div className="my-2 text-xl text-slate-500 text-justify">
                   {`TPM không chỉ là một doanh nghiệp IoT, mà là một nguồn động viên và đối tác
 chiến lược cho sự phát triển của khách hàng. Chúng tôi không ngừng đổi mới để
 đồng hành cùng doanh nghiệp trong cuộc cách mạng số, xây dựng cầu nối giữa ý
@@ -181,21 +181,21 @@ bền vững.`}
         </div>
       </section>
 
-      <div style={{ maxWidth: 1280 }} className="w-full">
+      <div style={{ maxWidth: 1280, padding: '0 32px' }} className="w-full">
         <section className="my-16">
           <div style={{ color: "#3172A9" }} className="text-3xl font-semibold">
             # People
           </div>
           <Divider />
           <div className="my-8 flex items-center justify-center text-center text-4xl font-semibold">
-            <div className="w-6/12 ">5+ năm kinh nghiệm</div>
+            <div className="md:w-6/12 sm:w-full">5+ năm kinh nghiệm</div>
           </div>
-          <div className="my-8 flex items-center justify-center text-center text-lg font-semibold">
-            <div className="w-5/6">
+          <div className="my-8 flex items-center justify-center text-justify text-lg font-semibold">
+            <div className="md:w-10/12 sm:w-full">
               {`
               TPM tự hào có đội ngũ nhân viên với hơn 5 năm kinh nghiệm chuyên sâu trong
 lĩnh vực IoT. Điều này chứng tỏ sự ổn định và chuyên nghiệp của chúng tôi trong
-việc đưa ra giải pháp và dịch vụ IoT đẳng cấp. Các chuyên gia giàu kinh nghiệm
+việc đưa ra giải pháp và dịch vụ IoT đẳng cấp. Các chuyên gia giàu kinhr nghiệm
 của chúng tôi không chỉ mang đến sự hiểu biết sâu rộng về công nghệ mà còn là
 nguồn động viên và định hình sự đổi mới trong ngành.
               `}
@@ -205,7 +205,7 @@ nguồn động viên và định hình sự đổi mới trong ngành.
             <Row gutter={[24, 24]} justify="center">
               {profiles.map((profile: any) => {
                 return (
-                  <Col key={profile.name} span={7}>
+                  <Col key={profile.name} sm={7} xs={24}>
                     <MemberCard profile={profile} />
                   </Col>
                 )
@@ -219,7 +219,7 @@ nguồn động viên và định hình sự đổi mới trong ngành.
         style={{ width: "100vw" }}
         className="flex w-full items-center justify-center bg-mabel bg-cover bg-no-repeat"
       >
-        <div style={{ maxWidth: 1280 }} className="my-16 w-full">
+        <div style={{ maxWidth: 1280, padding: '0 32px' }} className="my-16 w-full">
           <div style={{ color: "#3172A9" }} className="text-3xl font-semibold">
             # {`Tìm hiểu thêm`}
           </div>

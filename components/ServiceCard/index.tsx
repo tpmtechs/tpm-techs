@@ -13,7 +13,7 @@ interface IServiceCard {
 
 const ServiceCard: FC<IServiceCard> = ({title, description, image, href}) => {
   return (
-    <div className="w-96 rounded-xl bg-white" style={{ height: 420 }}>
+    <div className="xl:w-96 sm:w-full rounded-xl bg-white" style={{ height: 420 }}>
       <img
         alt="banner"
         className="w-full rounded-t-xl h-48 object-cover"

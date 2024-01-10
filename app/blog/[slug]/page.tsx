@@ -14,7 +14,7 @@ const BlogDetail = ({ params }: { params: { slug: string } }) => {
   if (!blog)
     return (
       <div className="flex w-full flex-col items-center justify-center antialiased" style={{ marginTop: "66px" }}>
-        <div style={{ maxWidth: 1280 }} className="mx-auto flex w-full max-w-screen-xl flex-col justify-between px-4 ">
+        <div style={{ maxWidth: 1280, padding: '0 32px' }} className="mx-auto flex w-full max-w-screen-xl flex-col justify-between px-4 ">
           No data
         </div>
       </div>
@@ -23,7 +23,7 @@ const BlogDetail = ({ params }: { params: { slug: string } }) => {
   return (
     <Typography>
       <div className="flex w-full flex-col items-center justify-center antialiased" style={{ marginTop: "66px" }}>
-        <div style={{ maxWidth: 1280 }} className="mx-auto flex w-full max-w-screen-xl flex-col justify-between px-4 ">
+        <div style={{ maxWidth: 1280, padding: '0 32px' }} className="mx-auto flex w-full max-w-screen-xl flex-col justify-between px-4 ">
           <article className="format format-sm sm:format-base lg:format-lg format-blue dark:format-invert mx-auto my-24 w-full max-w-2xl">
             <figure>
               <img className="w-full rounded-xl" alt="image" src={blog?.image} />

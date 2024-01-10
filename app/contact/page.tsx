@@ -86,7 +86,7 @@ const Contact: FC = () => {
         style={{ width: "100vw" }}
         className="flex w-full items-center justify-center bg-[url('https://firebasestorage.googleapis.com/v0/b/tpm-techs.appspot.com/o/IOT9.jpg?alt=media&token=f1f2be23-4e80-47e3-b820-28403ed9826e')] bg-cover bg-center bg-no-repeat"
       >
-        <div style={{ maxWidth: 1280, height: 600 }} className="z-40 flex w-full items-center justify-start">
+        <div style={{ maxWidth: 1280, padding: '0 32px', height: 600 }} className="z-40 flex w-full items-center justify-start">
           <Row gutter={[24, 24]}>
             <Col span={24}>
               <div className="text-2xl italic text-white">TPM Technology</div>
@@ -97,15 +97,155 @@ const Contact: FC = () => {
         <div style={{ height: 600 }} className="absolute inset-0 z-30 w-full bg-black bg-opacity-50" />
       </section>
       <div className="my-16 flex w-full items-center justify-center">
-        <div style={{ maxWidth: 1280 }} className="w-full">
+        <div style={{ maxWidth: 1280, padding: '0 32px' }} className="w-full">
           <div style={{ color: "#3172A9" }} className="text-3xl font-semibold">
             # {`Liên hệ`}
           </div>
           <Divider />
           <Row gutter={[48, 48]}>
-            <Col span={12}>
+            <Col sm={0} xs={24}>
+              <div className="mx-auto max-w-2xl text-center">
+                <h2 className="text-3xl font-semibold tracking-tight text-gray-900 sm:text-4xl">Hãy để lại liên lạc</h2>
+                <p className="mt-2 text-lg leading-8 text-gray-600">
+                  Chúng tôi sẽ liên hệ bạn trong thời gian sớm nhất.
+                </p>
+              </div>
+              <form action={mailtoHref} method="POST" className="mt-8 w-full sm:mt-8">
+                <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
+                  <div>
+                    <label htmlFor="last-name" className="block text-sm font-semibold leading-6 text-gray-900">
+                      Họ
+                    </label>
+                    <div className="mt-2.5">
+                      <input
+                        placeholder="Họ"
+                        type="text"
+                        id="last-name"
+                        autoComplete="family-name"
+                        onChange={(e) => handleChange(FormType.LAST_NAME, e)}
+                        className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-primary-600 sm:text-sm sm:leading-6"
+                      />
+                    </div>
+                  </div>
+                  <div>
+                    <label htmlFor="first-name" className="block text-sm font-semibold leading-6 text-gray-900">
+                      Tên
+                    </label>
+                    <div className="mt-2.5">
+                      <input
+                        placeholder="Tên"
+                        type="text"
+                        id="first-name"
+                        autoComplete="given-name"
+                        onChange={(e) => handleChange(FormType.FIRST_NAME, e)}
+                        className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-primary-600 sm:text-sm sm:leading-6"
+                      />
+                    </div>
+                  </div>
+                  <div className="sm:col-span-2">
+                    <label htmlFor="company" className="block text-sm font-semibold leading-6 text-gray-900">
+                      Công ty
+                    </label>
+                    <div className="mt-2.5">
+                      <input
+                        placeholder="Công ty"
+                        type="text"
+                        id="company"
+                        autoComplete="organization"
+                        onChange={(e) => handleChange(FormType.COMPANY, e)}
+                        className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-primary-600 sm:text-sm sm:leading-6"
+                      />
+                    </div>
+                  </div>
+                  <div className="sm:col-span-2">
+                    <label htmlFor="email" className="block text-sm font-semibold leading-6 text-gray-900">
+                      Email
+                    </label>
+                    <div className="mt-2.5">
+                      <input
+                        placeholder="Email"
+                        type="email"
+                        id="email"
+                        autoComplete="email"
+                        onChange={(e) => handleChange(FormType.EMAIL, e)}
+                        className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-primary-600 sm:text-sm sm:leading-6"
+                      />
+                    </div>
+                  </div>
+                  <div className="sm:col-span-2">
+                    <label htmlFor="phone-number" className="block text-sm font-semibold leading-6 text-gray-900">
+                      Số điện thoại
+                    </label>
+                    <div className="relative mt-2.5">
+                      <div className="absolute inset-y-0 left-0 flex items-center">
+                        <label htmlFor="country" className="sr-only">
+                          Quốc gia
+                        </label>
+                        <select
+                          onChange={(e) => handleChange(FormType.COUNTRY, e)}
+                          id="country"
+                          defaultValue="(+84)"
+                          className="h-full rounded-md border-0 bg-transparent bg-none py-0 pl-4 pr-9 text-gray-400 focus:ring-2 focus:ring-inset focus:ring-primary-600 sm:text-sm"
+                        >
+                          <option value={"(+84)"}>VN</option>
+                          <option value={"(+81)"}>JP</option>
+                          <option value={"(+1)"}>US</option>
+                        </select>
+                      </div>
+                      <input
+                        placeholder="Số điện thoại"
+                        type="tel"
+                        id="phone-number"
+                        autoComplete="tel"
+                        onChange={(e) => handleChange(FormType.PHONE_NUMBER, e)}
+                        className="block w-full rounded-md border-0 px-3.5 py-2 pl-24 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-primary-600 sm:text-sm sm:leading-6"
+                      />
+                    </div>
+                  </div>
+                  <div className="sm:col-span-2">
+                    <label htmlFor="subject" className="block text-sm font-semibold leading-6 text-gray-900">
+                      Tiêu đề
+                    </label>
+                    <div className="mt-2.5">
+                      <input
+                        placeholder="Tiêu đề"
+                        type="subject"
+                        id="subject"
+                        autoComplete="subject"
+                        onChange={(e) => handleChange(FormType.SUBJECT, e)}
+                        className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-primary-600 sm:text-sm sm:leading-6"
+                      />
+                    </div>
+                  </div>
+                  <div className="sm:col-span-2">
+                    <label htmlFor="message" className="block text-sm font-semibold leading-6 text-gray-900">
+                      Nội dung
+                    </label>
+                    <div className="mt-2.5">
+                      <textarea
+                        onChange={(e) => handleChange(FormType.MESSAGE, e)}
+                        placeholder="Nội dung"
+                        id="message"
+                        rows={4}
+                        className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-primary-600 sm:text-sm sm:leading-6"
+                        defaultValue={""}
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div className="mt-10">
+                  <button
+                    type="submit"
+                    className="block w-full rounded-md bg-primary-600 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-primary-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-600"
+                  >
+                    Gửi
+                  </button>
+                </div>
+              </form>
+            </Col>
+            <Col sm={12} xs={24}>
               <h2 className="text-3xl font-semibold tracking-tight text-gray-900 sm:text-4xl">Liên hệ chúng tôi</h2>
-              <div className="mt-28">
+              <div className="md:mt-28 mt-4">
                 <Row gutter={[16, 16]}>
                   <Col span={24}>
                     <div className="rounded-xl bg-white p-4">
@@ -194,7 +334,7 @@ const Contact: FC = () => {
                 </Row>
               </div>
             </Col>
-            <Col span={12}>
+            <Col sm={12} xs={0}>
               <div className="mx-auto max-w-2xl text-center">
                 <h2 className="text-3xl font-semibold tracking-tight text-gray-900 sm:text-4xl">Hãy để lại liên lạc</h2>
                 <p className="mt-2 text-lg leading-8 text-gray-600">
