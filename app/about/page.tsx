@@ -1,6 +1,7 @@
 "use client"
 
 import { Carousel, Col, Divider, Image, Row } from "antd"
+import Link from "next/link"
 import { type FC, useEffect, useRef, useState } from "react"
 import "animate.css"
 import MemberCard from "components/MemberCard"
@@ -189,6 +190,33 @@ chiến lược cho sự phát triển của khách hàng. Chúng tôi không ng
 tưởng và hiện thực, và góp phần vào việc xây dựng một tương lai thông minh và
 bền vững.`}
                 </div>
+              </div>
+            </Col>
+          </Row>
+        </div>
+      </section>
+
+      <section
+        style={{ width: "100vw" }}
+        className="flex w-full items-center justify-center bg-white bg-cover bg-no-repeat"
+      >
+        <div style={{ maxWidth: 1280, padding: "0 32px" }} className="z-40 flex w-full items-center justify-start">
+           <Row style={{ padding: "32px 0", width: '100%' }} align="middle" gutter={[24, 24]}>
+            <Col sm={12} xs={24}>
+              <Row align="middle" justify="center">
+                <Link href="https://tpcgroup.net.vn" target="_blank">
+                <Image
+                  preview={false}
+                  width={240}
+                  alt="TPC-logo"
+                  src="https://firebasestorage.googleapis.com/v0/b/tpm-techs.appspot.com/o/logo-tpc-8.jpg?alt=media&token=de415049-e698-457d-9f2c-7a8778df04d3"
+                />
+                </Link>
+              </Row>
+            </Col>
+            <Col sm={12} xs={24}>
+              <div className="text-justify text-base font-medium">
+                {`Công ty TNHH đầu tư & xây dựng TPCONS là nhà tài trợ chính của TPM trong suốt quá trình hình thành.`}
               </div>
             </Col>
           </Row>
