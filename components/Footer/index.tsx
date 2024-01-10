@@ -1,12 +1,61 @@
+'use client'
+
 import { FacebookFilled, GithubFilled, LinkedinFilled, TwitterSquareFilled } from "@ant-design/icons"
 import { Button, Col, Divider, Image, Input, Row, Select } from "antd"
 import dayjs from "dayjs"
 import Link from "next/link"
-import type { FC } from "react"
+import { type FC ,useState } from "react"
 import "./index.css"
 import Map from "components/Map"
 
+enum FormType {
+  NAME = "name",
+  EMAIL = "email",
+  PHONE_NUMBER = "phoneNumber",
+  FIELD = "field",
+}
+
+interface IFormData {
+  name?: string
+  phoneNumber?: string
+  email?: string
+  field?: string
+}
+
 const Footer: FC = () => {
+  const [values, setValues] = useState<IFormData>({
+    name: "Họ và tên",
+    phoneNumber: "Số điện thoại",
+    email: "Email",
+    field: "Lĩnh vực vần tư vấn",
+  })
+
+  const body = encodeURIComponent(
+    "Tên: " +
+      `${values?.name}` +
+      "\nEmail: " +
+      values?.email +
+      "\nSố điện thoại: " +
+      `${values?.phoneNumber}` +
+      `\nNội dung: Cần hỗ trợ tư vấn về lĩnh vực ${values?.field}`
+  )
+
+  const mailtoHref = `mailto:quan260402@gmail.com?subject=[TPM Technology] - Hỗ trợ tư vấn&body=${body}`
+
+  const handleChange = (type: string, e: any) => {
+    setValues({
+      ...values,
+      [type]: e?.target?.value || "",
+    })
+  }
+
+  const handleSelect = (value: string) => {
+    setValues({
+      ...values,
+      field: value,
+    })
+  }
+
   return (
     <div className="flex w-full flex-col items-center justify-center bg-gradient-to-r from-primary-700 to-primary-800 pb-6 text-white">
       <section
@@ -23,16 +72,17 @@ const Footer: FC = () => {
                     <div className="text-base text-white">Đăng ký thông tin để được tư vấn</div>
                   </Col>
                   <Col span={24}>
-                    <Input size="large" placeholder="Họ và tên" />
+                    <Input onChange={(e) => handleChange( FormType.NAME , e) } size="large" placeholder="Họ và tên" />
                   </Col>
                   <Col span={24}>
-                    <Input size="large" placeholder="Số điện thoại" />
+                    <Input onChange={(e) => handleChange( FormType.PHONE_NUMBER , e) } size="large" placeholder="Số điện thoại" />
                   </Col>
                   <Col span={24}>
-                    <Input size="large" placeholder="Địa chỉ Email" />
+                    <Input onChange={(e) => handleChange( FormType.EMAIL , e) } size="large" placeholder="Địa chỉ Email" />
                   </Col>
                   <Col span={24}>
                     <Select
+                      onChange={handleSelect}
                       style={{ width: "100%" }}
                       size="large"
                       placeholder="Lĩnh vực cần tư vấn"
@@ -44,7 +94,7 @@ const Footer: FC = () => {
                     />
                   </Col>
                   <Col span={24}>
-                    <Button style={{ width: "100%" }} size="large" type="primary">
+                    <Button href={mailtoHref} style={{ width: "100%" }} size="large" type="primary">
                       Đăng ký
                     </Button>
                   </Col>
