@@ -515,7 +515,6 @@ và bền vững.`,
         type: TYPE.IMAGE,
         content: `https://firebasestorage.googleapis.com/v0/b/tpm-techs.appspot.com/o/image-002.jpg?alt=media&token=d514eda2-6a88-4501-b28b-d0270e4025c1`,
       },
-      
     ],
   },
   {
@@ -749,7 +748,7 @@ dựng Tpcons, chuyên gia hàng đầu trong lĩnh vực điện mặt trời. 
 vững và giảm lượng khí nhà kính, đồng thời thúc đẩy tiêu chí phát triển xanh và
 bền vững trong ngành công nghiệp sản xuất.`,
       },
-    {
+      {
         type: TYPE.IMAGE,
         content: `https://firebasestorage.googleapis.com/v0/b/tpm-techs.appspot.com/o/image-402.jpg?alt=media&token=96502a5e-82d3-4a93-8764-d29be0399416`,
       },
@@ -779,7 +778,48 @@ lược của họ về môi trường và xã hội.`,
       imageUrl:
         "https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
     },
-    contents: [],
+    contents: [
+      {
+        type: TYPE.IMAGE,
+        content: `https://firebasestorage.googleapis.com/v0/b/tpm-techs.appspot.com/o/image-502.jpg?alt=media&token=fe03dd9c-9470-4cbc-a637-e8b0abf8d843`,
+      },
+
+      {
+        type: TYPE.PARAGRAPH,
+        content: `Công ty TNHH đầu tư và xây dựng Tpcons, là đối tác có uy tín và kinh nghiệm
+chuyên sâu trong xây dựng các hệ thống điện mặt trời. Sự hợp tác giữa chủ đầu tư
+và chủ thầu hứa hẹn tạo nên một dự án hiệu quả, đồng thời là bước đi quan trọng
+trong hành trình hướng tới mục tiêu năng lượng sạch và giảm lượng khí nhà kính.`,
+      },
+      {
+        type: TYPE.IMAGE,
+        content: `https://firebasestorage.googleapis.com/v0/b/tpm-techs.appspot.com/o/image-504.jpg?alt=media&token=0a7b836b-1556-4e09-986d-e9284aeb2908`,
+      },
+      {
+        type: TYPE.PARAGRAPH,
+        content: `Dự kiến, công trình sẽ không chỉ mang lại lợi ích kinh tế mà còn đóng góp vào
+việc duy trì cân bằng môi trường, tạo ra một ngành công nghiệp bền vững và thân
+thiện với môi trường.`,
+      },
+      {
+        type: TYPE.IMAGE,
+        content: `https://firebasestorage.googleapis.com/v0/b/tpm-techs.appspot.com/o/image-505.jpg?alt=media&token=871d6412-81b0-47c1-8409-6388f708f63d`,
+      },
+      {
+        type: TYPE.PARAGRAPH,
+        content: `Dự kiến, công trình sẽ không chỉ mang lại lợi ích kinh tế mà còn đóng góp vào
+việc duy trì cân bằng môi trường, tạo ra một ngành công nghiệp bền vững và thân
+thiện với môi trường.`,
+      },
+      {
+        type: TYPE.IMAGE,
+        content: `https://firebasestorage.googleapis.com/v0/b/tpm-techs.appspot.com/o/image-503.jpg?alt=media&token=3193a283-02e9-44fb-a3fc-b899f1b8e130`,
+      },
+      {
+        type: TYPE.IMAGE,
+        content: `https://firebasestorage.googleapis.com/v0/b/tpm-techs.appspot.com/o/image-506.jpg?alt=media&token=129b4c81-d6e1-4f7d-a518-968e644ea1d1`,
+      },
+    ],
   },
   {
     image:
@@ -799,7 +839,18 @@ SABECO, SPgroup và PTC đã hoàn thành.`,
       imageUrl:
         "https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
     },
-    contents: [],
+    contents: [
+      {
+        type: TYPE.IMAGE,
+        content: `https://firebasestorage.googleapis.com/v0/b/tpm-techs.appspot.com/o/image-601.jpeg?alt=media&token=5b724df9-7451-445e-8ec8-9c164a5c5804`,
+      },
+      {
+        type: TYPE.PARAGRAPH,
+        content: `#TPC #SABECO #SPgroup #CleanEnergy #GreenERA #SustainableLiving
+#CleanEnergy #GreenEra #SustainableFuture #RenewableEnergy #GoGreen
+#EnvironmentalResponsibility #CleanTech #GreenRevolution #EcoFriendly`,
+      },
+    ],
   },
   {
     image:
@@ -821,7 +872,49 @@ trong hành trình chuyển đổi năng lượng và bảo vệ môi trường.
       imageUrl:
         "https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
     },
-    contents: [],
+    contents: [
+      {
+        type: TYPE.PARAGRAPH,
+        content: `Nằm tại vùng Dầu Tiếng, một trong những khu vực có tiềm năng năng lượng
+mặt trời lớn tại Việt Nam, Solar Park không chỉ là dự án hứa hẹn về nguồn cung
+năng lượng sạch mà còn là minh chứng cho cam kết của TPC về phát triển bền
+vững. Được xây dựng trên diện tích rộng lớn, dự án này đóng vai trò quan trọng
+trong việc đáp ứng nhu cầu ngày càng tăng về năng lượng sạch cho cộng đồng và
+khu vực lân cận.`,
+      },
+      {
+        type: TYPE.IMAGE,
+        content: `https://firebasestorage.googleapis.com/v0/b/tpm-techs.appspot.com/o/image-601.jpg?alt=media&token=c85c6c31-8f87-4e41-b6ed-d3500751d5f6`,
+      },
+      {
+        type: TYPE.PARAGRAPH,
+        content: `Trong quá trình triển khai, TPC đã chú trọng đến việc sử dụng công nghệ tiên
+tiến nhất và thiết bị hiệu quả nhất để tối ưu hóa hiệu suất sản xuất năng lượng.
+Đồng thời, các biện pháp an toàn và bảo vệ môi trường đã được tích hợp, đảm bảo
+rằng dự án không chỉ mang lại lợi ích về mặt năng lượng mà còn không làm ảnh
+hưởng đến tự nhiên xung quanh.`,
+      },
+      {
+        type: TYPE.IMAGE,
+        content: `https://firebasestorage.googleapis.com/v0/b/tpm-techs.appspot.com/o/image-602.jpg?alt=media&token=5a672da0-9734-49e5-bcc6-7956f12e0e3a`,
+      },
+      {
+        type: TYPE.PARAGRAPH,
+        content: `Nhà máy điện mặt trời Solar Park không chỉ tạo ra nguồn điện sạch mà còn
+đóng góp vào việc giảm lượng khí nhà kính, giúp giảm tác động của biến đổi khí
+hậu. Nó không chỉ là một nguồn cung năng lượng mà còn là một dự án mang tính
+chiến lược, đưa năng lượng tái tạo trở thành một phần quan trọng trong nguồn cung
+điện quốc gia.`,
+      },
+      {
+        type: TYPE.PARAGRAPH,
+        content: `Solar Park tại Dầu Tiếng 1 và Dầu Tiếng 2 là minh chứng cho tầm quan trọng
+của việc chuyển đổi sang nguồn năng lượng sạch và bền vững. TPC đã đóng góp
+tích cực vào sự phát triển của ngành công nghiệp năng lượng tái tạo, hướng dẫn
+cho các doanh nghiệp khác về quyết tâm và trách nhiệm trong việc xây dựng một
+tương lai bền vững cho cả xã hội và môi trường.`,
+      },
+    ],
   },
   {
     image:
@@ -845,7 +938,28 @@ khu vực.`,
       imageUrl:
         "https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
     },
-    contents: [],
+    contents: [
+      {
+        type: TYPE.IMAGE,
+        content: `https://firebasestorage.googleapis.com/v0/b/tpm-techs.appspot.com/o/image-701.jpg?alt=media&token=7800b846-9140-4b0c-bda3-57c38deb1e2e`,
+      },
+      {
+        type: TYPE.IMAGE,
+        content: `https://firebasestorage.googleapis.com/v0/b/tpm-techs.appspot.com/o/image-702.jpg?alt=media&token=a8831955-6fd0-4761-97e0-55a7687f2c3e`,
+      },
+      {
+        type: TYPE.IMAGE,
+        content: `https://firebasestorage.googleapis.com/v0/b/tpm-techs.appspot.com/o/image-703.jpg?alt=media&token=b7d5de88-9d11-4066-b9c8-41b6ceb286dc`,
+      },
+      {
+        type: TYPE.IMAGE,
+        content: `https://firebasestorage.googleapis.com/v0/b/tpm-techs.appspot.com/o/image-704.jpg?alt=media&token=401a3640-d350-42a7-a784-caa89cdb5da9`,
+      },
+      {
+        type: TYPE.PARAGRAPH,
+        content: `Dự án với chủ thầu là Công ty TNHH đầu tư và xây dựng Tpcons.`,
+      },
+    ],
   },
   {
     image:
@@ -868,7 +982,55 @@ nghiệp đến môi trường.`,
       imageUrl:
         "https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
     },
-    contents: [],
+    contents: [
+      {
+        type: TYPE.IMAGE,
+        content: `https://firebasestorage.googleapis.com/v0/b/tpm-techs.appspot.com/o/image-801.jpg?alt=media&token=3404a7e1-b586-417e-b7c9-53bb3c43e530`,
+      },
+      {
+        type: TYPE.PARAGRAPH,
+        content: `Chủ đầu tư MEDIPHAR CNC Tân Bình, đơn vị có uy tín trong lĩnh vực y tế,
+đã chọn lựa sử dụng năng lượng mặt trời như một phần quan trọng của chiến lược
+bền vững của mình. Dự án không chỉ giúp giảm chi phí vận hành mà còn thể hiện
+cam kết của MEDIPHAR CNC Tân Bình đối với trách nhiệm xã hội và môi
+trường.`,
+      },
+      {
+        type: TYPE.IMAGE,
+        content: `https://firebasestorage.googleapis.com/v0/b/tpm-techs.appspot.com/o/image-802.jpg?alt=media&token=2fe79ee5-fd3c-4bc5-890b-e6087a1235ef`,
+      },
+      {
+        type: TYPE.PARAGRAPH,
+        content: `Công ty TNHH Đầu tư và Xây dựng TPCons, với kinh nghiệm và chuyên môn
+cao trong lĩnh vực xây dựng hệ thống năng lượng mặt trời, đã đảm nhận vai trò chủ
+thầu. Việc triển khai dự án được thực hiện một cách chặt chẽ, đảm bảo tính an toàn
+và hiệu suất hoạt động của hệ thống.`,
+      },
+      {
+        type: TYPE.IMAGE,
+        content: `https://firebasestorage.googleapis.com/v0/b/tpm-techs.appspot.com/o/image-803.jpg?alt=media&token=17b2108c-72ee-4dc4-a6bf-21bd324eadfe`,
+      },
+      {
+        type: TYPE.PARAGRAPH,
+        content: `Dự án không chỉ là nguồn năng lượng sạch mà còn là minh chứng cho sự hợp
+tác thành công giữa chủ đầu tư và chủ thầu, tạo ra giá trị bền vững cho cả cộng
+đồng và doanh nghiệp. Sự đổi mới trong lĩnh vực năng lượng của MEDIPHAR
+CNC Tân Bình và TPCons đã góp phần quan trọng vào sự phát triển bền vững của
+Việt Nam.`,
+      },
+      {
+        type: TYPE.IMAGE,
+        content: `https://firebasestorage.googleapis.com/v0/b/tpm-techs.appspot.com/o/image-804.jpg?alt=media&token=b046e689-4088-49bb-a9a2-7e650b0f6be0`,
+      },
+      {
+        type: TYPE.IMAGE,
+        content: `https://firebasestorage.googleapis.com/v0/b/tpm-techs.appspot.com/o/image-805.jpg?alt=media&token=fb4a47e6-2e9f-4ac9-83f0-696ac355c680`,
+      },
+      {
+        type: TYPE.IMAGE,
+        content: `https://firebasestorage.googleapis.com/v0/b/tpm-techs.appspot.com/o/image-806.jpg?alt=media&token=f440da89-a585-44fc-903a-1c6d9f1a1088`,
+      },
+    ],
   },
 
   // Iot

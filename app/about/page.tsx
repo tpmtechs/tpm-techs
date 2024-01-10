@@ -216,7 +216,9 @@ bền vững.`}
             </Col>
             <Col sm={12} xs={24}>
               <div className="text-justify text-base font-medium">
-                {`Công ty TNHH đầu tư & xây dựng TPCONS là nhà tài trợ chính của TPM trong suốt quá trình hình thành.`}
+                {`Công ty TNHH đầu tư & xây dựng `} 
+                <Link href="https://tpcgroup.net.vn" target="_blank">TPCONS</Link>
+                {` là nhà tài trợ chính của TPM trong suốt quá trình hình thành.`}
               </div>
             </Col>
           </Row>
