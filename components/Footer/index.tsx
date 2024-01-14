@@ -5,8 +5,12 @@ import { Button, Col, Divider, Image, Input, Row, Select } from "antd"
 import dayjs from "dayjs"
 import Link from "next/link"
 import { type FC ,useState } from "react"
+import { FormattedMessage, useIntl } from "react-intl";
 import "./index.css"
+import urlcat from "urlcat"
 import Map from "components/Map"
+import Path from "config/path"
+import LocaleSelect from "components/LocaleSelect"
 
 enum FormType {
   NAME = "name",
@@ -23,6 +27,7 @@ interface IFormData {
 }
 
 const Footer: FC = () => {
+  const { formatMessage, locale } = useIntl()
   const [values, setValues] = useState<IFormData>({
     name: "Họ và tên",
     phoneNumber: "Số điện thoại",
@@ -31,16 +36,16 @@ const Footer: FC = () => {
   })
 
   const body = encodeURIComponent(
-    "Tên: " +
+    `${formatMessage({id: "footer.support.name"})}: ` +
       `${values?.name}` +
-      "\nEmail: " +
+      `\n${formatMessage({id: "footer.support.email"})}: ` +
       values?.email +
-      "\nSố điện thoại: " +
+      `\n${formatMessage({id: "footer.support.phone.number"})}: ` +
       `${values?.phoneNumber}` +
-      `\nNội dung: Cần hỗ trợ tư vấn về lĩnh vực ${values?.field}`
+      `\n${formatMessage({id: "footer.support.content"})}: ${formatMessage({id: "footer.support.message"})} ${values?.field}`
   )
 
-  const mailtoHref = `mailto:quan260402@gmail.com?subject=[TPM Technology] - Hỗ trợ tư vấn&body=${body}`
+  const mailtoHref = `mailto:quan260402@gmail.com?subject=[TPM Technology] - ${formatMessage({id: "footer.support.subject"})}&body=${body}`
 
   const handleChange = (type: string, e: any) => {
     setValues({
@@ -68,34 +73,34 @@ const Footer: FC = () => {
               <Col sm={8} xs={24}>
                 <Row gutter={[16, 16]} justify="center">
                   <Col className="text-center font-semibold">
-                    <div className="text-4xl text-white">Cần hỗ trợ ?</div>
-                    <div className="text-base text-white">Đăng ký thông tin để được tư vấn</div>
+                    <div className="text-4xl text-white"><FormattedMessage id="footer.support.title" /></div>
+                    <div className="text-base text-white"><FormattedMessage id="footer.support.subtitle" /></div>
                   </Col>
                   <Col span={24}>
-                    <Input onChange={(e) => handleChange( FormType.NAME , e) } size="large" placeholder="Họ và tên" />
+                    <Input onChange={(e) => handleChange( FormType.NAME , e) } size="large" placeholder={formatMessage({id: "footer.support.name"})} />
                   </Col>
                   <Col span={24}>
-                    <Input onChange={(e) => handleChange( FormType.PHONE_NUMBER , e) } size="large" placeholder="Số điện thoại" />
+                    <Input onChange={(e) => handleChange( FormType.PHONE_NUMBER , e) } size="large" placeholder={formatMessage({id: "footer.support.phone.number"})} />
                   </Col>
                   <Col span={24}>
-                    <Input onChange={(e) => handleChange( FormType.EMAIL , e) } size="large" placeholder="Địa chỉ Email" />
+                    <Input onChange={(e) => handleChange( FormType.EMAIL , e) } size="large" placeholder={formatMessage({id: "footer.support.email"})} />
                   </Col>
                   <Col span={24}>
                     <Select
                       onChange={handleSelect}
                       style={{ width: "100%" }}
                       size="large"
-                      placeholder="Lĩnh vực cần tư vấn"
+                      placeholder={formatMessage({id: "footer.support.field"})}
                       options={[
-                        { value: "IOT", label: "IOT" },
-                        { value: "Năng lượng tái tạo", label: "Năng lượng tái tạo" },
-                        { value: "Lĩnh vực khác", label: "Lĩnh vực khác" },
+                        { value: formatMessage({id: "footer.support.field.internet.of.things"}), label:  formatMessage({id: "footer.support.field.internet.of.things"}) },
+                        { value: formatMessage({id: "footer.support.field.recycled.energy"}), label:  formatMessage({id: "footer.support.field.recycled.energy"}) },
+                        { value: formatMessage({id: "footer.support.field.other"}), label:  formatMessage({id: "footer.support.field.other"}) },
                       ]}
                     />
                   </Col>
                   <Col span={24}>
                     <Button href={mailtoHref} style={{ width: "100%" }} size="large" type="primary">
-                      Đăng ký
+                      <FormattedMessage id="footer.support.submit" />
                     </Button>
                   </Col>
                 </Row>
@@ -118,31 +123,40 @@ const Footer: FC = () => {
                   src="https://firebasestorage.googleapis.com/v0/b/tpm-techs.appspot.com/o/tpm-technology-no-background.png?alt=media&token=d12002fa-bc8c-45e9-9607-b166005dc3fa"
                 />
               </div>
-              <div className="mt-2 text-center">“Chúng tôi là Đối tác tin cậy của khách hàng”</div>
+              <div className="mt-2 text-center">“<FormattedMessage id="common.slogan" />”</div>
             </Col>
             <Col sm={6} xs={12}>
               <Row gutter={[12, 12]}>
-                <Col span={24}>Địa chỉ: Số 42 đường 34, An Phú, thành phố Thủ Đức</Col>
-                <Col span={24}>Email: tpmcore@gmail.com</Col>
-                <Col span={24}>Hotline: 028 2229 9685</Col>
+                <Col span={24}><FormattedMessage id="common.address" />: <FormattedMessage id="common.address.detail" /></Col>
+                <Col span={24}><FormattedMessage id="common.email" />: <FormattedMessage id="common.email.detail" /></Col>
+                <Col span={24}><FormattedMessage id="common.hotline" />: <FormattedMessage id="common.hotline.detail" /></Col>
+                <Col span={24}><LocaleSelect /></Col>
               </Row>
             </Col>
             <Col sm={3} xs={12}>
               <Row gutter={[12, 12]}>
                 <Col span={24}>
-                  <Link href="/about">Trang chủ</Link>
+                  <Link className="text-primary" href={urlcat(Path.HOME, {locale})}>
+                  <FormattedMessage id="common.home" />
+                </Link>
                 </Col>
                 <Col span={24}>
-                  <Link href="/about">Giới thiệu</Link>
+                  <Link className="text-primary" href={urlcat(Path.ABOUT, {locale})}>
+                  <FormattedMessage id="common.about" />
+                </Link>
                 </Col>
                 <Col span={24}>
-                  <Link href="/services">Dịch vụ</Link>
+                  <Link className="text-primary" href={urlcat(Path.SERVICES, {locale})}>
+                  <FormattedMessage id="common.services" />
+                </Link>
                 </Col>
                 <Col span={24}>
-                  <Link href="/projects">Dự án</Link>
+                  <Link className="text-primary" href={urlcat(Path.PROJECTS, {locale})}>
+                  <FormattedMessage id="common.projects" />
+                </Link>
                 </Col>
                 <Col span={24}>
-                  <Link href="/contact">Liên hệ</Link>
+                  <Link className="text-primary" href={urlcat(Path.CONTACT, {locale})}><FormattedMessage id="common.contact.us" /></Link>
                 </Col>
               </Row>
             </Col>
@@ -161,17 +175,17 @@ const Footer: FC = () => {
         <div>
           <Row justify="space-between" align="middle" gutter={[12, 12]}>
             <Col sm={12} xs={24}>
-              <Row align="middle" justify={{ xs: 'center', sm: 'start' }}>&#169; {dayjs().year()} TPM Technology. All rights reserved</Row>
+              <Row align="middle" justify={{ xs: 'center', sm: 'start' }}>&#169; {dayjs().year()} TPM Technology. <FormattedMessage id="common.all.rights.reserved" /></Row>
             </Col>
             <Col sm={12} xs={24}>
               <Row gutter={[12, 12]} align="middle" justify={{ xs: 'center', sm: 'end' }}>
                 <Col>
-                  <Button type="link" href="/home">
+                  <Button type="link" href="#">
                     <LinkedinFilled style={{ fontSize: 28 }} />
                   </Button>
                 </Col>
                 <Col>
-                  <Button type="link" href="/home">
+                  <Button type="link" href="#">
                     <TwitterSquareFilled style={{ fontSize: 28 }} />
                   </Button>
                 </Col>
@@ -181,7 +195,7 @@ const Footer: FC = () => {
                   </Button>
                 </Col>
                 <Col>
-                  <Button type="link" href="/home">
+                  <Button type="link" href="#">
                     <GithubFilled style={{ fontSize: 28 }} />
                   </Button>
                 </Col>

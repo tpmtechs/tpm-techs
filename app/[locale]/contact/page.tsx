@@ -12,6 +12,7 @@ import {
 import { Button, Col, Divider, Row } from "antd"
 import { type FC, useState } from "react"
 import Map from "components/Map"
+import { FormattedMessage, useIntl } from "react-intl"
 
 enum FormType {
   LAST_NAME = "lastName",
@@ -36,29 +37,31 @@ interface IFormData {
 }
 
 const Contact: FC = () => {
+
+  const intl = useIntl();
+  const { formatMessage ,locale} = intl;
+
   const [values, setValues] = useState<IFormData>({
-    lastName: "Họ",
-    firstName: "Tên",
-    email: "Email",
-    phoneNumber: "Số điện thoại",
-    company: "Công ty",
-    message: "Nội dung",
-    subject: "Tiêu đề",
+    lastName: formatMessage({id: "contact.form.lastName"}),
+    firstName: formatMessage({id: "contact.form.firstName"}),
+    email: formatMessage({id: "contact.form.email"}),
+    phoneNumber: formatMessage({id: "contact.form.phone.number"}),
+    company: formatMessage({id: "contact.form.company"}),
+    message: formatMessage({id: "contact.form.message"}),
+    subject: formatMessage({id: "contact.form.subject"}),
     country: "(+84)",
   })
 
   const body = encodeURIComponent(
-    "Tên: " +
+    `${formatMessage({id: "contact.form.to.email.name"})}: ` +
       `${values?.lastName} ${values?.firstName}` +
-      "\nNơi làm việc: " +
+      `\n${formatMessage({id: "contact.form.to.email.name"})}: ` +
       values?.company +
-      "\nEmail: " +
+      `\n${formatMessage({id: "contact.form.to.email.name"})}: ` +
       values?.email +
-      "\nSố điện thoại: " +
+      `\n${formatMessage({id: "contact.form.to.email.name"})}: ` +
       `${values?.country} ${values?.phoneNumber}` +
-      "\nCông ty: " +
-      values?.company +
-      "\nNội dung: " +
+      `\n${formatMessage({id: "contact.form.to.email.name"})}: ` +
       values?.message
   )
 
@@ -90,7 +93,7 @@ const Contact: FC = () => {
           <Row gutter={[24, 24]}>
             <Col span={24}>
               <div className="text-2xl italic text-white">TPM Technology</div>
-              <div className=" text-7xl font-extrabold text-white">Liên hệ</div>
+              <div className=" text-7xl font-extrabold text-white"><FormattedMessage id="common.contact.us" /></div>
             </Col>
           </Row>
         </div>
@@ -99,26 +102,26 @@ const Contact: FC = () => {
       <div className="my-16 flex w-full items-center justify-center">
         <div style={{ maxWidth: 1280, padding: '0 32px' }} className="w-full">
           <div style={{ color: "#3172A9" }} className="text-3xl font-semibold">
-            # {`Liên hệ`}
+            # <FormattedMessage id="common.contact.us" />
           </div>
           <Divider />
           <Row gutter={[48, 48]}>
             <Col sm={0} xs={24}>
               <div className="mx-auto max-w-2xl text-center">
-                <h2 className="text-3xl font-semibold tracking-tight text-gray-900 sm:text-4xl">Hãy để lại liên lạc</h2>
+                <h2 className="text-3xl font-semibold tracking-tight text-gray-900 sm:text-4xl"><FormattedMessage id="contact.get.in.touch" /></h2>
                 <p className="mt-2 text-lg leading-8 text-gray-600">
-                  Chúng tôi sẽ liên hệ bạn trong thời gian sớm nhất.
+                  <FormattedMessage id="contact.get.in.touch.description" />
                 </p>
               </div>
               <form action={mailtoHref} method="POST" className="mt-8 w-full sm:mt-8">
                 <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
                   <div>
                     <label htmlFor="last-name" className="block text-sm font-semibold leading-6 text-gray-900">
-                      Họ
+                       <FormattedMessage id="contact.form.lastName" />
                     </label>
                     <div className="mt-2.5">
                       <input
-                        placeholder="Họ"
+                        placeholder={formatMessage({id: "contact.form.lastName"})}
                         type="text"
                         id="last-name"
                         autoComplete="family-name"
@@ -129,11 +132,11 @@ const Contact: FC = () => {
                   </div>
                   <div>
                     <label htmlFor="first-name" className="block text-sm font-semibold leading-6 text-gray-900">
-                      Tên
+                       <FormattedMessage id="contact.form.firstName" />
                     </label>
                     <div className="mt-2.5">
                       <input
-                        placeholder="Tên"
+                        placeholder={formatMessage({id: "contact.form.firstName"})}
                         type="text"
                         id="first-name"
                         autoComplete="given-name"
@@ -144,11 +147,11 @@ const Contact: FC = () => {
                   </div>
                   <div className="sm:col-span-2">
                     <label htmlFor="company" className="block text-sm font-semibold leading-6 text-gray-900">
-                      Công ty
+                      <FormattedMessage id="contact.form.company" />
                     </label>
                     <div className="mt-2.5">
                       <input
-                        placeholder="Công ty"
+                        placeholder={formatMessage({id: "contact.form.company"})}
                         type="text"
                         id="company"
                         autoComplete="organization"
@@ -159,11 +162,11 @@ const Contact: FC = () => {
                   </div>
                   <div className="sm:col-span-2">
                     <label htmlFor="email" className="block text-sm font-semibold leading-6 text-gray-900">
-                      Email
+                      <FormattedMessage id="contact.form.email" />
                     </label>
                     <div className="mt-2.5">
                       <input
-                        placeholder="Email"
+                        placeholder={formatMessage({id: "contact.form.email"})}
                         type="email"
                         id="email"
                         autoComplete="email"
@@ -174,12 +177,12 @@ const Contact: FC = () => {
                   </div>
                   <div className="sm:col-span-2">
                     <label htmlFor="phone-number" className="block text-sm font-semibold leading-6 text-gray-900">
-                      Số điện thoại
+                      <FormattedMessage id="contact.form.phone.number" />
                     </label>
                     <div className="relative mt-2.5">
                       <div className="absolute inset-y-0 left-0 flex items-center">
                         <label htmlFor="country" className="sr-only">
-                          Quốc gia
+                          <FormattedMessage id="contact.form.country" />
                         </label>
                         <select
                           onChange={(e) => handleChange(FormType.COUNTRY, e)}
@@ -193,7 +196,7 @@ const Contact: FC = () => {
                         </select>
                       </div>
                       <input
-                        placeholder="Số điện thoại"
+                        placeholder={formatMessage({id: "contact.form.phone.number"})}
                         type="tel"
                         id="phone-number"
                         autoComplete="tel"
@@ -204,11 +207,11 @@ const Contact: FC = () => {
                   </div>
                   <div className="sm:col-span-2">
                     <label htmlFor="subject" className="block text-sm font-semibold leading-6 text-gray-900">
-                      Tiêu đề
+                      <FormattedMessage id="contact.form.subject" />
                     </label>
                     <div className="mt-2.5">
                       <input
-                        placeholder="Tiêu đề"
+                        placeholder={formatMessage({id: "contact.form.subject"})}
                         type="subject"
                         id="subject"
                         autoComplete="subject"
@@ -219,12 +222,12 @@ const Contact: FC = () => {
                   </div>
                   <div className="sm:col-span-2">
                     <label htmlFor="message" className="block text-sm font-semibold leading-6 text-gray-900">
-                      Nội dung
+                      <FormattedMessage id="contact.form.message" />
                     </label>
                     <div className="mt-2.5">
                       <textarea
                         onChange={(e) => handleChange(FormType.MESSAGE, e)}
-                        placeholder="Nội dung"
+                        placeholder={formatMessage({id: "contact.form.message"})}
                         id="message"
                         rows={4}
                         className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-primary-600 sm:text-sm sm:leading-6"
@@ -238,13 +241,13 @@ const Contact: FC = () => {
                     type="submit"
                     className="block w-full rounded-md bg-primary-600 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-primary-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-600"
                   >
-                    Gửi
+                    <FormattedMessage id="contact.form.send" />
                   </button>
                 </div>
               </form>
             </Col>
             <Col sm={12} xs={24}>
-              <h2 className="text-3xl font-semibold tracking-tight text-gray-900 sm:text-4xl">Liên hệ chúng tôi</h2>
+              <h2 className="text-3xl font-semibold tracking-tight text-gray-900 sm:text-4xl"><FormattedMessage id="contact.contact.us" /></h2>
               <div className="md:mt-28 mt-4">
                 <Row gutter={[16, 16]}>
                   <Col span={24}>
@@ -257,8 +260,8 @@ const Contact: FC = () => {
                         </Col>
                         <Col xs={16}>
                           <div>
-                            <h2 className="text-xl font-semibold tracking-tight text-gray-900">Địa chỉ văn phòng</h2>
-                            <p className="text-sm ">Số 42 đường 34, An Phú, thành phố Thủ Đức</p>
+                            <h2 className="text-xl font-semibold tracking-tight text-gray-900"><FormattedMessage id="contact.office.location" /></h2>
+                            <p className="text-sm "><FormattedMessage id="common.address.detail" /></p>
                           </div>
                         </Col>
                       </Row>
@@ -274,8 +277,8 @@ const Contact: FC = () => {
                         </Col>
                         <Col>
                           <div>
-                            <h2 className="text-2xl font-semibold tracking-tight text-gray-900">Hotline</h2>
-                            <p>028 2229 9685</p>
+                            <h2 className="text-2xl font-semibold tracking-tight text-gray-900"><FormattedMessage id="common.hotline" /></h2>
+                            <p><FormattedMessage id="common.hotline.detail" /></p>
                           </div>
                         </Col>
                       </Row>
@@ -291,8 +294,8 @@ const Contact: FC = () => {
                         </Col>
                         <Col>
                           <div>
-                            <h2 className="text-2xl font-semibold tracking-tight text-gray-900">Email</h2>
-                            <p>tpmcore@gmail.com</p>
+                            <h2 className="text-2xl font-semibold tracking-tight text-gray-900"><FormattedMessage id="common.email" /></h2>
+                            <p><FormattedMessage id="common.email.detail" /></p>
                           </div>
                         </Col>
                       </Row>
@@ -301,12 +304,12 @@ const Contact: FC = () => {
                   <Col span={24}>
                     <Row gutter={[12, 12]}>
                       <Col>
-                        <Button type="link" href="/home">
+                        <Button type="link" href="#">
                           <LinkedinFilled style={{ fontSize: 28 }} />
                         </Button>
                       </Col>
                       <Col>
-                        <Button type="link" href="/home">
+                        <Button type="link" href="#">
                           <TwitterSquareFilled style={{ fontSize: 28 }} />
                         </Button>
                       </Col>
@@ -316,7 +319,7 @@ const Contact: FC = () => {
                         </Button>
                       </Col>
                       <Col>
-                        <Button type="link" href="/home">
+                        <Button type="link" href="#">
                           <GithubFilled style={{ fontSize: 28 }} />
                         </Button>
                       </Col>
@@ -336,20 +339,20 @@ const Contact: FC = () => {
             </Col>
             <Col sm={12} xs={0}>
               <div className="mx-auto max-w-2xl text-center">
-                <h2 className="text-3xl font-semibold tracking-tight text-gray-900 sm:text-4xl">Hãy để lại liên lạc</h2>
+                <h2 className="text-3xl font-semibold tracking-tight text-gray-900 sm:text-4xl"><FormattedMessage id="contact.get.in.touch" /></h2>
                 <p className="mt-2 text-lg leading-8 text-gray-600">
-                  Chúng tôi sẽ liên hệ bạn trong thời gian sớm nhất.
+                  <FormattedMessage id="contact.get.in.touch.description" />
                 </p>
               </div>
               <form action={mailtoHref} method="POST" className="mt-8 w-full sm:mt-8">
                 <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
                   <div>
                     <label htmlFor="last-name" className="block text-sm font-semibold leading-6 text-gray-900">
-                      Họ
+                       <FormattedMessage id="contact.form.lastName" />
                     </label>
                     <div className="mt-2.5">
                       <input
-                        placeholder="Họ"
+                        placeholder={formatMessage({id: "contact.form.lastName"})}
                         type="text"
                         id="last-name"
                         autoComplete="family-name"
@@ -360,11 +363,11 @@ const Contact: FC = () => {
                   </div>
                   <div>
                     <label htmlFor="first-name" className="block text-sm font-semibold leading-6 text-gray-900">
-                      Tên
+                       <FormattedMessage id="contact.form.firstName" />
                     </label>
                     <div className="mt-2.5">
                       <input
-                        placeholder="Tên"
+                        placeholder={formatMessage({id: "contact.form.firstName"})}
                         type="text"
                         id="first-name"
                         autoComplete="given-name"
@@ -375,11 +378,11 @@ const Contact: FC = () => {
                   </div>
                   <div className="sm:col-span-2">
                     <label htmlFor="company" className="block text-sm font-semibold leading-6 text-gray-900">
-                      Công ty
+                      <FormattedMessage id="contact.form.company" />
                     </label>
                     <div className="mt-2.5">
                       <input
-                        placeholder="Công ty"
+                        placeholder={formatMessage({id: "contact.form.company"})}
                         type="text"
                         id="company"
                         autoComplete="organization"
@@ -390,11 +393,11 @@ const Contact: FC = () => {
                   </div>
                   <div className="sm:col-span-2">
                     <label htmlFor="email" className="block text-sm font-semibold leading-6 text-gray-900">
-                      Email
+                      <FormattedMessage id="contact.form.email" />
                     </label>
                     <div className="mt-2.5">
                       <input
-                        placeholder="Email"
+                        placeholder={formatMessage({id: "contact.form.email"})}
                         type="email"
                         id="email"
                         autoComplete="email"
@@ -405,12 +408,12 @@ const Contact: FC = () => {
                   </div>
                   <div className="sm:col-span-2">
                     <label htmlFor="phone-number" className="block text-sm font-semibold leading-6 text-gray-900">
-                      Số điện thoại
+                      <FormattedMessage id="contact.form.phone.number" />
                     </label>
                     <div className="relative mt-2.5">
                       <div className="absolute inset-y-0 left-0 flex items-center">
                         <label htmlFor="country" className="sr-only">
-                          Quốc gia
+                          <FormattedMessage id="contact.form.country" />
                         </label>
                         <select
                           onChange={(e) => handleChange(FormType.COUNTRY, e)}
@@ -424,7 +427,7 @@ const Contact: FC = () => {
                         </select>
                       </div>
                       <input
-                        placeholder="Số điện thoại"
+                        placeholder={formatMessage({id: "contact.form.phone.number"})}
                         type="tel"
                         id="phone-number"
                         autoComplete="tel"
@@ -435,11 +438,11 @@ const Contact: FC = () => {
                   </div>
                   <div className="sm:col-span-2">
                     <label htmlFor="subject" className="block text-sm font-semibold leading-6 text-gray-900">
-                      Tiêu đề
+                      <FormattedMessage id="contact.form.subject" />
                     </label>
                     <div className="mt-2.5">
                       <input
-                        placeholder="Tiêu đề"
+                        placeholder={formatMessage({id: "contact.form.subject"})}
                         type="subject"
                         id="subject"
                         autoComplete="subject"
@@ -450,12 +453,12 @@ const Contact: FC = () => {
                   </div>
                   <div className="sm:col-span-2">
                     <label htmlFor="message" className="block text-sm font-semibold leading-6 text-gray-900">
-                      Nội dung
+                      <FormattedMessage id="contact.form.message" />
                     </label>
                     <div className="mt-2.5">
                       <textarea
                         onChange={(e) => handleChange(FormType.MESSAGE, e)}
-                        placeholder="Nội dung"
+                        placeholder={formatMessage({id: "contact.form.message"})}
                         id="message"
                         rows={4}
                         className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-primary-600 sm:text-sm sm:leading-6"
@@ -469,7 +472,7 @@ const Contact: FC = () => {
                     type="submit"
                     className="block w-full rounded-md bg-primary-600 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-primary-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-600"
                   >
-                    Gửi
+                    <FormattedMessage id="contact.form.send" />
                   </button>
                 </div>
               </form>

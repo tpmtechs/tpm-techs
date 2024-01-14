@@ -19,6 +19,15 @@ const config = withPlugins([[withBundleAnalyzer({ enabled: env.ANALYZE })]], {
       { source: "/ping", destination: "/api/health" },
     ]
   },
+  redirects() {
+    return [
+      {
+        source: "/",
+        destination: "/vi/home",
+        permanent: true,
+      },
+    ]
+  },
 })
 
 export default config

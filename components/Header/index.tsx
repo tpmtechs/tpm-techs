@@ -1,16 +1,22 @@
 import { Button, Col, Image, Row } from "antd"
 import Link from "next/link"
 import { FC } from "react"
+import { FormattedMessage, useIntl } from "react-intl";
 import "./index.css"
+import urlcat from "urlcat"
 import MenuDrawer from "components/MenuDrawer"
+import Path from "config/path"
+import LocaleSelect from "components/LocaleSelect";
 
 const Header: FC = () => {
+  const { locale } = useIntl()
+
   return (
     <div className="fixed top-0 z-50 flex w-full items-center justify-center bg-white">
       <div className="header-container w-full ">
         <Row style={{ width: "100%" }} justify="space-between" align="middle">
           <Col lg={4} md={4} xs={10}>
-            <Link href="/home">
+            <Link href={urlcat(Path.HOME, {locale})}>
               <Image
                 preview={false}
                 width={60}
@@ -22,29 +28,32 @@ const Header: FC = () => {
           <Col lg={20} md={20} xs={0}>
             <Row gutter={[48, 48]} align="middle" justify="end">
               <Col>
-                <Link className="text-primary" href="/home">
-                  Trang chủ
+                <Link className="text-primary" href={urlcat(Path.HOME, {locale})}>
+                  <FormattedMessage id="common.home" />
                 </Link>
               </Col>
               <Col>
-                <Link className="text-primary" href="/about">
-                  Giới thiệu
+                <Link className="text-primary" href={urlcat(Path.ABOUT, {locale})}>
+                  <FormattedMessage id="common.about" />
                 </Link>
               </Col>
               <Col>
-                <Link className="text-primary" href="/services">
-                  Dịch vụ
+                <Link className="text-primary" href={urlcat(Path.SERVICES, {locale})}>
+                  <FormattedMessage id="common.services" />
                 </Link>
               </Col>
               <Col>
-                <Link className="text-primary" href="/projects">
-                  Dự án
+                <Link className="text-primary" href={urlcat(Path.PROJECTS, {locale})}>
+                  <FormattedMessage id="common.projects" />
                 </Link>
               </Col>
               <Col>
-                <Button type="primary" size="large" href="/contact">
-                  Liên hệ
+                <Button type="primary" size="large" href={urlcat(Path.CONTACT, {locale})}>
+                  <FormattedMessage id="common.contact.us" />
                 </Button>
+              </Col>
+              <Col>
+                <LocaleSelect  />
               </Col>
             </Row>
           </Col>

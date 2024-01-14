@@ -3,6 +3,7 @@
 import Link from "next/link"
 import { type FC } from "react"
 import './index.css';
+import { FormattedMessage } from "react-intl";
 
 interface IServiceCard {
     title: string;
@@ -24,9 +25,8 @@ const ServiceCard: FC<IServiceCard> = ({title, description, image, href}) => {
         <div className="text-lg font-bold">{title}</div>
         <div className="text-base font-regular mt-2 block-ellipsis">{description}</div>
         {
-          !!href && (<Link href={href}>{`Đọc thêm`}</Link>)
+          !!href && (<Link href={href}><FormattedMessage id="home.services.read.more" /></Link>)
         }
-        
       </div>
     </div>
   )

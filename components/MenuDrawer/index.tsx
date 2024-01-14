@@ -6,6 +6,7 @@ import { FC, useState } from "react"
 import { MenuOutlined } from "@ant-design/icons"
 import { topFunction } from "utils/utils"
 import Path from "config/path"
+import LocaleSelect from "components/LocaleSelect"
 
 const MenuDrawer: FC = () => {
   const [open, setOpen] = useState(false)
@@ -27,7 +28,9 @@ const MenuDrawer: FC = () => {
       <Button type="link" onClick={showDrawer}>
         <MenuOutlined />
       </Button>
-      <Drawer placement="right" onClose={onClose} open={open}>
+      <Drawer 
+      footer={<LocaleSelect />} 
+      placement="right" onClose={onClose} open={open}>
         <div>
           <Row gutter={[12, 12]}>
             <Col span={24}>

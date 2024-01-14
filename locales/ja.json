@@ -1,0 +1,36 @@
+{
+  "common.home": "ホームページ",
+  "common.about": "について",
+  "common.services": "サービス",
+  "common.projects": "プロジェクト",
+  "common.contact.us": "接触",
+  "common.address": "住所",
+  "common.address.detail": "No. 42、Street 34、An Phu、Thu Duc 市",
+  "common.email": "メール",
+  "common.email.detail": "tpmcore@gmail.com",
+  "common.hotline": "ホットライン",
+  "common.hotline.detail": "028 2229 9585",
+  "common.slogan": "私たちはお客様の信頼できるパートナーです",
+  "common.all.rights.reserved": "無断転載を禁じます",
+
+  "common.vietnamese": "ベトナム語",
+  "common.english": "英語",
+  "common.japanese": "日本語",
+
+  "footer.support.title": "助けが必要 ？",
+  "footer.support.subtitle": "情報を登録してアドバイスを受け取る",
+  "footer.support.name": "名前と苗字",
+  "footer.support.phone.number": "電話番号",
+  "footer.support.email": "メール",
+  "footer.support.field": "アドバイスが必要な分野",
+  "footer.support.field.internet.of.things": "Internet of Things",
+  "footer.support.field.recycled.energy": "再生エネルギー",
+  "footer.support.field.other": "その他の地域",
+  "footer.support.submit": "登録する",
+  "footer.support.subject": "コンサルティングサポート",
+  "footer.support.content": "コンテンツ",
+  "footer.support.message": "現場でのコンサルティングサポートが必要",
+
+  "projects.category.clean.energy": "クリーンエネルギー",
+  "projects.category.internet.of.things": "Internet of Things"
+}

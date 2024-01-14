@@ -1,7 +1,18 @@
-import { type FC } from "react"
+/* eslint-disable @next/next/no-img-element */
 import Link from "antd/es/typography/Link"
+import { type FC } from "react"
+import { useIntl } from "react-intl"
+import urlcat from "urlcat"
+import Path from "config/path"
+
 
 const Post: FC<{ post: any }> = ({ post }) => {
+  const { locale } = useIntl();
+  const href = urlcat(Path.BLOG_DETAIL, {
+    locale,
+    id: post.id,
+  })
+
   return (
     <article key={post?.id} className="flex max-w-xl flex-col items-start">
       <div className="flex items-center gap-x-4 text-xs">
@@ -25,10 +36,10 @@ const Post: FC<{ post: any }> = ({ post }) => {
           className="mt-4 w-full rounded-xl object-cover"
           style={{ height: 200, width: 380 }}
           src={post?.image}
-          alt="post-image"
+          alt="post"
         />
         <h3 className="mt-3 text-xl font-semibold leading-6 text-gray-900 group-hover:text-gray-600">
-          <Link href={`/blog/${post?.id}`}>
+          <Link href={href}>
             <span className="absolute inset-0" />
             <div style={{ color: "#3172A9" }} className="text-xl font-semibold">
               {post?.title}

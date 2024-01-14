@@ -1,13 +1,30 @@
+'use client'
+
 import { CheckOutlined } from "@ant-design/icons"
 import { Button, Col, Divider, Row } from "antd"
-import { type FC } from "react"
+import { type FC, useEffect, useState  } from "react"
+import { FormattedMessage, useIntl } from "react-intl"
+import urlcat from "urlcat"
+import { BlogType } from "app/[locale]/blog/data"
 import ServiceCard from "components/ServiceCard"
-import { BlogType, serviceBlogs } from "app/[locale]/blog/data"
+import Path from "config/path"
+
 
 const Services: FC = () => {
-  const services = serviceBlogs.filter((blog) => {
-    return blog?.type === BlogType.SERVICE
-  })
+  const {locale} = useIntl();
+
+  const [blogs, setBlogs] = useState<IBlog[]>([])
+
+  useEffect(() => {
+    const load = async () => {
+      const data = (await import(`app/[locale]/blog/blogs/${locale}`)).serviceBlogs.filter((blog: IBlog) => {
+        return blog.type === BlogType.SERVICE
+      })
+      setBlogs(data)
+    }
+
+    load()
+  }, [locale])
 
   return (
     <div className="flex w-full flex-col items-center justify-center " style={{ marginTop: "66px" }}>
@@ -19,13 +36,13 @@ const Services: FC = () => {
           <Row gutter={[24, 24]}>
             <Col span={24}>
               <div className="text-2xl italic text-white">{`TPM Technology`}</div>
-              <div className="text-5xl font-extrabold text-white">{`Cung cấp các giải pháp sáng tạo và bền vững`}</div>
+              <div className="text-5xl font-extrabold text-white"><FormattedMessage id="services.banner.title" /></div>
             </Col>
             <Col span={24}>
               <Row gutter={[24, 24]} align="middle" justify="start">
                 <Col>
                   <Button type="primary" size="large" href="/contact">
-                    {`Liên hệ với chúng tôi`}
+                    <FormattedMessage id="services.banner.contact.us" />
                   </Button>
                 </Col>
               </Row>
@@ -38,28 +55,32 @@ const Services: FC = () => {
       <div style={{ maxWidth: 1280, padding: '0 32px' }} className="w-full">
         <section className="my-16">
           <div style={{ color: "#3172A9" }} className="text-3xl font-semibold">
-            # {`Dịch vụ`}
+            # <FormattedMessage id="services.title" />
           </div>
           <Divider />
           <div className="my-1 flex items-center justify-center text-center text-lg font-semibold text-primary">
-            <div className="w-6/12 ">{`Dịch vụ tốt nhất!`}</div>
+            <div className="w-6/12 "><FormattedMessage id="services.subtitle" /></div>
           </div>
           <div className="my-1 flex items-center justify-center text-center text-4xl font-semibold">
-            <div className="md:w-8/12 sm:w-full font-semibold">{`
-              Cung cấp dịch vụ hiệu suất cao cho nhiều ngành công nghiệp và công nghệ!
-            `}</div>
+            <div className="md:w-8/12 sm:w-full font-semibold"><FormattedMessage id="services.description" /></div>
           </div>
 
           <div className="my-8">
             <Row gutter={[48, 48]} align="middle" justify="center">
-              {services.map((service) => {
+              {blogs.map((service) => {
+
+                const href = urlcat(Path.BLOG_DETAIL, {
+                  locale,
+                  id: service.id
+                })
+
                 return (
                   <Col key={service.title}  xl={8} sm={12} xs={24}>
                     <ServiceCard
                       title={service.title}
                       description={service.description}
                       image={service.image}
-                      href={`/blog/${service.id}`}
+                      href={href}
                     />
                   </Col>
                 )
@@ -77,10 +98,10 @@ const Services: FC = () => {
           <Row style={{ padding: '32px 0' }} gutter={[48, 48]} align="middle" justify={{xs: 'center', sm: 'start'}}>
             <Col sm={12} xs={24}>
               <div className="text-left text-lg font-semibold text-gamboge">
-                {`Xây dựng tương lại, Khôi phục quá khứ`}
+                <FormattedMessage id="services.criteria.subtitle" />
               </div>
               <div className="text-left text-4xl font-semibold text-white">
-                {`Sản phẩm đáng tin cây, hiệu quả và kỹ thuật tiên tiến!`}
+                <FormattedMessage id="services.criteria.title" />
               </div>
             </Col>
             <Col sm={12} xs={24}>
@@ -90,11 +111,9 @@ const Services: FC = () => {
                     <CheckOutlined className="text-2xl" />
                   </Col>
                   <Col span={22}>
-                    <div className="mb-4 text-xl font-semibold">{`Tối Ưu Hóa Hiệu Suất Với IoT`}</div>
+                    <div className="mb-4 text-xl font-semibold"><FormattedMessage id="services.criteria.1.title" /></div>
                     <div>
-                      {`Hệ thống thông minh của chúng tôi không chỉ kiểm soát chất lượng mà còn tối
-ưu hóa hiệu suất, giúp doanh nghiệp của bạn tiết kiệm chi phí và thời gian một
-cách đáng kể.`}
+                      <FormattedMessage id="services.criteria.1.description" />
                     </div>
                   </Col>
                 </Row>
@@ -107,9 +126,9 @@ cách đáng kể.`}
                     <CheckOutlined className="text-2xl" />
                   </Col>
                   <Col span={22}>
-                    <div className="mb-4 text-xl font-semibold">{`Kiểm Soát Chất Lượng Hiệu Quả`}</div>
+                    <div className="mb-4 text-xl font-semibold"><FormattedMessage id="services.criteria.2.title" /></div>
                     <div>
-                      {`Chúng tôi nâng cao giá trị sản phẩm của mình bằng cách kiểm soát chất lượng một cách hiệu quả.`}
+                      <FormattedMessage id="services.criteria.2.description" />
                     </div>
                   </Col>
                 </Row>
@@ -122,9 +141,9 @@ cách đáng kể.`}
                     <CheckOutlined className="text-2xl" />
                   </Col>
                   <Col span={22}>
-                    <div className="mb-4 text-xl font-semibold">{`Đảm Bảo Sự Hài Lòng 100%`}</div>
+                    <div className="mb-4 text-xl font-semibold"><FormattedMessage id="services.criteria.3.title" /></div>
                     <div>
-                      {`Một cách tiếp cận tích hợp để cung cấp các dịch vụ kỹ thuật cho phép khách hàng của chúng tôi được hưởng lợi từ thương mại và hậu cần.`}
+                      <FormattedMessage id="services.criteria.3.description" />
                     </div>
                   </Col>
                 </Row>
@@ -137,11 +156,9 @@ cách đáng kể.`}
                     <CheckOutlined className="text-2xl" />
                   </Col>
                   <Col span={22}>
-                    <div className="mb-4 text-xl font-semibold">{`An Toàn và Bảo Mật Vững Chắc`}</div>
+                    <div className="mb-4 text-xl font-semibold"><FormattedMessage id="services.criteria.4.title" /></div>
                     <div>
-                      {`Với cam kết đặt sự an toàn và bảo mật lên hàng đầu, sản phẩm IoT của chúng
-tôi giúp bảo vệ dữ liệu quan trọng của bạn, đồng thời giảm thiểu rủi ro liên quan
-đến an ninh mạng.`}
+                      <FormattedMessage id="services.criteria.4.description" />
                     </div>
                   </Col>
                 </Row>
@@ -154,11 +171,9 @@ tôi giúp bảo vệ dữ liệu quan trọng của bạn, đồng thời giả
                     <CheckOutlined className="text-2xl" />
                   </Col>
                   <Col span={22}>
-                    <div className="mb-4 text-xl font-semibold">{`Trải Nghiệm Người Dùng Xuất Sắc`}</div>
+                    <div className="mb-4 text-xl font-semibold"><FormattedMessage id="services.criteria.5.title" /></div>
                     <div>
-                      {`Hệ thống của chúng tôi không chỉ đảm bảo chất lượng sản phẩm mà còn tạo ra
-trải nghiệm người dùng xuất sắc, giúp nâng cao sự hài lòng và tạo ra một sự kết
-nối mạnh mẽ giữa doanh nghiệp và khách hàng.`}
+                      <FormattedMessage id="services.criteria.5.description" />
                     </div>
                   </Col>
                 </Row>

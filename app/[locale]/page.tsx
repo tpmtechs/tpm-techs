@@ -1,6 +1,6 @@
 
 import { Metadata } from "next"
-import Home from "./[locale]/home/page"
+import Home from "./home/page"
 
 export const metadata: Metadata = {
   title: "TPM Technology",
