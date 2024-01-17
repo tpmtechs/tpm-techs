@@ -1,0 +1,23 @@
+.member-card {
+  padding: 12px;
+  border-radius: 12px;
+}
+
+.info {
+  margin-top: 12px;
+  padding: 0 12px;
+}
+
+.description {
+  margin-top: 12px;
+  color: black;
+}
+
+.role {
+  color: #4772c2;
+}
+
+.name {
+  color: black;
+  font-size: 20px;
+}
