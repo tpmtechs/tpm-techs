@@ -1,6 +1,5 @@
 bootstrap:
-	nvm use 18
-	npm install
+	npm install --legacy-peer-deps
 	npm run dev
 
 dev:
