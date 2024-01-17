@@ -12,7 +12,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/tpmtechs/tpm-techs">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
+    <img src="https://firebasestorage.googleapis.com/v0/b/tpm-techs.appspot.com/o/tpm-technology.jpg?alt=media&token=a4dfd9c8-b9d4-4990-8919-2f1fedad470f" alt="Logo" width="80" height="80">
   </a>
 
   <h3 align="center">TPM Technology</h3>
