@@ -436,6 +436,8 @@ thể nghiêm trọng hơn và cần thêm thời gian để khắc phục.`,
 ]
 
 export const posts: IBlog[] = [
+  // Thêm một bài viết mới ở đây
+
   {
     image:
       "https://firebasestorage.googleapis.com/v0/b/tpm-techs.appspot.com/o/NL4.jpg?alt=media&token=666d6d47-9db7-44bd-97e9-733558fbf56c",
@@ -1039,6 +1041,77 @@ Việt Nam.`,
     ],
   },
 
+  {
+    image:
+      "https://firebasestorage.googleapis.com/v0/b/tpm-techs.appspot.com/o/post-11.jpg?alt=media&token=9c874e9a-b915-4985-88be-7e89b69358ae",
+    id: 212,
+    title: `Bài viết mới`,
+    href: "#",
+    description: `Dự án điện năng lượng mặt trời tại Tân Bình, hoàn thành vào năm 2019, là một
+minh chứng cho sự thành công và đồng hành hiệu quả giữa chủ đầu tư
+MEDIPHAR CNC Tân Bình và nhà thầu TPCons. Dự án này đã tạo ra một nguồn
+điện tái tạo quan trọng, góp phần vào việc giảm thiểu ảnh hưởng của ngành công
+nghiệp đến môi trường.`,
+    date: "Mar 16, 2020",
+    datetime: "2020-03-16",
+    category: { title: "Năng lượng sạch", href: "#" },
+    author: {
+      name: "Michael Foster",
+      role: "Co-Founder / CTO",
+      href: "#",
+      imageUrl:
+        "https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
+    },
+    contents: [
+      {
+        type: TYPE.IMAGE,
+        content: `https://firebasestorage.googleapis.com/v0/b/tpm-techs.appspot.com/o/image-801.jpg?alt=media&token=3404a7e1-b586-417e-b7c9-53bb3c43e530`,
+      },
+      {
+        type: TYPE.PARAGRAPH,
+        content: `Chủ đầu tư MEDIPHAR CNC Tân Bình, đơn vị có uy tín trong lĩnh vực y tế,
+đã chọn lựa sử dụng năng lượng mặt trời như một phần quan trọng của chiến lược
+bền vững của mình. Dự án không chỉ giúp giảm chi phí vận hành mà còn thể hiện
+cam kết của MEDIPHAR CNC Tân Bình đối với trách nhiệm xã hội và môi
+trường.`,
+      },
+      {
+        type: TYPE.IMAGE,
+        content: `https://firebasestorage.googleapis.com/v0/b/tpm-techs.appspot.com/o/image-802.jpg?alt=media&token=2fe79ee5-fd3c-4bc5-890b-e6087a1235ef`,
+      },
+      {
+        type: TYPE.PARAGRAPH,
+        content: `Công ty TNHH Đầu tư và Xây dựng TPCons, với kinh nghiệm và chuyên môn
+cao trong lĩnh vực xây dựng hệ thống năng lượng mặt trời, đã đảm nhận vai trò chủ
+thầu. Việc triển khai dự án được thực hiện một cách chặt chẽ, đảm bảo tính an toàn
+và hiệu suất hoạt động của hệ thống.`,
+      },
+      {
+        type: TYPE.IMAGE,
+        content: `https://firebasestorage.googleapis.com/v0/b/tpm-techs.appspot.com/o/image-803.jpg?alt=media&token=17b2108c-72ee-4dc4-a6bf-21bd324eadfe`,
+      },
+      {
+        type: TYPE.PARAGRAPH,
+        content: `Dự án không chỉ là nguồn năng lượng sạch mà còn là minh chứng cho sự hợp
+tác thành công giữa chủ đầu tư và chủ thầu, tạo ra giá trị bền vững cho cả cộng
+đồng và doanh nghiệp. Sự đổi mới trong lĩnh vực năng lượng của MEDIPHAR
+CNC Tân Bình và TPCons đã góp phần quan trọng vào sự phát triển bền vững của
+Việt Nam.`,
+      },
+      {
+        type: TYPE.IMAGE,
+        content: `https://firebasestorage.googleapis.com/v0/b/tpm-techs.appspot.com/o/image-804.jpg?alt=media&token=b046e689-4088-49bb-a9a2-7e650b0f6be0`,
+      },
+      {
+        type: TYPE.IMAGE,
+        content: `https://firebasestorage.googleapis.com/v0/b/tpm-techs.appspot.com/o/image-805.jpg?alt=media&token=fb4a47e6-2e9f-4ac9-83f0-696ac355c680`,
+      },
+      {
+        type: TYPE.IMAGE,
+        content: `https://firebasestorage.googleapis.com/v0/b/tpm-techs.appspot.com/o/image-806.jpg?alt=media&token=f440da89-a585-44fc-903a-1c6d9f1a1088`,
+      },
+    ],
+  },
   // Iot
   {
     id: 212,
