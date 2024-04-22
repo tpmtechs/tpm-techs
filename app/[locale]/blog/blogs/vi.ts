@@ -1207,6 +1207,18 @@ Việt Nam.`,
       },
     ],
   },
+  {
+    id: 215,
+    date: "Apr 22, 2024",
+    datetime: "2024-04-22",
+    category: { title: "Internet of Things", href: "#" },
+    title: `Module camera detect bụi bẩn và cảnh báo mức độ dơ bề mặt`,
+    description: `Module camera detect bụi bẩn và cảnh báo mức độ dơ bề mặt`,
+    image: `https://firebasestorage.googleapis.com/v0/b/tpm-techs.appspot.com/o/z5373684133797_048de6024bc99eae29ea4dcd264c61c2.jpg?alt=media&token=e62d5fda-297b-4d6b-9847-f2326d587e2c`,
+    contents: [],
+  },
+
+
 ]
 
 export const serviceBlogs: IBlog[] = [
