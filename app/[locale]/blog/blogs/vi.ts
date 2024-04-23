@@ -1367,7 +1367,7 @@ Việt Nam.`,
         content: `Dự án xây dựng module tích hợp camera AI nhận biết bụi và cảnh báo mức độ dơ trên ứng 
                   dụng di động sẽ mang lại một giải pháp toàn diện cho việc quản lý chất lượng trong quy
                   trình sản xuất công nghiệp. Điều này giúp tối ưu hóa quy trình kiểm soát chất lượng, giảm
-                  thiểu sai sót, và đảm bảo rằng sản phẩm luôn đạt chất lượng cao nhất.`,
+                  thiểu sai sót, và đảm bảo rằng sản phẩm luôn đạt chất lượng cao nhất. `,
       },
 
 
