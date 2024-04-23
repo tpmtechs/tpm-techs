@@ -1299,11 +1299,18 @@ Việt Nam.`,
       },
       {
         type: TYPE.IMAGE,
-        items: [
-          `https://firebasestorage.googleapis.com/v0/b/tpm-techs.appspot.com/o/app_01.png?alt=media&token=5ec3bb00-ed8e-4e8b-9976-ca3676dac8b6`,
-          `https://firebasestorage.googleapis.com/v0/b/tpm-techs.appspot.com/o/app_02.png?alt=media&token=b70ca346-799c-40d0-b5dc-2eaa0df45ce3`,
-          `https://firebasestorage.googleapis.com/v0/b/tpm-techs.appspot.com/o/app_003.png?alt=media&token=ba783292-3cc4-4eef-86a1-156c84dfff81`,
-        ]
+        content: `https://firebasestorage.googleapis.com/v0/b/tpm-techs.appspot.com/o/app_01.png?alt=media&token=5ec3bb00-ed8e-4e8b-9976-ca3676dac8b6`,
+
+      },
+      {
+        type: TYPE.IMAGE,
+        content: `https://firebasestorage.googleapis.com/v0/b/tpm-techs.appspot.com/o/app_02.png?alt=media&token=b70ca346-799c-40d0-b5dc-2eaa0df45ce3`,
+
+      },
+      {
+        type: TYPE.IMAGE,
+        content: `https://firebasestorage.googleapis.com/v0/b/tpm-techs.appspot.com/o/app_003.png?alt=media&token=ba783292-3cc4-4eef-86a1-156c84dfff81`,
+        
       },
       {
         type: TYPE.LIST,
