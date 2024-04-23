@@ -1212,10 +1212,116 @@ Việt Nam.`,
     date: "Apr 22, 2024",
     datetime: "2024-04-22",
     category: { title: "Internet of Things", href: "#" },
-    title: `Module camera detect bụi bẩn và cảnh báo mức độ dơ bề mặt`,
+    title: `Giải pháp sử dụng trí tuệ nhân tạo và Internet vạn vật cho ứng dụng trên thiết bị di động`,
     description: `Module camera detect bụi bẩn và cảnh báo mức độ dơ bề mặt`,
     image: `https://firebasestorage.googleapis.com/v0/b/tpm-techs.appspot.com/o/z5373684133797_048de6024bc99eae29ea4dcd264c61c2.jpg?alt=media&token=e62d5fda-297b-4d6b-9847-f2326d587e2c`,
-    contents: [],
+    contents: [
+      {
+        type: TYPE.TITLE,
+        content: `Thiết bị`,
+      },
+      {
+        type: TYPE.LIST,
+        items: [
+          `Module tích hợp camera mang lại sự thông minh và hiệu quả cho việc quản lý `,
+          `chất lượng trong quy trình sản xuất keo công nghiệp. Với việc kết hợp công `,
+          `nghệ camera và trí tuệ nhân tạo, chúng tôi mang đến một giải pháp toàn diện `,
+          `cho việc nhận biết mức độ dơ và phân tích bụi trên bề mặt cuộn keo, cùng với `,
+          `các thông số môi trường như nhiệt độ và độ ẩm xung quanh.`,
+       
+        ],
+      },
+      {
+        type: TYPE.TITLE,
+        content: `Tính năng và lợi ích`,
+      },
+      {
+        type: TYPE.IMAGE,
+        content: `https://firebasestorage.googleapis.com/v0/b/tpm-techs.appspot.com/o/hinhosd2.jpg?alt=media&token=f33a8c8c-0b9e-48ce-be1d-20c10ef6d2ea`,
+      },
+      {
+        type: TYPE.LIST,
+        items: [
+          `Nhận biết mức độ dơ: Module của chúng tôi có khả năng nhận diện mức  `,
+          `độ dơ trên bề mặt của cuộn keo, từ đó cung cấp thông tin chính xác và  `,
+          `chi tiết về tình trạng sạch sẽ của sản phẩm. `,
+       
+        ],
+      },
+      {
+        type: TYPE.IMAGE,
+        content: `https://firebasestorage.googleapis.com/v0/b/tpm-techs.appspot.com/o/AI_0001.jpg?alt=media&token=fea9fac1-0baa-452e-b2a5-ffaff035c37a`,
+      },
+      {
+        type: TYPE.LIST,
+        items: [
+          `Phân tích bụi trên bề mặt: Sử dụng trí tuệ nhân tạo, chúng tôi có thể  `,
+          `phân tích và định loại các loại bụi mà không cần can thiệp của con người.`,
+          `Điều này giúp tối ưu hóa quy trình kiểm soát chất lượng và giảm thiểu `,
+          `sai sót.`,
+        ],
+      },
+      {
+        type: TYPE.IMAGE,
+        content: `https://firebasestorage.googleapis.com/v0/b/tpm-techs.appspot.com/o/AI_0002.gif?alt=media&token=69eb612c-3ef0-4262-838a-ec28a9c027a0`,
+      },
+      {
+        type: TYPE.LIST,
+        items: [
+          `Tích hợp AI nhận biết các loại bụi mới: Không chỉ nhận biết các loại `,
+          `bụi thông thường, mà module của chúng tôi còn có khả năng học và nhận `,
+          `biết các loại bụi mới xuất hiện trên bề mặt của cuộn keo, đảm bảo rằng `,
+          `quy trình kiểm tra luôn được cập nhật và hiệu quả.`,
+        ],
+      },
+      {
+        type: TYPE.IMAGE,
+        content: `https://firebasestorage.googleapis.com/v0/b/tpm-techs.appspot.com/o/AI_0003.png?alt=media&token=bafff354-d1ce-4fa4-bca5-a396785baec5 `,
+      },
+      {
+        type: TYPE.LIST,
+        items: [
+          `Dự đoán thời gian mức độ dơ đạt ngưỡng: Hệ thống của chúng tôi sử `,
+          `dụng dữ liệu lịch sử và thuật toán dự đoán để ước lượng thời gian cần `,
+          `thiết cho mức độ dơ đạt tới ngưỡng mà người dùng đã định trước. Điều `,
+          `này giúp người dùng có thể lên kế hoạch và thực hiện các biện pháp `,
+          `phòng tránh kịp thời, tránh được những hậu quả không mong muốn.`,
+        ],
+      },
+      {
+        type: TYPE.LIST,
+        items: [
+          `Tối ưu hóa quy trình quản lý chất lượng: Việc dự đoán thời gian mức  `,
+          `độ dơ giúp tối ưu hóa quy trình quản lý chất lượng, giảm thiểu thời gian `,
+          `và công sức mà người dùng phải bỏ ra cho việc kiểm tra thường xuyên, `,
+          `đồng thời đảm bảo rằng sản phẩm luôn đạt chất lượng cao nhất.`,
+        ],
+      },
+      {
+        type: TYPE.IMAGE,
+        content: `https://firebasestorage.googleapis.com/v0/b/tpm-techs.appspot.com/o/app_02.png?alt=media&token=b70ca346-799c-40d0-b5dc-2eaa0df45ce3`,
+      },
+      {
+        type: TYPE.LIST,
+        items: [
+          `Cảnh báo thông qua ứng dụng di động: Thông tin về dự đoán thời `,
+          `gian mức độ dơ đạt ngưỡng cũng sẽ được cung cấp thông qua ứng dụng `,
+          `di động, giúp người dùng có thể tham khảo và chuẩn bị kế hoạch một `,
+          `cách thuận tiện từ bất kỳ đâu, thông tin về tình trạng sạch sẽ của cuộn `,
+          `keo và các chỉ số môi trường sẽ được truy cập dễ dàng thông qua ứng `,
+          `dụng di động. Người dùng có thể nhận được cảnh báo ngay lập tức khi `,
+          `phát hiện vấn đề, giúp họ có thể can thiệp kịp thời và giảm thiểu nguy `,
+          `cơ sai sót nhất.`,
+        ],
+      },
+      {
+        type: TYPE.IMAGE,
+        content: `https://firebasestorage.googleapis.com/v0/b/tpm-techs.appspot.com/o/app_004.png?alt=media&token=5b24c994-2b85-44a6-99b2-ca381c36429f`,
+      },
+
+
+
+    ],
   },
 
 
