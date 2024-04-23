@@ -1298,14 +1298,26 @@ Việt Nam.`,
         ],
       },
       {
+        type: TYPE.TITLE,
+        content: `Ứng dụng di động`,
+      },
+      {
         type: TYPE.IMAGE,
         content: `https://firebasestorage.googleapis.com/v0/b/tpm-techs.appspot.com/o/app_01.png?alt=media&token=5ec3bb00-ed8e-4e8b-9976-ca3676dac8b6`,
 
       },
       {
+        type: TYPE.TITLE,
+        content: `Màn hình tích hợp nhiều chức năng`,
+      },
+      {
         type: TYPE.IMAGE,
         content: `https://firebasestorage.googleapis.com/v0/b/tpm-techs.appspot.com/o/app_02.png?alt=media&token=b70ca346-799c-40d0-b5dc-2eaa0df45ce3`,
 
+      },
+      {
+        type: TYPE.TITLE,
+        content: `Màn hình quản lý, hiển thị các máy đã tích hợp modules`,
       },
       {
         type: TYPE.IMAGE,
@@ -1326,9 +1338,38 @@ Việt Nam.`,
         ],
       },
       {
+        type: TYPE.TITLE,
+        content: `Màn hình hiển thị chi tiết các thông số đã được thu thập và tính toán từ module`,
+      },
+      {
         type: TYPE.IMAGE,
         content: `https://firebasestorage.googleapis.com/v0/b/tpm-techs.appspot.com/o/app_004.png?alt=media&token=5b24c994-2b85-44a6-99b2-ca381c36429f`,
       },
+      {
+        type: TYPE.TITLE,
+        content: `Màn hình hiển thị thống kê số lượng theo biểu đồ một cách trừu tượng`,
+      },
+      {
+        type: TYPE.IMAGE,
+        content: `https://firebasestorage.googleapis.com/v0/b/tpm-techs.appspot.com/o/app_005.png?alt=media&token=d1367843-dfc3-442a-a09f-6001df055fa0`,
+      },
+      {
+        type: TYPE.TITLE,
+        content: `Màn hình hiển thị các cảnh báo khi đặt ngưỡng do người dùng định nghĩa`,
+      },
+      {
+        type: TYPE.IMAGE,
+        content: `https://firebasestorage.googleapis.com/v0/b/tpm-techs.appspot.com/o/app_006.png?alt=media&token=8cf01941-cc37-4610-b6b5-0173e01bc956`,
+      },
+
+      {
+        type: TYPE.TITLE,
+        content: `Dự án xây dựng module tích hợp camera AI nhận biết bụi và cảnh báo mức độ dơ trên ứng 
+                  dụng di động sẽ mang lại một giải pháp toàn diện cho việc quản lý chất lượng trong quy
+                  trình sản xuất công nghiệp. Điều này giúp tối ưu hóa quy trình kiểm soát chất lượng, giảm
+                  thiểu sai sót, và đảm bảo rằng sản phẩm luôn đạt chất lượng cao nhất.`,
+      },
+
 
 
 
