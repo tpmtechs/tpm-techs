@@ -1213,7 +1213,7 @@ school.`,
     datetime: "2024-04-22",
     category: { title: "Internet of Things", href: "#" },
     title: `The solution utilizes artificial intelligence and the Internet of Things for applications on mobile devices.`,
-    description: `The camera module detects dust and alerts about the level of surface dirt.`,
+    description: `The camera module detects dirt and alerts the level of surface dirt.`,
     image: `https://firebasestorage.googleapis.com/v0/b/tpm-techs.appspot.com/o/z5373684133797_048de6024bc99eae29ea4dcd264c61c2.jpg?alt=media&token=e62d5fda-297b-4d6b-9847-f2326d587e2c`,
     contents: [
       {
@@ -1221,82 +1221,54 @@ school.`,
         content: `The device`,
       },
       {
-        type: TYPE.LIST,
-        items: [
-          `The integrated camera module brings intelligence and efficiency to quality management`,
-          `in industrial adhesive manufacturing processes. By combining camera technology and`,
-          `artificial intelligence, we provide a comprehensive solution for detecting dirt levels`,
-          `and analyzing dust on adhesive rolls, along with environmental parameters such as`,
-          `temperature and humidity.`,
-       
-        ],
+        type: TYPE.PARAGRAPH,
+        content: `The integrated camera module brings intelligence and efficiency to quality management in the industrial adhesive manufacturing process. By combining camera technology and artificial intelligence, we provide a comprehensive solution for recognizing the level of dirt and analyzing dust on the surface of adhesive rolls, along with environmental parameters such as temperature and humidity.`,  
       },
       {
         type: TYPE.TITLE,
-        content: `Features and Benefits`,
+        content: `Features and benefits`,
       },
       {
         type: TYPE.IMAGE,
         content: `https://firebasestorage.googleapis.com/v0/b/tpm-techs.appspot.com/o/hinhosd2.jpg?alt=media&token=f33a8c8c-0b9e-48ce-be1d-20c10ef6d2ea`,
       },
       {
-        type: TYPE.LIST,
-        items: [
-          `Detecting dirt levels: Our module has the capability to recognize the degree`,
-          `of dirt on the surface of adhesive rolls, thereby providing accurate and detailed`,
-          `information about the cleanliness status of the product.`,
-       
-        ],
+        type: TYPE.PARAGRAPH,
+        content: `Detecting dirt level: Our module has the capability to recognize the level of dirt on the surface of the adhesive roll, thereby providing accurate and detailed information about the cleanliness status of the product. `,
       },
       {
         type: TYPE.IMAGE,
         content: `https://firebasestorage.googleapis.com/v0/b/tpm-techs.appspot.com/o/AI_0001.jpg?alt=media&token=fea9fac1-0baa-452e-b2a5-ffaff035c37a`,
       },
       {
-        type: TYPE.LIST,
-        items: [
-          `Analyzing dust on the surface: Using artificial intelligence, we can analyze`,
-          `and classify various types of dust without human intervention. This helps optimize`,
-          `quality control processes and minimize errors.`,
-        ],
+        type: TYPE.PARAGRAPH,
+        content: `Analysis of dust on the surface: Using artificial intelligence, we can analyze and classify various types of dust without human intervention. This helps optimize the quality control process and minimize errors.`,   
       },
       {
         type: TYPE.IMAGE,
         content: `https://firebasestorage.googleapis.com/v0/b/tpm-techs.appspot.com/o/AI_0002.gif?alt=media&token=69eb612c-3ef0-4262-838a-ec28a9c027a0`,
       },
       {
-        type: TYPE.LIST,
-        items: [
-          `Integration of AI to recognize new types of dust: Our module not only identifies`,
-          `common types of dust, but also has the ability to learn and recognize new types`,
-          `of dust appearing on the surface of adhesive rolls, ensuring that the inspection`,
-          `process is always updated and effective.`,
-        ],
+        type: TYPE.PARAGRAPH,
+        content: `
+        Integration of AI to recognize new types of dust: Our module not only identifies common types of dust but also has the ability to learn and recognize newly emerging types of dust on the surface of the adhesive roll, ensuring that the inspection process is always up-to-date and effective.`,   
       },
       {
         type: TYPE.IMAGE,
         content: `https://firebasestorage.googleapis.com/v0/b/tpm-techs.appspot.com/o/3.gif?alt=media&token=34930a62-01b4-4132-8840-68e59e29b809`,
       },
       {
-        type: TYPE.LIST,
-        items: [
-          `Predicting the time when the dirt level reaches the threshold: Our system uses`,
-          `historical data and prediction algorithms to estimate the time required for`,
-          `the dirt level to reach the pre-defined threshold. This helps users plan and`,
-          `implement preventive measures in a timely manner, avoiding undesirable consequences.`,
-        ],
+        type: TYPE.PARAGRAPH,
+        content: `Predicting time to reach dirt threshold: Our system utilizes historical data and prediction algorithms to estimate the time required for the dirt level to reach the threshold predetermined by the user. This enables users to plan and implement preventive measures in a timely manner, avoiding undesirable consequences.`,      
       },
       {
-        type: TYPE.LIST,
-        items: [
-          `Optimizing the quality management process: Predicting the dirt level helps optimize`,
-          `the quality management process, reducing the time and effort users need to spend`,
-          `on frequent inspections, while ensuring that the product always maintains the highest quality.`,
-        ],
+        type: TYPE.PARAGRAPH,
+        content: `Optimizing quality management process: Predicting the time for dirt level helps optimize the quality management process, reducing the time and effort users need to spend on frequent inspections, while ensuring that the product always meets the highest quality standards.`,
+     
       },
       {
         type: TYPE.TITLE,
-        content: `Mobile application`,
+        content: `mobile application`,
       },
       {
         type: TYPE.IMAGE,
@@ -1305,7 +1277,7 @@ school.`,
       },
       {
         type: TYPE.TITLE,
-        content: `Multi-function integrated screen`,
+        content: `Integrated multifunctional screen `,
       },
       {
         type: TYPE.IMAGE,
@@ -1314,7 +1286,7 @@ school.`,
       },
       {
         type: TYPE.TITLE,
-        content: `Management screen, displaying integrated modules' statuses`,
+        content: `Management screen, displaying integrated module-equipped machines`,
       },
       {
         type: TYPE.IMAGE,
@@ -1322,20 +1294,12 @@ school.`,
         
       },
       {
-        type: TYPE.LIST,
-        items: [
-          `Alerts via mobile application: Information about the predicted time `,
-          `when the dirt level reaches the threshold will also be provided through `,
-          `the mobile application, allowing users to conveniently refer to and `,
-          `prepare plans from anywhere. Details about the cleanliness status `,
-          `of the adhesive roll and environmental indices will be easily accessible `,
-          `through the mobile application. Users can receive immediate alerts `,
-          `upon detecting issues, enabling them to intervene promptly and minimize risks.`,
-        ],
+        type: TYPE.PARAGRAPH,
+        content: `Alerts via mobile app: Information about predicted time to reach dirt threshold will also be provided through the mobile app, enabling users to conveniently reference and plan from anywhere. Information about the cleanliness status of the adhesive roll and environmental indices will be easily accessible through the mobile app. Users can receive immediate alerts upon detection of issues, allowing them to intervene promptly and minimize the risk of errors.`,
       },
       {
         type: TYPE.TITLE,
-        content: `Màn hình hiển thị chi tiết các thông số đã được thu thập và tính toán từ module`,
+        content: `The screen displays detailed parameters collected and calculated from the module.`,
       },
       {
         type: TYPE.IMAGE,
@@ -1343,7 +1307,7 @@ school.`,
       },
       {
         type: TYPE.TITLE,
-        content: `The screen displays detailed information of the parameters collected and calculated from the module.`,
+        content: `The screen displays statistical quantities in an abstract chart format.`,
       },
       {
         type: TYPE.IMAGE,
@@ -1351,7 +1315,7 @@ school.`,
       },
       {
         type: TYPE.TITLE,
-        content: `The screen displays alerts when the thresholds defined by the user are reached.`,
+        content: `The screen displays alerts when the user-defined thresholds are reached.`,
       },
       {
         type: TYPE.IMAGE,
@@ -1359,11 +1323,9 @@ school.`,
       },
 
       {
-        type: TYPE.TITLE,
-        content: `The project to develop a camera-integrated AI module for dust detection and alerting
-                  on dirt levels in mobile applications will provide a comprehensive solution for quality 
-                  management in industrial manufacturing processes. This helps optimize quality control processes,
-                  minimize errors, and ensure that the product consistently achieves the highest quality.`,
+        type: TYPE.PARAGRAPH,
+        content: `
+        The project to develop an integrated camera AI module for detecting dust and alerting dirt levels on the mobile application will provide a comprehensive solution for quality management in the industrial production process. This helps optimize the quality control process, minimize errors, and ensure that the product always meets the highest quality standards. `,
       },
 
     ],

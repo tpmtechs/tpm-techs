@@ -1307,6 +1307,146 @@ export const posts: IBlog[] = [
       },
     ],
   },
+  {
+    id: 215,
+    date: "Apr 22, 2024",
+    datetime: "2024-04-22",
+    category: { title: "Internet of Things", href: "#" },
+    title: `携帯デバイス向けの人工知能とIoT（Internet of Things）を活用したソリューション`,
+    description: `カメラモジュールが汚れを検出し、表面の汚れレベルを警告します`,
+    image: `https://firebasestorage.googleapis.com/v0/b/tpm-techs.appspot.com/o/z5373684133797_048de6024bc99eae29ea4dcd264c61c2.jpg?alt=media&token=e62d5fda-297b-4d6b-9847-f2326d587e2c`,
+    contents: [
+      {
+        type: TYPE.TITLE,
+        content: `デバイス`,
+      },
+      {
+        type: TYPE.PARAGRAPH,
+        content: 
+          `カメラを統合したモジュールは、産業用接着剤の製造プロセスにおける品質管理に知能と効率性をもたらします。カメラテクノロジーと人工知能を組み合わせることで、周囲の温度や湿度などの環境パラメーターを包括的に管理するソリューションを提供しています。 `,
+  
+      },
+      {
+        type: TYPE.TITLE,
+        content: `機能と利益`,
+      },
+      {
+        type: TYPE.IMAGE,
+        content: `https://firebasestorage.googleapis.com/v0/b/tpm-techs.appspot.com/o/hinhosd2.jpg?alt=media&token=f33a8c8c-0b9e-48ce-be1d-20c10ef6d2ea`,
+      },
+      {
+        type: TYPE.PARAGRAPH,
+        content: 
+          `この機能では、私たちのモジュールは接着テープの表面の汚れの程度を認識し、製品の清潔状態に関する正確で詳細な情報を提供します。 `,
+                 
+        
+      },
+      {
+        type: TYPE.IMAGE,
+        content: `https://firebasestorage.googleapis.com/v0/b/tpm-techs.appspot.com/o/AI_0001.jpg?alt=media&token=fea9fac1-0baa-452e-b2a5-ffaff035c37a`,
+      },
+      {
+        type: TYPE.PARAGRAPH,
+        content: 
+          `表面の塵の分析：人工知能を使用して、私たちは人間の介入なしにさまざまな種類の塵を分析および分類することができます。これにより、品質管理プロセスを最適化し、ミスを最小限に抑えるのに役立ちます。 `,
+  
+        
+      },
+      {
+        type: TYPE.IMAGE,
+        content: `https://firebasestorage.googleapis.com/v0/b/tpm-techs.appspot.com/o/AI_0002.gif?alt=media&token=69eb612c-3ef0-4262-838a-ec28a9c027a0`,
+      },
+      {
+        type: TYPE.PARAGRAPH,
+        content: 
+          `新しい種類の塵を認識するAIの統合：通常の塵だけでなく、当社のモジュールは新しい種類の塵を学習して認識する能力も備えています。これにより、テープの表面に現れる新しい塵を常に検知し、検査プロセスを常に最新かつ効果的なものに保ちます。 `,
+	   
+        
+      },
+      {
+        type: TYPE.IMAGE,
+        content: `https://firebasestorage.googleapis.com/v0/b/tpm-techs.appspot.com/o/3.gif?alt=media&token=34930a62-01b4-4132-8840-68e59e29b809`,
+      },
+      {
+        type: TYPE.PARAGRAPH,
+        content: 
+          `しきい値に到達するまでの時間を予測する：当社のシステムは、過去のデータと予測アルゴリズムを使用して、ユーザーが事前に定義したしきい値に達するまでに必要な時間を推定します。これにより、ユーザーは適切な対策を計画し、早めに予防措置を講じることができ、望まざる結果を避けることができます。 `,
+         
+        
+      },
+      {
+        type: TYPE.PARAGRAPH,
+        content: 
+          `品質管理プロセスの最適化：汚れの時間を予測することで、品質管理プロセスを最適化し、ユーザーが頻繁に行う検査に費やす時間と労力を最小限に抑えることができます。これにより、製品が常に最高品質であることを保証します。 `,
+         
+        
+      },
+      {
+        type: TYPE.TITLE,
+        content: `モバイルアプリ`,
+      },
+      {
+        type: TYPE.IMAGE,
+        content: `https://firebasestorage.googleapis.com/v0/b/tpm-techs.appspot.com/o/app_01.png?alt=media&token=5ec3bb00-ed8e-4e8b-9976-ca3676dac8b6`,
+
+      },
+      {
+        type: TYPE.TITLE,
+        content: `多機能統合画面`,
+      },
+      {
+        type: TYPE.IMAGE,
+        content: `https://firebasestorage.googleapis.com/v0/b/tpm-techs.appspot.com/o/app_02.png?alt=media&token=b70ca346-799c-40d0-b5dc-2eaa0df45ce3`,
+
+      },
+      {
+        type: TYPE.TITLE,
+        content: `管理画面、モジュールを統合した機器を表示します`,
+      },
+      {
+        type: TYPE.IMAGE,
+        content: `https://firebasestorage.googleapis.com/v0/b/tpm-techs.appspot.com/o/app_003.png?alt=media&token=ba783292-3cc4-4eef-86a1-156c84dfff81`,
+        
+      },
+      {
+        type: TYPE.PARAGRAPH,
+        content: 
+          `モバイルアプリを通じての警告: 汚れがしきい値に達する予測情報もモバイルアプリを通じて提供され、ユーザーはどこからでも簡単に参照して計画を立てることができます。 接着テープの清潔状態や環境指標に関する情報もモバイルアプリで簡単にアクセスできます。 問題が発生した場合、ユーザーはすぐに警告を受け取り、迅速な対応と最小限のエラーを避けることができます。 `,
+         
+        
+      },
+      {
+        type: TYPE.TITLE,
+        content: `モジュールから収集され、計算された詳細なパラメーターを表示する画面`,
+      },
+      {
+        type: TYPE.IMAGE,
+        content: `https://firebasestorage.googleapis.com/v0/b/tpm-techs.appspot.com/o/app_004.png?alt=media&token=5b24c994-2b85-44a6-99b2-ca381c36429f`,
+      },
+      {
+        type: TYPE.TITLE,
+        content: `抽象的なグラフで数量の統計を表示する画面`,
+      },
+      {
+        type: TYPE.IMAGE,
+        content: `https://firebasestorage.googleapis.com/v0/b/tpm-techs.appspot.com/o/app_005.png?alt=media&token=d1367843-dfc3-442a-a09f-6001df055fa0`,
+      },
+      {
+        type: TYPE.TITLE,
+        content: `ユーザーが定義した閾値を設定すると警告を表示する画面`,
+      },
+      {
+        type: TYPE.IMAGE,
+        content: `https://firebasestorage.googleapis.com/v0/b/tpm-techs.appspot.com/o/app_006.png?alt=media&token=8cf01941-cc37-4610-b6b5-0173e01bc956`,
+      },
+
+      {
+        type: TYPE.PARAGRAPH,
+        content: `AIカメラを組み込んだほこり検出およびモバイルアプリでの汚れ度警告の統合モジュールの構築プロジェクトは、産業生産プロセスにおける品質管理の包括的なソリューションを提供します。 これにより品質管理プロセスを最適化し、ミスを最小限に抑え、製品が常に最高品質であることを保証します。`,
+      },
+    ],
+  },
+
 ]
 
 export const serviceBlogs: IBlog[] = [
