@@ -605,21 +605,20 @@ const Home: FC = () => {
 
         {/*................................... Bảng tin........................................ */}
         <section className="my-16">
-          <div style={{ color: "#3172A9" }} className="text-3xl font-semibold">
-            # <FormattedMessage id="home.strategic.news" />
-          </div>
-          <Divider/>
-          <div className="my-8 flex items-center justify-center text-center text-lg font-semibold">
-            <div className="sm:w-10/12 md:w-6/12 text-justify">
-              <FormattedMessage id="home.strategic.partnership.campuchia" />
+            <div style={{ color: "#3172A9" }} className="text-3xl font-semibold">
+              # <FormattedMessage id="home.strategic.news" />
             </div>
-            <Col sm={10} xs={60}>
-              <div className="flex flex-col items-center justify-center text-center">
+            <Divider />
+            <div className="my-8 flex flex-wrap justify-center">
+              <div className="sm:w-10/12 md:w-6/12 text-center text-justify">
+                <FormattedMessage id="home.strategic.partnership.campuchia" />
+              </div>
+              <div className="flex flex-col items-center justify-center text-center mx-4 my-4 sm:w-full md:w-1/3">
                 <img
                   alt="banner"
-                  className="mb-2 w-8/12 rounded-xl"
+                  className="mb-2 w-full rounded-xl"
                   src="https://firebasestorage.googleapis.com/v0/b/tpm-techs.appspot.com/o/newscampuchia1.jpg?alt=media&token=462e82b9-eb29-4233-a384-31d1ce0a017f"
-              />
+                />
                 <div style={{ color: "#3172A9" }} className="text-xl font-semibold">
                   {/* <FormattedMessage id="home.smart.farming.solutions" /> */}
                 </div>
@@ -628,12 +627,12 @@ const Home: FC = () => {
                 </div>
               </div>
 
-              <div className="flex flex-col items-center justify-center text-center">
+              <div className="flex flex-col items-center justify-center text-center mx-4 my-4 sm:w-full md:w-1/3">
                 <img
                   alt="banner"
-                  className="mb-2 w-8/12 rounded-xl"
+                  className="mb-2 w-full rounded-xl"
                   src="https://firebasestorage.googleapis.com/v0/b/tpm-techs.appspot.com/o/newscampuchia.jpg?alt=media&token=a4b907c8-9ed5-44e8-8692-2279761de84e"
-              />
+                />
                 <div style={{ color: "#3172A9" }} className="text-xl font-semibold">
                   {/* <FormattedMessage id="home.smart.farming.solutions" /> */}
                 </div>
@@ -642,22 +641,21 @@ const Home: FC = () => {
                 </div>
               </div>
 
-              <div className="flex flex-col items-center justify-center text-center">
+              <div className="flex flex-col items-center justify-center text-center mx-4 my-4 sm:w-full md:w-1/3">
                 <img
                   alt="banner"
-                  className="mb-2 w-8/12 rounded-xl"
+                  className="mb-2 w-full rounded-xl"
                   src="https://firebasestorage.googleapis.com/v0/b/tpm-techs.appspot.com/o/newscampuchia2.jpg?alt=media&token=fe6d54cf-1bcf-402e-a837-df8f1d329372"
-              />
-                <div className="text-md text-slate-500">
+                />
+                {/* <div className="text-md text-slate-500">
                   <FormattedMessage id="newscampuchia.solutions.description2" />
                 </div>
                 <div style={{ color: "#3172A9" }} className="text-xl font-semibold">
                   <FormattedMessage id="newscampuchia.solutions.description1" />
-                </div>
+                </div> */}
               </div>
-            </Col>
-          </div>
-        </section>
+            </div>
+          </section>
           {/*................................... Bảng tin........................................ */}
 
           
