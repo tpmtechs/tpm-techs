@@ -605,7 +605,7 @@ const Home: FC = () => {
 
         {/*................................... Bảng tin........................................ */}
         <section className="my-16">
-            <div style={{ color: "#3172A9" }} className="text-3xl font-semibold">
+            <div style={{ color: "#3172A9" }} className="text-3xl font-semibold text-center">
               # <FormattedMessage id="home.strategic.news" />
             </div>
             <Divider />
@@ -647,12 +647,12 @@ const Home: FC = () => {
                   className="mb-2 w-full rounded-xl"
                   src="https://firebasestorage.googleapis.com/v0/b/tpm-techs.appspot.com/o/newscampuchia2.jpg?alt=media&token=fe6d54cf-1bcf-402e-a837-df8f1d329372"
                 />
-                {/* <div className="text-md text-slate-500">
+                <div className="text-md text-slate-500">
                   <FormattedMessage id="newscampuchia.solutions.description2" />
                 </div>
                 <div style={{ color: "#3172A9" }} className="text-xl font-semibold">
                   <FormattedMessage id="newscampuchia.solutions.description1" />
-                </div> */}
+                </div>
               </div>
             </div>
           </section>
