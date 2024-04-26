@@ -7,10 +7,10 @@
   "common.address": "住所",
   "common.address.detail": "No. 42, Street 34, An Phu, City Thu Duc",
   "common.email": "Email",
-  "common.email.detail": "tpmcore@gmail.com",
+  "common.email.detail": "tpmsupport@tpm-techs.com",
   "common.hotline": "Hotline",
   "common.hotline.detail": "028 2229 9585",
-  "common.hr.email": "nguyentrang28tpc@gmail.com",
+  "common.hr.email": "hr@tpm-techs.com",
   "common.hr.hotline": "0334594302",
   "common.slogan": "私たちはお客様の信頼できるパートナーです",
   "common.all.rights.reserved": "無断転載を禁じます",
@@ -57,7 +57,7 @@
 
   "about.banner.subtitle": "私たちについて",
   "about.introduction.title": "TPM カンパニー - モノのインターネット (IoT) 分野のパイオニア",
-  "about.introduction.description": "4.0 産業時代の競争に足を踏み入れた TPM (Tinh Pham Moi) は、モノのインターネット (IoT) の分野に特化した画期的なユニットです。 イノベーションへの情熱と最先端のソリューションの提供に取り組む当社は、単なる企業ではなく、大胆なアイデアを現実にすることに重点を置いたチームです。",
+  "about.introduction.description": "TPM. 先駆けとして、第4次産業革命の時代に進むTPMは、インターネット・オブ・シングス（IoT）分野における画期的な存在です。創造性に溢れ、先進的なソリューションを提供することにコミットしており、私たちは単なる企業ではなく、大胆なアイデアを現実に変えることに焦点を当てた組織です。",
   "about.mission.and.vision": "ミッションとビジョン",
   "about.mission.and.vision.description": "当社は、顧客のパフォーマンスを向上させ、ビジネス プロセスを最適化するのに役立つ画期的な IoT 製品とサービスを作成するという使命に着手しました。 私たちのビジョンはデジタル開発に限定されるものではなく、コミュニティのためのスマートで持続可能な未来を形作ることにもあります。",
   "about.team.of.experts": "専門家チーム",
@@ -71,8 +71,8 @@
   "about.final": "最後の",
   "about.final.description": "TPM は単なる IoT ビジネスではなく、お客様の成長を後押しする戦略的パートナーです。 私たちは、デジタル革命におけるビジネスに寄り添うよう常に革新し、アイデアと現実の間に架け橋を築き、スマートで持続可能な未来の構築に貢献します。",
 
-  "about.tpc.description.1": "投資建設株式会社",
-  "about.tpc.description.2": "は、TPM の設立プロセス全体を通して、TPM のメインスポンサーでした。",
+  "about.tpc.description.1": "TPMはTPグループの",
+  "about.tpc.description.2": "メンバーです。",
 
   "about.people": "TPMチーム",
   "about.people.year.of.experience": "積年の経験",

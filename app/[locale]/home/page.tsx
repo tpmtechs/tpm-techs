@@ -619,12 +619,6 @@ const Home: FC = () => {
                   className="mb-2 w-full rounded-xl"
                   src="https://firebasestorage.googleapis.com/v0/b/tpm-techs.appspot.com/o/newscampuchia1.jpg?alt=media&token=462e82b9-eb29-4233-a384-31d1ce0a017f"
                 />
-                <div style={{ color: "#3172A9" }} className="text-xl font-semibold">
-                  {/* <FormattedMessage id="home.smart.farming.solutions" /> */}
-                </div>
-                <div className="text-md text-slate-500">
-                  {/* <FormattedMessage id="home.smart.farming.solutions.description" /> */}
-                </div>
               </div>
 
               <div className="flex flex-col items-center justify-center text-center mx-4 my-4 sm:w-full md:w-1/3">
@@ -633,12 +627,6 @@ const Home: FC = () => {
                   className="mb-2 w-full rounded-xl"
                   src="https://firebasestorage.googleapis.com/v0/b/tpm-techs.appspot.com/o/newscampuchia.jpg?alt=media&token=a4b907c8-9ed5-44e8-8692-2279761de84e"
                 />
-                <div style={{ color: "#3172A9" }} className="text-xl font-semibold">
-                  {/* <FormattedMessage id="home.smart.farming.solutions" /> */}
-                </div>
-                <div className="text-md text-slate-500">
-                  {/* <FormattedMessage id="home.smart.farming.solutions.description" /> */}
-                </div>
               </div>
 
               <div className="flex flex-col items-center justify-center text-center mx-4 my-4 sm:w-full md:w-1/3">
@@ -647,12 +635,6 @@ const Home: FC = () => {
                   className="mb-2 w-full rounded-xl"
                   src="https://firebasestorage.googleapis.com/v0/b/tpm-techs.appspot.com/o/newscampuchia2.jpg?alt=media&token=fe6d54cf-1bcf-402e-a837-df8f1d329372"
                 />
-                {/* <div className="text-md text-slate-500">
-                  <FormattedMessage id="newscampuchia.solutions.description2" />
-                </div>
-                <div style={{ color: "#3172A9" }} className="text-xl font-semibold">
-                  <FormattedMessage id="newscampuchia.solutions.description1" />
-                </div> */}
               </div>
             </div>
           </section>

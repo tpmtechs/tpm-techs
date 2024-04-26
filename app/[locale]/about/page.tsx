@@ -32,32 +32,32 @@ interface IProfiles {
 const profiles: IProfiles = {
   en: [
     {
-      name: "Nguyễn Thiên Đức",
-      role: "Giám đốc điều hành TPM",
+      name: "Mr. Nguyen Thien Duc",
+      role: "TPM Technology President",
       imageUrl:
         "https://firebasestorage.googleapis.com/v0/b/tpm-techs.appspot.com/o/ceo-nguyen-thien-duc.jpeg?alt=media&token=826c1205-f5ab-4629-a168-7aacef5f22bd",
       description:
-        "Giám đốc điều hành TPM kiêm giám đốc điều hành TPCONS, đại diện cho các công ty ĐẦU TƯ VÀ XÂY DỰNG ÂN NAM & Công Ty TNHH PHÁT TRIỂN NĂNG LƯỢNG SẠCH TPE",
+        "TPM President and TPCONS CEO, representing AN NAM INVESTMENT AND CONSTRUCTION companies & TPE CLEAN ENERGY DEVELOPMENT COMPANY LIMITED",
     },
   ],
   ja: [
     {
-      name: "Nguyễn Thiên Đức",
-      role: "TPM Technology CEO",
+      name: "Mr. Nguyen Thien Duc",
+      role: "TPM Technology President",
       imageUrl:
         "https://firebasestorage.googleapis.com/v0/b/tpm-techs.appspot.com/o/ceo-nguyen-thien-duc.jpeg?alt=media&token=826c1205-f5ab-4629-a168-7aacef5f22bd",
       description:
-        "TPM CEO および TPCONS CEO、AN NAM INVESTMENT AND 建設会社および TPE CLEAN ENERGY DEVELOPMENT COMPANY LIMITED の代表",
+        "TPM President および TPCONS CEO、AN NAM INVESTMENT AND 建設会社および TPE CLEAN ENERGY DEVELOPMENT COMPANY LIMITED の代表",
     },
   ],
   vi: [
     {
       name: "Nguyễn Thiên Đức",
-      role: "TPM Technology CEO",
+      role: "Chủ tịch công ty TPM",
       imageUrl:
         "https://firebasestorage.googleapis.com/v0/b/tpm-techs.appspot.com/o/ceo-nguyen-thien-duc.jpeg?alt=media&token=826c1205-f5ab-4629-a168-7aacef5f22bd",
       description:
-        "TPM CEO and TPCONS CEO, representing AN NAM INVESTMENT AND CONSTRUCTION companies & TPE CLEAN ENERGY DEVELOPMENT COMPANY LIMITED",
+        "Chủ tịch TPM kiêm giám đốc điều hành TPCONS, đại diện cho các công ty ĐẦU TƯ VÀ XÂY DỰNG ÂN NAM & Công Ty TNHH PHÁT TRIỂN NĂNG LƯỢNG SẠCH TPE",
     },
   ],
 }
@@ -228,12 +228,12 @@ const About: FC = () => {
               </Row>
             </Col>
             <Col sm={12} xs={24}>
-              <div className="text-justify text-base font-medium">
+              <div className="text-justify text-base font-medium ">
                 <FormattedMessage id="about.tpc.description.1" />
                 {` `}
-                <Link href="https://tpcgroup.net.vn" target="_blank">
+                {/* <Link href="https://tpcgroup.net.vn" target="_blank">
                   TPCONS
-                </Link>
+                </Link> */}
                 {` `}
                 {``}
                 <FormattedMessage id="about.tpc.description.2" />
