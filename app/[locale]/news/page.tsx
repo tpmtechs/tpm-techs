@@ -9,7 +9,7 @@ import Post from "components/Post"
 import React from 'react';
 
 
-const news: FC= () => {
+const News: FC= () => {
 
   const intl = useIntl();
   const { formatMessage ,locale} = intl
@@ -150,4 +150,4 @@ const news: FC= () => {
   )
 }
 
-export default news
+export default News
