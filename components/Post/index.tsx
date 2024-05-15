@@ -4,8 +4,8 @@ import { type FC } from "react"
 import { useIntl } from "react-intl"
 import urlcat from "urlcat"
 import Path from "config/path"
-import { DownloadOutlined, EditOutlined, AndroidOutlined, AppleOutlined  } from '@ant-design/icons';
-import { Button, Carousel, Col, Divider, Row, Typography } from "antd"
+import { AndroidOutlined, AppleOutlined, DownloadOutlined, EditOutlined } from '@ant-design/icons';
+import { Button } from "antd"
 import { FormattedMessage } from "react-intl"
 const Post: FC<{ post: any }> = ({ post }) => {
   const { locale } = useIntl();
