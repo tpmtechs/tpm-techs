@@ -13,10 +13,10 @@
   "common.address": "Địa chỉ",
   "common.address.detail": "Số 42 đường 34, An Phú, thành phố Thủ Đức",
   "common.email": "Email",
-  "common.email.detail": "tpmcore@gmail.com",
+  "common.email.detail": "tpmsupport@tpm-techs.com",
   "common.hotline": "Hotline",
   "common.hotline.detail": "028 2229 9585",
-  "common.hr.email": "nguyentrang28tpc@gmail.com",
+  "common.hr.email": "hr@tpm-techs.com",
   "common.hr.hotline": "0334594302",
   "common.slogan": "Chúng tôi là Đối tác tin cậy của khách hàng",
   "common.all.rights.reserved": "All rights reserved",
@@ -67,7 +67,7 @@
 
   "about.banner.subtitle": "Về chúng tôi",
   "about.introduction.title": "Công ty TPM - Tiên Phong Trong Lĩnh Vực Internet of Things (IoT)",
-  "about.introduction.description": "TPM, hoặc Tinh Phẩm Mới, đặt chân chạy đua với thời đại công nghiệp 4.0, là một đơn vị đột phá chuyên sâu trong lĩnh vực Internet of Things (IoT). Với đam mê sáng tạo và cam kết mang đến giải pháp tiên tiến, chúng tôi không chỉ là một công ty, mà còn là một nhóm người tập trung vào việc biến những ý tưởng táo bạo thành hiện thực.",
+  "about.introduction.description": "TPM. Tiên phong, tiến tới thời đại công nghiệp 4.0, là một đơn vị đột phá chuyên sâu trong lĩnh vực Internet of Things (IoT). Với đam mê sáng tạo và cam kết mang đến giải pháp tiên tiến, chúng tôi không chỉ là một công ty, mà còn là một tổ chức tập trung vào việc biến những ý tưởng táo bạo thành hiện thực.",
   "about.mission.and.vision": "Sứ Mệnh và Tầm Nhìn",
   "about.mission.and.vision.description": "Chúng tôi đặt ra sứ mệnh tạo ra những sản phẩm và dịch vụ IoT mang tính đột phá, giúp nâng cao hiệu suất và tối ưu hóa quy trình kinh doanh cho khách hàng. Tầm nhìn của chúng tôi không chỉ giới hạn trong việc phát triển kỹ thuật số, mà còn là việc định hình một tương lai thông minh và bền vững cho cộng đồng.",
   "about.team.of.experts": "Đội Ngũ Chuyên Gia",
@@ -81,8 +81,8 @@
   "about.final": "Cuối cùng",
   "about.final.description": "TPM không chỉ là một doanh nghiệp IoT, mà là một nguồn động viên và đối tác chiến lược cho sự phát triển của khách hàng. Chúng tôi không ngừng đổi mới để đồng hành cùng doanh nghiệp trong cuộc cách mạng số, xây dựng cầu nối giữa ý tưởng và hiện thực, và góp phần vào việc xây dựng một tương lai thông minh và bền vững.",
 
-  "about.tpc.description.1": "Công ty TNHH đầu tư & xây dựng",
-  "about.tpc.description.2": "là nhà tài trợ chính của TPM trong suốt quá trình hình thành.",
+  "about.tpc.description.1": "TPM là một thành viên",
+  "about.tpc.description.2": "trong tập đoàn TP Group",
 
   "about.people": "Đội ngũ TPM",
   "about.people.year.of.experience": "năm kinh nghiệm",

@@ -13,10 +13,10 @@
   "common.address": "Address",
   "common.address.detail": "No. 42, Street 34, An Phu, Thu Duc City",
   "common.email": "Email",
-  "common.email.detail": "tpmcore@gmail.com",
+  "common.email.detail": "tpmsupport@tpm-techs.com",
   "common.hotline": "Hotline",
   "common.hotline.detail": "028 2229 9585",
-  "common.hr.email": "nguyentrang28tpc@gmail.com",
+  "common.hr.email": "hr@tpm-techs.com",
   "common.hr.hotline": "0334594302",
   "common.slogan": "We are our customers' trusted partner",
   "common.all.rights.reserved": "All rights reserved",
@@ -63,7 +63,7 @@
 
   "about.banner.subtitle": "About us",
   "about.introduction.title": "TPM Company - Pioneer in the Field of Internet of Things (IoT)",
-  "about.introduction.description": "TPM, or New Tinh Pham, sets foot in the race for the 4.0 industrial era, is a breakthrough unit specializing in the field of Internet of Things (IoT). With a passion for creativity and committed to delivering innovative solutions, we are not just a company, but a team of people focused on turning bold ideas into reality.",
+  "about.introduction.description": "TPM. Pioneering the way into the Industry 4.0 era, TPM is a groundbreaking entity specialized in the field of Internet of Things (IoT). With a passion for innovation and a commitment to delivering advanced solutions, we are not just a company but also an organization dedicated to turning bold ideas into reality.",
   "about.mission.and.vision": "Mission and Vision",
   "about.mission.and.vision.description": "We set out on a mission to create groundbreaking IoT products and services that improve performance and optimize business processes for customers. Our vision is not limited to digital development, but also to shaping a smart and sustainable future for the community.",
   "about.team.of.experts": "Team of Experts",
@@ -77,8 +77,8 @@
   "about.final": "Finally",
   "about.final.description": "TPM is not just an IoT business, but a source of encouragement and strategic partner for customers' development. We constantly innovate to accompany businesses in digital revolution, building bridges between ideas and reality, and contributing to building a smart and sustainable future.",
 
-  "about.tpc.description.1": "Investment & Construction Company Limited",
-  "about.tpc.description.2": "was the main sponsor of TPM throughout its formation.",
+  "about.tpc.description.1": "TPM is a member of",
+  "about.tpc.description.2": "the TP Group.",
 
   "about.people": "TPM Team",
   "about.people.year.of.experience": "years of experience",
