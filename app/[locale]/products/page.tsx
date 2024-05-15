@@ -34,40 +34,33 @@ function getItem(
 const items: MenuItem[] = [
   getItem(<FormattedMessage id="products.IT.AI" />, '1', <PieChartOutlined />),
   getItem(<FormattedMessage id="products.EtherCat" />, '2', <DesktopOutlined />),
-  // getItem('User', 'sub1', <UserOutlined />, [
-  //   getItem('Tom', '3'),
-  //   getItem('Bill', '4'),
-  //   getItem('Alex', '5'),
-  // ]),
-  // getItem('Team', 'sub2', <TeamOutlined />, [getItem('Team 1', '6'), getItem('Team 2', '8')]),
   getItem(<FormattedMessage id="products.file" />, '9', <FileOutlined />,[
     getItem(<span style={{ color: '#fff' }}><FormattedMessage id="products.app" /></span>, '4'),
     getItem(<span style={{ color: '#fff' }}><FormattedMessage id="products.board" /></span>, '5'),
   ]),
 ];
 
-const Products: FC= () => {
+const Products: FC = () => {
 
   const intl = useIntl();
-  const { formatMessage ,locale} = intl
+  const { formatMessage, locale } = intl;
   const [posts, setPosts] = useState<IBlog[]>([]);
+  
   useEffect(() => {
     const load = async () => {
-        const data = (await import(`app/[locale]/blog/blogs/${locale}`)).posts;
-        setPosts(data);
+      const data = (await import(`app/[locale]/blog/blogs/${locale}`)).posts;
+      setPosts(data);
     }
 
-    load()
-  },[locale])
-
-
+    load();
+  }, [locale]);
 
   const [selectedContent, setSelectedContent] = useState("");
   const [selectedContent1, setSelectedContent1] = useState("");
   const [selectedKeys, setSelectedKeys] = useState<string[]>(['1']);
 
   const handleMenuClick = (id: string) => {
-    setSelectedKeys([id]); // Chỉnh sửa ở đây
+    setSelectedKeys([id]);
     if (id === "1") {
       setSelectedContent("internet.of.things");
       setSelectedContent1("IT & AI");
