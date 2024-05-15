@@ -2,12 +2,9 @@
 
 /* eslint-disable @next/next/no-img-element */
 
-import { DownloadOutlined, EditOutlined } from '@ant-design/icons';
-import { Button, Carousel, Col, Divider, Row, Typography } from "antd"
+import {Col, Row } from "antd"
 import { FC, useState, useEffect } from "react"
 import { FormattedMessage, useIntl } from "react-intl"
-import urlcat from "urlcat"
-import Path from "config/path"
 import Post from "components/Post"
 import {
   DesktopOutlined,
@@ -18,7 +15,6 @@ import {
 } from '@ant-design/icons';
 import type { MenuProps } from 'antd';
 import { Breadcrumb, Layout, Menu, theme } from 'antd';
-import { Eagle_Lake } from "next/font/google"
 
 const { Header, Content, Footer, Sider } = Layout;
 
