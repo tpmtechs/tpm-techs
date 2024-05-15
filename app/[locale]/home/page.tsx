@@ -601,49 +601,7 @@ const Home: FC = () => {
               </div>
             </Col>
           </Row>
-        </section>
-<<<<<<< HEAD
-=======
-
-        {/*................................... Bảng tin........................................ */}
-        <section className="my-16">
-            <div style={{ color: "#3172A9" }} className="text-3xl font-semibold">
-              # <FormattedMessage id="home.strategic.news" />
-            </div>
-            <Divider />
-            <div className="my-8 flex flex-wrap justify-center">
-              <div className="sm:w-10/12 md:w-6/12 text-justify">
-                <FormattedMessage id="home.strategic.partnership.campuchia" />
-              </div>
-              <div className="flex flex-col items-center justify-center text-center mx-4 my-4 sm:w-full md:w-1/3">
-                <img
-                  alt="banner"
-                  className="mb-2 w-full rounded-xl"
-                  src="https://firebasestorage.googleapis.com/v0/b/tpm-techs.appspot.com/o/newscampuchia1.jpg?alt=media&token=462e82b9-eb29-4233-a384-31d1ce0a017f"
-                />
-              </div>
-
-              <div className="flex flex-col items-center justify-center text-center mx-4 my-4 sm:w-full md:w-1/3">
-                <img
-                  alt="banner"
-                  className="mb-2 w-full rounded-xl"
-                  src="https://firebasestorage.googleapis.com/v0/b/tpm-techs.appspot.com/o/newscampuchia.jpg?alt=media&token=a4b907c8-9ed5-44e8-8692-2279761de84e"
-                />
-              </div>
-
-              <div className="flex flex-col items-center justify-center text-center mx-4 my-4 sm:w-full md:w-1/3">
-                <img
-                  alt="banner"
-                  className="mb-2 w-full rounded-xl"
-                  src="https://firebasestorage.googleapis.com/v0/b/tpm-techs.appspot.com/o/newscampuchia2.jpg?alt=media&token=fe6d54cf-1bcf-402e-a837-df8f1d329372"
-                />
-              </div>
-            </div>
-          </section>
-          {/*................................... Bảng tin........................................ */}
-
->>>>>>> 68a90650dfab9ff62775c96c0cf334d4f83ac030
-          
+        </section>      
         <section className="my-16">
           <div style={{ color: "#3172A9" }} className="text-3xl font-semibold">
             # <FormattedMessage id="home.strategic.partnership" />
