@@ -1,3 +1,5 @@
+
+import { Divider } from 'antd';
 const TYPE = {
   TITLE: "title",
   PARAGRAPH: "paragraph",
@@ -34,6 +36,11 @@ interface IBlog {
   id: number
   title: string
   description: string
+  driveLink?: string
+  documentLink?: string 
+  android?: string
+  ios?:string
+  apk?: string
   contents: IContent[]
   image: string
   type?: string
@@ -1330,6 +1337,490 @@ Việt Nam.`,
       },
 
 
+    ],
+  },
+  // ======================================================== products=======================================================
+  // ========================================================================================================================
+  // ========================================================================================================================
+  // ========================================================================================================================
+  {
+    id: 216,
+    date: "Apr 22, 2024",
+    datetime: "2024-04-22",
+    category: { title: "Công nghệ và trí tuệ nhân tạo", href: "#" },
+    title: `Giải pháp sử dụng trí tuệ nhân tạo và Internet vạn vật cho ứng dụng trên thiết bị di động`,
+    description: `Module camera detect bụi bẩn và cảnh báo mức độ dơ bề mặt`,
+    image: `https://firebasestorage.googleapis.com/v0/b/tpm-techs.appspot.com/o/z5373684133797_048de6024bc99eae29ea4dcd264c61c2.jpg?alt=media&token=e62d5fda-297b-4d6b-9847-f2326d587e2c`,
+    contents: [
+      {
+        type: TYPE.TITLE,
+        content: `Thiết bị`,
+      },
+      {
+        type: TYPE.PARAGRAPH,
+        content: `Module tích hợp camera mang lại sự thông minh và hiệu quả cho việc quản lý chất lượng trong quy trình sản xuất keo công nghiệp. Với việc kết hợp công nghệ camera và trí tuệ nhân tạo, chúng tôi mang đến một giải pháp toàn diện cho việc nhận biết mức độ dơ và phân tích bụi trên bề mặt cuộn keo, cùng với các thông số môi trường như nhiệt độ và độ ẩm xung quanh.`,  
+      },
+      {
+        type: TYPE.TITLE,
+        content: `Tính năng và lợi ích`,
+      },
+      {
+        type: TYPE.IMAGE,
+        content: `https://firebasestorage.googleapis.com/v0/b/tpm-techs.appspot.com/o/hinhosd2.jpg?alt=media&token=f33a8c8c-0b9e-48ce-be1d-20c10ef6d2ea`,
+      },
+      {
+        type: TYPE.PARAGRAPH,
+        content: `Nhận biết mức độ dơ: Module của chúng tôi có khả năng nhận diện mức độ dơ trên bề mặt của cuộn keo, từ đó cung cấp thông tin chính xác và chi tiết về tình trạng sạch sẽ của sản phẩm. `,
+      },
+      {
+        type: TYPE.IMAGE,
+        content: `https://firebasestorage.googleapis.com/v0/b/tpm-techs.appspot.com/o/AI_0001.jpg?alt=media&token=fea9fac1-0baa-452e-b2a5-ffaff035c37a`,
+      },
+      {
+        type: TYPE.PARAGRAPH,
+        content: `Phân tích bụi trên bề mặt: Sử dụng trí tuệ nhân tạo, chúng tôi có thể phân tích và định loại các loại bụi mà không cần can thiệp của con người. Điều này giúp tối ưu hóa quy trình kiểm soát chất lượng và giảm thiểu sai sót.`,   
+      },
+      {
+        type: TYPE.IMAGE,
+        content: `https://firebasestorage.googleapis.com/v0/b/tpm-techs.appspot.com/o/AI_0002.gif?alt=media&token=69eb612c-3ef0-4262-838a-ec28a9c027a0`,
+      },
+      {
+        type: TYPE.PARAGRAPH,
+        content: `Tích hợp AI nhận biết các loại bụi mới: Không chỉ nhận biết các loại bụi thông thường, mà module của chúng tôi còn có khả năng học và nhận biết các loại bụi mới xuất hiện trên bề mặt của cuộn keo, đảm bảo rằng quy trình kiểm tra luôn được cập nhật và hiệu quả.`,   
+      },
+      {
+        type: TYPE.IMAGE,
+        content: `https://firebasestorage.googleapis.com/v0/b/tpm-techs.appspot.com/o/3.gif?alt=media&token=34930a62-01b4-4132-8840-68e59e29b809`,
+      },
+      {
+        type: TYPE.PARAGRAPH,
+        content: `Dự đoán thời gian mức độ dơ đạt ngưỡng: Hệ thống của chúng tôi sử dụng dữ liệu lịch sử và thuật toán dự đoán để ước lượng thời gian cần thiết cho mức độ dơ đạt tới ngưỡng mà người dùng đã định trước. Điều này giúp người dùng có thể lên kế hoạch và thực hiện các biện pháp phòng tránh kịp thời, tránh được những hậu quả không mong muốn.`,      
+      },
+      {
+        type: TYPE.PARAGRAPH,
+        content: `Tối ưu hóa quy trình quản lý chất lượng: Việc dự đoán thời gian mức độ dơ giúp tối ưu hóa quy trình quản lý chất lượng, giảm thiểu thời gian và công sức mà người dùng phải bỏ ra cho việc kiểm tra thường xuyên, đồng thời đảm bảo rằng sản phẩm luôn đạt chất lượng cao nhất.`,
+     
+      },
+      {
+        type: TYPE.TITLE,
+        content: `Ứng dụng di động`,
+      },
+      {
+        type: TYPE.IMAGE,
+        content: `https://firebasestorage.googleapis.com/v0/b/tpm-techs.appspot.com/o/app_01.png?alt=media&token=5ec3bb00-ed8e-4e8b-9976-ca3676dac8b6`,
+
+      },
+      {
+        type: TYPE.TITLE,
+        content: `Màn hình tích hợp nhiều chức năng`,
+      },
+      {
+        type: TYPE.IMAGE,
+        content: `https://firebasestorage.googleapis.com/v0/b/tpm-techs.appspot.com/o/app_02.png?alt=media&token=b70ca346-799c-40d0-b5dc-2eaa0df45ce3`,
+
+      },
+      {
+        type: TYPE.TITLE,
+        content: `Màn hình quản lý, hiển thị các máy đã tích hợp modules`,
+      },
+      {
+        type: TYPE.IMAGE,
+        content: `https://firebasestorage.googleapis.com/v0/b/tpm-techs.appspot.com/o/app_003.png?alt=media&token=ba783292-3cc4-4eef-86a1-156c84dfff81`,
+        
+      },
+      {
+        type: TYPE.PARAGRAPH,
+        content: `Cảnh báo thông qua ứng dụng di động: Thông tin về dự đoán thời gian mức độ dơ đạt ngưỡng cũng sẽ được cung cấp thông qua ứng dụng di động, giúp người dùng có thể tham khảo và chuẩn bị kế hoạch một cách thuận tiện từ bất kỳ đâu, thông tin về tình trạng sạch sẽ của cuộn keo và các chỉ số môi trường sẽ được truy cập dễ dàng thông qua ứng dụng di động. Người dùng có thể nhận được cảnh báo ngay lập tức khi phát hiện vấn đề, giúp họ có thể can thiệp kịp thời và giảm thiểu nguy cơ sai sót nhất.`,
+      },
+      {
+        type: TYPE.TITLE,
+        content: `Màn hình hiển thị chi tiết các thông số đã được thu thập và tính toán từ module`,
+      },
+      {
+        type: TYPE.IMAGE,
+        content: `https://firebasestorage.googleapis.com/v0/b/tpm-techs.appspot.com/o/app_004.png?alt=media&token=5b24c994-2b85-44a6-99b2-ca381c36429f`,
+      },
+      {
+        type: TYPE.TITLE,
+        content: `Màn hình hiển thị thống kê số lượng theo biểu đồ một cách trừu tượng`,
+      },
+      {
+        type: TYPE.IMAGE,
+        content: `https://firebasestorage.googleapis.com/v0/b/tpm-techs.appspot.com/o/app_005.png?alt=media&token=d1367843-dfc3-442a-a09f-6001df055fa0`,
+      },
+      {
+        type: TYPE.TITLE,
+        content: `Màn hình hiển thị các cảnh báo khi đặt ngưỡng do người dùng định nghĩa`,
+      },
+      {
+        type: TYPE.IMAGE,
+        content: `https://firebasestorage.googleapis.com/v0/b/tpm-techs.appspot.com/o/app_006.png?alt=media&token=8cf01941-cc37-4610-b6b5-0173e01bc956`,
+      },
+
+      {
+        type: TYPE.PARAGRAPH,
+        content: `Dự án xây dựng module tích hợp camera AI nhận biết bụi và cảnh báo mức độ dơ trên ứng 
+                  dụng di động sẽ mang lại một giải pháp toàn diện cho việc quản lý chất lượng trong quy
+                  trình sản xuất công nghiệp. Điều này giúp tối ưu hóa quy trình kiểm soát chất lượng, giảm
+                  thiểu sai sót, và đảm bảo rằng sản phẩm luôn đạt chất lượng cao nhất. `,
+      },
+
+
+    ],
+  },
+  {
+    id: 217,
+    date: "Mar 16, 2020",
+    datetime: "2020-03-16",
+    category: { title: "Bộ điều khiển mạng EtherCat", href: "#" },
+    title: `PHÁT TRIỂN BỘ ĐIỀU KHIỂN NHIỀU TRỤC SỬ DỤNG CÔNG NGHỆ MANG ETHERCAT`,
+    description: `Phương pháp thông thường: Điều khiển nhiều động cơ bằng tín hiệu xung và Phương pháp mới: Điều khiển nhiều động cơ bằng tín hiệu mạng`,
+    image: `https://firebasestorage.googleapis.com/v0/b/tpm-techs.appspot.com/o/Picture1_IOT.png?alt=media&token=deddcf5f-f915-4765-8315-ba6e17f0dd04`,
+    contents: [
+      {
+        type: TYPE.TITLE,
+        content: `Tên dự án: Phát triển bộ điều khiển nhiều trục sử dụng công nghệ mạng EtherCAT`,
+      },
+      {
+        type: TYPE.TITLE,
+        content: `Phương pháp thông thường: Điều khiển nhiều động cơ bằng tín hiệu xung`,
+      },
+      {
+        type: TYPE.PARAGRAPH,
+        content: `
+          Pulse-based motion controller
+          `,
+      },
+      {
+        type: TYPE.LIST,
+        items: [
+          `Cáp điều khiển khá cồng kềnh và đắt tiền`,
+          `Một bộ điều khiển tối đa 4-8 động cơ được điều khiển `,
+          `Thời gian trễ cao, không đảm bảo điều khiển đồng bộ`,
+          `Cảm biến PHẢI được truyền về máy tính chủ`,
+        ],
+      },
+      {
+        type: TYPE.IMAGE,
+        content: `https://firebasestorage.googleapis.com/v0/b/tpm-techs.appspot.com/o/Picture2_IOT.png?alt=media&token=5a841b0f-12ad-4a6f-9dc3-1ec1aaf5f96b`,
+      },
+      {
+        type: TYPE.TITLE,
+        content: `Phương pháp mới: Điều khiển nhiều động cơ bằng tín hiệu mạng`,
+      },
+      {
+        type: TYPE.PARAGRAPH,
+        content: `Network-based motion controller`,
+      },
+      {
+        type: TYPE.LIST,
+        items: [
+          `Sử dụng cáp LAN, khá gọn, rẻ tiền và dễ kiếm`,
+          `Một bộ điều khiển tối đa 64 động cơ được bảo đảm điều khiển đồng bộ `,
+          `Không có thời gian trễ hoặc rất nhỏ`,
+          `Cảm biến được truyền về servo driver (đặt gần động cơ nên không đòi hỏi dây dẫn dài)`,
+        ],
+      },
+      {
+        type: TYPE.IMAGE,
+        content: `https://firebasestorage.googleapis.com/v0/b/tpm-techs.appspot.com/o/Picture3_IOT.png?alt=media&token=48faaa6a-a3e2-4942-8299-2fcdfa684fc1`,
+      },
+      {
+        type: TYPE.PARAGRAPH,
+        content: `Hệ thống hoàn chỉnh bao gồm:`,
+      },
+      {
+        type: TYPE.LIST,
+        items: [
+          `1 master motion controller kết nối vào máy tính`,
+          `Các loại slave bao gồm servo driver (dùng để điều khiển động cơ) và I/O (Input/Output: dung để nhận tín hiệu từ cảm biến)`,
+          `Có tối đa 64 slave trong 1 network`,
+        ],
+      },
+      {
+        type: TYPE.IMAGE,
+        content: `https://firebasestorage.googleapis.com/v0/b/tpm-techs.appspot.com/o/Picture4_IOT.png?alt=media&token=07615029-1ba3-4d34-a308-66d8e6f4e287`,
+      },
+    ],
+  },
+  {
+    id: 218,
+    date: "Mar 16, 2020",
+    datetime: "2020-03-16",
+    category: { title: "Download", href: "#" },
+    driveLink: "https://drive.google.com/file/d/1vMerbOsxHgIRTclvIahkPEX9aKfPnwb9/view?usp=sharing",
+    documentLink: "https://docs.google.com/document/d/1JeqFAuf0VjMCQfvrZi9z0E1kbeFEGbZvIzcEozbjTwE/edit",
+    title: `EtherCAT - based Motion Controller`,
+    description: `Phương pháp thông thường: Điều khiển nhiều động cơ bằng tín hiệu xung và Phương pháp mới: Điều khiển nhiều động cơ bằng tín hiệu mạng`,
+    image: `https://firebasestorage.googleapis.com/v0/b/tpm-techs.appspot.com/o/EtherCat_Products_1.jpg?alt=media&token=86409bb4-4337-4fa3-95a6-06a1d2f30565`,
+    contents: [
+      {
+        type: TYPE.TITLE,
+        content: `Tên dự án: EtherCAT - based Motion Controller`,
+      },
+      {
+        type: TYPE.TITLE,
+        content: `Bộ điều khiển mạng EtherCat`,
+      },
+      {
+        type: TYPE.PARAGRAPH,
+        content: `
+          Pulse-based motion controller
+          `,
+      },
+      {
+        type: TYPE.LIST,
+        items: [
+          `Cáp điều khiển khá cồng kềnh và đắt tiền`,
+          `Một bộ điều khiển tối đa 4-8 động cơ được điều khiển `,
+          `Thời gian trễ cao, không đảm bảo điều khiển đồng bộ`,
+          `Cảm biến PHẢI được truyền về máy tính chủ`,
+        ],
+      },
+      {
+        type: TYPE.IMAGE,
+        content: `https://firebasestorage.googleapis.com/v0/b/tpm-techs.appspot.com/o/Picture2_IOT.png?alt=media&token=5a841b0f-12ad-4a6f-9dc3-1ec1aaf5f96b`,
+      },
+      {
+        type: TYPE.TITLE,
+        content: `Phương pháp mới: Điều khiển nhiều động cơ bằng tín hiệu mạng`,
+      },
+      {
+        type: TYPE.PARAGRAPH,
+        content: `Network-based motion controller`,
+      },
+      {
+        type: TYPE.LIST,
+        items: [
+          `Sử dụng cáp LAN, khá gọn, rẻ tiền và dễ kiếm`,
+          `Một bộ điều khiển tối đa 64 động cơ được bảo đảm điều khiển đồng bộ `,
+          `Không có thời gian trễ hoặc rất nhỏ`,
+          `Cảm biến được truyền về servo driver (đặt gần động cơ nên không đòi hỏi dây dẫn dài)`,
+        ],
+      },
+      {
+        type: TYPE.IMAGE,
+        content: `https://firebasestorage.googleapis.com/v0/b/tpm-techs.appspot.com/o/Picture3_IOT.png?alt=media&token=48faaa6a-a3e2-4942-8299-2fcdfa684fc1`,
+      },
+      {
+        type: TYPE.PARAGRAPH,
+        content: `Hệ thống hoàn chỉnh bao gồm:`,
+      },
+      {
+        type: TYPE.LIST,
+        items: [
+          `1 master motion controller kết nối vào máy tính`,
+          `Các loại slave bao gồm servo driver (dùng để điều khiển động cơ) và I/O (Input/Output: dung để nhận tín hiệu từ cảm biến)`,
+          `Có tối đa 64 slave trong 1 network`,
+        ],
+      },
+      {
+        type: TYPE.IMAGE,
+        content: `https://firebasestorage.googleapis.com/v0/b/tpm-techs.appspot.com/o/Picture4_IOT.png?alt=media&token=07615029-1ba3-4d34-a308-66d8e6f4e287`,
+      },
+    ],
+  },
+  {
+    id: 219,
+    date: "Mar 16, 2020",
+    datetime: "2020-03-16",
+    category: { title: "Download", href: "#" },
+    title: `TSVC-EA050H-E02 380V Ethercat`,
+    description: `Điều khiển nhiều động cơ bằng tín hiệu xung và Phương pháp mới: Điều khiển nhiều động cơ bằng tín hiệu mạng`,
+    driveLink: "https://drive.google.com/file/d/1vMerbOsxHgIRTclvIahkPEX9aKfPnwb9/view?usp=sharing",
+    documentLink: "https://drive.google.com/file/d/1QbVRH3lKZXSCqP-laEiDbUqC4725wmdf/view?usp=sharing",
+    image: `https://firebasestorage.googleapis.com/v0/b/tpm-techs.appspot.com/o/EtherCat_products_2.jpg?alt=media&token=99da17ad-23ee-4594-a1d7-920568504127`,
+    contents: [
+      {
+        type: TYPE.TITLE,
+        content: `Tên dự án: EtherCAT - based Motion Controller`,
+      },
+      {
+        type: TYPE.TITLE,
+        content: `Bộ điều khiển mạng EtherCat`,
+      },
+      {
+        type: TYPE.PARAGRAPH,
+        content: `
+          Pulse-based motion controller
+          `,
+      },
+      {
+        type: TYPE.LIST,
+        items: [
+          `Cáp điều khiển khá cồng kềnh và đắt tiền`,
+          `Một bộ điều khiển tối đa 4-8 động cơ được điều khiển `,
+          `Thời gian trễ cao, không đảm bảo điều khiển đồng bộ`,
+          `Cảm biến PHẢI được truyền về máy tính chủ`,
+        ],
+      },
+      {
+        type: TYPE.IMAGE,
+        content: `https://firebasestorage.googleapis.com/v0/b/tpm-techs.appspot.com/o/Picture2_IOT.png?alt=media&token=5a841b0f-12ad-4a6f-9dc3-1ec1aaf5f96b`,
+      },
+      {
+        type: TYPE.TITLE,
+        content: `Phương pháp mới: Điều khiển nhiều động cơ bằng tín hiệu mạng`,
+      },
+      {
+        type: TYPE.PARAGRAPH,
+        content: `Network-based motion controller`,
+      },
+      {
+        type: TYPE.LIST,
+        items: [
+          `Sử dụng cáp LAN, khá gọn, rẻ tiền và dễ kiếm`,
+          `Một bộ điều khiển tối đa 64 động cơ được bảo đảm điều khiển đồng bộ `,
+          `Không có thời gian trễ hoặc rất nhỏ`,
+          `Cảm biến được truyền về servo driver (đặt gần động cơ nên không đòi hỏi dây dẫn dài)`,
+        ],
+      },
+      {
+        type: TYPE.IMAGE,
+        content: `https://firebasestorage.googleapis.com/v0/b/tpm-techs.appspot.com/o/Picture3_IOT.png?alt=media&token=48faaa6a-a3e2-4942-8299-2fcdfa684fc1`,
+      },
+      {
+        type: TYPE.PARAGRAPH,
+        content: `Hệ thống hoàn chỉnh bao gồm:`,
+      },
+      {
+        type: TYPE.LIST,
+        items: [
+          `1 master motion controller kết nối vào máy tính`,
+          `Các loại slave bao gồm servo driver (dùng để điều khiển động cơ) và I/O (Input/Output: dung để nhận tín hiệu từ cảm biến)`,
+          `Có tối đa 64 slave trong 1 network`,
+        ],
+      },
+      {
+        type: TYPE.IMAGE,
+        content: `https://firebasestorage.googleapis.com/v0/b/tpm-techs.appspot.com/o/Picture4_IOT.png?alt=media&token=07615029-1ba3-4d34-a308-66d8e6f4e287`,
+      },
+    ],
+  },
+  {
+    id: 220,
+    date: "Mar 01, 2024",
+    datetime: "2024-05-01",
+    category: { title: "applications", href: "#" },
+    title: `OSADA Mobile`,
+    description: `Ứng dụng nhận biết phát hiện bụi phận và cảnh báo mức độ dơ trong nhà máy`,
+    android: "https://play.google.com/store/apps/details?id=com.android.chrome&hl=vi&gl=US",
+    apk: "https://drive.google.com/file/d/1iuXAtY4G08KtmYPz6GpjBtM6bO9r8qUn/view?usp=sharing",
+    ios: "https://apps.apple.com/vn/app/google-chrome/id535886823?l=vi",
+    image: `https://firebasestorage.googleapis.com/v0/b/tpm-techs.appspot.com/o/19203939logoosada.jpg?alt=media&token=af7c8c96-a6f0-4cc7-9de5-b206c606cfb6`,
+    contents: [
+      {
+        type: TYPE.TITLE,
+        content: `Thiết bị`,
+      },
+      {
+        type: TYPE.PARAGRAPH,
+        content: `Module tích hợp camera mang lại sự thông minh và hiệu quả cho việc quản lý chất lượng trong quy trình sản xuất keo công nghiệp. Với việc kết hợp công nghệ camera và trí tuệ nhân tạo, chúng tôi mang đến một giải pháp toàn diện cho việc nhận biết mức độ dơ và phân tích bụi trên bề mặt cuộn keo, cùng với các thông số môi trường như nhiệt độ và độ ẩm xung quanh.`,  
+      },
+      {
+        type: TYPE.TITLE,
+        content: `Tính năng và lợi ích`,
+      },
+      {
+        type: TYPE.IMAGE,
+        content: `https://firebasestorage.googleapis.com/v0/b/tpm-techs.appspot.com/o/hinhosd2.jpg?alt=media&token=f33a8c8c-0b9e-48ce-be1d-20c10ef6d2ea`,
+      },
+      {
+        type: TYPE.PARAGRAPH,
+        content: `Nhận biết mức độ dơ: Module của chúng tôi có khả năng nhận diện mức độ dơ trên bề mặt của cuộn keo, từ đó cung cấp thông tin chính xác và chi tiết về tình trạng sạch sẽ của sản phẩm. `,
+      },
+      {
+        type: TYPE.IMAGE,
+        content: `https://firebasestorage.googleapis.com/v0/b/tpm-techs.appspot.com/o/AI_0001.jpg?alt=media&token=fea9fac1-0baa-452e-b2a5-ffaff035c37a`,
+      },
+      {
+        type: TYPE.PARAGRAPH,
+        content: `Phân tích bụi trên bề mặt: Sử dụng trí tuệ nhân tạo, chúng tôi có thể phân tích và định loại các loại bụi mà không cần can thiệp của con người. Điều này giúp tối ưu hóa quy trình kiểm soát chất lượng và giảm thiểu sai sót.`,   
+      },
+      {
+        type: TYPE.IMAGE,
+        content: `https://firebasestorage.googleapis.com/v0/b/tpm-techs.appspot.com/o/AI_0002.gif?alt=media&token=69eb612c-3ef0-4262-838a-ec28a9c027a0`,
+      },
+      {
+        type: TYPE.PARAGRAPH,
+        content: `Tích hợp AI nhận biết các loại bụi mới: Không chỉ nhận biết các loại bụi thông thường, mà module của chúng tôi còn có khả năng học và nhận biết các loại bụi mới xuất hiện trên bề mặt của cuộn keo, đảm bảo rằng quy trình kiểm tra luôn được cập nhật và hiệu quả.`,   
+      },
+      {
+        type: TYPE.IMAGE,
+        content: `https://firebasestorage.googleapis.com/v0/b/tpm-techs.appspot.com/o/3.gif?alt=media&token=34930a62-01b4-4132-8840-68e59e29b809`,
+      },
+      {
+        type: TYPE.PARAGRAPH,
+        content: `Dự đoán thời gian mức độ dơ đạt ngưỡng: Hệ thống của chúng tôi sử dụng dữ liệu lịch sử và thuật toán dự đoán để ước lượng thời gian cần thiết cho mức độ dơ đạt tới ngưỡng mà người dùng đã định trước. Điều này giúp người dùng có thể lên kế hoạch và thực hiện các biện pháp phòng tránh kịp thời, tránh được những hậu quả không mong muốn.`,      
+      },
+      {
+        type: TYPE.PARAGRAPH,
+        content: `Tối ưu hóa quy trình quản lý chất lượng: Việc dự đoán thời gian mức độ dơ giúp tối ưu hóa quy trình quản lý chất lượng, giảm thiểu thời gian và công sức mà người dùng phải bỏ ra cho việc kiểm tra thường xuyên, đồng thời đảm bảo rằng sản phẩm luôn đạt chất lượng cao nhất.`,
+     
+      },
+      {
+        type: TYPE.TITLE,
+        content: `Ứng dụng di động`,
+      },
+      {
+        type: TYPE.IMAGE,
+        content: `https://firebasestorage.googleapis.com/v0/b/tpm-techs.appspot.com/o/app_01.png?alt=media&token=5ec3bb00-ed8e-4e8b-9976-ca3676dac8b6`,
+
+      },
+      {
+        type: TYPE.TITLE,
+        content: `Màn hình tích hợp nhiều chức năng`,
+      },
+      {
+        type: TYPE.IMAGE,
+        content: `https://firebasestorage.googleapis.com/v0/b/tpm-techs.appspot.com/o/app_02.png?alt=media&token=b70ca346-799c-40d0-b5dc-2eaa0df45ce3`,
+
+      },
+      {
+        type: TYPE.TITLE,
+        content: `Màn hình quản lý, hiển thị các máy đã tích hợp modules`,
+      },
+      {
+        type: TYPE.IMAGE,
+        content: `https://firebasestorage.googleapis.com/v0/b/tpm-techs.appspot.com/o/app_003.png?alt=media&token=ba783292-3cc4-4eef-86a1-156c84dfff81`,
+        
+      },
+      {
+        type: TYPE.PARAGRAPH,
+        content: `Cảnh báo thông qua ứng dụng di động: Thông tin về dự đoán thời gian mức độ dơ đạt ngưỡng cũng sẽ được cung cấp thông qua ứng dụng di động, giúp người dùng có thể tham khảo và chuẩn bị kế hoạch một cách thuận tiện từ bất kỳ đâu, thông tin về tình trạng sạch sẽ của cuộn keo và các chỉ số môi trường sẽ được truy cập dễ dàng thông qua ứng dụng di động. Người dùng có thể nhận được cảnh báo ngay lập tức khi phát hiện vấn đề, giúp họ có thể can thiệp kịp thời và giảm thiểu nguy cơ sai sót nhất.`,
+      },
+      {
+        type: TYPE.TITLE,
+        content: `Màn hình hiển thị chi tiết các thông số đã được thu thập và tính toán từ module`,
+      },
+      {
+        type: TYPE.IMAGE,
+        content: `https://firebasestorage.googleapis.com/v0/b/tpm-techs.appspot.com/o/app_004.png?alt=media&token=5b24c994-2b85-44a6-99b2-ca381c36429f`,
+      },
+      {
+        type: TYPE.TITLE,
+        content: `Màn hình hiển thị thống kê số lượng theo biểu đồ một cách trừu tượng`,
+      },
+      {
+        type: TYPE.IMAGE,
+        content: `https://firebasestorage.googleapis.com/v0/b/tpm-techs.appspot.com/o/app_005.png?alt=media&token=d1367843-dfc3-442a-a09f-6001df055fa0`,
+      },
+      {
+        type: TYPE.TITLE,
+        content: `Màn hình hiển thị các cảnh báo khi đặt ngưỡng do người dùng định nghĩa`,
+      },
+      {
+        type: TYPE.IMAGE,
+        content: `https://firebasestorage.googleapis.com/v0/b/tpm-techs.appspot.com/o/app_006.png?alt=media&token=8cf01941-cc37-4610-b6b5-0173e01bc956`,
+      },
+
+      {
+        type: TYPE.PARAGRAPH,
+        content: `Dự án xây dựng module tích hợp camera AI nhận biết bụi và cảnh báo mức độ dơ trên ứng 
+                  dụng di động sẽ mang lại một giải pháp toàn diện cho việc quản lý chất lượng trong quy
+                  trình sản xuất công nghiệp. Điều này giúp tối ưu hóa quy trình kiểm soát chất lượng, giảm
+                  thiểu sai sót, và đảm bảo rằng sản phẩm luôn đạt chất lượng cao nhất. `,
+      },
     ],
   },
 
@@ -3605,3 +4096,4 @@ export const serviceBlogs: IBlog[] = [
     ],
   },
 ]
+

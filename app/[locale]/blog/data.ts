@@ -33,6 +33,11 @@ interface IBlog {
   id: number
   title: string
   description: string
+  driveLink?: string
+  documentLink?: string
+  android?: string
+  ios?:string
+  apk?: string
   contents: IContent[]
   image: string
   type?: string

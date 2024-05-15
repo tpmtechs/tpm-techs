@@ -49,10 +49,20 @@ const Header: FC = () => {
                 </Link>
               </Col>
               <Col>
+                <Link className="text-primary" href={urlcat(Path.NEWS, {locale})}>
+                  <FormattedMessage id="common.news" />
+                </Link>
+              </Col>
+              <Col>
+                <Link className="text-primary" href={urlcat(Path.PRODUCTS, {locale})}>
+                  <FormattedMessage id="common.products" />
+                </Link>
+              </Col>
+              <Col>
                 <Button type="primary" size="large" href={urlcat(Path.CONTACT, {locale})}>
                   <FormattedMessage id="common.contact.us" />
                 </Button>
-              </Col>
+              </Col>   
               <Col>
                 <LocaleSelect  />
               </Col>

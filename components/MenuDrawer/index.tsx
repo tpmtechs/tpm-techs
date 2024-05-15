@@ -69,6 +69,16 @@ const MenuDrawer: FC = () => {
               </Button>
             </Col>
             <Col span={24}>
+              <Button type="link" onClick={() => handleClick()} href={urlcat(Path.NEWS, {locale})}>
+                <FormattedMessage id="common.news" />
+              </Button>
+            </Col>
+            <Col span={24}>
+              <Button type="link" onClick={() => handleClick()} href={urlcat(Path.PRODUCTS, {locale})}>
+                <FormattedMessage id="common.products" />
+              </Button>
+            </Col>
+            <Col span={24}>
               <Button type="link" onClick={() => handleClick()} href={urlcat(Path.CONTACT, {locale})}>
                  <FormattedMessage id="common.contact.us" />
               </Button>

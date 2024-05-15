@@ -65,7 +65,7 @@ const Footer: FC = () => {
     <div className="flex w-full flex-col items-center justify-center bg-gradient-to-r from-primary-700 to-primary-800 pb-6 text-white">
       <section
         style={{ width: "100vw" }}
-        className="relative flex w-full items-center justify-center bg-[url('https://firebasestorage.googleapis.com/v0/b/tpm-techs.appspot.com/o/NL9.jpg?alt=media&token=333c5633-f345-4832-ad22-dd45b408505d')] bg-cover bg-center bg-no-repeat"
+        className="relative flex w-full items-center justify-center bg-[url('https://firebasestorage.googleapis.com/v0/b/tpm-techs.appspot.com/o/Untitled%20design%20TPM%203.gif?alt=media&token=838240e8-b463-45ab-a015-fe007c359403')] bg-cover bg-center bg-no-repeat"
       >
         <div style={{ maxWidth: 1280, padding: '0 32px', height: 400}} className="z-40 flex w-full items-center justify-start">
           <div className="w-full">
@@ -155,9 +155,25 @@ const Footer: FC = () => {
                   <FormattedMessage id="common.projects" />
                 </Link>
                 </Col>
+                
                 <Col span={24}>
-                  <Link className="text-primary" href={urlcat(Path.CONTACT, {locale})}><FormattedMessage id="common.contact.us" /></Link>
+                  <Link className="text-primary" href={urlcat(Path.CONTACT, {locale})}>
+                    <FormattedMessage id="common.contact.us" />
+                    </Link>
                 </Col>
+
+                <Col span={24}>
+                  <Link className="text-primary" href={urlcat(Path.NEWS, {locale})}>
+                  <FormattedMessage id="common.news" />
+                </Link>
+                </Col>
+                
+                <Col span={24}>
+                  <Link className="text-primary" href={urlcat(Path.PRODUCTS, {locale})}>
+                  <FormattedMessage id="common.products" />
+                </Link>
+                </Col>
+
               </Row>
             </Col>
             <Col sm={8} xs={24}>
@@ -190,7 +206,7 @@ const Footer: FC = () => {
                   </Button>
                 </Col>
                 <Col>
-                  <Button type="link" href="https://www.facebook.com/profile.php?id=61554331060849">
+                  <Button type="link" href="https://www.facebook.com/profile.php?id=61559082667204">
                     <FacebookFilled style={{ fontSize: 28 }} />
                   </Button>
                 </Col>
