@@ -2,19 +2,16 @@
 
 /* eslint-disable @next/next/no-img-element */
 
-import {Col, Row } from "antd"
-import { FC, useState, useEffect } from "react"
-import { FormattedMessage, useIntl } from "react-intl"
-import Post from "components/Post"
 import {
   DesktopOutlined,
   FileOutlined,
   PieChartOutlined,
-  TeamOutlined,
-  UserOutlined,
 } from '@ant-design/icons';
+import { Breadcrumb, Col, Layout, Menu, Row, theme } from 'antd';
 import type { MenuProps } from 'antd';
-import { Breadcrumb, Layout, Menu, theme } from 'antd';
+import { FC, useEffect, useState } from 'react';
+import { FormattedMessage, useIntl } from 'react-intl';
+import Post from 'components/Post';
 
 const { Header, Content, Footer, Sider } = Layout;
 

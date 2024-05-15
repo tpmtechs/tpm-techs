@@ -1,8 +1,8 @@
 "use client"
 
 /* eslint-disable @next/next/no-img-element */
-import { Button, Carousel, Col, Divider, Row, Typography } from "antd"
-import { FC, useEffect, useState, useRef } from "react"
+import { Col, Divider, Row} from "antd"
+import { FC, useEffect, useRef, useState } from "react";
 import { FormattedMessage, useIntl } from "react-intl"
 import { BlogType } from "app/[locale]/blog/data"
 import Post from "components/Post"
