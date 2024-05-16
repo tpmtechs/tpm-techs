@@ -89,12 +89,6 @@ const BlogDetail = ({ params }: { params: { slug: string } }) => {
                       </div>
                     </div>
                   )
-                } else if (blog?.category.title === "Download") {
-                  return (
-                    <div >
-                      DOWNLOAD DA Checkin
-                    </div>
-                  )
                 } 
                 return (
                   <div key="content" className={content.type}>
