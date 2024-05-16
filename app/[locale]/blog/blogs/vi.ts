@@ -57,7 +57,7 @@ export const blogs: IBlog[] = [
     id: 101,
     title: "HỆ THỐNG TỰ ĐỘNG HÓA VÀ ĐIỀU KHIỂN",
     description:
-      "Giải pháp Quản lý Toàn diện của chúng tôi cung cấp các giải pháp phần mềm sáng tạo dành cho hệ thống tòa nhà thương mại và công nghiệp, cung cấp khả năng kiểm soát và giám sát hiệu quả để nâng cao hiệu suất hoạt động của tòa nhà.",
+      "Giải pháp Quản lý Toàn diện của chúng tôi cung cấp phần mềm và phần cứng trong các hệ thống như dây chuyền sản xuất, hệ thống tòa nhà thương mại và công nghiệp, cung cấp khả năng kiểm soát và giám sát hiệu quả để nâng cao hiệu suất hoạt động của doanh nghiệp.",
     contents: [
       {
         type: "title",
@@ -94,10 +94,7 @@ export const blogs: IBlog[] = [
   {
     id: 102,
     title: "THIẾT BỊ KẾT NỐI",
-    description: `TPM Technology có chuyên môn và công nghệ để cung cấp thông tin cảnh
-báo quý giá, phân tích dữ liệu và các hệ thống hiệu quả cho dự án của bạn, bất kể
-phạm vi của nó. Khám phá cách những thiết bị kết nối của chúng tôi có thể cách
-mạng hóa hoạt động của bạn.`,
+    description: `TPM Technology JSC có năng lực chuyên môn và công nghệ tiên tiến để cung cấp thông tin cảnh báo sự cố, phân tích dữ liệu và hệ thống hiệu quả cho doanh nghiệp. Khám phá cách thiết bị kết nối của chúng tôi có thể cải thiện hoạt động.`,
     contents: [
       {
         type: "paragraph",
@@ -217,8 +214,7 @@ tiết kiệm chi phí, có thể mở rộng và an toàn.`,
   {
     id: 103,
     title: "TƯ VẤN",
-    description: `Hỗ trợ khách hàng trong việc đạt được quá trình chuyển đổi kỹ thuật số
-mượt mà và bền vững.`,
+    description: `Tư vấn khách hàng trong việc thiết kế, vận hành và đề xuất các giải pháp phù hợp.`,
     contents: [
       {
         type: "title",
@@ -333,10 +329,7 @@ cạnh tranh, nâng cao hiệu quả và mang lại trải nghiệm nâng cao ch
   {
     id: 104,
     title: "HỖ TRỢ",
-    description: `Chúng tôi cung cấp dịch vụ bảo trì và hỗ trợ toàn diện, bao gồm bảo trì
-phòng ngừa và khắc phục, phân tích hiệu suất, giám sát máy chủ và ứng dụng, cải
-tiến liên tục và các mức hỗ trợ 1, 2 và 3. Mục tiêu của chúng tôi là đảm bảo hệ
-thống hoạt động ổn định và cung cấp hỗ trợ liên tục cho khách hàng.`,
+    description: `Chúng tôi cung cấp dịch vụ bảo trì và hỗ trợ toàn diện, bao gồm bảo trì định kỳ, khắc phục và thay thế, phân tích hiệu suất, giám sát máy chủ và ứng dụng, cải tiến liên tục. Mục tiêu của chúng tôi là đảm bảo hệ thống hoạt động ổn định và cung cấp hỗ trợ xuyên suốt cho khách hàng.`,
     contents: [
       {
         type: TYPE.TITLE,
@@ -1052,7 +1045,7 @@ Việt Nam.`,
     date: "Mar 16, 2020",
     datetime: "2020-03-16",
     category: { title: "Internet of Things", href: "#" },
-    title: `PHÁT TRIỂN BỘ ĐIỀU KHIỂN NHIỀU TRỤC SỬ DỤNG CÔNG NGHỆ MANG ETHERCAT`,
+    title: `PHÁT TRIỂN BỘ ĐIỀU KHIỂN NHIỀU TRỤC SỬ DỤNG CÔNG NGHỆ MẠNG ETHERCAT`,
     description: `Phương pháp thông thường: Điều khiển nhiều động cơ bằng tín hiệu xung và Phương pháp mới: Điều khiển nhiều động cơ bằng tín hiệu mạng`,
     image: `https://firebasestorage.googleapis.com/v0/b/tpm-techs.appspot.com/o/Picture1_IOT.png?alt=media&token=deddcf5f-f915-4765-8315-ba6e17f0dd04`,
     contents: [
@@ -1558,66 +1551,13 @@ Việt Nam.`,
         type: TYPE.TITLE,
         content: `Tên dự án: EtherCAT - based Motion Controller`,
       },
-      {
-        type: TYPE.TITLE,
-        content: `Bộ điều khiển mạng EtherCat`,
-      },
-      {
-        type: TYPE.PARAGRAPH,
-        content: `
-          Pulse-based motion controller
-          `,
-      },
-      {
-        type: TYPE.LIST,
-        items: [
-          `Cáp điều khiển khá cồng kềnh và đắt tiền`,
-          `Một bộ điều khiển tối đa 4-8 động cơ được điều khiển `,
-          `Thời gian trễ cao, không đảm bảo điều khiển đồng bộ`,
-          `Cảm biến PHẢI được truyền về máy tính chủ`,
-        ],
-      },
+
+      //------------Table-----------------
       {
         type: TYPE.IMAGE,
-        content: `https://firebasestorage.googleapis.com/v0/b/tpm-techs.appspot.com/o/Picture2_IOT.png?alt=media&token=5a841b0f-12ad-4a6f-9dc3-1ec1aaf5f96b`,
+        content: `https://firebasestorage.googleapis.com/v0/b/tpm-techs.appspot.com/o/bang_chitiet_ertherket.png?alt=media&token=46f83f68-42b0-4042-b129-0408449b2daa`,
       },
-      {
-        type: TYPE.TITLE,
-        content: `Phương pháp mới: Điều khiển nhiều động cơ bằng tín hiệu mạng`,
-      },
-      {
-        type: TYPE.PARAGRAPH,
-        content: `Network-based motion controller`,
-      },
-      {
-        type: TYPE.LIST,
-        items: [
-          `Sử dụng cáp LAN, khá gọn, rẻ tiền và dễ kiếm`,
-          `Một bộ điều khiển tối đa 64 động cơ được bảo đảm điều khiển đồng bộ `,
-          `Không có thời gian trễ hoặc rất nhỏ`,
-          `Cảm biến được truyền về servo driver (đặt gần động cơ nên không đòi hỏi dây dẫn dài)`,
-        ],
-      },
-      {
-        type: TYPE.IMAGE,
-        content: `https://firebasestorage.googleapis.com/v0/b/tpm-techs.appspot.com/o/Picture3_IOT.png?alt=media&token=48faaa6a-a3e2-4942-8299-2fcdfa684fc1`,
-      },
-      {
-        type: TYPE.PARAGRAPH,
-        content: `Hệ thống hoàn chỉnh bao gồm:`,
-      },
-      {
-        type: TYPE.LIST,
-        items: [
-          `1 master motion controller kết nối vào máy tính`,
-          `Các loại slave bao gồm servo driver (dùng để điều khiển động cơ) và I/O (Input/Output: dung để nhận tín hiệu từ cảm biến)`,
-          `Có tối đa 64 slave trong 1 network`,
-        ],
-      },
-      {
-        type: TYPE.IMAGE,
-        content: `https://firebasestorage.googleapis.com/v0/b/tpm-techs.appspot.com/o/Picture4_IOT.png?alt=media&token=07615029-1ba3-4d34-a308-66d8e6f4e287`,
-      },
+     
     ],
   },
   {

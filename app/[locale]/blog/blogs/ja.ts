@@ -57,7 +57,7 @@ export const blogs: IBlog[] = [
     title: "自動化および制御システム",
     description:
       //"Giải pháp Quản lý Toàn diện của chúng tôi cung cấp các giải pháp phần mềm sáng tạo dành cho hệ thống tòa nhà thương mại và công nghiệp, cung cấp khả năng kiểm soát và giám sát hiệu quả để nâng cao hiệu suất hoạt động của tòa nhà."
-      "当社のトータル管理ソリューションは、商業および産業用ビル システム向けの革新的なソフトウェア ソリューションを提供し、効果的な制御と監視を提供してビルのパフォーマンスを向上させます。",
+      "当社の総合管理ソリューションは、製造ライン、商業および産業用建物システムなどのシステムでソフトウェアとハードウェアを提供し、ビジネスの運用効率を向上させるための効果的な制御と監視機能を提供します。",
     contents: [
       {
         type: "title",
@@ -113,10 +113,7 @@ export const blogs: IBlog[] = [
 // báo quý giá, phân tích dữ liệu và các hệ thống hiệu quả cho dự án của bạn, bất kể
 // phạm vi của nó. Khám phá cách những thiết bị kết nối của chúng tôi có thể cách
 // mạng hóa hoạt động của bạn.`,
-    description: `TPMテクノロジーは現場情報を提供する専門知識と技術を持っています
-    プロジェクトに関係なく、貴重なレポート、データ分析、効率的なシステムを提供します。
-    その範囲。 接続されたデバイスがどのように機能するかをご覧ください
-    業務をネットワーク化します。`,
+    description: `TPM Technology JSCは、企業に対して警告情報、データ分析、効果的なシステムを提供する専門能力と先進技術を持っています。当社の接続されたデバイスが業務を改善できる方法を発見してください。`,
     contents: [
       {
         type: "paragraph",
@@ -284,8 +281,7 @@ export const blogs: IBlog[] = [
     title: `アドバイスする`,
 //     description: `Hỗ trợ khách hàng trong việc đạt được quá trình chuyển đổi kỹ thuật số
 // mượt mà và bền vững.`,
-      description: `お客様のデジタルトランスフォーメーションの実現をサポート
-      滑らかで耐久性があります。`,
+      description: `デザイン、運用、適切な解決策の提案に関して顧客にコンサルティングします。`,
     contents: [
       {
         type: "title",
@@ -432,10 +428,7 @@ export const blogs: IBlog[] = [
 // phòng ngừa và khắc phục, phân tích hiệu suất, giám sát máy chủ và ứng dụng, cải
 // tiến liên tục và các mức hỗ trợ 1, 2 và 3. Mục tiêu của chúng tôi là đảm bảo hệ
 // thống hoạt động ổn định và cung cấp hỗ trợ liên tục cho khách hàng.`,
-    description: `保守を含めた総合的な保守・サポートサービスをご提供いたします。
-    予防と修復、パフォーマンス分析、サーバーとアプリケーションの監視、改善
-    継続的な進歩とレベル 1、2、および 3 のサポート。私たちの目標は、システムを保証することです。
-    システムは安定して動作し、顧客に継続的なサポートを提供します。`,
+    description: ` 私たちは定期的なメンテナンス、トラブルシューティングと交換、性能分析、サーバーおよびアプリケーションの監視、そして継続的な改善を含む包括的な保守およびサポートサービスを提供しています。 私たちの目標は、システムの安定性を確保し、顧客に連続的なサポートを提供することです。`,
     contents: [
       {
         type: TYPE.TITLE,

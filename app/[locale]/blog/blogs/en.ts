@@ -55,7 +55,7 @@ export const blogs: IBlog[] = [
     id: 101,
     title: "AUTOMATION AND CONTROL SYSTEM",
     description:
-      "Our Total Management Solutions provide innovative software solutions for commercial and industrial building systems, providing effective control and monitoring to enhance building performance. home.",
+      "Our Comprehensive Management Solution provides software and hardware in systems such as production lines, commercial and industrial building systems, offering effective control and monitoring capabilities to enhance business operational efficiency.",
     contents: [
       {
         type: "title",
@@ -92,10 +92,7 @@ export const blogs: IBlog[] = [
   {
     id: 102,
     title: "CONNECTION DEVICE",
-    description: `TPM Technology has the expertise and technology to provide scene information
-    Valuable reporting, data analysis and efficient systems for your project, regardless
-    its scope. Discover how our connected devices can be
-    Networkize your operations.`,
+    description: `TPM Technology JSC has the expertise and advanced technology capabilities to provide fault alert information, data analysis, and efficient systems for businesses. Explore how our connected devices can enhance operations.`,
     contents: [
       {
         type: "paragraph",
@@ -215,8 +212,7 @@ export const blogs: IBlog[] = [
   {
     id: 103,
     title: "ADVISE",
-    description: `Support customers in achieving digital transformation
-    smooth and durable.`,
+    description: `Consulting customers on designing, operating, and proposing suitable solutions.`,
     contents: [
       {
         type: "title",
@@ -331,10 +327,7 @@ export const blogs: IBlog[] = [
   {
     id: 104,
     title: "SUPPORT",
-    description: `We provide comprehensive maintenance and support services, including maintenance
-    prevention and remediation, performance analysis, server and application monitoring, improvement
-    Continuous advancement and support levels 1, 2 and 3. Our goal is to ensure system
-    The system operates stably and provides continuous support to customers.`,
+    description: `We offer comprehensive maintenance and support services, including regular maintenance, troubleshooting and replacement, performance analysis, server and application monitoring, and continuous improvement. Our aim is to ensure system stability and provide seamless support to customers.`,
     contents: [
       {
         type: TYPE.TITLE,

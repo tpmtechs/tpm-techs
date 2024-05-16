@@ -38,6 +38,7 @@ const BlogDetail = ({ params }: { params: { slug: string } }) => {
             className="mx-auto flex w-full max-w-screen-xl flex-col justify-between px-4 "
           >
             <article className="format format-sm sm:format-base lg:format-lg format-blue dark:format-invert mx-auto my-24 w-full max-w-2xl">
+              
               <figure>{blog?.image && <img className="w-full rounded-xl" alt="image" src={blog?.image} />}</figure>
               <header className="not-format mb-4 mt-10 lg:mb-6">
                 <Title>{blog?.title}</Title>
@@ -88,7 +89,13 @@ const BlogDetail = ({ params }: { params: { slug: string } }) => {
                       </div>
                     </div>
                   )
-                }
+                } else if (blog?.category.title === "Download") {
+                  return (
+                    <div >
+                      DOWNLOAD DA Checkin
+                    </div>
+                  )
+                } 
                 return (
                   <div key="content" className={content.type}>
                     <Paragraph className="text-justify">{content.content}</Paragraph>
