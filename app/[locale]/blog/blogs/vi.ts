@@ -1538,18 +1538,18 @@ Việt Nam.`,
   },
   {
     id: 218,
-    date: "Mar 16, 2020",
-    datetime: "2020-03-16",
+    date: "Mar 16, 2024",
+    datetime: "2024-03-16",
     category: { title: "Download", href: "#" },
     driveLink: "https://drive.google.com/file/d/1vMerbOsxHgIRTclvIahkPEX9aKfPnwb9/view?usp=sharing",
     documentLink: "https://docs.google.com/document/d/1JeqFAuf0VjMCQfvrZi9z0E1kbeFEGbZvIzcEozbjTwE/edit",
     title: `EtherCAT - based Motion Controller`,
-    description: `Phương pháp thông thường: Điều khiển nhiều động cơ bằng tín hiệu xung và Phương pháp mới: Điều khiển nhiều động cơ bằng tín hiệu mạng`,
+    description: `Sản phẩm: Điều khiển nhiều động cơ bằng tín hiệu mạng`,
     image: `https://firebasestorage.googleapis.com/v0/b/tpm-techs.appspot.com/o/EtherCat_Products_1.jpg?alt=media&token=86409bb4-4337-4fa3-95a6-06a1d2f30565`,
     contents: [
       {
         type: TYPE.TITLE,
-        content: `Tên dự án: EtherCAT - based Motion Controller`,
+        content: `Tên sản phẩm: EtherCAT - based Motion Controller`,
       },
 
       //------------Table-----------------
@@ -1558,83 +1558,6 @@ Việt Nam.`,
         content: `https://firebasestorage.googleapis.com/v0/b/tpm-techs.appspot.com/o/bang_chitiet_ertherket.png?alt=media&token=46f83f68-42b0-4042-b129-0408449b2daa`,
       },
      
-    ],
-  },
-  {
-    id: 219,
-    date: "Mar 16, 2020",
-    datetime: "2020-03-16",
-    category: { title: "Download", href: "#" },
-    title: `TSVC-EA050H-E02 380V Ethercat`,
-    description: `Điều khiển nhiều động cơ bằng tín hiệu xung và Phương pháp mới: Điều khiển nhiều động cơ bằng tín hiệu mạng`,
-    driveLink: "https://drive.google.com/file/d/1vMerbOsxHgIRTclvIahkPEX9aKfPnwb9/view?usp=sharing",
-    documentLink: "https://drive.google.com/file/d/1QbVRH3lKZXSCqP-laEiDbUqC4725wmdf/view?usp=sharing",
-    image: `https://firebasestorage.googleapis.com/v0/b/tpm-techs.appspot.com/o/EtherCat_products_2.jpg?alt=media&token=99da17ad-23ee-4594-a1d7-920568504127`,
-    contents: [
-      {
-        type: TYPE.TITLE,
-        content: `Tên dự án: EtherCAT - based Motion Controller`,
-      },
-      {
-        type: TYPE.TITLE,
-        content: `Bộ điều khiển mạng EtherCat`,
-      },
-      {
-        type: TYPE.PARAGRAPH,
-        content: `
-          Pulse-based motion controller
-          `,
-      },
-      {
-        type: TYPE.LIST,
-        items: [
-          `Cáp điều khiển khá cồng kềnh và đắt tiền`,
-          `Một bộ điều khiển tối đa 4-8 động cơ được điều khiển `,
-          `Thời gian trễ cao, không đảm bảo điều khiển đồng bộ`,
-          `Cảm biến PHẢI được truyền về máy tính chủ`,
-        ],
-      },
-      {
-        type: TYPE.IMAGE,
-        content: `https://firebasestorage.googleapis.com/v0/b/tpm-techs.appspot.com/o/Picture2_IOT.png?alt=media&token=5a841b0f-12ad-4a6f-9dc3-1ec1aaf5f96b`,
-      },
-      {
-        type: TYPE.TITLE,
-        content: `Phương pháp mới: Điều khiển nhiều động cơ bằng tín hiệu mạng`,
-      },
-      {
-        type: TYPE.PARAGRAPH,
-        content: `Network-based motion controller`,
-      },
-      {
-        type: TYPE.LIST,
-        items: [
-          `Sử dụng cáp LAN, khá gọn, rẻ tiền và dễ kiếm`,
-          `Một bộ điều khiển tối đa 64 động cơ được bảo đảm điều khiển đồng bộ `,
-          `Không có thời gian trễ hoặc rất nhỏ`,
-          `Cảm biến được truyền về servo driver (đặt gần động cơ nên không đòi hỏi dây dẫn dài)`,
-        ],
-      },
-      {
-        type: TYPE.IMAGE,
-        content: `https://firebasestorage.googleapis.com/v0/b/tpm-techs.appspot.com/o/Picture3_IOT.png?alt=media&token=48faaa6a-a3e2-4942-8299-2fcdfa684fc1`,
-      },
-      {
-        type: TYPE.PARAGRAPH,
-        content: `Hệ thống hoàn chỉnh bao gồm:`,
-      },
-      {
-        type: TYPE.LIST,
-        items: [
-          `1 master motion controller kết nối vào máy tính`,
-          `Các loại slave bao gồm servo driver (dùng để điều khiển động cơ) và I/O (Input/Output: dung để nhận tín hiệu từ cảm biến)`,
-          `Có tối đa 64 slave trong 1 network`,
-        ],
-      },
-      {
-        type: TYPE.IMAGE,
-        content: `https://firebasestorage.googleapis.com/v0/b/tpm-techs.appspot.com/o/Picture4_IOT.png?alt=media&token=07615029-1ba3-4d34-a308-66d8e6f4e287`,
-      },
     ],
   },
   {
