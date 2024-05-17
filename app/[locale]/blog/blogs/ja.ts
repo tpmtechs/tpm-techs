@@ -1663,7 +1663,7 @@ export const posts: IBlog[] = [
     id: 218,
     date: "2020年3月16日",
     datetime: "2020-03-16",
-    category: { title: "ダウンロード", href: "#" },
+    category: { title: "Download", href: "#" },
     driveLink: "https://drive.google.com/file/d/1vMerbOsxHgIRTclvIahkPEX9aKfPnwb9/view?usp=sharing",
     documentLink: "https://docs.google.com/document/d/1JeqFAuf0VjMCQfvrZi9z0E1kbeFEGbZvIzcEozbjTwE/edit",
     title: `EtherCATベースのモーションコントローラ`,
