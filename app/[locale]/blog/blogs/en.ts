@@ -1530,79 +1530,54 @@ school.`,
   },
   {
     id: 218,
-    date: "Mar 16, 2020",
-    datetime: "2020-03-16",
+    date: "Mar 16, 2024",
+    datetime: "2024-03-16",
     category: { title: "Download", href: "#" },
     driveLink: "https://drive.google.com/file/d/1vMerbOsxHgIRTclvIahkPEX9aKfPnwb9/view?usp=sharing",
     documentLink: "https://docs.google.com/document/d/1JeqFAuf0VjMCQfvrZi9z0E1kbeFEGbZvIzcEozbjTwE/edit",
     title: `EtherCAT - based Motion Controller`,
-    description: `Conventional method: Controlling multiple motors with pulse signals and New method: Controlling multiple motors with network signals`,
+    description: `Product: Control multiple motors using network signals`,
     image: `https://firebasestorage.googleapis.com/v0/b/tpm-techs.appspot.com/o/EtherCat_Products_1.jpg?alt=media&token=86409bb4-4337-4fa3-95a6-06a1d2f30565`,
     contents: [
       {
         type: TYPE.TITLE,
-        content: `Tên dự án: EtherCAT - based Motion Controller`,
+        content: `Product name: EtherCAT - based Motion Controller`,
       },
       {
         type: TYPE.TITLE,
-        content: `Bộ điều khiển mạng EtherCat`,
-      },
-      {
-        type: TYPE.PARAGRAPH,
-        content: `
-          Pulse-based motion controller
-          `,
-      },
-      {
-        type: TYPE.LIST,
-        items: [
-          `Cáp điều khiển khá cồng kềnh và đắt tiền`,
-          `Một bộ điều khiển tối đa 4-8 động cơ được điều khiển `,
-          `Thời gian trễ cao, không đảm bảo điều khiển đồng bộ`,
-          `Cảm biến PHẢI được truyền về máy tính chủ`,
-        ],
-      },
-      {
-        type: TYPE.IMAGE,
-        content: `https://firebasestorage.googleapis.com/v0/b/tpm-techs.appspot.com/o/Picture2_IOT.png?alt=media&token=5a841b0f-12ad-4a6f-9dc3-1ec1aaf5f96b`,
+        content: `- EtherCAT Main Board (EtherCAT Distribution Network Standard, Hardware Type - no need to install separate RTOS)`,
       },
       {
         type: TYPE.TITLE,
-        content: `Phương pháp mới: Điều khiển nhiều động cơ bằng tín hiệu mạng`,
+        content: `- Supports up to 32 axes`,
       },
       {
-        type: TYPE.PARAGRAPH,
-        content: `Network-based motion controller`,
+        type: TYPE.TITLE,
+        content: `- Supports up to 32 IOs`,
       },
       {
-        type: TYPE.LIST,
-        items: [
-          `Sử dụng cáp LAN, khá gọn, rẻ tiền và dễ kiếm`,
-          `Một bộ điều khiển tối đa 64 động cơ được bảo đảm điều khiển đồng bộ `,
-          `Không có thời gian trễ hoặc rất nhỏ`,
-          `Cảm biến được truyền về servo driver (đặt gần động cơ nên không đòi hỏi dây dẫn dài)`,
-        ],
+        type: TYPE.TITLE,
+        content: `- Servo driver support and CiA-402 (DS-402) device configuration support step`,
       },
       {
-        type: TYPE.IMAGE,
-        content: `https://firebasestorage.googleapis.com/v0/b/tpm-techs.appspot.com/o/Picture3_IOT.png?alt=media&token=48faaa6a-a3e2-4942-8299-2fcdfa684fc1`,
+        type: TYPE.TITLE,
+        content: `- Information can be updated every 0.5msec to 4msec (default 1msec) based on connection of up to 64 nodes`,
       },
       {
-        type: TYPE.PARAGRAPH,
-        content: `Hệ thống hoàn chỉnh bao gồm:`,
+        type: TYPE.TITLE,
+        content: `- Support firmware upgrade`,
       },
       {
-        type: TYPE.LIST,
-        items: [
-          `1 master motion controller kết nối vào máy tính`,
-          `Các loại slave bao gồm servo driver (dùng để điều khiển động cơ) và I/O (Input/Output: dung để nhận tín hiệu từ cảm biến)`,
-          `Có tối đa 64 slave trong 1 network`,
-        ],
+        type: TYPE.TITLE,
+        content: `- Providing H/W EzSoftware UC (ECAT) software`,
       },
+
+      //------------Table-----------------
       {
         type: TYPE.IMAGE,
-        content: `https://firebasestorage.googleapis.com/v0/b/tpm-techs.appspot.com/o/Picture4_IOT.png?alt=media&token=07615029-1ba3-4d34-a308-66d8e6f4e287`,
+        content: `https://firebasestorage.googleapis.com/v0/b/tpm-techs.appspot.com/o/erthercat_EN.png?alt=media&token=2b94b70c-4303-45e8-8f3d-9fbb5b4b19a2`,
       },
+     
     ],
   },
   

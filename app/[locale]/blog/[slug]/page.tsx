@@ -4,6 +4,7 @@ import { useEffect, useRef, useState } from "react"
 import "./index.css"
 import { Image, Spin, Typography } from "antd"
 import { useIntl } from "react-intl"
+import { Col, Row } from 'antd';
 const { Title, Paragraph } = Typography
 
 const BlogDetail = ({ params }: { params: { slug: string } }) => {
@@ -33,16 +34,69 @@ const BlogDetail = ({ params }: { params: { slug: string } }) => {
   const renderContent = () => {
     if (blog?.category?.title === "Download") {
       return (
-        
+
         <div>
-          <div >
-                    <Image style={{ height: "50vh", width: "40vw",  objectFit: "cover" }} preview={true} className="w-full rounded-xl" alt="image" src={blog?.image} />
+          <div className="flex w-full flex-col items-center justify-center ">
+          <section
+            style={{ width: "100vw" }}
+            className="flex w-full items-center justify-center bg-[url('https://firebasestorage.googleapis.com/v0/b/tpm-techs.appspot.com/o/Untitled%20design%20products.gif?alt=media&token=b2315cfb-7a7d-44cd-bfe1-f2bb3e9140ce')] bg-cover bg-center bg-no-repeat"
+            >
+            <div style={{ maxWidth: 1280, padding: '0 32px', height: 600 }} className="z-40 flex w-full items-center justify-start">
+              <Row gutter={[24, 24]}>
+                <Col span={24}>
+                  <div className="text-2xl italic text-white">TPM Technology</div>
+                  <div className="text-5xl font-extrabold text-white">{blog?.description}</div>
+                </Col>
+              </Row>
+            </div>
+            <div style={{ height: 600 }} className="absolute inset-0 z-30 w-full bg-black bg-opacity-60" />
+          </section>  
+        </div>
+
+
+
+
+          <div style={{ display: 'flex', alignItems: 'flex-start', gap: '20px' }}>
+            <Image 
+              style={{ height: "50vh", width: "30vw", objectFit: "cover", marginTop: "5%" }} 
+              preview={true} 
+              className="w-full rounded-xl" 
+              alt="image" 
+              src={blog?.image} 
+            />
+
+            <div>
+              <Paragraph style={{ fontWeight: 'bold', fontSize: '25px', marginTop: "25px" }}>{blog?.description}</Paragraph>
+              {blog?.contents?.map((content: any) => { 
+                if (content.type === "title") 
+                  return (
+                    <div key="content" className={content.type}>
+                      <Paragraph style={{ fontSize: '12px' }}>
+                        {content.content}
+                      </Paragraph>
+                    </div>
+                  )
+              })}
+            </div>
           </div>
-          <div className="flex items-center justify-center py-2">
-                    <Image preview={false} className="w-full rounded-xl" alt="image" src={"https://firebasestorage.googleapis.com/v0/b/tpm-techs.appspot.com/o/bang_chitiet_ertherket.png?alt=media&token=46f83f68-42b0-4042-b129-0408449b2daa"} />
-          </div>
-          <Paragraph>{blog?.description}</Paragraph>
-          {blog?.driveLink && (
+
+          {blog?.contents?.map((content: any) => { 
+             if (content.type === "image") {
+              return (
+                <div key="content" className={content.type}>
+                  <div className="flex items-center justify-center py-2">
+                    <Image style={{ height: "100vh", width: "100vw",  objectFit: "contain"}} preview={false} className="w-full rounded-xl" alt="image" src={content?.content} />
+                  </div>
+                </div>
+              )
+            }
+            // // return (
+            // //   <div key="content" className={content.type}>
+            // //     <Paragraph className="text-justify">{content.content}</Paragraph>
+            // //   </div>
+            // )
+          })}
+          {/* {blog.driveLink && (
             <Paragraph>
               <a href={blog.driveLink} target="_blank" rel="noopener noreferrer">Download from Google Drive</a>
             </Paragraph>
@@ -51,7 +105,7 @@ const BlogDetail = ({ params }: { params: { slug: string } }) => {
             <Paragraph>
               <a href={blog.documentLink} target="_blank" rel="noopener noreferrer">View Document</a>
             </Paragraph>
-          )}
+          )} */}
           
         </div>
       )

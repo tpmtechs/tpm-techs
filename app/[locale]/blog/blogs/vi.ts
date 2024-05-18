@@ -1551,11 +1551,39 @@ Việt Nam.`,
         type: TYPE.TITLE,
         content: `Tên sản phẩm: EtherCAT - based Motion Controller`,
       },
+      {
+        type: TYPE.TITLE,
+        content: `- Bo mạch chính EtherCAT (Tiêu chuẩn mạng phân phối EtherCAT, Loại phần cứng - không cần cài đặt RTOS riêng)`,
+      },
+      {
+        type: TYPE.TITLE,
+        content: `- Hỗ trợ lên tới 32 trục`,
+      },
+      {
+        type: TYPE.TITLE,
+        content: `- Hỗ trợ lên tới 32 IO`,
+      },
+      {
+        type: TYPE.TITLE,
+        content: `- Hỗ trợ trình điều khiển servo và bước hỗ trợ cấu hình thiết bị CiA-402 (DS-402)`,
+      },
+      {
+        type: TYPE.TITLE,
+        content: `- Thông tin có thể được cập nhật cứ sau 0,5msec đến 4msec (mặc định 1msec) dựa trên kết nối lên tới 64 nút`,
+      },
+      {
+        type: TYPE.TITLE,
+        content: `- Hỗ trợ nâng cấp firmware`,
+      },
+      {
+        type: TYPE.TITLE,
+        content: `- Cung cấp phần mềm H/W EzSoftware UC (ECAT)`,
+      },
 
       //------------Table-----------------
       {
         type: TYPE.IMAGE,
-        content: `https://firebasestorage.googleapis.com/v0/b/tpm-techs.appspot.com/o/bang_chitiet_ertherket.png?alt=media&token=46f83f68-42b0-4042-b129-0408449b2daa`,
+        content: `https://firebasestorage.googleapis.com/v0/b/tpm-techs.appspot.com/o/erthercat_VN.png?alt=media&token=abe073b4-d448-42f8-9cbf-676c96d82b74`,
       },
      
     ],
