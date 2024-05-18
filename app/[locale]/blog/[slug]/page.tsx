@@ -157,7 +157,7 @@ const BlogDetail = ({ params }: { params: { slug: string } }) => {
               if (content.type === "list") {
                 return (
                   <div key={`${content.type}-${index}`} className={content.type}>
-                    <Paragraph style={{ fontSize: '12px' }}>
+                    <Paragraph style={{ fontSize: '11px' }}>
                       {content.content}
                     </Paragraph>
                   </div>
