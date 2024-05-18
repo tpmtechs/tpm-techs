@@ -104,20 +104,43 @@ const Products: FC = () => {
         );
       case "clean.energy":
         return (
+          // <div style={{ maxWidth: 1280, padding: '0 32px' }} className="w-full">
+          //   <div className="py-12 sm:py-12">
+          //     <div className="mx-auto max-w-7xl px-6 lg:px-8">
+          //       {/* <div style={{ color: "#3172A9" }} className="text-3xl font-semibold">
+          //         # {formatMessage({ id: 'projects.category.clean.energy' })}
+          //       </div> */}
+          //       {/* <Divider /> */}
+          //       <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16   lg:mx-0 lg:max-w-none lg:grid-cols-3">
+          //         {posts
+          //           .filter((post) => {
+          //             return post?.category?.title === formatMessage({ id: 'products.ethercat' })
+          //           })
+          //           .map((post) => (
+          //             <Post key={post?.id} post={post} />
+          //           ))}
+          //       </div>
+          //     </div>
+          //   </div>
+          // </div>
           <div style={{ maxWidth: 1280, padding: '0 32px' }} className="w-full">
             <div className="py-12 sm:py-12">
               <div className="mx-auto max-w-7xl px-6 lg:px-8">
                 {/* <div style={{ color: "#3172A9" }} className="text-3xl font-semibold">
-                  # {formatMessage({ id: 'projects.category.clean.energy' })}
+                  # {formatMessage({ id: 'projects.category.internet.of.things' })}
                 </div> */}
                 {/* <Divider /> */}
                 <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16   lg:mx-0 lg:max-w-none lg:grid-cols-3">
                   {posts
                     .filter((post) => {
-                      return post?.category?.title === formatMessage({ id: 'products.ethercat' })
+                      return post?.category?.title === formatMessage({ id: 'products.download' })
                     })
                     .map((post) => (
-                      <Post key={post?.id} post={post} />
+                      <div key={post?.id}>
+                        <Post post={post} />
+                        <div className="mt-4">  
+                        </div>
+                      </div>
                     ))}
                 </div>
               </div>
