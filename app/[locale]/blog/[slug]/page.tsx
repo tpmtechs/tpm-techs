@@ -153,16 +153,15 @@ const BlogDetail = ({ params }: { params: { slug: string } }) => {
                 )
             })}
 
-            {blog?.contents?.map((content: any, index: number) => { 
-              if (content.type === "list") {
+            {blog?.contents?.map((content: any) => { 
+              if (content.type === "list") 
                 return (
-                  <div key={`${content.type}-${index}`} className={content.type}>
-                    <Paragraph style={{ fontSize: '11px' }}>
+                  <div key="content" className={content.type}>
+                    <Paragraph style={{ fontSize: '12px', textAlign: 'center' }}>
                       {content.content}
                     </Paragraph>
                   </div>
                 )
-              }
             })}
           </div>
         </div>
