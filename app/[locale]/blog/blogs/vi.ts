@@ -1580,6 +1580,79 @@ Việt Nam.`,
         content: `- Cung cấp phần mềm H/W EzSoftware UC (ECAT)`,
       },
 
+      {
+        type: TYPE.LIST,
+        content: `Thông số`,
+      },
+      {
+        type: TYPE.LIST,
+        content: `Communication type - EtherCAT distributed network specification`,
+      },
+      {
+        type: TYPE.LIST,
+        content: `Communication port - 2 port (RJ45)`,
+      },
+      {
+        type: TYPE.LIST,
+        content: `Physical layer - 100 Base-TX Full duplex (by IEEE 802.3u)`,
+      },
+      {
+        type: TYPE.LIST,
+        content: `Transmission speed - 100 Mbps`,
+      },
+      {
+        type: TYPE.LIST,
+        content: `Transmission cycle time -	0. 5msec ~ 4msec(Default 1msec)`,
+      },
+      {
+        type: TYPE.LIST,
+        content: `Control Axis - Max. 32 Axes`,
+      },
+      {
+        type: TYPE.LIST,
+        content: `Max. Install board of System - 8 board`,
+      },
+      {
+        type: TYPE.LIST,
+        content: `LED display -	Com(Yellow), Error(Red), Power(Yellow), Link(Green)`,
+      },
+      {
+        type: TYPE.LIST,
+        content: `Number of configuration nodes  -	Max. 64 nodes`,
+      },
+      {
+        type: TYPE.LIST,
+        content: `Network connection - RJ45 RX/TX, Standard STP cable(above CAT6e) Up to Max. 50m between nodes`,
+      },
+      {
+        type: TYPE.LIST,
+        content: `Bus interface -	PCI express x 1, Gen 1`,
+      },
+      {
+        type: TYPE.LIST,
+        content: `Connect -	RJ45 LAN`,
+      },
+      {
+        type: TYPE.LIST,
+        content: `Power supply / current consumption -	DC 12V / Max. 800mA`,
+      },
+      {
+        type: TYPE.LIST,
+        content: `Operating temperature/Humidity - Temperature: 0 ~ 55℃ / Humidity: 5 ~ 95% (Non-condensation)`,
+      },
+      {
+        type: TYPE.LIST,
+        content: `Storage temperature -	-20 ~ 70℃`,
+      },
+      {
+        type: TYPE.LIST,
+        content: `Weight - 216g`,
+      },
+      {
+        type: TYPE.LIST,
+        content: `Exterior dimension of product -	168 (W) mm x 112 (L) mm`,
+      },
+
       //------------Table-----------------
       {
         type: TYPE.IMAGE,

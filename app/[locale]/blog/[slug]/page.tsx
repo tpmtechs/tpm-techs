@@ -152,20 +152,19 @@ const BlogDetail = ({ params }: { params: { slug: string } }) => {
                   </div>
                 )
             })}
+
+            {blog?.contents?.map((content: any) => { 
+              if (content.type === "list") 
+                return (
+                  <div key="content" className={content.type}>
+                    <Paragraph style={{ fontSize: '12px', textAlign: 'center' }}>
+                      {content.content}
+                    </Paragraph>
+                  </div>
+                )
+            })}
           </div>
         </div>
-        {blog?.contents?.map((content: any) => { 
-           if (content.type === "image") {
-            return (
-              <div key="content" className={content.type}>
-                <div className="flex items-center justify-center py-2">
-                  <Image style={{ height: "100vh", width: "100vw",  objectFit: "contain"}} preview={false} className="w-full rounded-xl" alt="image" src={content?.content} />
-                </div>
-              </div>
-            )
-          }
-          
-        })}
           {/* {blog.driveLink && (
             <Paragraph>
               <a href={blog.driveLink} target="_blank" rel="noopener noreferrer">Download from Google Drive</a>
