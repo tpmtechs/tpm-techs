@@ -146,5 +146,7 @@
   "products.icon.fileapk": " File Apk",
 
   "products.app": "Ứng dụng",
-  "products.board": "Phần mềm"
+  "products.board": "Phần mềm",
+  "news.listnews": "Danh sách bảng tin",
+  "news.listnews.id": "news"
 }

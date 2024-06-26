@@ -145,5 +145,7 @@
 
   "common.vietnamese": "ベトナム語",
   "common.english": "英語",
-  "common.japanese": "日本語"
+  "common.japanese": "日本語",
+  "news.listnews": "ニュースフィードのリスト",
+  "news.listnews.id": "news"
 }

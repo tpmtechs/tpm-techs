@@ -11,6 +11,9 @@ import urlcat from "urlcat"
 import Map from "components/Map"
 import Path from "config/path"
 import LocaleSelect from "components/LocaleSelect"
+import { useEffect } from "react"
+import Chatbot from "./chatbot";
+
 
 enum FormType {
   NAME = "name",
@@ -26,6 +29,7 @@ interface IFormData {
   field?: string
 }
 
+
 const Footer: FC = () => {
   const { formatMessage, locale } = useIntl()
   const [values, setValues] = useState<IFormData>({
@@ -34,6 +38,25 @@ const Footer: FC = () => {
     email: formatMessage({id: "footer.support.phone.number"}),
     field: formatMessage({id: "footer.support.field"}),
   })
+
+  useEffect(() => {
+    // Tạo thẻ script để tải script của EasyChatGPT
+    const script = document.createElement("script")
+    script.src = "https://widget.easychatgpt.io/dist/widget/main.js"
+    script.async = true
+    script.onload = () => {
+      // Khởi tạo EasyChatGPT sau khi script đã được tải
+      if (window.EasyChatGPT) {
+        window.EasyChatGPT.init({ handle: "tpm-techscom" })
+      }
+    }
+    document.body.appendChild(script)
+
+    // Xóa script khi component bị hủy
+    return () => {
+      document.body.removeChild(script)
+    }
+  }, [])
 
   const body = encodeURIComponent(
     `${formatMessage({id: "footer.support.name"})}: ` +
@@ -62,7 +85,9 @@ const Footer: FC = () => {
   }
 
   return (
+    
     <div className="flex w-full flex-col items-center justify-center bg-gradient-to-r from-primary-700 to-primary-800 pb-6 text-white">
+      <Chatbot /> 
       <section
         style={{ width: "100vw" }}
         className="relative flex w-full items-center justify-center bg-[url('https://firebasestorage.googleapis.com/v0/b/tpm-techs.appspot.com/o/Untitled%20design%20TPM%203.gif?alt=media&token=838240e8-b463-45ab-a015-fe007c359403')] bg-cover bg-center bg-no-repeat"

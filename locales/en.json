@@ -145,5 +145,7 @@
 
   "common.vietnamese": "Vietnamese",
   "common.english": "English",
-  "common.japanese": "Japanese"
+  "common.japanese": "Japanese",
+  "news.listnews": "List of news feeds",
+  "news.listnews.id": "news"
 }

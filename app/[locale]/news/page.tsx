@@ -15,6 +15,15 @@ const News: FC = () => {
   const [blogs, setBlogs] = useState<IBlog[]>([]);
   const ref = useRef<any>([]);
   const [height, setHeight] = useState(0);
+  
+  useEffect(() => {
+    const load = async () => {
+      const data = (await import(`app/[locale]/blog/blogs/${locale}`)).posts;
+      setPosts(data);
+    }
+
+    load();
+  }, [locale]);
 
   useEffect(() => {
     setHeight(ref?.current?.clientWidth / 1.778);
@@ -68,7 +77,6 @@ const News: FC = () => {
                   <br />
                 </React.Fragment>
               ))}
-              {/* <FormattedMessage id="home.strategic.partnership.campuchia" /> */}
             </div>
             <div className="flex flex-col items-center justify-center text-center mx-4 my-4 sm:w-full md:w-1/3">
               <img
@@ -104,34 +112,31 @@ const News: FC = () => {
                 className="mb-2 w-full rounded-xl"
                 src="https://firebasestorage.googleapis.com/v0/b/tpm-techs.appspot.com/o/newscampuchia2.jpg?alt=media&token=fe6d54cf-1bcf-402e-a837-df8f1d329372"
               />
-              {/* <div className="text-md text-slate-500">
-                <FormattedMessage id="newscampuchia.solutions.description2" />
-              </div>
-              <div style={{ color: "#3172A9" }} className="text-xl font-semibold">
-                <FormattedMessage id="newscampuchia.solutions.description1" />
-              </div> */}
             </div>
           </div>
         </section>
         {/*................................... Bảng tin........................................ */}
       </div>
-      <section
-        style={{ width: "100vw" }}
-        className="flex w-full items-center justify-center bg-mabel bg-cover bg-no-repeat"
-      >
-        <div style={{ maxWidth: 1280, padding: "0 32px" }} className="my-16 w-full">
-          {/* <Divider /> */}
-          <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 lg:mx-0 lg:max-w-none lg:grid-cols-4">
-            {blogs.map((blog) => {
-              return (
-                <div className="w-full" key={blog.id}>
-                  <Post key={blog.id} post={blog} />
-                </div>
-              );
-            })}
+
+      <div style={{ maxWidth: 1280, padding: '0 32px' }} className="w-full">
+        <div className="py-12 sm:py-12">
+          <div className="mx-auto max-w-7xl px-6 lg:px-8">
+            <div style={{ color: "#3172A9" }} className="text-3xl font-semibold">
+              # {formatMessage({id: 'news.listnews' })}
+            </div>
+            <Divider />
+            <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16   lg:mx-0 lg:max-w-none lg:grid-cols-3">
+              {posts
+                .filter((post) => {
+                  return post?.category?.title === formatMessage({id: 'news.listnews.id' })
+                })
+                .map((post) => (
+                  <Post key={post?.id} post={post} />
+                ))}
+            </div>
           </div>
         </div>
-      </section>
+      </div>  
 
       <div style={{ maxWidth: 1280, padding: "0 32px" }} className="w-full ">
         <section className="pb-16 pt-2">
