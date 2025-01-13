@@ -10,8 +10,8 @@ import {
 import Link from "next/link"
 import { type FC, useEffect, useRef, useState } from "react"
 import "animate.css"
-import MemberCard from "components/MemberCard"
 import { BlogType } from "app/[locale]/blog/data"
+import MemberCard from "components/MemberCard"
 import Post from "components/Post"
 
 import "./index.css"
@@ -209,7 +209,7 @@ const About: FC = () => {
         </div>
       </section>
 
-      <section
+      {/* <section
         style={{ width: "100vw" }}
         className="flex w-full items-center justify-center bg-white bg-cover bg-no-repeat"
       >
@@ -231,9 +231,9 @@ const About: FC = () => {
               <div className="text-justify text-base font-medium ">
                 <FormattedMessage id="about.tpc.description.1" />
                 {` `}
-                {/* <Link href="https://tpcgroup.net.vn" target="_blank">
+                <Link href="https://tpcgroup.net.vn" target="_blank">
                   TPCONS
-                </Link> */}
+                </Link>
                 {` `}
                 {``}
                 <FormattedMessage id="about.tpc.description.2" />
@@ -241,9 +241,9 @@ const About: FC = () => {
             </Col>
           </Row>
         </div>
-      </section>
+      </section> */}
 
-      <div style={{ maxWidth: 1280, padding: "0 32px" }} className="w-full">
+      {/* <div style={{ maxWidth: 1280, padding: "0 32px" }} className="w-full">
         <section className="my-16">
           <div style={{ color: "#3172A9" }} className="text-3xl font-semibold">
             # <FormattedMessage id="about.people" />
@@ -274,14 +274,14 @@ const About: FC = () => {
             </Row>
           </div>
         </section>
-      </div>
-      <div style={{ maxWidth: 1280, padding: "0 32px" }} className="w-full ">
+      </div> */}
+      {/* <div style={{ maxWidth: 1280, padding: "0 32px" }} className="w-full ">
         <section className="pb-16 pt-2">
           <div id="video" ref={ref} style={{ height: height, width: "100%" }}>
             <iframe width="100%" height="100%" src="https://www.youtube.com/embed/jy1Q-VlgNdA?si=mSX6LkQBejhZPm8A&mute=1&loop=1&autoplay=1&amp;controls=0&amp;rel=0&amp;disablekb=0&amp;modestbranding=1&amp;showinfo=0&amp;preload=true&amp;playsinline=1&amp;iv_load_policy=3&amp;enablejsapi=1&amp;origin=http%3A%2F%2Fcaztus.vn&amp;widgetid=1" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
           </div>
         </section>
-      </div>
+      </div> */}
 
       <section
         style={{ width: "100vw" }}

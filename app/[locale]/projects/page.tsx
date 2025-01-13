@@ -57,7 +57,7 @@ const Projects: FC= () => {
         </div>
       </div>
 
-      <div style={{ maxWidth: 1280, padding: '0 32px' }} className="w-full">
+      {/* <div style={{ maxWidth: 1280, padding: '0 32px' }} className="w-full">
         <div className="py-12 sm:py-12">
           <div className="mx-auto max-w-7xl px-6 lg:px-8">
             <div style={{ color: "#3172A9" }} className="text-3xl font-semibold">
@@ -75,7 +75,7 @@ const Projects: FC= () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   )
 }
